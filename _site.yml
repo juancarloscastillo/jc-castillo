@@ -1,0 +1,17 @@
+name: "JC Castillo"
+output_dir: "."
+navbar:
+  title: "Juan Carlos Castillo"
+  left:
+  - text: "About me"
+    href: index.html
+  - text: "Publications"
+    href: publications.html
+
+  right:
+  - icon: fa-github fa-lg
+    href: http://github.com/juancarloscastillo
+output:
+  html_document:
+  theme: paper
+css: 'styles.css'
