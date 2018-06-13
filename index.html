@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -164,6 +167,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -205,19 +303,143 @@ $(document).ready(function () {
 </div>
 
 
-<hr />
 <p>I am assistant profesor at <a href="http://sociologia.uc.cl/">ISUC</a></p>
-<div id="probando-encabezados" class="section level1">
-<h1>Probando encabezados</h1>
-<p>texto 1</p>
+<div id="about-me" class="section level2">
+<h2>About me</h2>
+<p>From March 2014 I am assistant professor at the Institute of Sociology, Faculty of Social Sciences, Pontificia Universidad Católica de Chile. Previously (2010-2013) I was research coordinator at the assessment center MIDE UC and assistant professor at School of Psychology, in the same Faculty. I am also deputy director of the Centre for Social Conflict and Cohesion Studies - COES (www.coes.cl) from December 2013. I completed my first degree in psychology at the Catholic University of Valparaiso (1997), then I got a master degree in public management at Potstam University, Germany (2000). After a period working at NGOs and applied research centers, I started my PhD studies in sociology at the department of empirical research methods of Humboldt University, Berlin (2010). Since my dissertation onwards my main areas of interest and research have been legitimacy of economic inequality, public opinion research, social justice research, youth citizenship, quantitative methods, structural equation models and multilevel models. The results of my research have been published in a number of peer-reviewed journals, such as Social Psychology Quarterly, Social Science Research, Youth Studies, Social Justice Research, Bulleting of Latin American Research, Education, Citizenship and Social justice, among others. Most of these research has been funded by competitive research grants from the chilean scientific agency (CONICYT) for the projects “Political Socialization and School Experience” (2011-2014) and “Social Justice and Citizenship Participation” (2012-2015). Currently I am starting a new project called “The moral economy of meritocracy and distributive preferences” (2016-2019). My teaching experience is mostly related to methods seminars at a graduate level, such as Advanced Quantitative Methodology, Multilevel Models and Structural Equation Models. In sociology I am in charge of a undergraduate seminar called “Individual and Society”, which covers topics of sociological social psychology.</p>
 </div>
-<div id="probando-segundo-encabezado" class="section level1">
-<h1>Probando segundo encabezado</h1>
-<p>texto 2</p>
+<div id="papers" class="section level2">
+<h2>Papers</h2>
+<div id="current-paper-projects" class="section level3">
+<h3>Current paper projects</h3>
+<p>About the stability of meritocratic beliefs: A longitudinal measurement invariance approach (with Guillermo Beck)</p>
+<p>Income inequality and social cohesion. How objective and subjective income inequality affects generalized social trust in Latin American societies (with Sonja Zmerli).</p>
+<p>Perception and justification of wage inequality across time (with Rodrigo Yañez &amp; Ignacio Madero).</p>
+<p>Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda &amp; Angélica Bonilla). Submitted.</p>
+<p>Do people perceive more inequality when more inequality exists? (with Martin Schröder). Submitted.</p>
+<p>Cambios en las creencias sobre pobreza y riqueza en Chile (con Raimundo Frei &amp; Rodrigo Henríquez) Submitted.</p>
+<p>On the justice of pensions: A factorial survey approach (with Francisco Olivos &amp; Ariel Azar).Revise &amp; resubmit.</p>
+<p>Patterns of civic and political commitment in early adolescence (with Loreto Martínez, Patricio Cumsille &amp; Ignacio Loyola). Revise &amp; reubmit.</p>
+</div>
+<div id="peer-reviewed-journal-articles" class="section level3">
+<h3>Peer-reviewed journal articles</h3>
+<p>Castillo, JC. &amp; Torres, A. , Atria, J &amp; Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología (ISI).</p>
+<p>Castillo, JC &amp; Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Forthcoming in Psykhe (SCOPUS).</p>
+<p>Atria, J., Amenábar, J., Sanchez, J., Castillo, JC &amp; Cociña, M. (2017) Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile. Cultura, Hombre y Sociedad 27(2)5-36 (Scielo).</p>
+<p>Miranda, D., Castillo, JC &amp; Sandoval-Hernández, A. (2017) Young Citizens Participation: An empirical test of a conceptual model. Forthcoming in Youth &amp; Society (ISI)</p>
+<p>Azar, A., Maldonado, L., Castillo, JC &amp; Atria, J. (2017) Preferences for healthcare policies, income and egalitarianism: A study on Public Attitudes in 29 countries. Forthcoming in Public Health. (ISI)</p>
+<p>Guerra, C. &amp; Castillo, J (2016) Sintomatología en adolescentes victimizados sexualmente: El rol del apoyo de la familia y del grupo de pares. Revista sobre la infancia y la adolescencia, 11:66-80 (Latindex)</p>
+<p>Castillo, J. (2016) Public opinion about just salaries in Chile: An exploratory study based on a factorial survey. Forthcoming in Cuadernos ISUC.</p>
+<p>Schneider, S. &amp; Castillo, J. (2015) Poverty attributions and the perceived legitimacy of income inequalities: A comparison of East and West Germany. Social Psychology Quarterly 78(3):263-282 (ISI)</p>
+<p>Bascopé, M., Bonhomme, M., Cox, C., Castillo, JC., Miranda, D. (2015) Curricular Guidelines and Citizenship Education in Latin American Schools. Revista Latinoamericana de Ciencias Sociales, Niñez &amp; Juventud 13(2):1169-1190 (Scielo).</p>
+<p>Castillo, J. , Joignant, A., Palacios, D., &amp; Tham, M. (2015) Inequality, distributive justice and political participation.Bulletin of Latin American Research 34(4)486-50 (ISI)</p>
+<p>Zmerli, S. &amp; Castillo, J. (2015) Inequality and political trust. How objective and subjective inequality affects Latin American democracies. Social Science Research 52, 179-192 (ISI)</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M. &amp; Bonhomme, M. (2014) Mitigating the Political Participation Gap from the School: The Roles of Civic Knowledge and Classroom Climate. Journal of Youth Studies 18(1) 16-35. (ISI)</p>
+<p>Castillo, J. (2014) Actitudes hacia el trabajo y justicia salarial en Chile.Temas de la Agenda Pública 66, 33-44</p>
+<p>Castillo, J., Madero, I. &amp; Miranda, D. (2014) Educación, desigualdad y creencias distributivas: Evidencia del caso chileno. Sociedad Hoy 24 13-31 (Latindex)</p>
+<p>Castillo, J., Cox, C., Miranda, D. &amp; Bascopé, M. &amp; Bonhomme, M. (2014) Social inequality and changes in student’s expected political participation in Chile. Education, citizenship &amp; social justice 9(2) 140-156. (SCOPUS).</p>
+<p>Factor, R., Castillo, J. &amp; Rattner, A (2014) Procedural justice, religiosity and minorities. Police Practice and Research 15(2)130-142 (SCOPUS)</p>
+<p>Preiss, D., Castillo, J., Flotts, P. &amp; San Martin, E. (2013) Assessment of argumentative writing and critical thinking in higher education: Educational correlates and gender differences . Learning and Individual Differences 28, 193-203 (ISI)</p>
+<p>Preiss, D., Castillo, J., Grigorenko, H. &amp; Manzi, J. (2013) Argumentative writing and academic achievement: A longitudinal study. Learning and Individual Differences 8,204-211 (ISI)</p>
+<p>Castillo, J., Salamovich, A. &amp; Madero, I. (2013) Clivajes partidarios y cambios en preferencias distributivas en Chile. Revista de Ciencia Política 33(2) 469-488 (ISI)</p>
+<p>Castillo, J., Miranda, D. &amp; Madero, I. (2013) Todos somos de clase media: Sobre el estatus social subjetivo en Chile. Latin American Research Review 48(1) 155-173 (ISI)</p>
+<p>Castillo, J. (2013) Contrastes entre la desigualdad objetiva y subjetiva en Chile. Temas de la Agenda Pública 57, 1-15. (Latindex)</p>
+<p>Castillo, J. Leal. P. &amp; Madero, I. &amp; Miranda, D. (2012) ¿Son los chilenos igualmente solidarios? La influencia de los recursos personales en las donaciones de dinero. Opiniao Publica (SCOPUS)</p>
+<p>Castillo, J. (2012) La legitimidad de las desigualdades salariales. Una aproximación multidimensional. Revista Internacional de Sociología (ISI)</p>
+<p>Madero, I. &amp; Castillo , J. (2012) Sobre el estudio empírico de la solidaridad: Aproximaciones conceptuales y metodológicas. Polis.1(31) 391-409. (SCIELO)</p>
+<p>Castillo, J., Miranda, D. &amp; Carrasco, D. (2012) Percepción de desigualdad económica en Chile: Medición, diferencias y determinantes. Psykhé 21(1) 99-114. (SCOPUS)</p>
+<p>Castillo, J. (2012) Is inequality becoming just? Changes in public opinion about economic distribution in Chile. Bulletin of Latin American Research, 31(1)1-18. (ISI)</p>
+<p>Castillo, J. (2011) Legitimacy of inequality in a highly unequal context: evidence from the Chilean case. Social Justice Research 24 (4) 314-340. (ISI)</p>
+<p>Castillo, J. (2009). ¿Cuál es la Brecha Salarial Justa? Opinión Pública y Legitimación de la Desigualdad Económica en Chile. Estudios Públicos (113), 237-266.</p>
+</div>
+<div id="books-chapters-working-papers" class="section level3">
+<h3>Books, chapters &amp; working papers</h3>
+<p>Miranda, D. &amp; Castillo, JC (2018) Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009. In A. Sandoval-Hernandez, M. Isaac &amp; D. Miranda (Eds.) Teaching tolerance in a globalized world. New York, NY: Springer Berlin Heidelberg.</p>
+<p>Miranda, D., Castillo, JC. &amp; Cumsille, P. (2018) The Political Socialization of Attitudes Toward Equal Rights from a Comparative Perspective . In A. Sandoval-Hernandez, M. Isaac &amp; D. Miranda (Eds.) Teaching tolerance in a globalized world. New York, NY: Springer Berlin Heidelberg.</p>
+<p>Bargsted, M., Castillo, J. &amp; Somma, N. (2017) Political trust in Latin America. forthcoming in The Handbook of Political Trust (Zmerli, S. &amp; Van der Meer, T.). In Press.</p>
+<p>Olivos, F., Mackenna, B., Castillo, JC, &amp; Bargsted, M. (2015) Percepción de conflicto en Chile: Un análisis desde la opinión pública 2006-2013 (273-298).En: Castillo, M. &amp; Maldonado, C. Desigualdades: Tolerancia, legitimación y conflicto en las sociedades latinoamericanas. Santiago: RIL</p>
+<p>Cox, C. &amp; Castillo, J (Eds.) (2015) Aprendizaje de la ciudadanía: Contextos, experiencias y resultados. Santiago: Ediciones UC.</p>
+<p>Miranda, D. Castillo, J. &amp; Sandoval-Hernandez, A. (2015). Desigualdad económica y conocimiento cívico. Chile en comparación internacional. En : Castillo, J. &amp; Cox, C. Aprendizaje de la Ciudadanía: Contextos, experiencias y resultados. Ediciones UC, Santiago. Pp. 487- 524</p>
+<p>Cox, C.; Bascopé, M.; Castillo, J.C.; Miranda, D. &amp; Bonhomme, M. (2015). Capítulo de libro: Educación Ciudadana en América Latina: Prioridades en los Currículos Escolares. En: Castillo, J. &amp; Cox, C. Aprendizaje de la Ciudadanía: Contextos, experiencias y resultados. Ediciones UC, Santiago. Pp. 321-371</p>
+<p>Castillo, J.C.; Miranda, D. &amp; Bonhomme, M. (2015). Capítulo de libro: Desigualdad Social y cambios en las expectativas de participación política de los estudiantes en Chile. En: Castillo, J. &amp; Cox, C. Aprendizaje de la Ciudadanía: Contextos, experiencias y resultados. Ediciones UC, Santiago. Pp. 459-486</p>
+<p>Cox, C., Bascopé, M., Castillo, J., Bonhomme, M., Miranda, D. (2014) Educación Ciudadana en América Latina: Prioridades de los Currículos. Working Papers on Curriculum Issues, UNESCO International Bureau of Education (IBE)</p>
+<p>Castillo, J. &amp; Olivos, F. (2014) Redistribución e impuestos: Un análisis desde la opinión pública. En Atria, J. Tributación en Sociedad: Impuestos y Redistribución en el Chile del Siglo XXI (143-166). Santiago: Uqbar.</p>
+<p>Castillo, Miranda &amp; Carrasco (2011). La percepción de desigual de la desigualdad (The unequal perception of inequality). Technical report IT1101, Measurement Center Mide-UC. Santiago: P. Universidad Católica de Chile.</p>
+<p>Castillo, J. (2011). The legitimacy of economic inequality: An empirical approach to the case of Chile. Boca R.: Dissertation.com. ISBN 1-59942-376-6</p>
+<p>Castillo &amp; Carrasco (2010). Sobre la estabilidad del autoritarismo: Un caso de medición de invarianza longitudinal. (On the stability of authoritarianism: A case of measurement invariance). Technical report IT1008, Measurement Center Mide-UC. Santiago: P. Universidad Católica de Chile.</p>
+<p>Castillo, J. (2008) Factorial survey: Dimensions of Just Rewards. International Social Justice Project - Working Paper N°165. Berlin: Humboldt University.</p>
+<p>Castillo, J., Gerlitz, J., &amp; Schrenker, M. (2008). Perception and Legitimacy of Income Inequality in International Comparison. International Social Justice Project - Working Paper N°168. Berlin: Humboldt University.</p>
+<p>Castillo, J., Mühleck, K., &amp; Wegener, B. (2008). The Empirical Approach to the Study of Social Justice: A Research Agenda for Latin America. Observatory on Inequality in Latin America – Working Paper N°24. Miami: University of Miami.</p>
+<p>Schneider, S., &amp; Castillo, J. (2007). Internal and External Attributions of Poverty - Germany 1991/ 2006. International Social Justice Project - Working Paper N°132, Berlin: Humboldt University.</p>
+<p>Castillo, J., &amp; Schneider, S. (2007). Internal and External Attributions of Poverty and Wealth. International Social Justice Project - Working Paper N°131, Berlin: Humboldt University.</p>
+<p>Castillo, J. (2007) Legitimation and Justice Ideologies in contexts of extreme economic inequality. International Social Justice Project - Working Paper N°125, Berlin: Humboldt University.</p>
+<p>Castillo, J., &amp; Asun, D. (2002). Creencias en la Justicia en el Mundo: Un Estudio Preliminar en Relación a Actitudes de Intolerancia y Discriminación. In D. Paez (Ed.), Psicología Social. Buenos Aires: Prentice Hall.</p>
+</div>
+<div id="conference-papers-presentations" class="section level3">
+<h3>Conference papers &amp; presentations</h3>
+<p>Castillo, JC. (2017) Percepciones y legitimación de la desigualdad: Mérito e Instituciones. Panel Congreso Latinoamericano de Sociología (Diciembre 2-7). Montevideo, Universidad de la República.</p>
+<p>Castillo, JC. (2017) Meritocracia y preferencias redistributivas. Panel Conferencia COES (Noviembre 8-9. Viña del Mar, Universidad Adolfo Ibañez.</p>
+<p>Castillo, JC. (2017) Meritocratic beliefs and economic inequality. Colloquium of Macro Sociology (Julio 12). Berlin, Humboldt University.</p>
+<p>Castillo, JC. &amp; Miranda, D. (2017) Class and Status as Predictors of Inclusive Attitudes Towards Immigrants, Minorities and Gender. 7th IEA International Research Conference (IRC) (June 28-30). Prague, Charles University.</p>
+<p>Castillo, JC. (2016) Origen y atribuciones de la pobreza y desigualdad social (origins and atributions of poverty and social inequality). Session organizer, COES-LSE Conference “Inequalities”. (Nov. 3-5). Santiago, Chile.</p>
+<p>Castillo, JC (2016) Desigualdad y meritocracia (inequality and meritocracy). Presentation at the conference cycle “Catedra Investigación Santiago” (Oct. 19). Santiago, Chile.</p>
+<p>Castillo, JC (2016) Meritocracia y explicaciones de la pobreza: Medición y vinculaciones (meritocracy and poverty explanations: measurement and links). Session organizer, “Congreso Chileno de Sociología” (October 11-14). Talca, Chile.</p>
+<p>Castillo, JC. &amp; Frei, R. (2016) Clases de atribuciones de riqueza y pobreza (class attributions of poverty and wealth). Paper presented at the “Congreso Chileno de Sociología” (October 11-14). Talca, Chile.</p>
+<p>Castillo, JC. (2016) Meritocracia y preferencias redistributivas (meritocracy and redistributive preferences). Research colloquium Institute of Sociology, Pontificia Universidad Católica de Chile (Oct. 4). Santiago, Chile.</p>
+<p>Castillo, JC (2016) Economic Inequality, Distributive Preferences and Political Outcomes (I &amp; II). Sessions organized for the Research Committee 42 (Social Psychology) at the Congress of the International Sociological Association - ISA (July 9-14). Vienna, Austria.</p>
+<p>Castillo, JC (2016) Inequality, Distributive Preferences and Types of Participation in Latin America. Paper presented at the Congress of the International Sociological Association - ISA (July 9-14). Vienna, Austria.</p>
+<p>Castillo, JC. &amp; Miranda, D. (2015) Origen social, conocimiento cívico y participación en la escuela. CIEP - Congreso Internacional de Educación y Pobreza (January 08 - 10) Villarrica, Chile.</p>
+<p>Miranda, D. &amp; Castillo, JC. (2015) Lo civil y lo civico: Hacia un modelo conceptual y de medición de ciudadanía escolar. CIEP - Congreso Internacional de Educación y Pobreza (January 08 - 10) Villarrica, Chile.</p>
+<p>Castillo, JC., Olivos, F. &amp; Azar. A. (2015) What is a just pension? A factorial survey approach. WAPOR (June 16-19) Buenos Aires, Argentina.</p>
+<p>Castillo, J. (2014) Inequality, justice beliefs and political participation in Latin America. Paper presented at the Congress of the International Sociological Association - ISA (July 13-19). Yokohama, Japan.</p>
+<p>Bargsted, M., Castillo, J. &amp; Somma, M. (2014) Political trust in Latin America. Paper presented at the WAPOR Latin America Conference (18-20 June). Santiago de Chile.</p>
+<p>Castillo, J. (2014) Economic inequality and Social Justice in Latin America. Poster presented at the Herrenhausen Konferenz: Re-thinking social inequality (May 12-14). Hannover, Germany.</p>
+<p>Bargsted, M., Castillo, J. &amp; Somma, M. (2014) Political trust in Latin America. Paper presented at the authors’ workshop of the Handbook of Political Trust (May 15-18). Goethe Universität Frankfurt am Main, Germany.</p>
+<p>Castillo, J., Tham, M. &amp; Palacios, D. (2013) Desigualdad, justicia distributiva y participación política en Chile. Paper presented at the “Congreso de la Asociación Latinoamericana de Sociología – ALAS” (September 29 –October 4). Santiago de Chile.</p>
+<p>Miranda, D., Castillo, J., Cox, C., Bascopé, M., &amp; Bonhomme, J. (2013) Autoritarismo y Valores Democráticos en Estudiantes Latinoamericanos. Paper presented at the “Congreso de la Asociación Latinoamericana de Sociología – ALAS” (September 29 – October 4). Santiago de Chile.</p>
+<p>Zmerli, S. &amp; Castillo, J. (2013) Income inequality and social trust in Latin American societies. Paper presented at the “7th ECPR General Conference”, Panel: Dismantling Democracy: The Challenge of Inequality to Political Engagement. (September 4-7). Bordeaux.</p>
+<p>Miranda, D., Castillo, J., Cox, C., Bascopé, M., &amp; Bonhomme, J. (2013) Socioeconomic background and expected political participation at school: individual and contextual mechanisms. Paper presented at the summer school “Rising Inequalities and their impacts on Societies” (September 2-6). Levico, Italy.</p>
+<p>Castillo, J., Miranda, D., Bonhomme, M., Cox, C. &amp; Bascopé, M. (2013) Mitigating the participation gap from the school: The role of civic knowledge and classroom climate. Paper presented at the research colloquium of the Data Processing and Research Center, International Association for the Evaluation of the Educational Achievement (IEA). (August 7). Hamburg, Germany.</p>
+<p>Miranda, D., Castillo, J., Cox, C., Bascopé, M., &amp; Bonhomme, J. (2013) Factors related to an open classroom climate and its impact on civic and expected political participation. Paper presented at the ”XV Comparative Education World Congress: New Times, New Voices” - WCCES (June 24-28). Buenos Aires, Argentina.</p>
+<p>Castillo, J., Madero, I., Miranda, D. &amp; Escobar, J. (2012) Education, equity and distributive beliefs: Evidence from the chilean case. Paper presented at the International Sociological Association - ISA Forum (August 1-4). Buenos Aires.</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M., &amp; Escobar, J. (2012) Desigualdad económica y cambios en las expectativas de participación de estudiantes en Chile. Paper presented at the ”Congreso Interdisciplinario de Investigación en Educación” - CIIE (August 23-24). Santiago de Chile.</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M., &amp; Escobar, J. (2012) Civic knowledge and political participation. Six Latin American countries in comparative perspectives. Paper presented at the International Sociological Association - ISA Forum (August 1-4). Buenos Aires.</p>
+<p>Zmerli, S. &amp; Castillo, J. (2012) Income inequality and political support: How objective and subjective inequality affect Latin Américan democracies. Paper presented at the Annual Scientific Meeting of the International Society of Political Psychology – ISPP (July 5-9). Chicago.</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M., &amp; Escobar, J. (2012) Social inequality and changes in students’ expected political participation in Chile. Paper presented at the Annual Scientific Meeting of the International Society of Political Psychology – ISPP (July 5-9). Chicago.</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M., Madero, I. &amp; Escobar, J. (2012) Social origin and citizenship participation in Latin American schools. Paper presented at AERA Conference (April 13-17). Vancouver.</p>
+<p>Castillo, J., Cox, C., Miranda, D., Bascopé, M., Madero, I. &amp; Escobar, J. (2011) Actitudes hacia la democracia en estudiantes chilenos. Primer Congreso Nacional de Ciencias Sociales y Educación. Valparaíso: Universidad Católica de Valparaíso</p>
+<p>Castillo, J., Salamovich, A. &amp; Madero, I. (2011) Clivajes partidarios y preferencias distributivas. IV Congreso Nacional de Psicología. Santiago: Universidad de Chile.</p>
+<p>Castillo, J., Salamovich, A. &amp; Miranda, D. (2011) Partisan cleavages and distributive preferences: A cross sectional time comparison. Poster presented at the “Annual Scientific Meeting of the International Society of Political Psychology – ISPP” (July 9-12). Istanbul: Bilgi University.</p>
+<p>Castillo, J., Miranda, D. &amp; Torres, P. (2011) Authoritarianism, Social Dominance &amp; Trust in Public Institutions. Paper presented at the “Annual Scientific Meeting of the International Society of Political Psychology – ISPP” (July 9-12). Istanbul: Bilgi University.</p>
+<p>Castillo,J., Miranda, D. &amp; Madero, I. (2011). Todos somos de clase media: Sobre el estatus social subjetivo en Chile. Paper presented at the “VI Congreso Nacional de Sociología – Pre ALAS 2011” (Apr. 13-15). Valparaíso: Universidad de Playa Ancha.</p>
+<p>Castillo, J. &amp; Miranda, D. (2010) Cambios en la relación entre religión e identidad política en Chile. (Changes in the relationship between religion and political identity in Chile). Presentation at the international seminar “Jóvenes, cultura y religión”. Santiago: P. Universidad Católica de Chile.</p>
+<p>Castillo, J. (2010) Is inequality becoming just? Changes in public opinion about economic inequality in Chile. Paper presented at the “XXIX International Congress of the Latin American Studies Association” (Oct. 6-9). Toronto: Sheraton Conference Center.</p>
+<p>Castillo, J. (2010) Higher salaries but stable inequality? A cross-sectional comparison of attitudes towards economic distribution. Paper presented at the “13th biennal conference of the International Society for Justice Research” (Aug. 21-24). Banff (Canada): The Banff Centre.</p>
+<p>Castillo, J., Miranda, D. &amp; Carrasco, D. (2010) Percepción de la desigualdad económica en Chile: Medición, determinantes y sesgos. (Perception of economic inequality in Chile: Measurement, determinants and biases). Presentation at the symposium “Tendencias emergentes de la (des) igualdad social: Desafíos para Chile y América Latina”. Santiago: Universidad de Santiago.</p>
+<p>Castillo, J. (2010). Cambios en la percepciones de la desigualdad económica en Chile (Changes in the perceptions of economic inequality in Chile). Presentation at the conference “La desigualdad: Legitimación y conflicto en las sociedades latinoamericanas”. (July 21-24). Santiago: Universidad Alberto Hurtado.</p>
+<p>Castillo, J. (2009) Herkunftsbedingte Disparitäten im Hochschulzugang in Chile und Deutschland (Desigualdades de origen social en el ingreso a la Universidad en Chile y en Alemania). Presentación en la conferencia “Herausforderungen der Globalisierung” (Nov. 20-21) Berlin: Iberoamerikanisches Institut.</p>
+<p>Castillo, J. (2009). Perception and Legitimacy of Economic Inequality in Chile. Paper presentad at “5th ECPR General Conference” (Sept. 10-12). Potsdam: Potsdam University.</p>
+<p>Castillo, J. (2009). What are Just Salaries for Different Occupations in Chile? Paper presentado en el “21st World Congress of Political Science – IPSA” (July 12-16). Santiago de Chile: Universidad de Chile.</p>
+<p>Castillo, J. &amp; Schneider, S., &amp;. (2009). The Legitimacy kf Social Inequality in Comparative Perspective: Do People and Countries Differ in their Poverty Attributions? Paper presentado en el “21st World Congress of Political Science – IPSA” (July 12-16). Santiago de Chile: Universidad de Chile.</p>
+<p>Schneider, S. &amp; Castillo, J. (2009) Social Justice and Political Participation. Paper presentado (por el primer autor) en la “32nd Conference of the International Society of Political Psychology – ISPP” (July 14-17). Dublin: Trinity College.</p>
+<p>Castillo, J. (2009). Consensus and Legitimacy of Earnings Inequality. Presentación en el “International Social Justice Project Workshop” (May 6-10). Haifa: Haifa University, Israel.</p>
+<p>Castillo, J. (2009). ¿Consenso o Conflicto acerca de la Distribución? La Legitimación de la Desigualdad Económica en Chile en Perspectiva Comparada. Paper presentado en la “2nd Latin American Conference of the World Association for Public Opinion Research” (April 22-24). Lima: Universidad Católica.</p>
+<p>Castillo, J. (2008). Legitimación de la Desigualdad Económica en Chile. Presentación en la Universidad Academia de Humanismo Cristiano (December 10th), Santiago de Chile.</p>
+<p>Castillo, J., Gerlitz, J., &amp; Schrenker, M. (2008). Perception and Legitimacy of Income Inequality in International Comparison. Paper presentado en la “APSA Annual Conference” (Aug. 28-31). Boston: Conference Center</p>
+<p>Castillo, J. (2008). On the Justice of Occupational Earnings in Chile: A Factorial Survey Analysis. Presentación en la “12th Conference of the International Society for Justice Research” (August 14-17). Adelaide: Flinders University.</p>
+<p>Castillo, J., &amp; Schneider, S. (2008). The Legitimacy of the Distributive System: A Comparison of Germany and Chile. Paper presentado en la “31st Conference of the International Society of Political Psychology – ISPP” (July 9-12). Paris: Sciences Po.</p>
+<p>Castillo, J., Mühleck, K., &amp; Wegener, B. (2008). The Empirical Approach to the Study of Social Justice: A Research Agenda for Latin America. Paper presentado en la conferencia “Intra- and inter- generational Transmission of Inequality” (Feb. 28-29). Mexico: Regional Bureau for Latin America and the Caribbean of United Nations Development Program (RBLAC-UNDP).</p>
+<p>Castillo, J. (2007). Explanations of Poverty: A Comparison of Germany, the Czech Republic and Chile. Persentación en el “International Social Justice Project Workshop” (April 27-28). Budapest: Social Sciences Faculty, Eötvös Loránd University.</p>
+<p>Castillo, J. (2007). Legitimation and Justice Ideologies in Contexts of Extreme Economic Inequalities. Paper presentado en la “30th Conference of the International Society of Political Psychology (July 4-7)”. Portland: Embassy Suites Hotel.</p>
+<p>Castillo, J. (2007). Justice Ideologies and Attributions of Poverty in Comparative Perspective. Presentación en la conferencia “Law and Society in the 21st Century” (July 15-28). Berlin: Humboldt University.</p>
+<p>Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of Chile in Comparative Perspective. Poster presentado en la “11th Conference of the International Society for Justice Research” (August 2-5). Berlin: Humboldt University.</p>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
