@@ -5,12 +5,16 @@ navbar:
   left:
   - text: "About me"
     href: index.html
-  - text: "Publications"
-    href: publications.html
+  - text: "Research"
+    href: research.html
 
   right:
   - icon: fa-github fa-lg
     href: http://github.com/juancarloscastillo
+  - icon: fa-twitter fa-lg
+    href: https://twitter.com/juankcastillo
+  - icon: fa-envelope fa-lg
+    href: contact.html    
 output:
   html_document:
   theme: paper
