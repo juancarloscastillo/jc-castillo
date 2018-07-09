@@ -13,9 +13,9 @@ output:
 
 <img src="images/simon.jpg" style="width:20%; margin-right: 20px" align="left">
 
-Estoy en la Facultad de Ciencias Sociales, Campus San Joaquín, Macul, Santiago.
-
 <br clear="all" />
+
+Estoy en la Facultad de Ciencias Sociales, Campus San Joaquín, Macul, Santiago.
 
 Si quieres me escribes un [email](mailto:jcastillov@uc.cl)
 
