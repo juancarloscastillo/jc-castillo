@@ -15,13 +15,17 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -163,6 +167,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -219,42 +318,42 @@ $(document).ready(function () {
 </div>
 
 
-<div id="welcome-to-github-pages" class="section level2">
-<h2>Welcome to GitHub Pages</h2>
-<p>You can use the <a href="https://github.com/juancarloscastillo/jc-castillo/edit/master/README.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
-<p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to rebuild the pages in your site, from the content in your Markdown files.</p>
-<div id="markdown" class="section level3">
-<h3>Markdown</h3>
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
-<pre class="markdown"><code>Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)</code></pre>
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
+<p><br/> <br/></p>
+<div id="software" class="section level2">
+<h2>Software</h2>
+<p>I use software compatible with the principles of open science, this is, free and open source.</p>
+<p><img src="images/logos.png" style="width:90%" align="left"></p>
+<p><br clear="all" /></p>
+<hr />
+<ul>
+<li><p>My operating system is Linux, I use <a href="https://www.ubuntu.com/">Ubuntu</a> with Gnome-<a href="http://glx-dock.org/">Cairo Dock</a>. A lot of freedom for customization … and looks great.</p></li>
+<li><p>For general statistical analysis and reporting I work in <a href="https://cran.r-project.org/">R</a>, using packages for data science from <a href="https://www.tidyverse.org/">Tidyverse</a>.</p></li>
+<li>For more specific analysis I have been using for a while <a href="https://cran.r-project.org/web/packages/lme4/index.html">lme4</a> for multilevel models and (Lavaan)[<a href="http://lavaan.ugent.be/" class="uri">http://lavaan.ugent.be/</a>] for SEM.</li>
+<li>I also use R’s reproducibility tools as <a href="https://yihui.name/knitr/">Knitr</a> &amp; Rmarkdown … before I used to be a fan of Latex, but the simplicity and efficiency of Markdown is unbeatable, even for presentations with tools such as <a href="https://remarkjs.com/">remark</a> &amp; <a href="https://slides.yihui.name/xaringan/">Xaringan</a> .</li>
+<li><p>For writing and most of my work I use <a href="https://atom.io/">Atom</a> . I am currently working in a workflow for academic writing linking Atom, R, Bibtex and <a href="https://www.zotero.org/">Zotero</a> via <a href="https://github.com/retorquere/zotero-better-bibtex">BetterBibTex</a>. So far it is working, a draft (in spanish) is <a href="https://juancarloscastillo.github.io/citando-plano/">here</a></p></li>
+</ul>
 </div>
-<div id="jekyll-themes" class="section level3">
-<h3>Jekyll Themes</h3>
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/juancarloscastillo/jc-castillo/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
+<div id="open-science" class="section level2">
+<h2>Open Science</h2>
+<ul>
+<li><p><a href="https://osf.io/">Open Science Framework</a></p></li>
+<li><p><a href="https://socopen.org/welcome/">SocArxive</a>, the open achive of the social sciences</p></li>
+<li><p><a href="https://www.bitss.org/">The Berkeley Initiative for Transparency in the Social Sciences</a></p></li>
+</ul>
 </div>
-<div id="support-or-contact" class="section level3">
-<h3>Support or Contact</h3>
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-</div>
+<div id="following-people" class="section level2">
+<h2>Following people</h2>
+<ul>
+<li><a href="https://kieranhealy.org/">Kieran Healy</a></li>
+<li><a href="https://github.com/yihui">Yihui Xie</a></li>
+<li><a href="https://www.gc.cuny.edu/stonecenter/Leslie-McCall">Leslie McCall</a></li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

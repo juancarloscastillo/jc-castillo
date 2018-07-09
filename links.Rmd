@@ -1,0 +1,47 @@
+---
+title: " "
+author: " "
+output: 
+    html_document:
+        theme: united
+        toc: TRUE
+        toc_float: TRUE
+---
+
+<br/>
+<br/>
+
+## Software
+
+I use software compatible with the principles of open science, this is, free and open source.
+
+<img src="images/logos.png" style="width:90%" align="left">
+
+<br clear="all" />
+
+---
+
+
+- My operating system is Linux, I use [Ubuntu](https://www.ubuntu.com/) with Gnome-[Cairo Dock](http://glx-dock.org/). A lot of freedom for customization  ... and looks great.
+
+- For general statistical analysis and reporting I work in [R](https://cran.r-project.org/), using packages for data science from [Tidyverse](https://www.tidyverse.org/).
+
+- For more specific analysis I have been using for a while [lme4](https://cran.r-project.org/web/packages/lme4/index.html) for multilevel models and (Lavaan)[http://lavaan.ugent.be/] for SEM.
+- I also use R's reproducibility tools as [Knitr](https://yihui.name/knitr/) & Rmarkdown ... before I used to be a fan of Latex, but the simplicity and efficiency of Markdown is unbeatable, even for presentations with tools such as [remark](https://remarkjs.com/) & [Xaringan](https://slides.yihui.name/xaringan/) .
+- For writing and most of my work I use [Atom](https://atom.io/) . I am currently working in a workflow for academic writing linking Atom, R, Bibtex and [Zotero](https://www.zotero.org/) via [BetterBibTex](https://github.com/retorquere/zotero-better-bibtex). So far it is working, a draft (in spanish) is [here](https://juancarloscastillo.github.io/citando-plano/)
+
+## Open Science
+
+- [Open Science Framework](https://osf.io/)
+
+- [SocArxive](https://socopen.org/welcome/), the open achive of the social sciences
+
+- [The Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
+
+
+## Following people
+
+- [Kieran Healy](https://kieranhealy.org/)
+- [Yihui Xie](https://github.com/yihui)
+- [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall)
+
