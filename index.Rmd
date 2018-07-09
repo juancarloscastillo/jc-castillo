@@ -12,7 +12,12 @@ output:
 
 ### PhD Sociology, Humboldt Universität <br/>
 ### Professor at [Institute of Sociology](http://www.sociologia.uc.cl), Pontificia Universidad Católica de Chile <br/>
-### Deputy director [COES](http://www.coes.cl) - Centre for Social Conflict and Cohesion Studies
+### Deputy director [Centre for Social Conflict and Cohesion Studies](http://www.coes.cl)
+[<img src="images/logocoes.jpg" style="width:30%" align="left">](http://www.coes.cl)
+<br/>
+<br/>
+<br/>
+
 
 ---
 
