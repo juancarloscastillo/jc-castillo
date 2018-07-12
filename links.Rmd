@@ -11,6 +11,11 @@ output:
 <br/>
 <br/>
 
+## Tutorials
+
+- [Citando en texto plano](citando-plano.html) (citing in plain text): referencias bibliográficas para documentos académicos en LaTeX, (R)Markdown, y Xaringan desde Atom.  
+
+
 ## Software
 
 I use software compatible with the principles of open science, this is, free and open source.
@@ -26,9 +31,9 @@ I use software compatible with the principles of open science, this is, free and
 
 - For general statistical analysis and reporting I work in [R](https://cran.r-project.org/), using packages for data science from [Tidyverse](https://www.tidyverse.org/).
 
-- For more specific analysis I have been using for a while [lme4](https://cran.r-project.org/web/packages/lme4/index.html) for multilevel models and [Lavaan](http://lavaan.ugent.be/) for SEM.
-- I also use R's reproducibility tools as [Knitr](https://yihui.name/knitr/) & Rmarkdown ... before I used to be a fan of Latex, but the simplicity and efficiency of Markdown is unbeatable, even for presentations with tools such as [remark](https://remarkjs.com/) & [Xaringan](https://slides.yihui.name/xaringan/) .
-- For writing and most of my work I use [Atom](https://atom.io/) . I am currently working in a workflow for academic writing linking Atom, R, Bibtex and [Zotero](https://www.zotero.org/) via [BetterBibTex](https://github.com/retorquere/zotero-better-bibtex). So far it is working, a draft (in spanish) is [here](https://juancarloscastillo.github.io/citando-plano/)
+- For more specific analysis: I use [lme4](https://cran.r-project.org/web/packages/lme4/index.html) for multilevel models and [Lavaan](http://lavaan.ugent.be/) for SEM.
+- I also use R's reproducibility tools as [Knitr](https://yihui.name/knitr/) & Rmarkdown ... before I used to be a fan of LaTeX, but the simplicity and efficiency of Markdown seems unbeatable, even for presentations with tools such as [remark](https://remarkjs.com/) & [Xaringan](https://slides.yihui.name/xaringan/) .
+- For writing (and almost for everything so far) I use [Atom](https://atom.io/) editor. Just great, and smooth with Git/Github. 
 
 ## Open Science
 
