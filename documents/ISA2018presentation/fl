@@ -1,0 +1,92 @@
+RefManageR-package         package:RefManageR          R Documentation
+
+_I_m_p_o_r_t _a_n_d _M_a_n_a_g_e _B_i_b_T_e_X _a_n_d _B_i_b_L_a_T_e_X _r_e_f_e_r_e_n_c_e_s _w_i_t_h _R_e_f_M_a_n_a_g_e_R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     RefManageR provides tools for importing and working with
+     bibliographic references.  It greatly enhances the bibentry class
+     by providing a class BibEntry which stores BibTeX and BibLaTeX
+     references, supports UTF-8 encoding, and can be easily searched by
+     any field, by date ranges, and by various formats for name lists
+     (author by last names, translator by full names, etc.). Entries
+     can be updated, combined, sorted, printed in a number of styles,
+     and exported. BibTeX and BibLaTeX .bib files can be read into R
+     and converted to BibEntry objects.  Interfaces to NCBI's Entrez,
+     CrossRef, and Zotero are provided for importing references and
+     references can be created from locally stored PDFs using Poppler.
+     Includes functions for citing and generating a bibliography with
+     hyperlinks for documents prepared with RMarkdown or RHTML.
+
+_D_e_t_a_i_l_s:
+
+     *Importing and Creating References*
+
+     BibEntry objects can be created directly using the ‘BibEntry’
+     function.  ‘.bib’ files can be read into R using the ‘ReadBib’
+     function. Tools are provided for importing references from
+     Crossref, Zotero, Google Scholar, and PDFs and looking up PubMed
+     ID's and DOIs.  See ‘ReadPDFs’, ‘ReadZotero’, ‘ReadCrossRef’,
+     ‘ReadGS’, ‘ReadPubMed’, ‘GetPubMedByID’, ‘GetPubMedRelated’.
+
+     *Manipulating BibEntry objects*
+
+     BibEntry objects may be searched and indexed by field values, name
+     lists, keys, dates, date ranges, etc.  See ‘[.BibEntry’,
+     ‘[<-.BibEntry’, ‘[[.BibEntry’, ‘$.BibEntry’.
+
+     *Printing and Exporting Bibliographies*
+
+     The ‘print.BibEntry’ function can print in a number of formats
+     (e.g. text, html) and most of the base bibliography styles
+     available with BibLaTeX (e.g. alphabetic, numeric, authortitle,
+     and authoryear).  ‘toBibtex.BibEntry’ will convert a BibEntry
+     object to a character vector containing lines of a BibTeX file,
+     converting fields, entry types and expanding crossreferences as
+     needed to coerce BibLaTeX entries to BibTeX.  ‘toBiblatex’
+     converts the BibEntry object to a character vector containing
+     lines of the corresponding BibLaTeX file.  The results can be
+     written to a file using ‘WriteBib’.
+
+     Citations can be generated in a number of styles using one of the
+     available functions for citations.  A list of references can be
+     printed based on the works the user has cited thus far in their
+     document.  See ‘Cite’.  The citations and bibliography can be
+     printed including hyperlinks using either the R Markdown or R HTML
+     formats.
+
+     *Additional features*
+
+     All sorting methods for bibliographies available in the BibLaTeX
+     LaTeX package have been implemented see ‘sort.BibEntry’ and the
+     references.
+
+     Using ‘open.BibEntry’ electronic copies of references can be
+     opened in a PDF viewer or web browser.
+
+     The convenience function ‘BibOptions’ is provided for setting
+     defaults for commonly used functions such as ‘print.BibEntry’,
+     ‘[.BibEntry’, and ‘Cite’.  Its interface is similar to ‘options’.
+
+_A_u_t_h_o_r(_s):
+
+     McLean, M. W. <email: mathew.w.mclean@gmail.com>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     McLean, M. W. (2014). Straightforward Bibliography Management in R
+     Using the RefManageR Package. arXiv: 1403.2036 [cs.DL]. Submitted.
+
+     Lehman, P., P. Kime, A. Boruvka, and J. Wright (2013). The
+     biblatex Package. <URL:
+     https://mirror.pregi.net/tex-archive/macros/latex/contrib/biblatex/doc/biblatex.pdf>.
+
+     Hornik, K., D. Murdoch, and A. Zeileis (2012).  Who Did What? The
+     Roles of R Package Authors and How to Refer to Them. The R Journal
+     *4*, 1. <URL:
+     https://journal.r-project.org/archive/2012-1/RJournal_2012-1_Hornik~et~al.pdf>
+
+     Patashnik, O (1988). Bibtexing. <URL:
+     https://mirror.pregi.net/tex-archive/biblio/bibtex/contrib/doc/btxdoc.pdf>.
+
+
