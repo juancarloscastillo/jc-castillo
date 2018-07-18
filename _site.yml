@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Juan Carlos Castillo"
   left:
-  - text: "About me"
+  - icon: fa-home fa-lg
     href: index.html
   - text: "Research"
     href: research.html
