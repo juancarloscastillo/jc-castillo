@@ -19,6 +19,9 @@ navbar:
     href: https://twitter.com/juankcastillo
   - icon: fa-envelope fa-lg
     href: contact.html
+  - text: "Researchgate"
+    href: https://www.researchgate.net/profile/Juan_Castillo5/contributions
+
  
 output:
   html_document:
