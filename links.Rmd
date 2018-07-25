@@ -4,19 +4,20 @@ author: " "
 output: 
     html_document:
         theme: united
-        toc: TRUE
-        toc_float: TRUE
+        includes:
+          after_body: footer.html
+
 ---
 
 <br/>
 <br/>
 
-## Tutorials
+### Tutorials
 
 - [Citando en texto plano](citando-plano.html) (citing in plain text): referencias bibliográficas para documentos académicos en LaTeX, (R)Markdown, y Xaringan desde Atom.  
+<br/>
 
-
-## Software
+### Software
 
 I use software compatible with the principles of open science, this is, free and open source.
 
@@ -35,7 +36,9 @@ I use software compatible with the principles of open science, this is, free and
 - I also use R's reproducibility tools as [Knitr](https://yihui.name/knitr/) & Rmarkdown ... before I used to be a fan of LaTeX, but the simplicity and efficiency of Markdown seems unbeatable, even for presentations with tools such as [remark](https://remarkjs.com/) & [Xaringan](https://slides.yihui.name/xaringan/) .
 - For writing (and almost for everything so far) I use [Atom](https://atom.io/) editor. Just great, and smooth with Git/Github. 
 
-## Open Science
+<br/>
+
+### Open Science
 
 - [Open Science Framework](https://osf.io/)
 
@@ -43,13 +46,16 @@ I use software compatible with the principles of open science, this is, free and
 
 - [The Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
 
+<br/>
 
-## Following people
+### Following people
 
 - [Kieran Healy](https://kieranhealy.org/)
 - [Yihui Xie](https://github.com/yihui)
 - [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall)
 
+<br/>
 
-## Miscellaneous
-- Robert Mitchell's guide to buid rmarkownwebsite: [link](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
+### Miscellaneous
+- [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
+- [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)

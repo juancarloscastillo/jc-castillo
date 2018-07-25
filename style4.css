@@ -12,14 +12,13 @@ html, body {
 }
 
 #rbmvFooter {
-  position: relative;
   z-index: 2;
   box-sizing: border-box;
   height: 25em;
 }
 
 #rbmvFooter.footer {
-  background-color: #a59a9a;  /* light black */
+  background-color: #d1420e;  /* light black */
   padding: 4% 8%;
   margin-top: 7em;
   box-shadow: 0px 3px 50px 0px rgba(43,45,66,0.4);

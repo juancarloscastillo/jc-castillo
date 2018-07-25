@@ -5,18 +5,19 @@ output:
     html_document:
         theme: united
         highlight: tango
+        includes:
+          after_body: footer.html
+        
 ---
 
 <br/>
 <br/>
 
+### Horas de reunión
+<br/>
 
-<img src="images/simon.jpg" style="width:20%; margin-right: 20px" align="left">
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/juan_castillo/horasofi" style="min-width:320px;height:580px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
 
-Estoy en la Facultad de Ciencias Sociales, Campus San Joaquín, Macul, Santiago.
-
-Si quieres me escribes un [email](mailto:jcastillov@uc.cl)
-
-... o si prefieres una reunión, para evitar el ir y venir de e-mails, te puedes inscribir directamente en mi página de [Calendly.](https://calendly.com/juan_castillo/horasofi)
-
-*Nos vemos!*

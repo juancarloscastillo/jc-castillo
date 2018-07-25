@@ -5,6 +5,8 @@ output:
     html_document:
         theme: united
         highlight: tango
+        includes:
+          after_body: footer.html
 ---
 
 <br/>
