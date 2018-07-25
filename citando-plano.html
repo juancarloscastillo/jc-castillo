@@ -23,25 +23,52 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link rel="stylesheet" href="site_libs/academicons-1.8.6/css/academicons.css" />
+
 
 <style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
   }
 </style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
 
 
 <style type="text/css">
@@ -71,6 +98,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style4.css" type="text/css" />
 
 </head>
 
@@ -92,6 +120,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -276,28 +307,43 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
+  <a href="research.html">Research</a>
 </li>
 <li>
-  <a href="research.html">Research</a>
+  <a href="documents/CVjccastillo.pdf">
+    <span class="ai ai-cv fa-lg"></span>
+     
+  </a>
 </li>
 <li>
   <a href="links.html">Links</a>
 </li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="documents/CVjccastillo.pdf">
-    <span class="fa fa-file-pdf-o fa-lg"></span>
+  <a href="http://github.com/juancarloscastillo">
+    <span class="fa fa-github fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/juancarloscastillo">
-    <span class="fa fa-github fa-lg"></span>
+  <a href="https://www.researchgate.net/profile/Juan_Castillo5/contributions">
+    <span class="ai ai-researchgate fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://orcid.org/0000-0003-1265-7854">
+    <span class="ai ai-orcid fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://osf.io/jtgda/">
+    <span class="ai ai-osf fa-lg"></span>
      
   </a>
 </li>
@@ -306,15 +352,6 @@ div.tocify {
     <span class="fa fa-twitter fa-lg"></span>
      
   </a>
-</li>
-<li>
-  <a href="contact.html">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.researchgate.net/profile/Juan_Castillo5/contributions">Researchgate</a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -442,18 +479,18 @@ bibliography:
 <ol style="list-style-type: decimal">
 <li>Indicar paquete y librería: en un chunk de setup luego del YAML header. La librería se indica con la función ReadBib de RefManageR (en este caso, en el mismo directorio, si no dar el path)</li>
 </ol>
-<pre class="markdown"><code>```{r setup, include=FALSE}
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">```{r setup, include=FALSE}
  options(htmltools.dir.version = TRUE)
  pacman::p_load(RefManageR)
  bib &lt;- ReadBib(&quot;merit_pref_int.bib&quot;, check = FALSE)
-```</code></pre>
+```</code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, “castillo_2018”). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código: <code>r Cite (bib, &quot;castillo_2018&quot;)</code></p></li>
 <li><p>Para generar las referencias: en la lámina que corresponde, incluir:</p></li>
 </ol>
-<pre class="markdown"><code>```{r, results=&#39;asis&#39;, echo=FALSE}
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">```{r, results=&#39;asis&#39;, echo=FALSE}
 PrintBibliography(bib)
-```</code></pre>
+```</code></pre></div>
 </div>
 </div>
 <div id="usando-atom-para-flujo-de-trabajo-academico-en-texto-plano-con-citas" class="section level2">

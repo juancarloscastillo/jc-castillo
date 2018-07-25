@@ -1,0 +1,54 @@
+html, body {
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  height: 100%;
+}
+
+#rbmvFooter {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  height: 25em;
+}
+
+#rbmvFooter.footer {
+  background-color: #a59a9a;  /* light black */
+  padding: 4% 8%;
+  margin-top: 7em;
+  box-shadow: 0px 3px 50px 0px rgba(43,45,66,0.4);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#rbmvFooter .footer {
+  color: #626262;  /* darker grey */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 14px;
+}
+
+#scrollTop {
+  color: #FFFFFF!important; /* white */
+}
+
+.footerContent {
+  color: var(--dark-grey);
+  font-size: 16px;
+}
+
+.footerContent a {
+  color: var(--dark-grey);
+}
+
+.footerContent a:hover {
+  color: var(--light-grey);
+}

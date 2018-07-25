@@ -50,3 +50,6 @@ I use software compatible with the principles of open science, this is, free and
 - [Yihui Xie](https://github.com/yihui)
 - [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall)
 
+
+## Miscellaneous
+- Robert Mitchell's guide to buid rmarkownwebsite: [link](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)

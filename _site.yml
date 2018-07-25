@@ -3,27 +3,32 @@ output_dir: "."
 navbar:
   title: "Juan Carlos Castillo"
   left:
-  - icon: fa-home fa-lg
-    href: index.html
   - text: "Research"
     href: research.html
+  - icon: ai-cv fa-lg
+    href: documents/CVjccastillo.pdf   
   - text: "Links"
-    href: links.html  
+    href: links.html
+  - text: "Contact"
+    href: contact.html
 
   right:
-  - icon: fa-file-pdf-o fa-lg
-    href: documents/CVjccastillo.pdf 
   - icon: fa-github fa-lg
     href: http://github.com/juancarloscastillo
+  - icon: ai-researchgate fa-lg
+    href: https://www.researchgate.net/profile/Juan_Castillo5/contributions
+  - icon: ai-orcid fa-lg
+    href: https://orcid.org/0000-0003-1265-7854
+  - icon: ai-osf fa-lg
+    href: https://osf.io/jtgda/
   - icon: fa-twitter fa-lg
     href: https://twitter.com/juankcastillo
-  - icon: fa-envelope fa-lg
-    href: contact.html
-  - text: "Researchgate"
-    href: https://www.researchgate.net/profile/Juan_Castillo5/contributions
-
  
 output:
   html_document:
-  theme: paper
-css: 'styles.css'
+    theme: yeti
+    highlight: pygments
+    css: style4.css
+    includes:
+      in_header: academicons.html
+      # after_body: footer.html
