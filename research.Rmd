@@ -12,36 +12,31 @@ output:
 <br/>
 <br/>
 
-## Projects
+## [Projects / Grants]()
 
 <br/>
 
-- 2018 - 2021 Associate researcher (coinvestigador) FONDECYT Regular 1181239: Political socialization and citizenship education: The role of the family and the school (principal researcher: Cristián Cox)
+- **Political socialization and citizenship education: The role of the family and the school** (2018 - 2021) FONDECYT Regular 1181239, associate researcher (principal researcher: Cristián Cox).
 
 
-- 2016 - 2019 Principal researcher project FONDECYT Regular 1160921: The moral economy of meritocracy and redistributive preferences (link to project website)[https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences]
+- **The moral economy of meritocracy and redistributive preference** (2016 - 2019) FONDECYT Regular 1160921, principal researcher. [(link to project website)](https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences)
 
 
-- 2013 - 2018 Principal researcher / deputy director FONDAP: Centre for Social Conflict and Cohesion Studies. 15130009 CONICYT. (www.coes.cl)
+- **Centre for Social Conflict and Cohesion Studies** [COES](www.coes.cl) (2013 - 2018) FONDAP CONICYT 15130009, principal researcher / deputy director. 
 
+- **Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC** (2013 - 2014) CONICYT DRI 130074, principal researcher. 
 
-- 2013 - 2014 Principal researcher project: Apoyo a la Formación de Redes Internacionales entre Centros de Investigación. CONICYT DRI 130074 (Departamento de Relaciones Internacionales). 
+- **Social justice and citizenship participation: An international comparison with focus on the case of Chile** (2012 - 2015) FONDECYT Iniciación 11121203, principal researcher.
 
+- **Socialización política y experiencia escolar, Chile en contexto internacional** (2012 - 2015) FONDECYT Regular 1120630, associate researcher (principal researcher: Cristián Cox).
 
-- 2012 - 2015 Principal researcher project FONDECYT Iniciación 11121203: Social justice and citizenship participation: An international comparison with focus on the case of Chile .
+- **Inequality, social justice and political participation** (2011 - 2012) Inicio UC 11/2011, principal researcher.
 
-
-- 2012 - 2015 Associate researcher (coinvestigador) project  FONDECYT 1120630: Socialización política y experiencia escolar, Chile en contexto internacional (principal researcher: Cristián Cox.)
-
-
-- 2011 - 2012 Principal researcher project Inicio 11/2011: Inequality, social justice and political participation. Vicerrectoría de Investigación de la P. Universidad Católica de Chile.
-
-
-- 2010 - 2011	Principal researcher project Inicio 24/2010: Testing the stability of perception and justification of economic inequality in Chile: A cross-sectional time comparison. Vicerrectoría de Investigación de la P. Universidad Católica de Chile.
+- **Testing the stability of perception and justification of economic inequality in Chile: A cross-sectional time comparison** (2010 - 2011)	Inicio 24/2010, principal researcher.
 
 <br/>
 
-## Papers
+## [Papers]()
 
 <br/>
 
@@ -67,7 +62,7 @@ output:
 
 ### Peer-reviewed journal articles 
 
-If you are looking for copies of my papers, search in my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions).
+(If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
 
 - Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología (ISI).
 
@@ -171,7 +166,7 @@ If you are looking for copies of my papers, search in my site in [Researchgate](
 
 <br/>
 
-## Conferences
+## [Conferences]()
 
 Castillo,JC (2018) Perceptions and preferences about meritocracy in international comparison. Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center [(link)](documents/ISA2018presentation/castillo2018meritocracyISA.html).
 
@@ -289,7 +284,7 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 
 <br/>
 
-## Supervised thesis
+## [Supervised thesis]()
 
 <br/>
 
@@ -299,12 +294,15 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Miranda, D. (2018) The civic and civil dimensions of youth participation. Doctorado en sociología, P. Universidad Católica de Chile. 
 
 - Plaza, A. (2018) Movilidad social y preferencias por la redistribución: Efectos individuales y contextuales. Magíster en Sociología, P. Universidad Católica de Chile. 
+
 - Franetovic, G. (2018) Desigualdad, desarrollo económico y preferencias redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile. 
+
 - Muñoz, E. (2018) Evaluaciones de justicia distributiva sobre las pensiones de vejez en Chile. Magíster en Sociología, P. Universidad Católica de Chile. 
 
 - Sandoval, D. (2017) Merezco estar aquí: Un estudio multinivel sobre la relación entre meritocracia y educación. Magíster en Sociología, P. Universidad Católica de Chile. 
 
 - Montedónico, S. (2017) Contexto Polı́tico Institucional y Preferencias Redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile. 
+
 - Acevedo, F. (2017) Compromiso Cívico Juvenil en Chile: una aproximación desde los recursos. Magíster en Sociología, P. Universidad Católica de Chile. 
 
 - Placencio, M. (2016) Legitimidad del Sistema Económico y Participación Ciudadana: Una aproximación a la relación entre percepciones individuales y actividad política en Chile. Magíster en Sociología, P. Universidad Católica de Chile. 

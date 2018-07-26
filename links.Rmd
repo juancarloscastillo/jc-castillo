@@ -33,7 +33,9 @@ I use software compatible with the principles of open science, this is, free and
 - For general statistical analysis and reporting I work in [R](https://cran.r-project.org/), using packages for data science from [Tidyverse](https://www.tidyverse.org/).
 
 - For more specific analysis: I use [lme4](https://cran.r-project.org/web/packages/lme4/index.html) for multilevel models and [Lavaan](http://lavaan.ugent.be/) for SEM.
+
 - I also use R's reproducibility tools as [Knitr](https://yihui.name/knitr/) & Rmarkdown ... before I used to be a fan of LaTeX, but the simplicity and efficiency of Markdown seems unbeatable, even for presentations with tools such as [remark](https://remarkjs.com/) & [Xaringan](https://slides.yihui.name/xaringan/) .
+
 - For writing (and almost for everything so far) I use [Atom](https://atom.io/) editor. Just great, and smooth with Git/Github. 
 
 <br/>
@@ -51,11 +53,17 @@ I use software compatible with the principles of open science, this is, free and
 ### Following people
 
 - [Kieran Healy](https://kieranhealy.org/)
+
 - [Yihui Xie](https://github.com/yihui)
+
 - [Leslie McCall](https://www.gc.cuny.edu/stonecenter/Leslie-McCall)
 
 <br/>
 
 ### Miscellaneous
+
+- [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)
+
 - [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
+
 - [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
