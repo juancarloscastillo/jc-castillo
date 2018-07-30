@@ -54,7 +54,7 @@ html, body {
   color: var(--light-grey);
 }
 
-
+ 
 /*collapsible - add specifications for <details> tag*/
 
  summary::-webkit-details-marker {
