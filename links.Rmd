@@ -10,6 +10,7 @@ output:
 ---
 
 <br/>
+
 <br/>
 
 ### Tutorials
@@ -44,7 +45,7 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Open Science Framework](https://osf.io/)
 
-- [SocArxive](https://socopen.org/welcome/), the open achive of the social sciences
+- [SocArxiv](https://socopen.org/welcome/), the open archive of the social sciences
 
 - [The Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
 

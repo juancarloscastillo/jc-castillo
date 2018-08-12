@@ -8,7 +8,6 @@ output:
         toc_float: TRUE
 
 ---
-
 <br/>
 <br/>
 
@@ -24,6 +23,9 @@ output:
 
 - **Centre for Social Conflict and Cohesion Studies** [COES](www.coes.cl) (2013 - 2018) FONDAP CONICYT 15130009, principal researcher / deputy director. 
 
+<details>
+<summary> *See more...* </summary>
+
 - **Formación de Redes Internacionales entre Centros de Investigación, MIDE-IEA/DPC** (2013 - 2014) CONICYT DRI 130074, principal researcher. 
 
 - **Social justice and citizenship participation: An international comparison with focus on the case of Chile** (2012 - 2015) FONDECYT Iniciación 11121203, principal researcher.
@@ -33,7 +35,7 @@ output:
 - **Inequality, social justice and political participation** (2011 - 2012) Inicio UC 11/2011, principal researcher.
 
 - **Testing the stability of perception and justification of economic inequality in Chile: A cross-sectional time comparison** (2010 - 2011)	Inicio 24/2010, principal researcher.
-
+</details>
 <br/>
 
 ## [Papers]()
@@ -42,6 +44,8 @@ output:
 
 ### Current paper projects
   
+- Perceptions and Preferences about Meritocracy in International Comparison  [(*link to ISA 2018 presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
+
 - About the stability of meritocratic beliefs: A longitudinal measurement invariance approach (with Guillermo Beck)
 
 - Income inequality and social cohesion. How objective and subjective income inequality affects generalized social trust in Latin American societies (with Sonja Zmerli).
@@ -91,6 +95,10 @@ output:
 
 - Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2017) Preferences for healthcare policies, income and egalitarianism: A study on Public Attitudes in 29 countries. Forthcoming in Public Health. (ISI)
 
+
+<details>
+<summary> *See more...* </summary>
+
 - Guerra, C. & Castillo, J (2016) Sintomatología en adolescentes victimizados sexualmente: El rol del apoyo de la familia y del grupo de pares. Revista sobre la infancia y la adolescencia, 11:66-80 (Latindex)
 
 - Castillo, J. (2016) Public opinion about just salaries in Chile: An exploratory study based on a factorial survey. Forthcoming in Cuadernos ISUC. 
@@ -137,6 +145,8 @@ output:
 
 - Castillo, J. (2009). ¿Cuál es la Brecha Salarial Justa? Opinión Pública y Legitimación de la Desigualdad Económica en Chile. Estudios Públicos (113), 237-266.
 
+</details>
+
 <br/>
 
 ### Books, chapters & working papers
@@ -150,6 +160,9 @@ output:
 - Olivos, F., Mackenna, B., Castillo, JC, & Bargsted, M. (2015) Percepción de conflicto en Chile: Un análisis desde la opinión pública 2006-2013 (273-298).En: Castillo, M. & Maldonado, C. Desigualdades: Tolerancia, legitimación y conflicto en las sociedades latinoamericanas. Santiago: RIL
 
 - Cox, C. & Castillo, J (Eds.) (2015)  Aprendizaje de la ciudadanía: Contextos, experiencias y resultados. Santiago: Ediciones UC.
+
+<details>
+<summary> *See more...* </summary>
 
 - Miranda, D. Castillo, J. & Sandoval-Hernandez, A. (2015). Desigualdad económica y conocimiento cívico. Chile en comparación internacional. En : Castillo, J. & Cox, C. Aprendizaje de la Ciudadanía: Contextos, experiencias y resultados. Ediciones UC, Santiago. Pp. 487- 524
 
@@ -181,6 +194,7 @@ output:
 
 - Castillo, J., & Asun, D. (2002). Creencias en la Justicia en el Mundo: Un Estudio Preliminar en Relación a Actitudes de Intolerancia y Discriminación. In D. Paez (Ed.), Psicología Social. Buenos Aires: Prentice Hall.  
 
+</details>
 <br/>
 
 ## [Conferences]()
@@ -194,6 +208,9 @@ Castillo, JC. (2017) Meritocracia y preferencias redistributivas. Panel Conferen
 Castillo, JC. (2017) Meritocratic beliefs and economic inequality. Colloquium of Macro Sociology (Julio 12). Berlin, Humboldt University.
 
 Castillo, JC. & Miranda, D. (2017) Class and Status as Predictors of Inclusive Attitudes Towards Immigrants, Minorities and Gender. 7th IEA International Research Conference (IRC) (June 28-30). Prague, Charles University.
+
+<details>
+<summary> *See more...* </summary>
 
 Castillo, JC. (2016) Origen y atribuciones de la pobreza y desigualdad social (origins and atributions of poverty and social inequality). Session organizer, COES-LSE Conference "Inequalities". (Nov. 3-5). Santiago, Chile.
 
@@ -299,13 +316,15 @@ Castillo, J. (2007). Justice Ideologies and Attributions of Poverty in Comparati
 
 Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of Chile in Comparative Perspective. Poster presentado en la “11th  Conference of the International Society for Justice Research” (August 2-5). Berlin: Humboldt University. 
 
+</details>
+
 <br/>
 
 ## [Supervised thesis]()
 
 <br/>
 
-*As first advisor*
+### *As first advisor*
 <br/>
 
 - Miranda, D. (2018) The civic and civil dimensions of youth participation. Doctorado en sociología, P. Universidad Católica de Chile. 
@@ -315,6 +334,9 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Franetovic, G. (2018) Desigualdad, desarrollo económico y preferencias redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile. 
 
 - Muñoz, E. (2018) Evaluaciones de justicia distributiva sobre las pensiones de vejez en Chile. Magíster en Sociología, P. Universidad Católica de Chile. 
+
+<details>
+<summary> *See more...* </summary>
 
 - Sandoval, D. (2017) Merezco estar aquí: Un estudio multinivel sobre la relación entre meritocracia y educación. Magíster en Sociología, P. Universidad Católica de Chile. 
 
@@ -331,10 +353,10 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Torres, A. (2014) Aspectos subjetivos de la meritocracia y su relación con la percepción de desigualdad en Chile. Magíster en Psicología Social-Comunitaria, P. Universidad Católica de Chile. 
 
 - Yañez, R. (en curso) Construcción de juicios de justicia y emergencia de sentimientos de injusticia frente a la desigualdad social. Doctorado en Sociología, EHESS Paris (codirector).
-
+</details>
 <br/>
 
-*Como miembro de comité:*
+### *Evaluation committee*
 
 <br/>
 
@@ -345,6 +367,9 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Velasquez, D. (2017) Acción policial en las huelgas en Chile 2010-2015: La disputa por el orden productivo. Magíster en Sociología, P. Universidad Católica de Chile.
 
 - Fromm, G. (2017) A structural model of educational leadership and contexts influence over teachers’ efficacy beliefs. Doctorado en Educación, Pontificia Universidad Católica de Chile.
+
+<details>
+<summary> *See more...* </summary>
 
 - Villarroel, N. (2016) Stability and change in political right-wing groups in Chile: understanding the shift among right wingers to the center. Magíster en Psicología Social, Pontificia Universidad Católica de Chile.
 
@@ -361,3 +386,5 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Ortúzar, L. (2013) Creencias de Mundo Justo en Jóvenes Chilenos según status social. Magíster en Psicología Social, P. Universidad Católica de Chile. 
 
 - Gómez, K. (2013) Microfinanzas en Chile: Su impacto en el Capital Social, Empoderamiento y Equidad de Género, Magíster en Psicología Social, P. Universidad Católica de Chile. 
+
+</details>
