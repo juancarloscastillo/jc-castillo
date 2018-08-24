@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 #rbmvFooter {
   z-index: 2;
   box-sizing: border-box;
-  height: 25em;
+  height: 30em;
 }
 
 #rbmvFooter.footer {
