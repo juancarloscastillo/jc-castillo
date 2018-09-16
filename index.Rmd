@@ -6,6 +6,7 @@ output:
         theme: united
         highlight: tango
         includes:
+          before_body: header.html
           after_body: footer.html
 
 ---
