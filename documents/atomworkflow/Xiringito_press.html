@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open academic writing: An Atom-based workflow for social scientists</title>
+    <meta charset="utf-8">
+    <meta name="author" content=" Juan Carlos Castillo    Institute of Sociology- Pontificia Universidad Catolica de Chile   COES - Centre for Social Conflict and Cohesion Studies" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Open academic writing: An Atom-based workflow for social scientists
+### <br><a href="">Juan Carlos Castillo</a> <br> <br>Institute of Sociology- Pontificia Universidad Catolica de Chile <br> COES - Centre for Social Conflict and Cohesion Studies
+### October 17th, 2018 - SocArxiv Symposium
+
+---
+
+&lt;!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- Then copy the following in the termil, replacin FILENAME for the name of your markdown file:
+  - rmarkdown::render('Xiringito_press.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+---&gt;
+
+
+
+# Open academic writing?
+
+- Academic writing and open science
+
+???
+- There is lot of discussion in open science regarding access and reproducibility, this is, focused in how we interact with the wider academic community. However, there is less discussion about how our day-to-day academic practices -as writing - are related to open science.
+
+--
+
+- Components of the academic writing workflow:
+
+  - text processor
+  - reference management (software)
+  - third-party components (figures, diagrams, tables)
+  - collaboration
+  - version control
+
+???
+
+- But, what do I mean by writing? This is certainly not only typing, but involves another tools and processes (building blocks)
+
+--
+
+In this presentation:
+
+      - traditional writing workflow (W-workflow) and some limitations in terms of openness
+  - proposal of an open-workflow (X-workflow)
+
+
+---
+# The **W**(ord) academic writing workflow
+
+![](images/W_workflow.png)
+
+---
+
+# Opening the W-Flow
+
+- Is this writing format open?
+--
+![](images/realWord.png)
+
+--
+
+- Is it accessible / editable for everyone (including myself in the future)?
+
+--
+
+- Is it the most efficient form of version control and collaboration?
+
+???
+Issues:
+- Property of the contents (most important aspect related to openess)
+- Contents vs. format
+- Collaboration
+- Version control
+
+---
+# Looking for alternatives
+
+... many, but two very inspiring:
+
+![](images/bowers&amp;healey.png)
+
+---
+# Healeys' workflow
+
+
+![](https://kieranhealy.org/files/misc/workflow-wide-tx.png)
+
+--
+
+Some issues:
+
+- departs from data analysis instead of writing
+- weak integration of bibliographic references into the workflow
+- based on Emacs ... not very friendly
+
+???
+This is Healeys' comprehensive proposal, which is expĺained in more detail in the Plain Persons' guide. I recommend it but ...
+
+ - I think that it start from the wrong point (data analysis), the sequence is not the most clear one for the people not familiar with coding, actually it begins with an "Rmd" (R) file for writing the article, which is not really familiar for many social scientist.
+
+- it is based on Emacs, which I find not very friendly ...
+
+- and don't develop in detail an essential aspect: citations.  I think this can be made simpler and more close to writing and citing first.
+
+My proposal starts from Healeys' work and aims at bridging some of what I see as shortcomings.
+
+---
+class: inverse, middle, center
+
+# The X(irinGITo)-Workflow
+
+![:scale 50%](images/chiringuito.jpg)
+
+???
+- chiringuito is spanish slang for a food and beverages stand that is put toghether with very essential things, usually in the beach during the day. I like this image because it represents the basic things you need to start working, and because is very flexible.
+
+- Besides, is because X come after W (from Word workflow), and also becase it has Git
+
+
+---
+# X-Workflow Building blocks
+
+&lt;br&gt;
+
+| **Components**              	| **Tools**              	|
+|-----------------------------	|------------------------	|
+| 0. Editor                   	| Atom    	              |
+| 1. Writing                  	| Markdown / LaTeX       	|
+| 2. Bibliographic references 	| Zotero / BetterBibTex  	|
+| 3. Complements              	| R / Knitr / Kable     	|
+| 4. Version control          	| Git                    	|
+| 5. Collaboration            	| Github / Gitlab / etc. 	|
+
+--
+
+(This presentation covers the first three)
+
+---
+# Editors
+
+.center[
+![:scale 60%](images/editor.png)
+]
+
+Many alternatives: Emacs, Vim, Sublime, Atom ...
+
+
+???
+- An editor is a program to write and save plain text, this is, in a language for which you do not need an special software.
+- But editors also incorporate some special features that help different types of jobs, specially programming. For instance: highlighting, generation of bullets, snippets.
+- They are highly customizable, you can adapt them to your needs and taste.
+- Classic editors are Emacs and Vim, lately also Sublime. And there are many, many others.
+- They have different characteristics, I do not have time to describe each editor, I would just say that from my experience the most useful and friendly is Atom.
+
+---
+# Editors: Atom
+
+.left-column[
+  ### Why Atom?
+]
+
+.right-column[
+- free &amp; open source
+- great Git integration (for version control)
+- rapid development and solutions
+
+Besides ...
+- multiplatform
+- multiple languages support (Latex, Markdown, R, Python)
+- nice!
+]
+
+---
+# Editors: Atom
+
+.left-column[
+  ### Why Atom?
+  ### Installation
+]
+
+.right-column[
+
+- follow instructions in [https://atom.io/](https://atom.io/)
+- ... and open it
+
+![:scale 80%](images/atomempty.png)
+]
+---
+# Editors: Atom
+
+.left-column[
+  ### Why Atom?
+  ### Installation
+  ### Basics
+]
+
+.right-column[
+
+- File -&gt; new file (ctrl+n): new document ... start writing.
+
+- File -&gt; save (ctrl+s): save the file. Use the extension .md, so that when open the file will be recognized as markdown document.
+
+- Packages -&gt; Settings View -&gt; Open: general settings and package management
+
+.center[![:scale 70%](images/coresettings.png)]
+
+]
+
+---
+# Editors: Atom
+
+.left-column[
+  ### Why Atom?
+  ### Installation
+  ### Basics
+  ### Package installation
+]
+
+.right-column[
+
+.center[![:scale 80%](images/installwordcount.gif)]
+]
+---
+# Editors: Atom
+
+.left-column[
+  ### Why Atom?
+  ### Installation
+  ### Basics
+  ### Package installation
+  ### Tutorials
+]
+
+.right-column[
+
+.center[
+[Atom Flight Manual](https://flight-manual.atom.io)
+
+![:scale 50%](https://flight-manual.atom.io/assets/images/book/cover.png)
+]
+]
+
+---
+# 1. Plain-text writing language
+
+.left-column[
+  ### Alternatives
+]
+
+.right-column[
+
+
+|          	| **Format control** 	| **Code Marks** 	| **Output formats** 	|
+|----------	|--------------------	|----------------	|--------------------	|
+| LaTeX    	|          +         	|        +       	|          -         	|
+| Markdown 	|          -         	|        -       	|          +         	|
+
+]
+???
+
+---
+# 1. Plain-text writing language
+
+.left-column[
+  ### Alternatives
+  ### Markdown
+]
+
+.right-column[
+- easy to write, easy to read
+- easy conversion to other formats (specially html)
+- support for headers, tables, images, table of contents, links, equations.
+- idea: focus on the content first, format later.
+{{content}}
+]
+--
+- Examples:
+
+  - If you want to make a word **bold**, you merely put two asterisks around it:
+
+      - ``` like **this** ``` is  like **this**
+
+  - To emphasize a word with *italics* you put one asterisk around it:
+
+      - ``` like *this*``` is  like *this*
+
+- Thousand of tutorials and cheatsheets
+{{content}}
+---
+# 1. Plain-text writing language
+
+.left-column[
+  ### Alternatives
+  ### Markdown
+  ### Atom &amp; Markdown
+]
+
+.right-column[
+**Packages:**
+- _wordcount_ (a running wordcount in the bottom)
+- _language-markdown_ (for syntax highlighting),
+- _markdown-preview-enhanced_: real time formatted html output
+- _pandoc-convert_: for generating html / pdf / word output from Markdown
+{{content}}
+
+]
+
+--
+
+**Other recommended writing options:**
+- enable soft-wrap from core settings
+- spell-check package: works in different languages at the same time (!)
+- zen package: total content focus
+- theme-switcher: switches between themes, ideal for dark/light themes
+{{content}}
+
+---
+# 1. Plain-text writing language
+
+.left-column[
+  ### Alternatives
+  ### Markdown
+  ### Atom &amp; Markdown
+]
+
+.right-column[
+
+### Atom writing with markdown-preview-enhanced
+
+![](images/markdownwriting.gif)
+
+]
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+
+]
+
+.right-column[
+
+- Also plain-text (to integrate in Markdown)
+- Standard: BibTex
+- Not very friendly format for managing references...:
+
+```
+@article{sabbagh_dimension_2003,
+  title = {The Dimension of Social Solidarity in Distributive Justice},
+  volume = {42},
+  timestamp = {2014-09-26T12:30:41Z},
+  number = {2},
+  urldate = {2014-09-26},
+  journal = {Social science information},
+  author = {Sabbagh, Clara},
+  year = {2003},
+  pages = {255--276},
+  file = {Snapshot:/storage/V5R7I29W/255.html:text/html},
+  groups = {social justice theory,social justice theory}
+}
+```
+
+]
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+
+]
+
+.right-column[
+
+should be ...
+
+- free and open source
+- able to export references to a Bib file
+- able to keep the Bib file synced
+{{content}}
+]
+--
+
+Best alternative: [Zotero](https://www.zotero.org/)
+
+- Free and **open** source reference manager
+- Friendly, easy to use, flexible
+- Easy import / export references from other managers
+{{content}}
+
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+]
+
+.right-column[
+
+![](images/zotero.png)
+
+]
+
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+]
+
+.right-column[
+**1.** Add your references collection to Zotero (... in case you are using other program)
+
+  - download / install Zotero
+  - export your references from your current reference manager into a standard format (ej: bibtex)
+  - in Zotero: File &gt; Import &gt; search for the file.
+  - Done
+{{content}}
+]
+
+--
+
+**2.** Generate an automated, self-synced BibTex collection from Zotero via **Better BibTex** in Zotero:
+  - Instructions from the package creator [here](https://retorque.re/zotero-better-bibtex/installation/)
+  - Basically, download and install.
+  - Choose a collection (folder) to generate an updated Bib file
+  - Generate a synced BibTex file and save it
+{{content}}
+
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+]
+
+.right-column[
+
+![](images/exportbibtex.gif)
+]
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+]
+
+.right-column[
+3. Connecting Bib file to markdown
+
+Add the following at the beginning of your markdown document (called a YAML header):
+
+```
+---
+bibliography:
+- 'Path-to/MyLibrary.bib'
+---
+```
+{{content}}
+]
+
+--
+
+Where,
+
+  - _MyLibrary.bib_ (or whathever name): your Zotero synced collection
+  - _Path-to_ tells where to find the .bib file.
+{{content}}
+
+_**Now you are ready to start citing!**_
+
+
+
+???
+Alternatives to give the path:
+  a.  when generating the bib from Zotero, save it in the same directory of the md (Markdown) file, no need for path
+  b. paste the complete path to your bib file, wherever it is.
+  c. make a link to your bib file (over your bib file, right button, make a link.) Then copy this link where the md folder is, then indicate the exact name of this file in the YAML header.
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+  ### Citing
+]
+
+.right-column[
+
+Including cites in markdown works indicating the "citation keys" (reference ID):
+
+```
+@article{sabbagh_dimension_2003,
+  title = {The Dimension of ...
+.
+.
+```
+
+With this we can cite like this:
+
+![:scale 110%](images/citingwithkeys.png)
+]
+
+???
+of the item in the Bib file, sort of reference ID (generated automatically by the conversion through BetterBibTex.)
+
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+  ### Citing
+]
+
+.right-column[
+
+**Automate with Atom's Zotero-Picker**
+
+- go to Packages &gt; Settings Views &gt; Install Packages
+- Search and install Zotero Picker
+- Zotero must be open while citing
+- Open picker (Packages menu or Alt+Z), is the same Zotero plug-in for Word.
+- and select the references
+]
+---
+# 2. Integrating bibliographic references
+
+.left-column[
+  ### Format
+  ### Reference manager
+  ### Zotero
+  ### Z-flow
+  ### Citing
+]
+
+.right-column[
+
+![:scale 90%](images/citingwithpreview.gif)
+
+(_markdown-preview enhanced_, enable "Use Pandoc Parser" to see references)
+]
+---
+# Summary
+
+![](images/xflow.png)
+
+---
+class: center, middle, inverse
+
+## Comments most welcome!
+
+###[jcastillov@uc.cl](mailto: jcastillov@uc.cl)  -   [jc-castillo.com](https://jc-castillo.com)
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+Presentation generated through [**xaringan**](https://github.com/yihui/xaringan) (Yihui Xie), through [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), y [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
