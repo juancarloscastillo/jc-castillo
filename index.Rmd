@@ -33,6 +33,19 @@ output:
 
 <div class="wrap-collabsible">
 <input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+**Open academic writing: An Atom-based workflow for social scientists (SocArxiv 2018 maryland)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+The notion of open science is quickly expanding in terms of access, reproducibility and replication initiatives worldwide. Nevertheless, so far the implications of openness are less discussed regarding a basic academic process: writing. In this presentation I introduce the advantages of academic writing in plain text editors in terms of replication and version control, as suggested by Healey (2018) in "The plain person's guide to plain text social science". Nevertheless, departing from Healey's suggestion of a writing workflow based on the editor Emacs, I propose an alternative workflow using the text editor Atom (also free and open source). Some of the Atom's advantages to be presented are citing directly from Zotero/Bibtex, integration of \LaTeX \, Markdown and R languages, and easy formatting from plain text to pdf, html and/or word via Pandoc.
+</div>
+</div>
+</div>
+
+
+<div class="wrap-collabsible">
+<input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
 **Perceptions and Preferences about Meritocracy in International Comparison (ISA 2018 Toronto)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
 </label>
 <div class="collapsible-content">
