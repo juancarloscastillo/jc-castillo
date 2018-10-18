@@ -3,6 +3,7 @@ title: " "
 author: " "
 output:
     html_document:
+        smart: false
         theme: united
         highlight: tango
         includes:
