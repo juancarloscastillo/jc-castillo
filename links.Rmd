@@ -73,7 +73,9 @@ I use software compatible with the principles of open science, this is, free and
 - [Free our knowledge](http://freeourknowledge.org/)
 
 - [Paywall, the movie](https://paywallthemovie.com/)
--
+
+- [Open science training handbook](https://open-science-training-handbook.gitbook.io/book/)s
+
 <br/>
 
 ### Following people
@@ -89,6 +91,8 @@ I use software compatible with the principles of open science, this is, free and
 ### Miscellaneous
 
 - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)
+
+- [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer).
 
 - [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
 
