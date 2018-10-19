@@ -72,7 +72,9 @@ output:
 
 (If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
 
-- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in _Social Science Quarterly_ [DOI: 10.1111/ssqu.12539](10.1111/ssqu.12539).
+- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in _Social Science Quarterly_ [DOI: 10.1111/ssqu.12539](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12539). <a href="https://www.researchgate.net/publication/328359653_Deserving_a_Just_Pension_A_Factorial_Survey_Approach">
+<i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
+
 
 - Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología (ISI).
 <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
