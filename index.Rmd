@@ -46,7 +46,7 @@ The notion of open science is quickly expanding in terms of access, reproducibil
 
 
 <div class="wrap-collabsible">
-<input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
 **Perceptions and Preferences about Meritocracy in International Comparison (ISA 2018 Toronto)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
 </label>
 <div class="collapsible-content">
@@ -59,7 +59,7 @@ Meritocracy is a concept commonly used to characterize groups and societies in t
 
 
 <div class="wrap-collabsible">
-<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
+<input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
 **Meritocracy and economic inequality: Perceptions, preferences and implications** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
 <a href="https://www.researchgate.net/publication/325225032_Meritocracia_y_desigualdad_economica_Percepciones_preferencias_e_implicancias_Meritocracy_and_Economic_inequality_Perceptions_preferences_and_implications"> <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/qkpu4/">
@@ -68,7 +68,7 @@ Meritocracy is a concept commonly used to characterize groups and societies in t
 <div class="collapsible-content">
 <div class="content-inner">
 <p class="text">
-*Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Forthcoming in Revista Internacional de Sociología (ISI).* 
+*Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Forthcoming in Revista Internacional de Sociología (ISI).*
 
 
 The idea of meritocracy is related to the distribution of goods and rewards based on individual talent and effort, being a principle that legitimizes the unequal distribution of resources in modern societies. Despite the constant references to meritocracy in inequality and stratification research, there are still few conceptual and empirical attempts to understand to what extent individuals perceive and prefer meritocracy, as well as their consequences. The present research proposes a conceptual and empirical framework for  studying meritocratic perceptions and preferences, which is then related with economic inequality variables. Using data from the Chilean survey “Social justice and citizenship participation”, the analyses suggest that meritocratic perceptions and preferences are different constructs and that those perceiving an adequate functioning of meritocracy also perceive less economic inequality.
@@ -78,15 +78,15 @@ The idea of meritocracy is related to the distribution of goods and rewards base
 </div>
 
 <div class="wrap-collabsible">
-<input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">**Poverty and wealth attributions: A second order confirmatory factor analysis model** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
-<a href="https://www.researchgate.net/publication/326637297_Common_dimensions_for_poverty_and_wealth_attributions"> 
+<input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">**Poverty and wealth attributions: A second order confirmatory factor analysis model** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
+<a href="https://www.researchgate.net/publication/326637297_Common_dimensions_for_poverty_and_wealth_attributions">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/5xnrd/">
 <i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 </label>
 <div class="collapsible-content">
 <div class="content-inner">
-<p class="text"> 
+<p class="text">
 *Castillo, JC & Rivera-Gutierrez, M. (2018). Forthcoming in Psykhe (SCOPUS).*
 
 The theory of attributions has a long tradition in studying explanations for the origin of poverty. Nevertheless, research regarding the perceived causes of wealth has been so far sidelined and not related to the study of poverty attributions. This paper focuses on the relationship between poverty and wealth attributions from a latent variable measurement perspective, for which it considers two basic attribution types: internal (based on individual behavior) and external (based on socio-structural determinants). The data comes from a 10-indicator scale from the national representative survey “Social Justice and Citizenship Participation”, applied in Chile in 2013 (N=1.245). Based in previous exploratory and confirmatory studies, a factorial confirmatory model for internal and external attributions of both poverty an wealth was estimated (four factors), based on which a second order two-factor confirmatory model was estimated, one for internal and one for external attributions, for both poverty and wealth. The results show for the first time evidence of common attributional dimensions for poverty and wealth
@@ -100,4 +100,3 @@ The theory of attributions has a long tradition in studying explanations for the
 ---
 
 (see more in [Research](research.html))
-

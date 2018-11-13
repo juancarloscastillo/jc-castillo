@@ -74,7 +74,11 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Paywall, the movie](https://paywallthemovie.com/)
 
-- [Open science training handbook](https://open-science-training-handbook.gitbook.io/book/)s
+- [Open science training handbook](https://open-science-training-handbook.gitbook.io/book/)
+
+- [Unpaywall chrome extension](https://chrome.google.com/webstore/detail/unpaywall/iplffkdpngmdjhlpjmppncnlhomiipha) (Identifica con un ícono cuando el artículo se encuentra libre de pago).
+
+- [Introduction to reproducible science in R, from Brian Lee Yung Rowe](https://cartesianfaith.files.wordpress.com/2018/11/rowe-introduction-to-reproducible-science-part-i-20181112.pdf)
 
 <br/>
 
@@ -99,3 +103,7 @@ I use software compatible with the principles of open science, this is, free and
 - [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)
 
 - [Good tips for academic writing from Kevin Lafferty](http://trophiccascades.forestry.oregonstate.edu/sites/trophic/files/Lafferty_WritingScientificPaper.pdf)
+
+- [Guidelines for quantitative submissions ASR](http://journals.sagepub.com/doi/abs/10.1177/0003122418806282)
+
+- [Ghraphics principles cheatsheet](https://graphicsprinciples.github.io/)
