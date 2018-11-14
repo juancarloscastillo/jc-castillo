@@ -33,6 +33,19 @@ output:
 ### _Latest papers & projects_
 
 <div class="wrap-collabsible">
+<input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+**Meritocracia y redistribución en una sociedad desigual** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+Esta presentación desarrolla un marco conceptual y operacional para el estudio de la meritocracia y preferencias redistributivas, y luego analiza estas relaciones con datos de la encuesta comparativa internacional ISSP así como también de un estudio realizado en Colombia
+</div>
+</div>
+</div>
+
+
+<div class="wrap-collabsible">
 <input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
 **Open academic writing: An Atom-based workflow for social scientists (SocArxiv 2018 maryland)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
 </label>

@@ -1,9 +1,11 @@
 ---
 title: "Meritocracia y redistribución en una sociedad desigual"
-author: "<br>[Juan Carlos Castillo]() <br> <br>Instituto de Sociología - Pontificia Universidad Catolica de Chile <br> COES - Centro de Estudios de Conflicto y Cohesión Social"
+author: "<br>[Juan Carlos Castillo]() <br> <br>Instituto de Sociología - Pontificia Universidad Catolica de Chile <br> COES - Centro de Estudios de Conflicto y Cohesión Social <br><br>
+.small[FONDECYT 1160921]"
 date: "Noviembre 14, 2018 - Conferencia COES"
 output:
   xaringan::moon_reader:
+    css: ["my-theme.css", "my-fonts.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -43,11 +45,32 @@ Antes de relacionar meritocracia y redistribución nos parecía fundamental ahon
 Este año seguimos avanzando en la relación entre meritocracia y redistribución en nuestras tres perspectivas metodológicas: encuestas, datos cualitativos y experimentos.
 
 ---
-# Algunos resultados
+## Algunos resultados - artículos
 
-(listar papers, tesis y documentos de trabajo, conferencias, estadías)
+.small[
 
-- García-Sánchez & Castillo, JC.(2019)
+- Frei, R., Castillo, JC., Henríquez, R. & Suárez, J. (2018 - Forthcoming 2020) “¿Fruto del esfuerzo?”: los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. _Latin American Research Review_.
+
+- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in Social Science Quarterly DOI: 10.1111/ssqu.12539.
+
+- Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología
+
+- Castillo, JC & Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Forthcoming in Psykhe
+
+- Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2018) “Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” Public Health 148:59-69
+
+- Atria, J., Amenábar, J., Sanchez, J., Castillo, JC & Cociña, M. (2017) Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile. Cultura, Hombre y Sociedad 27(2)5-36 (Scielo)
+
+
+
+En elaboración
+
+- García-Sánchez & Castillo, JC.- Taking from the rich or giving to the poor: The two faces of support for redistribution
+
+- Franetovic & Castillo, JC - Redistributive preferences in unequal contexts: Changes in Latin America between 2008 and 2014
+
+- Beck & Castillo, JC - About the stability of meritocratic beliefs: A longitudinal measurement invariance approach.
+]
 
 ???
 Estos son algunos de los trabajos que hemos desarrollado en el marco del proyecto.
@@ -56,6 +79,28 @@ En general, el foco ha estado en consolidar los marcos conceptuales y operaciona
 Lo que voy a hacer en esta presentación es resumir la propuesta conceptual y operacional sobre meritocracia,
 
 ---
+## Algunos resultados - tesis
+
+.small[
+- Plaza, A. (2018) Movilidad social y preferencias por la redistribución: Efectos individuales y contextuales. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Franetovic, G. (2018) Desigualdad, desarrollo económico y preferencias redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Muñoz, E. (2018) Evaluaciones de justicia distributiva sobre las pensiones de vejez en Chile. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Sandoval, D. (2017) Merezco estar aquí: Un estudio multinivel sobre la relación entre meritocracia y educación. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Montedónico, S. (2017) Contexto Polı́tico Institucional y Preferencias Redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile.
+
+En elaboración:
+- Beck, G. - Redes de contacto extensas y la justificación de la desigualdad social en Chile.
+
+- Iturra, J. - Inconsistencia de estatus social y
+percepción de meritocracia: el caso de chile
+
+- Rojas, S. La dimensión subjetiva de la desigualdad de género en ingresos: factores asociados a percepción de salarios y preferencias de justicia
+]
+---
 class: inverse, middle, center
 
 # Meritocracia y redistribución
@@ -63,7 +108,7 @@ class: inverse, middle, center
 ---
 ## Meritocracia
 .left-column[
-  ### Base
+  ### Bases
 ]
 .right-column[
 
@@ -90,7 +135,7 @@ class: inverse, middle, center
 ## Meritocracia
 
 .left-column[
-  ### Base
+  ### Bases
   ### Perspectivas de estudio
 ]
 
@@ -107,7 +152,7 @@ class: inverse, middle, center
 ## Meritocracia
 
 .left-column[
-  ### Base
+  ### Bases
   ### Perspectivas de estudio
   ### Estudiando la dimensión subjetiva
 ]
@@ -139,7 +184,7 @@ class: inverse, middle, center
 ## Meritocracia
 
 .left-column[
-  ### Base
+  ### Bases
   ### Perspectivas de estudio
   ### Estudiando la dimensión subjetiva
   ### Propuesta conceptual
@@ -343,13 +388,19 @@ Variables:
 ]
 
 ---
-# Discusión
+class: inverse
+
+## Discusión
 
 - Conceptos y medición de meritocracia y preferencias
 
 - Preferencias: avances y limitaciones en medición
 
-- Meritocracia y preferencias
+- Meritocracia y preferencias: agenda de mediano plazo
+  - medición
+  - comparación internacional
+  - experimentos
+  - estudios cualitativos
 
 ---
 class: red
