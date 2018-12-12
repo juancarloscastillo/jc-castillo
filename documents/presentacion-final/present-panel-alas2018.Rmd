@@ -1,0 +1,855 @@
+---
+title: "Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas"
+author: "<br>[Proyecto FONDECYT 1160921: Economía Moral de la meritocracia y preferencias redistributivas](https://bit.ly/2ryn2T0)<br> <br> .small[Juan Carlos Castillo, Luis Maldonado & Jorge Atria <br><br>Instituto de Sociología - PUC / COES <br><br>]"
+date: "Diciembre 14, 2018 - Congreso Chileno de Sociología"
+output:
+  xaringan::moon_reader:
+    css: ["my-theme.css", "my-fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+---
+
+class: inverse, middle, center
+
+<!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('present-panel-alas2018.Rmd', 'xaringan::moon_reader')
+
+- knitr
+knitr::knit2html("present_panel-alas2018.Rmd")
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+# Antecedentes
+
+---
+class: center, middle
+
+## _"Cuando conoces estudiantes de regiones, con promedio 6,8 en Octavo Básico, que postulan a través del SAE  para ingresar a I Medio a un liceo de su preferencia y no quedan seleccionados, es evidente que hay que hacer mejoras al sistema para introducirle mayores niveles de justicia" <br>  (@mcubillossigall, 2 dic)_
+
+
+---
+class:center, middle
+
+![:scale 50%](figures/rise.jpg)
+
+---
+## Modelo de investigación
+
+.center[
+![](figures/fondecytmodel.png)
+]
+
+???
+- Esta es la segunda presentación de nuestro proyecto FONDECYT en la conferencia COES. El año pasado en Viña presentamos los primeros avances de la conceptualización de meritocracia y del enfoque de economía moral para el estudio cualitativo.
+- Este año seguimos avanzando en la relación entre meritocracia y redistribución en nuestras tres perspectivas metodológicas: encuestas, datos cualitativos y experimentos.
+
+---
+## Algunos resultados - artículos
+
+.small[
+
+- Frei, R., Castillo, JC., Henríquez, R. & Suárez, J. (2018 - Forthcoming 2020) “¿Fruto del esfuerzo?”: los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. _Latin American Research Review_.
+
+- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in Social Science Quarterly DOI: 10.1111/ssqu.12539.
+
+- Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología
+
+- Castillo, JC & Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Forthcoming in Psykhe
+
+- Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2018) “Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” Public Health 148:59-69
+
+- Atria, J., Amenábar, J., Sanchez, J., Castillo, JC & Cociña, M. (2017) Investigando a la élite económica: Lecciones y desafíos a partir del caso de Chile. Cultura, Hombre y Sociedad 27(2)5-36 (Scielo)
+
+
+
+En elaboración
+
+- García-Sánchez & Castillo, JC.- Taking from the rich or giving to the poor: The two faces of support for redistribution
+
+- Franetovic & Castillo, JC - Redistributive preferences in unequal contexts: Changes in Latin America between 2008 and 2014
+
+- Beck & Castillo, JC - About the stability of meritocratic beliefs: A longitudinal measurement invariance approach.
+]
+
+???
+Estos son algunos de los trabajos que hemos desarrollado en el marco del proyecto.
+
+En general, el foco ha estado en consolidar los marcos conceptuales y operacionalizaciones en meritocracia y redistribución por separado, paso necesario para poder generar propuestas más concretas sobre la relación entre ambas.
+Lo que voy a hacer en esta presentación es resumir la propuesta conceptual y operacional sobre meritocracia,
+
+---
+## Algunos resultados - tesis
+
+.small[
+- Plaza, A. (2018) Movilidad social y preferencias por la redistribución: Efectos individuales y contextuales. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Franetovic, G. (2018) Desigualdad, desarrollo económico y preferencias redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Muñoz, E. (2018) Evaluaciones de justicia distributiva sobre las pensiones de vejez en Chile. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Sandoval, D. (2017) Merezco estar aquí: Un estudio multinivel sobre la relación entre meritocracia y educación. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Montedónico, S. (2017) Contexto Polı́tico Institucional y Preferencias Redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile.
+
+En elaboración:
+- Beck, G. - Redes de contacto extensas y la justificación de la desigualdad social en Chile.
+
+- Iturra, J. - Inconsistencia de estatus social y
+percepción de meritocracia: el caso de chile
+
+- Rojas, S. La dimensión subjetiva de la desigualdad de género en ingresos: factores asociados a percepción de salarios y preferencias de justicia
+]
+---
+# El panel
+
+### 1 - Redes de contacto ocupacionales y justificación de la desigualdad social en Chile - Guillermo Beck
+
+### 2 - Intereses Fluidos: Movilidad Social y Preferencias por la Redistribución en perspectiva comparada - Alejandro plaza
+
+### 3 - Desigualdad económica y su influencia sobre la percepción sobre las diferencias de ingreso legítimas - Julio Iturra, Catalina Rufs & JC Castillo
+
+### 4 - Estatus Social Subjetivo y percepción de Meritocracia: El caso de Chile - Julio Iturra
+
+---
+class: center,middle, inverse
+
+# Redes de contacto ocupacionales y justificación de la desigualdad social en Chile
+
+**[Guillermo Beck Villarroel](https://www.coes.cl/integrantes/guillermo-beck/)**
+
+---
+### Introducción
+
+¿Cómo distribuir recursos que son escasos al interior de una sociedad?
+
+- Esta distribución debería ocurrir bajo principios de justicia, entendida como equidad. Donde quien hace más, recibe más (Walster et al.,1978; Deutsch, 1985). De este modo, existen injusticias que son consideradas justas. 
+
+- Varían debido a características a) societales, b) institucionales y c) sociales.
+
+- Se conforman a partir de a) experiencias individuales y b) a experiencias grupales (Wippler & Lindenberg, de Liebig y Sauer, 2016; Barnea, 2003).
+
+Justicia Distributiva, el cual aborda la inquietud respecto a cómo los beneficios y las cargas colectivas deberían distribuirse entre los miembros de la sociedad (Aalberg, 2003). ¿Deberían ser guiadas por factores económicos, sociales, de género?.
+
+- En el campo de las ciencias sociales, lo recién expuesto se ha abordado desde un enfoque de justificación de la desigualdad, respecto a cómo los aspectos subjetivos que poseen las personas colaboran en la conformación de ideales y creencias sobre justicia distributiva (Hadler, 2005; Kelley y Peoples, 2010; Castillo, 2012)
+
+---
+### Introducción
+
+Pero, ¿cómo la interacción grupal colabora en la conformación de los los ideales sobre justicia distributiva o justificación de la desigualdad?
+
+- La literatura señala que los valores, normas, creencias y actitudes que poseen las personas son conformados producto de la interacción con otras personas.
+
+- Los ideales sobre justicia pueden estar condicionados por el contacto interpersonal de tal manera que las relaciones sociales moldean las creencias y percepciones de los individuos (Huckfeldt y Sprage, 1984; Gartrell, 1985; Melamed, et al., 2014)
+
+- Un ejemplo de lo anterior lo entrega Thal (2016), quien, desde un argumento de aislamiento de clase, señala que las personas que viven en barrios con alto niveles de socioeconómico de Estados Unidos tienden a realizar generalizaciones de la realidad a partir de la situación de sus vecinos, motivo por el cual perciben que la situación del país en cuestión es mejor de lo que realmente es. 
+
+Así, los principios de justicia pueden ser afectados producto de la interacción social, es que se podría pensar que la justicia distributiva y la justificación de desigualdad podría variar según este aspecto.
+
+---
+### Introducción
+
+Un enfoque por el cual las ciencias sociales y la sociología han estudiado la interacción social es por medio de las redes de contacto.
+
+- Una estructura que se compone de conjunto de actores que se relacionan entre sí por una serie de vínculos, siendo estas relaciones el componente básico para la experiencia social
+
+La literatura en torno a redes de contacto identifica dos características que colaboran en la conformación y/o modificación de las actitudes, normas y valores que poseen las personas. 
+
+1. Diversidad: diferencias o similitudes en las características (e.g. sociales, económicas, demográficas, educacionales) que pueden existir entre los miembros participantes de una red. 
+
+2. Composición: atributos prepondareantes compartidos por los miembros de la red (reflejando el contenido, los recursos materiales e inmateriales que posee la red). 
+
+---
+### Problema de investigación
+
+¿En qué medida características como diversidad y composición de las redes de contacto se relacionan con la justificación de la desigualdad social en la sociedad chilena?
+
+Objetivos
+
+1. Identificar cómo se relaciona la diversidad de la red de contactos con la justificación de la desigualdad de las personas en Chile.
+
+2. Identificar cómo se relaciona la composición de la red de contactos con la justificación de la desigualdad de las personas en Chile.
+
+Hipótesis
+
+- H1: Una mayor diversidad ISEI de la red de contacto se relaciona con una menor justificación de justificación de desigualdad social en Chile.
+
+- H2: Una composición ISEI de la red de contacto asociada mayormente a ocupaciones de estatus e ingresos bajos se relaciona una menor justificación de justificación de desigualdad social en Chile.
+
+---
+### Datos, variables y método
+
+Encuesta longitudinal COES, ELSOC 2016 (n=2984), con representatividad nacional. Específicamente de los módulos: a) Legitimidad  y desigualdad, b) Redes sociales e interacciones inter-grupales.
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="60%",fig.cap=""}
+knitr::include_graphics('MiMuestra.png')
+```
+
+Posteriormente, se realizó una depuración que consistió en eliminar aquellos casos que no reportaron conocidos en ninguna de las trece ocupaciones de las cuales se les consultó, lo que se tradujo en la pérdida de 152 casos (n=2831).
+
+---
+### Datos, variables y método
+
+Variable dependiente
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="60%",fig.cap=""}
+knitr::include_graphics('MiVD.png')
+```
+
+
+Variable independiente
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="60%",fig.cap=""}
+knitr::include_graphics('MiVI.png')
+```
+
+---
+### Datos, variables y método
+
+Tamaño: Suma simple (a nivel de sujeto-ocupación) donde $n_i$  es el tamaño de la profesión en la i-esima posición.
+
+$$T=\sum_{i=1}^{13} n_i$$
+
+Diversidad ISEI: Índice D, Simpson (1949), donde a 1 se le resta la sumatoria de la proporción de sujetos en cada categoría elevada al cuadrado, como se ve en la siguiente ecuación (2), donde $p_i$  es la proporción en una determinadada categoría
+
+$$D=1-\sum p_i^2$$
+
+Composición ISEI: Proporción de la sumatoria de profesiones de bajo ISEI dividido la sumatoria de profesiones asociadas a un alto, medio y un bajo ISEI
+
+$$C=\frac{\sum_{ISEI_{bajo}}}{\sum_{ISEI_{bajo}}+\sum_{ISEI_{medio}}+\sum_{ISEI_{alto}}}$$
+
+---
+### Datos, variables y método
+
+Se aplicaron una serie de modelos de regresión logísticos ordinales para una de las variables dependientes (pensiones, educación y salud).
+
+En ambos modelos generales las variables control fueron: Género, Educación, Posición Política, Edad y Tamaño de la red.
+
+El primer modelo general es presentado de la siguiente forma:
+
+$$logit[P(Y≤j)]=\alpha_j+\beta_1Diversidad_{ISEI},  j=1,…,5-1$$
+
+El segundo modelo general es presentado de la siguiente forma:
+
+$$logit[P(Y≤j)]=\alpha_j+\beta_2Composición_{ISEI},  j=1,…,5-1$$
+
+Por último, el tercer modelo general es presentado por la siguiente fórmula:
+
+$$logit[P(Y≤j)]=\alpha_j+\beta_1Diversidad_{ISEI}+\beta_2Composición_{ISEI},  j=1,…,5-1$$
+
+---
+### Resultados Descriptivos: Variable dependientes
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="80%",fig.cap=""}
+knitr::include_graphics('MLD2p.png')
+```
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="40%",fig.cap=""}
+knitr::include_graphics('MiCorr.png')
+```
+
+---
+### Resultados Descriptivos: Variables independientes Tamaño, Diversidad ISEI y Composición ISEI
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%",fig.cap=""}
+knitr::include_graphics('MiRedesVI.png')
+```
+
+---
+### Resultados Descriptivos
+
+Baja justifcación de la desigualdad, especialmente en educación y salud, mientras que pensiones posee la mayor concentración en categorías de acuerdo y muy de acuerdo.
+
+Para los chilenos y chilenas encuestadas, el factor económico no debería ser un aspecto que diferencie la calidad al ingreso de los aspectos mencionados.
+
+Las personas encuestadas presentan redes ocupacionales extensas de, en promedio, 24 personas conocidas.
+
+En términos de diversidad, presentan una alta heterogeneidad cuando se les pregunta en función de las 13 ocupaciones.
+
+En términos de composición, se evidencia que las redes –a pesar de ser altamente heterogéneas- en términos de diversidad ISEI, presentan una composición asociada hacia rubros ocupaciones asociados a un bajo ISEI.
+
+---
+### Resultados de Regresión: Modelo cero. Tamaño de la red (TMÑ)
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="70%",fig.cap=""}
+knitr::include_graphics('ModeloTamaño.png')
+```
+
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="30%",fig.cap=""}
+knitr::include_graphics('Misig.png')
+```
+
+---
+### Resultados de Regresión: Modelo uno. Diversidad ISEI de la red (DVS)
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="70%",fig.cap=""}
+knitr::include_graphics('ModeloHeterog.png')
+```
+
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="30%",fig.cap=""}
+knitr::include_graphics('Misig.png')
+```
+
+---
+### Resultados de Regresión: Modelo dos. Composición ISEI de la red (CPN)
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="70%",fig.cap=""}
+knitr::include_graphics('ModeloCompos.png')
+```
+
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="30%",fig.cap=""}
+knitr::include_graphics('Misig.png')
+```
+
+---
+### Resultados de Regresión: Modelo tres. Diversidad ISEI de la red (DVS) y Composición ISEI de la red (CPN)
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="70%",fig.cap=""}
+knitr::include_graphics('ModelosHTGCompos.png')
+```
+
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="30%",fig.cap=""}
+knitr::include_graphics('Misig.png')
+```
+
+---
+### Discusión y conclusiones
+
+Los resultados de la presente investigación señalan que los y las chilenas encuestados poseen una baja justificación de la desigualdad social en Chile cuando se les pregunta si en términos de pensiones, educación y salud.
+
+Aunque para, pensiones existiría una mayor justificación de la desigualdad social en Chile producto de diferencias socioeconómicas. Lo cual podría sostenerse bajo ideales meritocráticos.
+
+Respecto de diversidad ISEI, redes ocupacionales más heterogéneas colaboran en que las personas posean un espectro social más amplio, presentando una menor justificación de la desigualdad.
+
+Redes ocupacionales de contacto están compuestas por ocupaciones de bajo o medio ISEI tenderán a tener una mayor adscripción hacia ideales sobre justicia distributiva y, por ende, justificarán menos la desigualdad en matería de salud, pensiones y educación.
+
+El con quien interactúan las persona es relevante, debido a que la conformación de ideales sobre justicia distributiva y justificación de la desigualdad poseen un componente que es individual y grupal.
+
+---
+class: inverse, middle, center
+
+#Intereses Fluidos:
+## Movilidad Social y Preferencias por la Redistribución en perspectiva comparada
+
+**[Alejandro Plaza Reveco](https://www.coes.cl/integrantes/alejandro-plaza/)**
+
+---
+
+# Problema de investigación
+
+¿Cómo se asocian la movilidad social objetiva y subjetiva con las preferencias redistributivas?
+
+¿Cómo las características institucionales y socioecnómicas de los países influyen en la relación entre movilidad objetiva y subjetiva con las preferencias redistributivas?
+---
+class:inverse, middle, center
+#Marco Teórico
+
+---
+# Marco Teórico: Sobre las preferencias redistributivas
+
+Dos grandes fuentes explicativas para entender las actitudes hacia la redistribución.
+
+* __Acción Racional__: La demanda por redistribución es una función de
+los niveles de ingreso de una persona: Personas bajo la mediana de
+la distribución de ingreso tenderán a ser proclives a la redistribución,
+mientras que las personas sobre la mediana tenderán a oponerse
+(Meltzer y Richard, 1981).
+
+* __Creencias de Justicia__: El apoyo a políticas redistributivas estaría
+alojado a un sistema general de orientaciones ideológicas y de
+creencias de justicia (Andress y Heien, 2001; Feldman y
+Steenberger,2001)
+
+---
+# Marco Teórico: Movilidad Individual e interés propio.
+
+__Expectativa de Movilidad Social__: La expectativa de ascender socialmente, reduciría la preferencia por la redistribución (Benabou y Ok, 2001;
+Benabou y Tirole, 2006).
+__Atribución Causal__: Personas que se mueven ascendentemente tolerarán más la desigualdad y prefieren menor redistribución (Schmidt-Catran, 2013;Gugushvili, 2016).
+
+
+* __H1__: A mayor nivel de movilidad social intergeneracional y percepción de movilidad social (en relación a su padre) menores serán las preferencias hacia la redistribución
+
+---
+# Marco Teórico: Movilidad Social y Desigualdad
+
+En consideración a la teoría del votante mediano se conjetura que:
+
+* **H2a**: A mayor desigualdad de un país, mayores serán las preferencias hacia la redistribución por parte de las personas.
+
+A partir de lo planteado por la hipótesis del Tunel (Hirschman y Rothschild, 1973) se establece que:
+
+* **H2b**: En contextos más iguales, las personas que se mueven hacia arriba" tenderán a tener menores preferencias redistributivas que en aquellos contextos más desiguales.
+
+
+---
+# Marco Teórico: Movilidad Social y Desarrollo Económico
+
+En países pobres existirían mayores incentivos para que las personas presionen por mayor redistribución para mejorar sus condiciones de vida
+
+* **H3a** A mayor desarrollo económico de un país, menor serán las preferencias hacia la redistribución por parte de las personas.
+
+El desarrollo económico generaría condiciones en que la movilidad social sea más probable (en la medida de que existen más recursos disponibles) (Yaish y Andersen, 2012; Gugushvili, 2017). De esta forma no se necesitaría de la intervención del Estado para mejorar las condiciones de vida.
+
+* **H3b** En países con mayor desarrollo económico, las personas que se mueven “hacia arriba” tenderán a preferir menos redistribución en comparación con los países de menos desarrollo económicos.
+
+---
+class:inverse, middle, center
+#Metodología
+
+---
+# Modelo de análisis
+
+.center[![description of the image](modeloteorico.png)]
+
+---
+# Datos y Variables
+
+* **Datos**:ISSP 2009, N=31.266, 37 países.
+* **Variable dependiente**: Nivel de acuerdo con “Es responsabilidad del gobierno reducir la desigualdad de ingreso entre personas con altos y bajos ingresos”.
+* **Variables Independientes N1**
+
+
+$$Movilidad_{\text{objetiva}} = ISEI_{hijo}-ISEI_{padre}$$
+
+Movilidad Subjetiva: "Por favor piense en su actual empleo (o en su último si usted no tiene uno ahora). Si usted compara este empleo con el empleo que su padre tenía cuando usted tenía [14/15/16] años, diría usted que su nivel o estatus es (o fue)… "
+
+**Variables Independientes N2**
+- Índice Gini.
+- PIB pér cápita (logaritmo natural).
+- Porcentaje del gasto público en educación en relación al total del gasto público.
+
+---
+# Datos y Variables
+ Además se incluyeron las siguientes variables de control:
+
+* Edad
+* Sexo
+* item Ingreso en quintiles
+* item Miembro de sindicato
+* item Empleados vs. Desempleados
+* item Años de Educación
+
+---
+# Técnica de Análisis
+
+Tomando en consideración la estructura multinivel de los datos de ISSP, se estima una serie de modelos multinivel
+
+$y_{ij} = \gamma_{10}(x_{ij}-\hat{x_{ij}}) - \gamma_{20}(w_{ij}-\hat{w_{ij}}) + \gamma_{30}\delta_{ij} + \gamma_{01}z_{j} + \gamma_{11}z_{j}x_{ij} + \mu_{0j} + r_{ij}$
+
+Las variables de movilidad social $x_{ij}$ y $w_{ij}$ son centradas a la media del pais _j_ .
+
+A partir del modelo nulo, se estimó la Correlación Intra-Clase a partir de la siguiente formula.
+
+
+$ICC = \frac{\tau_{00}}{\tau_{00} + \sigma^{2}} = \frac{0.18}{1.03+0.18} = 0.15$
+
+---
+class:inverse, middle, center
+#Resultados
+
+---
+class: center, middle
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('modelos1.png')
+
+```
+
+---
+
+class: center, middle
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('modelos2.png')
+
+```
+---
+class: center, middle
+# Efecto de interacción con Desigualdad
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('InterGini.png')
+
+```
+
+---
+
+
+class: center, middle
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('modelos3.png')
+
+```
+
+
+---
+class: center, middle
+# Efecto de interacción con Desarrollo económico
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('InterPib.png')
+
+```
+
+---
+#Conclusiones
+
+**H1**: Existiría una racionalidad asociada a la movilidad social, que repercutiría en menores preferencias por redistribución.
+
+**H2a** La desigualdad no tiene un efecto sobre las preferencias por la redistribución. No obstante, **H2b** la igualdad de un país acentuaría el efecto de la movilidad social
+
+**H3a** El desarrollo económico de un país influenciaría negativamente la preferencia por la redistribución, y asimismo **H3b** el desarrollo económico acentuaría la menor preferencia por la redistribución de los "moviles ascendentes".
+
+---
+#Futuras Investigaciones
+
+* Estudiar qué tipo de sistemas educativos gatillan movilidad social, lo cual podría afectar el apoyo por redustribución en un país.
+* Estudiar cómo todo lo aquí presentado, puede llegar a afectar el nivel de redistribución real en un país, desde una perspectiva longitudinal.
+* Concatenar estos resultados con otros procesos políticos-económicos importantes (aumento de incertidumbre y de inmigración).
+* Consideración de revisar un diseño longitudinal
+
+---
+class: inverse, middle, center
+#Desigualdad económica y su influencia sobre la percepción sobre las diferencias de ingreso legítimas
+
+**[Julio César Iturra, Catalina Rufs y Juan Carlos Castillo]()**
+---
+##Introducción
+
+###Experimento Kris-Stella Trump (2017)
+
+- ¿Por qué la preocupación pública por la desigualdad y demanda por políticas redistributivas no crece en la misma medida que la desigualdad de ingresos?
+  - Complementario a la teoría económica del interés-propio (Meltzer & Richard ,1981)
+  - A mayor desigualdad percibida, mayor desigualdad legitimada
+
+* Trump pesquisó esta relación a través de un diseño experimental, testeando el efecto de la información sobre desigualdad económica en la legitimación de diferencias salariales.
+
+---
+###Experimento Kris-Stella Trump
+
+**Supuestos teóricos:**
+- Hipótesis de ajuste
+  - Sesgo de *status quo*: ajuste racional y efecto ancla
+  - Teoría de la justificación del sistema
+- Se llevó a cabo un experimento para demostrar empíricamente:
+
+ *<center> ¿Influyen las percepciones de desigualdad existentes en las percepciones de desigualdad legítima? </center>*
+
+---
+###Experimento Kris-Stella Trump
+
+$$\text{ratio}_\frac{\text{Máximo salario especificado}}{\text{Mínimo salario especificado}}= \ln\Bigg(\frac{\text{Máximo salario especificado}}{\text{Mínimo salario especificado}}\Bigg) $$
+
+$$\; $$
+$$\; $$
+$$\; $$
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="70%"}
+knitr::include_graphics('Resultados-Trump.png')
+```
+
+---
+class: center, middle, inverse
+
+# Nuestro experimento
+
+---
+##Variable dependiente: Desigualdad recomendada
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="75%"}
+knitr::include_graphics('depvar1.png')
+```
+
+$$\text{ratio}_\frac{\text{Gerente}}{\text{Obrero}}= \ln\Bigg(\frac{\text{Salario Gerente}}{\text{Salario Obrero}}\Bigg) $$
+---
+#Tratamientos
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="80%", fig.cap="Figura: Ingresos Reales"}
+knitr::include_graphics('treat1.png')
+```
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="80%", fig.cap="Figura: Párrafo reforma educacional"}
+
+knitr::include_graphics('treat2.png')
+```
+
+---
+## Diseño
+
+En el contexto del estudio "Creencias políticas y sociales" ( $n$ =732), se implementó un diseño experimental a través de encuestas presenciales en población urbana de la Región Metropolitana.
+
+* 62% de mujeres. Edad promedio 44 años
+* **Educación**: Primaria incompleta o menos 9.3% , Primaria 11.2%, Secundaria 45.8%, Técnica 15.6% y Superior 18%.
+
+<table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"> </td><td>Media</td><td>DS</td><td>Min</td><td>Máx</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log(Máx/Min) reco.</td><td>2.60</td><td>0.97</td><td>0.00</td><td>6.31</td></tr>
+<tr><td style="text-align:left">Log(Gerente/Obrero) reco.</td><td>2.00</td><td>1.15</td><td>-3.40</td><td>6.31</td></tr>
+<tr><td style="text-align:left">Log(Gerente/Obrero) perc.</td><td>2.84</td><td>1.19</td><td>-3.06</td><td>7.60</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr></table>
+
+
+Se asignaron aleatoriamente  tres **condiciones tratamiento**:
+
+- Grupo A: Párrafo y Lista de ingresos
+- Grupo B: Párrafo
+- Grupo C: Lista de ingresos
+- Grupo D: Control (Sin información)
+
+---
+class: middle, center, inverse
+
+#Resultados
+
+---
+class:center
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('barplot3.png')
+
+```
+*Nota*: Comparación en base valores predichos de modelos de regresión OLS.
+---
+
+class:center
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+
+knitr::include_graphics('barplot1.png')
+
+```
+*Nota*: Comparación en base valores predichos de modelos de regresión OLS
+
+---
+class:middle, center
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%", fig.cap="Tabla 1: Regresión OLS para testear tratamientos"}
+
+knitr::include_graphics('table1.png')
+
+```
+---
+##Conclusiones
+
+* La evidencia muestra que la "hipótesis de ajuste" se cumple para el contexto chileno.
+
+* El tener conocimiento sobre la desigualdad de ingresos tiene como consecuencia que las personas legitimen mayores brechas salariales.
+
+* Las diferencias legítimas entre ocupaciones de bajo y alto estatus son suseptibles de ser afectadas por el nivel de conocimiento que las personas tienen sobre la desigualdad.
+
+
+---
+
+class: inverse, middle, center
+
+#Estatus Social Subjetivo y percepción de Meritocracia:
+## El caso de Chile
+
+**[Julio César Iturra Sanhueza](https://www.researchgate.net/profile/Julio_Iturra_Sanhueza)**
+
+---
+##Antecedentes
+
+* _**The Rise of Meritocracy**_ (Young, 1958)
+  + Idea de Mérito como la combinación de **Esfuerzo** y **Talento**.
+
+* Percepción de Meritocracia (García, 2001)
+
+_**<center> "(...) el grado en que los individuos consideran que sus sociedad cumple con los principios de una meritocracia, es decir que funciona como un sistema que asigna recompensas en función del esfuerzo y las habilidades". </center>**_
+
+* Relación entre mérito y estratificación
+
+  + "Beliefs about stratification", **creencias respecto a las causas de la desigualdad social** (Kluegel & Smith, 1981)
+
+  + **Estatus social subjetivo** y percepción de meritocracia (Castillo et al., 2013; 2018)
+
+  + Logro educativo y mérito (Goldthorpe, 2003)
+
+  + Hipótesis de Auto-interés (Meltzer & Richards, 1981)
+
+---
+class: inverse, middle, center
+
+#En el contexto chileno, ¿Cómo se relacionan las características de estatus social objetivo y subjetivo con la percepción de meritocracia?
+
+---
+## Hipótesis
+
+$H_{1}$: **Una posición superior en la distribución de ingresos se asocia positivamente con la percepción de meritocracia.**
+
+$H_{2}$: **Pertenecer a grupos con mayor logro educativo, se asocia con una mayor percepción de meritocracia.**
+
+$H_{3}$: **Desempeñarse en ocupaciones de alta cualiﬁcación en el mercado de trabajo, se asocia con una mayor percepción de meritocracia.**
+
+$H_{4}$: **Individuos con un Estatus Social subjetivo más alto tenderían a percibir más meritocracia.**
+
+???
+
+Estas son las principales hipótesis guiadas por las teoría e investigaciones previas.
+---
+class: inverse, middle, center
+
+#Medición Percepción de Meritocracia
+
+---
+## Batería de preguntas sobre Meritocracia
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+knitr::include_graphics('items1.png')
+```
+
+1. Batería para *Salir Adelante*
+2. Batería para *Recompensa Percibida*
+
+---
+class:middle
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="100%"}
+knitr::include_graphics('cfa2.png')
+```
+???
+
+**Estimación**: se realizó un CFA asumiendo que los indicadores con variables ordinales.
+
+**Ajuste**: El ajuste es adecuado, se probó una correlación entre los errores de "Inteligencia y habilidades" con "Trabajo duro". El problema de varianza negativa desapareció, pero a falta de una justificación sustantiva se decide mantener el modelo original.
+
+**Problemas**: Caso heywood; varianza negativas producto de diferencias entre la matriz real y predicha.
+---
+class: inverse, middle, center
+
+#Estatus social subjetivo
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="75%", results='asis'}
+knitr::include_graphics('ess.jpg')
+
+# a <- elsoc_gini %>% select(ess,essfam,esshijos)
+#
+# b <- c("Propio", "Familia","Hijos")
+# colnames(a) <- b
+# stargazer::stargazer(a, type = "html",nobs = FALSE)
+```
+
+<table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"> </td><td>Media</td><td>DS</td><td>Min</td><td>Máx</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Propio</td><td>4.34</td><td>1.58</td><td>0</td><td>10</td></tr>
+<tr><td style="text-align:left">Familia</td><td>3.96</td><td>1.93</td><td>0</td><td>10</td></tr>
+<tr><td style="text-align:left">Hijos</td><td>6.28</td><td>2.08</td><td>0</td><td>10</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr></table>
+
+???
+
+- Propio: Sesgo hacia la media 35% aprox en (5) 22% en (4) 15% en (6) = `r 35+22+15`%
+
+- Familia: Respecto a el propio. Habría una tendencia a posicionarse sobre la familia de origen.
+
+- Hijos: existe un sesgo hacia la parte superior de la distribución (movilidad social o expectativas de ello.)
+---
+class: inverse, middle, center
+
+#Resultados modelos de regresión
+---
+class: middle
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="150%"}
+knitr::include_graphics('coef1.jpg')
+```
+???
+
+---
+class: middle
+
+```{r, echo=FALSE, fig.align='right', message=FALSE, warning=FALSE, out.width="150%"}
+knitr::include_graphics('coef2.jpg')
+```
+???
+
+---
+class: inverse, middle, center
+
+#Análisis de mediación
+
+???
+
+- Hay una suposición teórica que proviene de la evidencia sobre movilidad social y actitudes hacia la desigualdad.
+
+- Que el coeficiente de Propio desaparezca, implica que hay algo con el estatus social de los hijos.
+
+- Una movilidad ascendiente es la más importante respecto de la adscripción a meritocracia.
+---
+class: center
+
+**Educación**  $\overrightarrow{a}$  **ESS Hijos**  $\overrightarrow{b}$ **Percepción de Meritocracia**
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics('table-med1.png')
+```
+
+---
+class: center
+ **ESS propio** $\overrightarrow{a}$  **ESS Hijos**  $\overrightarrow{b}$ **Percepción de meritocracia**
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="75%", fig.cap="**Nota**: Coeficientes estandarizados entre Estatus social subjetivo propio y las variables *Salir adelante* y *Recompensa percibida* $^{***}p<$ 0.001, $^{**}p<$ 0.01."}
+knitr::include_graphics('med1.png')
+```
+<!-- $^{***}p<$ 0.001, $^{**}p<$ 0.01 -->
+
+| Efecto | Coef. |   SE  |    z   |   p   |  Beta  |
+|:------:|:-----:|:-----:|:------:|:-----:|:------:|
+| Indirecto (1)| 0.019 | 0.004 |  4.633 | 0.000 |  0.061 |
+| Indirecto (2)| -0.018 | 0.006 | -2.975 | 0.003 | -0.032 |
+
+
+
+---
+## Evaluación de Hipótesis
+
+**Estatus objetivo**:
+1. La hipótesis referente a los ingresos no se cumple de manera sustancial. Es posible observar que pertenecer al Decil 3 y 4, implica diferencias respecto del Decil 1 ( $p<0.05$ )
+
+2. La educación es la variable de estatus objetivo más importante. Existen diferencias significativas en todos los grupos de nivel educativo. Existe una asociación positiva con Salir adelante y negativa con Recompensa percibida.
+
+3. La ocupación de los individuos no se encuentra asociada sustancialmente con la percepción de meritocracia.
+
+** Estatus subjetivo **
+
+* El estatus social subjetivo se asocia con la percepción de meritocracia. No obstante, el sentido de esta asociación es distinta según las medidas de estatus subjetivo.
+
+* El estatus subjetivo propio es menos relevante que el estatus de la familia de origen y el de los hijos.
+
+???
+
+1. Un estatus familiar más alto implica que se le atribuye **menor** importancia a los factores individuales (Educarse, esfuerzo y ambición.)
+2. Un estatus de sus hijos más alto implica una mayor importancia sobre los factores individuales.
+
+* Salir adelante:
+    + Familia (-) Meritocracia: Familia clase alta, menos meritocrático.
+
+    + Hijos (+) Meritocracia: Expectativas de movilidad a través de los hijos, alto mérito. (Atribución de pobreza, hipótesis POUM)
+
+    + Educación (+) Meritocracia: Intuitivo, mayor instrucción asociacio a mayor esfuerzo e inteligencia.
+
+* Recompensa percibida
+
+    + Familia (+) Meritocracia: "Estoy donde estoy, mis papás se esforzaron. También lo merezco"
+
+    + Hijos (-) Meritocracia: Evaluación negativa del futuro, en función de la evaluación propia. Asociado a deprivación.
+
+    + Educación (-) Meritocracia: Deprivación relativa "me esforcé harto, me recompensan poco (p.ej: Terciario ciclo corto)
+
+---
+
+class: center, middle
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+---
+class: center
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width="75%", results='asis'}
+knitr::include_graphics('freq1.png')
+```
