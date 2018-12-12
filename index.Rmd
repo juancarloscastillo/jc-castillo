@@ -40,7 +40,9 @@ output:
 <div class="collapsible-content">
 <div class="content-inner">
 <p class="text">
----
+
+(a completar)
+
 </div>
 </div>
 </div>
