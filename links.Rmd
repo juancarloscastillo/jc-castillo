@@ -80,6 +80,8 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Introduction to reproducible science in R, from Brian Lee Yung Rowe](https://cartesianfaith.files.wordpress.com/2018/11/rowe-introduction-to-reproducible-science-part-i-20181112.pdf)
 
+- [8 Easy Steps to Open Science: An Annotated Reading List](https://psyarxiv.com/cfzyx)
+
 <br/>
 
 ### Following people

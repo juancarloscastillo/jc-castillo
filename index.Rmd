@@ -33,7 +33,20 @@ output:
 ### _Latest papers & projects_
 
 <div class="wrap-collabsible">
-<input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+<input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible0" class="lbl-toggle">
+**Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
+
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+---
+</div>
+</div>
+</div>
+
+<div class="wrap-collabsible">
+<input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible0" class="lbl-toggle">
 **Meritocracia y redistribución en una sociedad desigual** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)
 </label>
 <div class="collapsible-content">
@@ -59,7 +72,7 @@ The notion of open science is quickly expanding in terms of access, reproducibil
 
 
 <div class="wrap-collabsible">
-<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
 **Perceptions and Preferences about Meritocracy in International Comparison (ISA 2018 Toronto)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
 </label>
 <div class="collapsible-content">
@@ -72,7 +85,7 @@ Meritocracy is a concept commonly used to characterize groups and societies in t
 
 
 <div class="wrap-collabsible">
-<input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
+<input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">
 **Meritocracy and economic inequality: Perceptions, preferences and implications** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
 <a href="https://www.researchgate.net/publication/325225032_Meritocracia_y_desigualdad_economica_Percepciones_preferencias_e_implicancias_Meritocracy_and_Economic_inequality_Perceptions_preferences_and_implications"> <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/qkpu4/">
@@ -91,7 +104,7 @@ The idea of meritocracy is related to the distribution of goods and rewards base
 </div>
 
 <div class="wrap-collabsible">
-<input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">**Poverty and wealth attributions: A second order confirmatory factor analysis model** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
+<input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible4" class="lbl-toggle">**Poverty and wealth attributions: A second order confirmatory factor analysis model** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
 <a href="https://www.researchgate.net/publication/326637297_Common_dimensions_for_poverty_and_wealth_attributions">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/5xnrd/">

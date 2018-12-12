@@ -62,7 +62,7 @@ output:
 
 - Do people perceive more inequality when more inequality exists? (with Martin Schröder). Submitted.
 
-- Patterns of civic and political commitment in early adolescence (with Loreto Martínez, Patricio Cumsille & Ignacio Loyola). Revise & resubmit.
+- Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries. (with Luis Maldonado, Francisco Olivos, Jorge Atria & Ariel Azar). Revise & resubmit.
 
 <br/>
 
@@ -70,11 +70,14 @@ output:
 
 (If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
 
-- Frei, R., Castillo, JC., Henríquez, R. & Suárez, J. (2018 - Forthcoming 2020) “¿Fruto del esfuerzo?”: los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. _Latin American Research Review_. 
+Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic and political commitment in early adolescence. Forthcoming in _Journal of Early Adolescence_.
+
+- Atria, J., Ramírez, S., Castillo, JC. & Maldonado, L. (2018) Studying meritocracy in an unequal context: Perspectives from chilean scholars. Forthcoming in Universum.
+
+- Frei, R., Castillo, JC., Henríquez, R. & Suárez, J. (2018 - Forthcoming 2020) “¿Fruto del esfuerzo?”: los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. _Latin American Research Review_.
 
 - Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in _Social Science Quarterly_ [DOI: 10.1111/ssqu.12539](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12539). <a href="https://www.researchgate.net/publication/328359653_Deserving_a_Just_Pension_A_Factorial_Survey_Approach">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
-
 
 - Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología (ISI).
 <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
@@ -105,7 +108,7 @@ output:
 
 
 <details>
-<summary> *See more...* </summary>
+<summary> *More...* </summary>
 
 - Guerra, C. & Castillo, J (2016) Sintomatología en adolescentes victimizados sexualmente: El rol del apoyo de la familia y del grupo de pares. Revista sobre la infancia y la adolescencia, 11:66-80 (Latindex) [link](https://polipapers.upv.es/index.php/reinad/article/view/4478/6797)
 
