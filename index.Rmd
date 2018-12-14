@@ -34,7 +34,7 @@ output:
 
 <div class="wrap-collabsible">
 <input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible0" class="lbl-toggle">
-**Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
+**Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas** (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
 
 </label>
 <div class="collapsible-content">
@@ -49,7 +49,7 @@ output:
 
 <div class="wrap-collabsible">
 <input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible0" class="lbl-toggle">
-**Meritocracia y redistribución en una sociedad desigual** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)
+**Meritocracia y redistribución en una sociedad desigual** (Conferencia COES - Noviembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)
 </label>
 <div class="collapsible-content">
 <div class="content-inner">
@@ -62,25 +62,12 @@ Esta presentación desarrolla un marco conceptual y operacional para el estudio 
 
 <div class="wrap-collabsible">
 <input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
-**Open academic writing: An Atom-based workflow for social scientists (SocArxiv 2018 maryland)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
+**Open academic writing: An Atom-based workflow for social scientists** (SocArxiv 2018 Conference - Maryland)[(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
 </label>
 <div class="collapsible-content">
 <div class="content-inner">
 <p class="text">
 The notion of open science is quickly expanding in terms of access, reproducibility and replication initiatives worldwide. Nevertheless, so far the implications of openness are less discussed regarding a basic academic process: writing. In this presentation I introduce the advantages of academic writing in plain text editors in terms of replication and version control, as suggested by Healey (2018) in "The plain person's guide to plain text social science". Nevertheless, departing from Healey's suggestion of a writing workflow based on the editor Emacs, I propose an alternative workflow using the text editor Atom (also free and open source). Some of the Atom's advantages to be presented are citing directly from Zotero/Bibtex, integration of \LaTeX \, Markdown and R languages, and easy formatting from plain text to pdf, html and/or word via Pandoc.
-</div>
-</div>
-</div>
-
-
-<div class="wrap-collabsible">
-<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
-**Perceptions and Preferences about Meritocracy in International Comparison (ISA 2018 Toronto)** [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
-</label>
-<div class="collapsible-content">
-<div class="content-inner">
-<p class="text">
-Meritocracy is a concept commonly used to characterize groups and societies in terms of allocation of rewards according to effort and talent. In this sense, the principle of merit has been related to the legitimation of inequalities in modern societies. Nevertheless, the conceptualization of merit is far from clear in the literature, having as a consequence that the few attempts dealing with the empirical study of meritocracy in terms of individual attitudes and beliefs are rather inconsistent among themselves. Based on a systematic review of the extant literature, we propose a conceptual framework for the empirical study of the subjective dimension of meritocracy which is then empirically tested by using data from available indicators of the International Social Survey Programme 2009 survey. The results of confirmatory factor analysis and measurement invariance models indicate that it is possible to identify two dimensions of meritocracy that are usually confused in the literature: perceptions and preferences. Furthermore, these two dimensions are composed of meritocratic and non-meritocratic elements which are not necessarily the ends of a same continuum. The implications for future research on meritocracy are discussed, particularly in relation to preferences towards redistribution.
 </div>
 </div>
 </div>
@@ -105,22 +92,7 @@ The idea of meritocracy is related to the distribution of goods and rewards base
 </div>
 </div>
 
-<div class="wrap-collabsible">
-<input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible4" class="lbl-toggle">**Poverty and wealth attributions: A second order confirmatory factor analysis model** <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
-<a href="https://www.researchgate.net/publication/326637297_Common_dimensions_for_poverty_and_wealth_attributions">
-<i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
-<a href="https://osf.io/preprints/socarxiv/5xnrd/">
-<i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
-</label>
-<div class="collapsible-content">
-<div class="content-inner">
-<p class="text">
-*Castillo, JC & Rivera-Gutierrez, M. (2018). Forthcoming in Psykhe (SCOPUS).*
 
-The theory of attributions has a long tradition in studying explanations for the origin of poverty. Nevertheless, research regarding the perceived causes of wealth has been so far sidelined and not related to the study of poverty attributions. This paper focuses on the relationship between poverty and wealth attributions from a latent variable measurement perspective, for which it considers two basic attribution types: internal (based on individual behavior) and external (based on socio-structural determinants). The data comes from a 10-indicator scale from the national representative survey “Social Justice and Citizenship Participation”, applied in Chile in 2013 (N=1.245). Based in previous exploratory and confirmatory studies, a factorial confirmatory model for internal and external attributions of both poverty an wealth was estimated (four factors), based on which a second order two-factor confirmatory model was estimated, one for internal and one for external attributions, for both poverty and wealth. The results show for the first time evidence of common attributional dimensions for poverty and wealth
-</div>
-</div>
-</div>
 
 
 

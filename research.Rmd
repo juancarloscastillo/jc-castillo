@@ -70,13 +70,13 @@ output:
 
 (If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
 
-Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic and political commitment in early adolescence. Forthcoming in _Journal of Early Adolescence_.
+- Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic and political commitment in early adolescence. Forthcoming in _Journal of Early Adolescence_.
 
 - Atria, J., Ramírez, S., Castillo, JC. & Maldonado, L. (2018) Studying meritocracy in an unequal context: Perspectives from chilean scholars. Forthcoming in Universum.
 
 - Frei, R., Castillo, JC., Henríquez, R. & Suárez, J. (2018 - Forthcoming 2020) “¿Fruto del esfuerzo?”: los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. _Latin American Research Review_.
 
-- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach (with Francisco Olivos & Ariel Azar). Accepted in _Social Science Quarterly_ [DOI: 10.1111/ssqu.12539](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12539). <a href="https://www.researchgate.net/publication/328359653_Deserving_a_Just_Pension_A_Factorial_Survey_Approach">
+- Castillo, JC. Olivos. F. & Azar, A. (2018) On the justice of pensions: A factorial survey approach. Accepted in _Social Science Quarterly_ [DOI: 10.1111/ssqu.12539](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12539). <a href="https://www.researchgate.net/publication/328359653_Deserving_a_Just_Pension_A_Factorial_Survey_Approach">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 
 - Castillo, JC. & Torres, A. , Atria, J & Maldonado, L. (2018) Meritocracia y desigualdad económica: Percepciones, preferencias e implicancias. Forthcoming in Revista Internacional de Sociología (ISI).
@@ -86,8 +86,8 @@ Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic 
 <a href="https://osf.io/preprints/socarxiv/qkpu4/">
 <i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 
-- Castillo, JC & Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Forthcoming in Psykhe (SCOPUS).
-<i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
+- Castillo, JC & Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Psykhe 27(2) 10.7764/psykhe.27.2.1152 (SCOPUS).
+<a href="http://www.psykhe.cl/index.php/psykhe/article/view/1152/pdf_113"><i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
 <a href="https://www.researchgate.net/publication/326637297_Common_dimensions_for_poverty_and_wealth_attributions">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/5xnrd/">
@@ -212,7 +212,10 @@ Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic 
 
 ## [Conferences]()
 
-Castillo,JC (2018) Perceptions and preferences about meritocracy in international comparison. Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center [(link)](documents/ISA2018presentation/castillo2018meritocracyISA.html).
+Castillo,JC (2018) Perceptions and preferences about meritocracy in international comparison. Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center [(to presentation)](documents/ISA2018presentation/castillo2018meritocracyISA.html).
+  - <details><summary> *More...* </summary>
+Meritocracy is a concept commonly used to characterize groups and societies in terms of allocation of rewards according to effort and talent. In this sense, the principle of merit has been related to the legitimation of inequalities in modern societies. Nevertheless, the conceptualization of merit is far from clear in the literature, having as a consequence that the few attempts dealing with the empirical study of meritocracy in terms of individual attitudes and beliefs are rather inconsistent among themselves. Based on a systematic review of the extant literature, we propose a conceptual framework for the empirical study of the subjective dimension of meritocracy which is then empirically tested by using data from available indicators of the International Social Survey Programme 2009 survey. The results of confirmatory factor analysis and measurement invariance models indicate that it is possible to identify two dimensions of meritocracy that are usually confused in the literature: perceptions and preferences. Furthermore, these two dimensions are composed of meritocratic and non-meritocratic elements which are not necessarily the ends of a same continuum. The implications for future research on meritocracy are discussed, particularly in relation to preferences towards redistribution.
+</details>
 
 Castillo, JC. & Jaime-Castillo, A. (2018) Reciprocity and Distributive Justice. Joint session organized for the Research Committee 42 (Social Psychology)  and 45 (Rational Choice) at the Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center.
 
@@ -349,6 +352,9 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Franetovic, G. (2018) Desigualdad, desarrollo económico y preferencias redistributivas en América Latina. Magíster en Sociología, P. Universidad Católica de Chile.
 
 - Muñoz, E. (2018) Evaluaciones de justicia distributiva sobre las pensiones de vejez en Chile. Magíster en Sociología, P. Universidad Católica de Chile.
+
+- Castro, F. (2018) ¿Menos confianza, menos Estado? El impacto de la corrupción sobre las preferencias redistributivas. Magíster en Sociología, P. Universidad Católica de Chile.
+
 
 <details>
 <summary> *See more...* </summary>
