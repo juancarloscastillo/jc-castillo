@@ -89,7 +89,7 @@ Issues:
 # Healeys' workflow
 
 
-![](https://kieranhealy.org/files/misc/workflow-wide-tx.png)
+![](images/healeysworkflow.png)
 
 --
 
