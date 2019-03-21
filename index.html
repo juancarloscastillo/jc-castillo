@@ -9,9 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="" />
 
 
-<title></title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,9 +21,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="stylesheet" href="site_libs/academicons-1.8.6/css/academicons.css" />
 
 
@@ -84,6 +84,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -98,7 +101,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -118,6 +120,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -139,18 +178,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -214,15 +312,18 @@ $(document).ready(function () {
 
 
 <p><br/> <br/></p>
+<p><img src="images/facso.png" style="width:100%" align="left"> <br/></p>
+<p><br clear="all" /></p>
+<div id="profesor-del-departamento-de-sociologia-facultad-de-ciencias-sociales-universidad-de-chile" class="section level3">
+<h3>Profesor del <a href="http://www.facso.uchile.cl/sociologia">Departamento de Sociología</a>, Facultad de Ciencias Sociales, Universidad de Chile <br/></h3>
+<hr />
+</div>
 <div id="phd-sociology-humboldt-university---berlin" class="section level3">
 <h3>PhD Sociology, Humboldt University - Berlin <br/></h3>
 </div>
-<div id="profesor-en-el-departamento-de-sociologia-facultad-de-ciencias-sociales-universidad-de-chile" class="section level3">
-<h3>Profesor en el <a href="http://www.facso.uchile.cl/sociologia">Departamento de Sociología</a>, Facultad de Ciencias Sociales, Universidad de Chile <br/></h3>
-</div>
 <div id="deputy-director-centre-for-social-conflict-and-cohesion-studies" class="section level3">
 <h3>Deputy director <a href="http://www.coes.cl">Centre for Social Conflict and Cohesion Studies</a></h3>
-<p><a href="http://www.coes.cl"><img src="images/logocoes.jpg" style="width:20%" align="left"></a> <br/> <br/> <br/> <br/> ... and proud moderator of <br/> <a href="http://www.socopen.org"><img src="images/socarxiv.jpg" style="width:30%"></a> <br/> <br/></p>
+<p><a href="http://www.coes.cl"><img src="images/logocoes.jpg" style="width:20%" align="left"></a> <br/> <br/> <br/> <br/> … and proud moderator of <br/> <a href="http://www.socopen.org"><img src="images/socarxiv.jpg" style="width:30%"></a> <br/> <br/></p>
 <hr />
 </div>
 <div id="latest-papers-projects" class="section level3">
@@ -251,7 +352,7 @@ Esta presentación desarrolla un marco conceptual y operacional para el estudio 
 <div class="collapsible-content">
 <div class="content-inner">
 <p class="text">
-The notion of open science is quickly expanding in terms of access, reproducibility and replication initiatives worldwide. Nevertheless, so far the implications of openness are less discussed regarding a basic academic process: writing. In this presentation I introduce the advantages of academic writing in plain text editors in terms of replication and version control, as suggested by Healey (2018) in &quot;The plain person's guide to plain text social science&quot;. Nevertheless, departing from Healey's suggestion of a writing workflow based on the editor Emacs, I propose an alternative workflow using the text editor Atom (also free and open source). Some of the Atom's advantages to be presented are citing directly from Zotero/Bibtex, integration of , Markdown and R languages, and easy formatting from plain text to pdf, html and/or word via Pandoc.
+The notion of open science is quickly expanding in terms of access, reproducibility and replication initiatives worldwide. Nevertheless, so far the implications of openness are less discussed regarding a basic academic process: writing. In this presentation I introduce the advantages of academic writing in plain text editors in terms of replication and version control, as suggested by Healey (2018) in “The plain person’s guide to plain text social science”. Nevertheless, departing from Healey’s suggestion of a writing workflow based on the editor Emacs, I propose an alternative workflow using the text editor Atom (also free and open source). Some of the Atom’s advantages to be presented are citing directly from Zotero/Bibtex, integration of , Markdown and R languages, and easy formatting from plain text to pdf, html and/or word via Pandoc.
 </div>
 </div>
 </div>
@@ -261,7 +362,8 @@ The notion of open science is quickly expanding in terms of access, reproducibil
 <div class="content-inner">
 <p class="text">
 <p><em>Castillo, JC. &amp; Torres, A. , Atria, J &amp; Maldonado, L. (2018) Forthcoming in Revista Internacional de Sociología (ISI).</em></p>
-The idea of meritocracy is related to the distribution of goods and rewards based on individual talent and effort, being a principle that legitimizes the unequal distribution of resources in modern societies. Despite the constant references to meritocracy in inequality and stratification research, there are still few conceptual and empirical attempts to understand to what extent individuals perceive and prefer meritocracy, as well as their consequences. The present research proposes a conceptual and empirical framework for studying meritocratic perceptions and preferences, which is then related with economic inequality variables. Using data from the Chilean survey “Social justice and citizenship participation”, the analyses suggest that meritocratic perceptions and preferences are different constructs and that those perceiving an adequate functioning of meritocracy also perceive less economic inequality. </details>
+The idea of meritocracy is related to the distribution of goods and rewards based on individual talent and effort, being a principle that legitimizes the unequal distribution of resources in modern societies. Despite the constant references to meritocracy in inequality and stratification research, there are still few conceptual and empirical attempts to understand to what extent individuals perceive and prefer meritocracy, as well as their consequences. The present research proposes a conceptual and empirical framework for studying meritocratic perceptions and preferences, which is then related with economic inequality variables. Using data from the Chilean survey “Social justice and citizenship participation”, the analyses suggest that meritocratic perceptions and preferences are different constructs and that those perceiving an adequate functioning of meritocracy also perceive less economic inequality.
+</details>
 </div>
 </div>
 </div>

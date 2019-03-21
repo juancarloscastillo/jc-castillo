@@ -100,6 +100,8 @@ I use software compatible with the principles of open science, this is, free and
 
 - [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer).
 
+- [Making R & Python work in Atom](https://jstaf.github.io/2018/03/25/atom-ide.html)
+
 - [Robert Mitchell's tutorial to build rmarkown websites](http://robertmitchellv.com/blog-building-site-with-rmarkdown.html)
 
 - [Emily Zabor's tutorial to build rmarkown websites](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html)

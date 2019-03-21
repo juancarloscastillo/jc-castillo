@@ -15,8 +15,15 @@ output:
 <br/>
 <br/>
 
+<img src="images/facso.png" style="width:100%" align="left"> <br/>
+
+<br clear="all" />
+
+### Profesor del [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, Universidad de Chile <br/>
+
+---
+
 ### PhD Sociology, Humboldt University - Berlin <br/>
-### Profesor en el [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, Universidad de Chile <br/>
 ### Deputy director [Centre for Social Conflict and Cohesion Studies](http://www.coes.cl)
 [<img src="images/logocoes.jpg" style="width:20%" align="left">](http://www.coes.cl)
 <br/>
