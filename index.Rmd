@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Juan Carlos Castillo"
 author: " "
 output:
     html_document:
@@ -40,7 +40,7 @@ output:
 ### _Latest papers & projects_
 
 <div class="wrap-collabsible">
-<input id="collapsible0" class="toggle" type="checkbox"><label for="collapsible0" class="lbl-toggle">
+<input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible4" class="lbl-toggle">
 **Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas** (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
 
 </label>
