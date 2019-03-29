@@ -20,7 +20,7 @@ output:
 
 ### Clases / prácticas
 
-- Práctica regresión simple (sesión 3 multivariada) [(*link *)](https://juancarloscastillo.github.io/jc-castillo/documents/multiva/sesiones/3regsimp1/practica/prac1_regsimp.html)
+- [Estadística multivariada](https://juancarloscastillo.github.io/metsoc-facsouchile/index.html)
 
 
 ### Newspapers articles, comments & opinions
