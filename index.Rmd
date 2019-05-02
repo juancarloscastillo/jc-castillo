@@ -39,6 +39,28 @@ output:
 
 ### _Latest papers & projects_
 
+
+<div class="wrap-collabsible">
+<input id="collapsible6" class="toggle" type="checkbox"><label for="collapsible6" class="lbl-toggle">
+**The Crowdsourced Replication Initiative: Investigating Immigration and Social Policy Preferences. Executive Report.** [(*link to SocArxiv Pre-print*)](https://doi.org/10.31235/osf.io/6j9qb)
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+
+Breznau, N., Rinke, E., Wuttke, A., Adem, M., Adriaans, J., Alvarez-Benjumea, A., … Castillo, JC. … Żółtak, T. (2019, January 26).
+
+
+In an era of mass migration, social scientists, populist parties and social movements raise concerns over the future of immigration-destination societies. What impacts does this have on policy and social solidarity? Comparative cross-national research, relying mostly on secondary data, has findings in different directions. There is a threat of selective model reporting and lack of replicability. The heterogeneity of countries obscures attempts to clearly define data-generating models. P-hacking and HARKing lurk among standard research practices in this area.
+This project employs crowdsourcing to address these issues. It draws on replication, deliberation, meta-analysis and harnessing the power of many minds at once. The Crowdsourced Replication Initiative carries two main goals, (a) to better investigate the linkage between immigration and social policy preferences across countries, and (b) to develop crowdsourcing as a social science method. The Executive Report provides short reviews of the area of social policy preferences and immigration, and the methods and impetus behind crowdsourcing plus a description of the entire project. Three main areas of findings will appear in three papers, that are registered as PAPs or in process.
+
+</div>
+</div>
+</div>
+
+
+
+
 <div class="wrap-collabsible">
 <input id="collapsible4" class="toggle" type="checkbox"><label for="collapsible4" class="lbl-toggle">
 **Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas** (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)

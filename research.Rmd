@@ -60,9 +60,9 @@ output:
 
 - Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla). Submitted.
 
-- Do people perceive more inequality when more inequality exists? (with Martin Schröder). Submitted.
+- Do people perceive more inequality when more inequality exists? (with Martin Schröder). Revise & Resubmit.
 
-- Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries. (with Luis Maldonado, Francisco Olivos, Jorge Atria & Ariel Azar). Revise & resubmit.
+- Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries. (with Luis Maldonado, Francisco Olivos, Jorge Atria & Ariel Azar). Accepted with minor reviews.
 
 <br/>
 
@@ -163,6 +163,8 @@ output:
 <br/>
 
 ### Books, chapters & working papers
+
+- Breznau, N., Rinke, E., Wuttke, A., Adem, M., Adriaans, J., Alvarez-Benjumea, A., … Castillo, JC. … Żółtak, T. (2019, January 26). The Crowdsourced Replication Initiative: Investigating Immigration and Social Policy Preferences. Executive Report. https://doi.org/10.31235/osf.io/6j9qb. <a href="https://doi.org/10.31235/osf.io/6j9qb"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 
 - Miranda, D. & Castillo, JC (2018) Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009. In A. Sandoval-Hernandez, M. Isaac & D. Miranda (Eds.) Teaching tolerance in a globalized world. New York, NY: Springer Berlin Heidelberg. <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>[Open Access](https://link.springer.com/chapter/10.1007/978-3-319-78692-6_3)
 
