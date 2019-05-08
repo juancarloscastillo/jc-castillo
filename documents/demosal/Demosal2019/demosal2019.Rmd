@@ -20,13 +20,15 @@ class: inverse, right
 
 ```{r setup, include=FALSE, cache = FALSE}
 require("knitr")
+library("pacman")
+p_load(xaringan)
 options(htmltools.dir.version = FALSE)
 ```
 
 <!---
 Para correr en ATOM
 - open terminal, abrir R (simplemente, R y enter)
-- rmarkdown::render('demosal2010.Rmd', 'xaringan::moon_reader')
+- rmarkdown::render('demosal2019.Rmd', 'xaringan::moon_reader')
 
 About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
 --->
@@ -69,9 +71,9 @@ class: animated, fadeIn
 
 ![](../images/modelo.png)
 ---
-class: inverse, middle, center,slideInRight
+class: roja, middle, center,slideInRight
 
-# Metodología
+## Metodología
 ---
 ## Datos:
 
@@ -97,7 +99,8 @@ class: inverse, middle, center,slideInRight
 ---
 ## Variables
 
-![](../images/descriptivos.png)
+.center[![:scale 80%](../images/descriptivos1.png)]
+
 ---
 ## Método de análisis
 
@@ -109,30 +112,30 @@ class: roja, middle, center,slideInRight
 ## Resultados
 ---
 # Acuerdo con la redistribución
-![](../images/ros4pais.png)
+![](../images/Figure2a.png)
 
 ---
 # Redistribución / tiempo
-![](../images/ros4tiempo.png)
+![](../images/Figure3z_color.png)
 
 ---
 # Redistribucion y desigualdad por país
-![](../images/ginipais.png)
+![](../images/ginipais1.png)
 ---
 # Redistribucion y desigualdad por país-tiempo
 ![](../images/giniencuesta.png)
 ---
 # Redistribucion y PIB por país
-![](../images/pibpais.png)
+![](../images/pibpais1.png)
 ---
 # Redistribucion y PIB por país-tiempo
 ![](../images/pibencuesta.png)
 ---
 # Modelos: Variables individuales
-![:scale 80%](../images/main_individual.png)
+.center[![:scale 80%](../images/main_individual.png)]
 ---
 # Modelos: Variables país y año-país
-![:scale 70%](../images/country-level.png)
+.center[![:scale 70%](../images/country-level.png)]
 ---
 # Interacciones
 ![](../images/interactions.png)
@@ -140,6 +143,27 @@ class: roja, middle, center,slideInRight
 class:roja, middle, center,slideInRight
 
 ## Conclusiones
+
+---
+class:inverse
+
+# Conclusiones
+
+--
+
+## 1. Ingreso y redistribución
+
+--
+
+## 2. Variables políticas: confianza e identificación
+
+--
+
+## 3. Consenso en A.Latina respecto de redistribución?
+
+###   - patrones similares entre y dentro de países
+
+###   - bajo efecto de variables contextuales
 
 ---
 class: right, slideInRight
