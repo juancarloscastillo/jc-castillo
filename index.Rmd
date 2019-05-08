@@ -12,6 +12,11 @@ output:
 
 ---
 
+<!---
+Para rendir el sitio desde terminal R:
+rmarkdown::render_site(encoding = 'UTF-8')
+--->
+
 <br/>
 <br/>
 
@@ -38,6 +43,22 @@ output:
 ---
 
 ### _Latest papers & projects_
+
+<div class="wrap-collabsible">
+<input id="collapsible7" class="toggle" type="checkbox"><label for="collapsible7" class="lbl-toggle">
+**Preferencias redistributivas en contextos desiguales:<br> América Latina 2008 - 2014** - Gonzalo Franetovic & Juan Carlos Castillo (DEMOSAL - Mayo 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/demosal/Demosal2019/demosal2019.html#1)
+
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+
+En una región en vías de desarrollo y altamente desigual como América Latina, resulta trascendental la comprensión de los determinantes que afectan el acuerdo de las personas con la redistribución de recursos desde el estado. Una serie de teorías centradas en el autointerés han establecido continuamente un vínculo negativo entre el ingreso que tienen las personas y su apoyo hacia la disminución de desigualdades vía redistribución. A pesar de ello, la evidencia es escasa y a veces contradictoria, mientras que su estudio en Latinoamérica resulta casi inexistente. Utilizando datos de la Encuesta LAPOP entre los años 2008 y 2014 esta investigación busca dar cuenta de la relación entre autointerés, desigualdad y redistribución en contextos altamente desiguales. Para ello, por primera vez se considera una dimensión longitudinal abarcando desde 2008 a 2014, considerando el efecto del cambio en los niveles de desigualdad mediante el uso de  modelos híbridos de regresión multinivel. Contrastando con la evidencia de estudios realizados en otras regiones, existe poca evidencia en América Latina para la hipótesis del autointerés, donde diferencias de status no lograrían constituirse como un determinante esencial sobre las preferencias redistributivas. A la luz de los resultados, se establecen comparaciones con los hallazgos de investigaciones previas en países desarrollados, discutiéndose la aplicación de teorías racionalistas en materia de justicia y solidaridad social dentro de la región.
+
+</div>
+</div>
+</div>
+
 
 
 <div class="wrap-collabsible">
