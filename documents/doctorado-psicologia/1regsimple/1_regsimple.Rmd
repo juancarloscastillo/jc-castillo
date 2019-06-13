@@ -401,8 +401,7 @@ $$\sigma=\sqrt{\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}\over {N - 1}}$$
 
 _En el ejemplo anterior:_
 
-$$\sigma= \sqrt{{(29.2)^{2}\over {5 - 1}}}$$
-
+$$\sigma=\sqrt{(29.2)^{2}\over {5 - 1}}$$
 .center[**$$ = 2.7$$**]
 
 ]
