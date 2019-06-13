@@ -21,6 +21,9 @@ output:
 ### Clases / prácticas
 
 - [Estadística multivariada](https://juancarloscastillo.github.io/metsoc-facsouchile/index.html)
+- Doctorado Psicología 2019
+  - [Regresión 1](documents/doctorado-psicologia/1regsimple/1_regsimple.html)
+  - [Práctica 1](https://juancarloscastillo.github.io/metsoc-facsouchile/documents/practicas/1_regsimp/prac1_regsimp.html)
 
 
 ### Newspapers articles, comments & opinions
@@ -67,6 +70,8 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Open Science
 
+- [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/pages/tutorials.html)
+
 - [Open Science Framework](https://osf.io/)
 
 - [SocArxiv](https://socopen.org/welcome/), the open archive of the social sciences
@@ -100,6 +105,8 @@ I use software compatible with the principles of open science, this is, free and
 <br/>
 
 ### Miscellaneous
+
+- [Pimp my RMD](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)
 

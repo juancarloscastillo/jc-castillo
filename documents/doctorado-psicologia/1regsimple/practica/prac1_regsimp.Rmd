@@ -1,0 +1,241 @@
+---
+title: "Practica 1: Primera estimación regresión simple"
+subtitle: "Estadistica Multivariada - Sociología FACSO Universidad de Chile"
+author: "Juan Carlos Castillo & Alejandro Plaza"
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introducción
+
+En esta práctica se abordan ejercicios iniciales de regresión simple. Para ello nos vamos a basar principalmente en el ejemplo de Darlington & Hayes cap. 2 (The simple regression model).
+
+# Datos
+
+Los datos a utilizar corresponden a un ejemplo ficticio de 23 casos (individuos) y sus datos en dos variables relacionadas con un juego (originalmente de mini-golf ... pero pensemos en un ejemplo más cercano de taca-taca). Las dos variables de esta base de datos son el número de veces que se ha jugado antes (X) y el número de goles o puntos ganados (Y). El archivo de datos es taca.txt. 
+
+Los datos se pueden bajar en el siguiente [link:](https://juancarloscastillo.github.io/jc-castillo/documents/multiva/sesiones/3regsimp1/practica/golf.txt)
+
+Para abrirlos datos recordemos que en la lógica de R se debe generar un objeto donde se guardan los datos. Este objeto puede tener cualquier nombre, en este caso lo llamaremos simplemente "datos". Recordemos que para crear un objeto en `R` la forma típica es `objeto <-función(argumentos)`. Para abrir la base de datos utilizaremos la función `read.csv`, que es para datos guardados en formato de texto simple, separados por coma, tabulación o espacio). En nuestro caso los datos están separados por espacio, así que agregamos además de la ruta del archivo el argumento `sep=""`
+
+```{r eval=FALSE}
+datos<- read.csv("( ...ruta hacia el archivo ...)\golf.txt", sep="")
+```
+
+<div class="alert alert-info">
+  <strong>Rutas:</strong> ¿Cómo identifico la ruta hacia mi archivo? Dos maneras:
+
+  - 1. Boton derecho sobre el archivo -> propiedades, ahí aparece la ruta completa. Copiar y pegar donde corresponde en el archivo de R, no olvidar agregar al final el nombre completo del archivo.
+
+  - 2. Más fácil: mouse sobre archivo, boton derecho, _copiar_ (o ctrl+c); luego, en el archivo de R, en el lugar que corresponde _pegar_ (o ctrl+v)
+</div>
+
+```{r echo=FALSE}
+datos<- read.csv("/home/juancarlos/Desktop/Dropbox/cursos 2/facso/multivariada/mulitva2018/sesiones/3regsimp1/practica/golf.txt", sep="")
+```
+
+## Verificación y descriptivos
+
+Verificamos si los datos están siendo bien leidos:
+```{r eval=FALSE}
+View(datos)
+```
+
+![](../../images/tacataca.png)
+
+Tenemos entonces tres columnas:
+- id: número único que identifica a cada sujeto
+- juegos: número de veces que ha jugado previamente
+- puntos: numero de puntos que obtuvo en el juego actual
+
+Generamos una tabla de descriptivos básicos
+
+```{r}
+summary(datos)
+```
+
+
+Y para publicar, usando la librería `stargazer`
+
+```{r,}
+library(stargazer)
+stargazer(datos, type = "text")
+
+```
+
+# El modelo de regresión simple
+
+## Experiencia en juegos y puntuación
+
+La pregunta que nos hacemos para este ejercicio de demostración es: *¿tiene relación la experiencia previa (juegos) con el rendimiento actual (puntos)?*
+
+Veamos un gráfico de nube de puntos / scatter de ambas variables. Para eso, primero cargamos la librería `ggplot`de R. Recordar que hay que instalarla primero si es que no se ha hecho previamente con `install.packages("ggplot")`
+
+<div class="alert alert-info">
+  <strong>Sobre librerías:</strong> _¿Cómo facilitar el proceso de instalación/carga?_
+
+  - Una de las características y posibles dificultades de R es la carga/instalación de librerías para funciones que no son básicas y que no vienen pre-instaladas. Para esto hay que instalar la librería (la primera vez, con `install.packages("librería")`, y luego cargarla `library(librería)`
+  - Una forma de evitarse este proceso es con la librería `pacman` (package manager). Lo que hace esta librería es cargar otras librerías, y en el caso que no estén instaladas, automáticamente las instala y las carga.
+  - Para esto, solo una vez insatlar esta libreria con el procedimiento tradicional `install.packages("pacman")`, y en adelante cuando se quiera instalar/cargar otras librerías: `pacman::p_load(librería1,librería2, librería...)`  y todas las librerías separadas por coma.
+</div>
+
+
+
+```{r}
+pacman::p_load(ggplot2,plotly)
+
+# basic scatterplot
+g=ggplot(datos, aes(x=juegos, y=puntos)) +
+  geom_point()
+
+gg=ggplotly(g)
+gg
+
+```
+
+
+Primero, sobre librerías y visualización: lo que hicimos fue grear un gráfico scatterplot "g" con la librería ggplot; luego modificamos este gráfico y creamos uno nuevo "gg" con la función ggplotly para añadir elementos interactivos (en este caso, las coordenadas de cada punto del gráfico).
+
+En términos de correlación se observa una posible asociación positiva, que podemos corroborar con la función cor
+
+```{r}
+cor(datos$juegos,datos$puntos)
+```
+
+Tenemos una correlación positiva y de un tamaño de efecto grande (para ciencias sociales), que nos señala una asociación positiva entre ambas variables. Ahora, ¿cómo se relaciona más específcamente la experiencia en juegos con los puntos obtenidos posteriormente?
+
+## Medias condicionales
+
+Antes de avanzar desde la correlación al método de regresión es importante conocer el concepto de media condicional. Como sabemos el promedio de Y (puntos) es 4. Es decir, si conocemos a algun individuo que pertence al grupo de "datos", sabemos que su puntaje se encuentra probablemente cercano a 4. ¿Podemos mejorar nuestra estimación utilizando el puntaje de X? Como lo conocemos, si el sujeto nos dice que ha jugado antes 6 veces, dada la información que conocemos probablemente vamos a estimar un puntaje superior de puntos, tal vez más cercano a 6. Lo que estamos haciendo es utilizar la información que conocemos de X para dar una estimación de Y que sea más precisa que el promedio bruto.
+
+
+![](../images/condmeans.png)
+
+
+Mirando el gráfico de nube de puntos, sabemos que tres personas han jugado antes una vez, pero una de ellas tuvo 2 puntos, otra 3 y otra 4. Con estos datos podemos calcular la media de Y para X=1, que sería igual a 3. En otras palabras, *la media condicional de Y cuando X=3 es 1*. Con esto, uno podría calcular la media condicional para cada punto de X y hacer una estimación más precisa de Y. Sin embargo, este proceso todavía no nos permite generalizar más precisamente la relación entre X e Y: ¿Cuántos puntos (Y) aumento segun mi experiencia previa de juego (X)? Esta pregunta nos conduce al cálculo de una recta que atraviese los puntos y que generalice la relación entre X e Y:
+
+
+```{r}
+g2=ggplot(datos, aes(x=juegos, y=puntos)) +
+  geom_point() +
+  geom_smooth(method=lm, se=FALSE)
+g2
+
+```
+
+
+## Residuos
+
+En el gráfico anterior vemos que la línea resume la relación entre X e Y, pero claramente es una simplificación que no abarca toda la variabilidad de los datos. Por ejemplo, para el sujeto cuya experiencia es haber jugado 1 vez y luego gana 3 puntos, esta línea predice exáctamente su puntaje basada en su experiencia. Sin embargo, el sujeto que ha jugado 3 veces y saca 6 puntos se encuentra más lejos de la línea y por lo tanto esta línea o "modelo predictivo" no representa tan bien su puntaje. A esto se refieren los *residuos*, que es la diferencia entre el valor predicho (o $\widehat{Y}$) y el observado $Y$. Por lo tanto, la mejor recta será aquella que minimice al máximo los residuos.
+
+El sentido de la recta que resume de mejor manera la relación entre dos variables es que minimice la suma de todos los residuos. Para realizar la suma de los residuos estos se elevan al cuadrado, lo que se denomina suma de residuos al cuadrado o $SS_{residual}$ ya que como hay residuos positivos y negativos unos se cancelan a otros y la suma es 0. De la infinita cantidad de rectas que se pueden trazar, siempre hay una que tiene un valor menor de $SS_{residual}$. Este procedimiento es el que da nombre al proceso de estimación: residuos cuadrados ordinarios, o *OLS* (Ordinary Least Squares).
+
+## Modelo y cálculo de parámetros
+
+El modelo de regresión entonces se relaciona con una ecuación de la recta, o recta de regresión, que se puede definir en términos simples de la siguiente manera:
+
+$$\widehat{Y}=b_{0} +b_{1}X $$
+
+Donde
+
+- $\widehat{Y}$ es el valor estimado de $Y$
+- $b_{0}$ es el intercepto de la recta (el valor de Y cuando X es 0)
+- $b_{1}$ es el coeficiente de regresión, que nos dice cuánto aumenta Y por cada punto que aumenta X
+
+
+## Cálculo de los parámetros del modelo de regresión
+
+$b_{1}$, o comunmente llamado "beta de regresión" se obtiene de la siguiente manera:
+
+$$b_{1}=\frac{Cov(XY)}{VarX}$$
+En términos más suntantivos se puede entender como qué parte de la covariación que hay entre X e Y se relaciona con (la varianza de) X. Especificando la fórmula:
+
+$$b_{1}=\frac{\frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {n-1}}{\frac{\sum_{i=1}^{n}(x_i - \bar{x})(x_i - \bar{x})} {n-1}}$$
+Y simplificando
+
+$$b_{1}=\frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {\sum_{i=1}^{n}(x_i - \bar{x})(x_i - \bar{x})}$$
+
+Como sabemos, la base para todos estos calculos es el valor de cada variable menos su promedio. Vamos a crear un vector en nuestra base de datos difx=$x-\bar{x}$ y dify=$y-\bar{y}$
+
+```{r}
+datos$difx=datos$juegos-mean(datos$juegos)
+datos$dify=datos$puntos-mean(datos$puntos)
+```
+
+Y ahora con esto podemos obtener la diferencia de productos cruzados dif_cru=$(x-\bar{x})*(y-\bar{y})$, así como la suma de cuadrados de X SSx=$(x-\bar{x})^2$
+
+```{r}
+datos$dif_cru=datos$difx*datos$dify
+datos$SSx=datos$difx^2
+datos
+
+```
+
+Y con esto podemos obtener la suma de productos cruzados y la suma de cuadrados de X
+
+```{r}
+sum(datos$dif_cru)
+sum(datos$SSx)
+```
+
+Reemplazando en la fórmula
+
+$$b_{1}=\frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})} {\sum_{i=1}^{n}(x_i - \bar{x})(x_i - \bar{x})}=\frac{34}{68}=0.5$$
+
+Y con esto podemos obtener el valor de $b_{0}$
+
+$$b_{0}=\bar{Y}-b_{1}\bar{X}$$
+$$b_{0}=4-(3 * 0.5)=2.5$$
+
+Completando la ecuación:
+
+$$\bar{Y}=2.5+0.5X$$
+
+Esto nos permite estimar el valor de $Y$ (o su media condicional) basado en el puntaje $X$.
+Por ejemplo, cuál es el valor estimado de $Y$ dado $X=5$?
+
+# Estimación del modelo de regresión simple en `R`
+
+La función para estimar regresión en `R` es `lm` (linear model). Su forma general es:
+
+```
+objeto=lm(dependiente ~ independiente, data=datos)
+```
+
+Donde
+
+- objeto: el nombre (cualquiera) que le damos al objeto donde se guardan los resultados de la estimación
+- dependiente / independiente: los nombres de las variables en los datos
+- data = el nombre del objeto de nuestros datos en R
+
+Ejemplo con los datos de taca taca:
+
+```{r}
+reg1 <-lm(puntos ~juegos, data = datos)
+```
+Con esta operación ya estimamos nuestra primera regresión simple. Para ver la estimación de los parámetros principales (intercepto y pendiente) simplemente ejecutamos el nombre del objeto:
+
+```{r}
+reg1
+```
+Y obtenemos los valores que calculamos previamente.
+
+Podemos tener un output en un formato más apropiado utilizando la librería `stargazer`
+
+```{r}
+stargazer(reg1, type = "text")
+```
+
+
+Vemos que en la tabla aprecen una serie de elementos adicionales, además de $b_{1}$ (juegos) y el intercepto o constante ("Constant"). Esto será tema de la siguiente sesión.
