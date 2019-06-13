@@ -45,7 +45,7 @@ About macros.js: permite escalar las imágenes como [:scale 50%](path to image),
 
 # Modelos de regresión - Doctorado en Psicología 2019
 <br>
-## Juan Carlos Castillo
+## Juan Carlos Castillo 
 
 ## Sesión 1: Regresión simple
 
