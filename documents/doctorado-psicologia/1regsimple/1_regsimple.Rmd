@@ -45,7 +45,7 @@ About macros.js: permite escalar las imágenes como [:scale 50%](path to image),
 
 # Modelos de regresión - Doctorado en Psicología 2019
 <br>
-## Juan Carlos Castillo 
+## Juan Carlos Castillo
 
 ## Sesión 1: Regresión simple
 
@@ -378,7 +378,8 @@ $$\sigma^{2}= {\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}\over {N - 1}}$$
 $$\sigma^{2}= {(29.2)\over {5 - 1}}$$
 
 .center[**$$ = 7.3$$**]
-]]
+]
+]
 
 ---
 
