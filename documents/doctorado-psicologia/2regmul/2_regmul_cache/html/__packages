@@ -1,0 +1,13 @@
+base
+knitr
+texreg
+dplyr
+corrplot
+ggplot2
+scatterplot3d
+stargazer
+haven
+sjmisc
+carData
+car
+coefplot

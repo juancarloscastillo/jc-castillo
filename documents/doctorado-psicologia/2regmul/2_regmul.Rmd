@@ -50,142 +50,10 @@ About macros.js: permite escalar las imágenes como [:scale 50%](path to image),
 ## Sesión 2: Regresión múltiple
 
 ---
-class: roja
-
-# Resumen sesión anterior
-
----
-# El concepto de explicación en ciencias sociales
-
-![](../images/explanandumexplanans.png)
-
-
-  + Explanandum: el fenómeno que predentemos explicar (precisión, relevancia y variabilidad).
-
-  + Explanans: lo que genera la aparición del fenómeno (lógica, eficacia y claridad.)
-
----
-class: inverse
-
-# Este curso: modelos de regresión
-
-.center[
-## y <-- bx + e
-]
-
-- Una alternativa estadística para la explicación basada en análisis de datos cuantitativos.
-
----
-# Bases: Varianza
-
-.pull-left[
-- Suma de las diferencias al cuadrado de cada valor (x) y el promedio de la distribución divididos por el total menos 1. Formalmente:
-
-$$\sigma^{2}={\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}\over {N - 1}}$$
-
-- Considerando N-1 para la varianza de la muestra.
-]
-
-.small[.pull-right[
-
-| ID   | Pje (x) | $$x-\bar{x}$$ | $$(x-\bar{x})^{2}$$ |
-|------|---------|----------|-----------|
-| 1    | 6       | 0.4      | 0.16      |
-| 2    | 4       | -1.6     | 2.56      |
-| 3    | 7       | 1.4      | 1.96      |
-| 4    | 2       | -3.6     | 12.96     |
-| 5    | 9       | 3.4      | 11.56     |
-| Sum  | 28      | 0        | 29.2      |
-| Prom | 5.6     |          |           |
-
-
-$$29.2/5-1$$
-
-.center[**$$ = 7.3$$**]
-]
-]
-
----
-
-# Correlación: Positiva y Negativa
-
-.center[![](../images/correlacion1.png)]
-
-
----
-
-# Correlación de Pearson
-
-Mide el grado y la dirección de una relación lineal entre dos variables (de nivel de medición intervalo/razón)
-
-
-$$r= \frac{Cov(x,y)}{\sigma _{x} \sigma_{y}}$$
-
-Para calcular la correlación necesitamos algo que llamaremos suma de productos de las desviaciones (SP) de X e Y
-
-$$SP= \sum(x-\bar{x})(y-\bar{y})$$
-Esto es análogo a la suma de cuadrados (SC), solo que ahora se mide la covarabilidad (COVARIANZA) entre dos variables en vez de la variación de una sola variable.
-
-$$SC= \sum(x-\bar{x})$$
-
-
----
-# Regresión: Idea de distribución condicional
-
-.center[![:scale 60%](../images/condmeans.png)]
-
-???
-Ejemplo para los sujetos con 1 en X hay 3 valores de Y: 2, 3 y 4. Por lo tanto, la media condicional de Y dado X=1 es 3
-
----
-# Componentes de la ecuación de la recta de regresión
-
-$$\widehat{Y}=b_{0} +b_{1}X$$
-
-Donde
-
-- $\widehat{Y}$ es el valor estimado de $Y$
-
-- $b_{0}$ es el intercepto de la recta (el valor de Y cuando X es 0)
-
-- $b_{1}$ es el coeficiente de regresión, que nos dice cuánto aumenta Y por cada punto que aumenta X
-
----
-# Descomponiendo Y en base a regresión
-
--   Tres piezas de información relevante:
-
-    - Valor observado de Y
-
-    - Estimación de Y a partir de X =( ${Y}^{\prime}$ )
-
-    - Promedio de Y: ( $\bar{Y}$ )
-
----
-# Descomponiendo Y
-
-.center[![:scale 85%](../images/resid_2.JPG)]
-
-$$Y=\bar{Y}+({Y}^{\prime}-\bar{Y}) + (Y-{Y}^{\prime})$$
-
-$$ \Sigma(y_i - \bar{y})^2=\Sigma (\bar{y}-\hat{y}_i)^2 + \Sigma(y_i-\hat{y}_i)^2
-     $$
-
----
-# Resumen sesion 1
-
-- explicación, modelos y estadística
-
-- variables, varianza y covarianza
-
-- modelo de regresión: explicar Y a partir de X
-
----
 class: roja, middle, center
 
 
 # 2. Regresión múltiple
-
 
 
 ---
@@ -195,16 +63,20 @@ class: inverse, bottom, left, animated, slideInRight
 
 # **Contenidos**
 
-## 1. Repaso de sesión anterior
+## 1. Bases regresión múltiple
 
-## 2. Bases de control y parcialización
+## 2. Control y parcialización
 
-## 3. Demostración parcialización
+## 3. Predictores categóricos
+
+## 4. Inferencia
+
+## 5. Ajuste y residuos
 
 ---
 class: inverse, middle, center
 
-# 1. Repaso sesión anterior
+# 1. Bases regresión múltiple
 
 ---
 # Base: Modelo de regresión (simple)
@@ -247,7 +119,7 @@ $$\widehat{Y}=b_{0}+b_{1}X_{1}+b_{2}X_{2}+b_{3}X_{3}+...+b_{k}X_{k}$$
 .pull-left[
 .center[![:scale 80%](../images/ingresoeduc.png)]
 
-$$\widehat{Ingreso}=b_0+b_1(Educ)$$
+$$\widehat{Ingreso}=b_0+b_{1(Educ)}$$
 
 ]
 
@@ -256,7 +128,9 @@ $$\widehat{Ingreso}=b_0+b_1(Educ)$$
 .pull-right[
 .center[![:scale 80%](../images/ingresoeducexp.png)]
 
-$$\widehat{Ingreso}=b_0+b_1(Educ)+b_2(Exp)$$
+.small[
+$$\widehat{Ingreso}=b_0+b_{1(Educ)}+b_{2(Exp)}$$
+]
 ]
 
 ---
@@ -268,7 +142,6 @@ $$\widehat{Ingreso}=b_0+b_1(Educ)+b_2(Exp)$$
 ]
 ---
 # Control de terceras variables
-
 .pull-left[
 ## 1. Control por diseño
 
@@ -405,7 +278,12 @@ class: inverse
 
 - Por ello, en regresión múltiple se habla de coeficientes de regresión **parciales**
 
-- Esta diferencia se relaciona con el concepto de control estadístico
+---
+class: inverse
+
+# RESUMEN (2)
+
+- Los coeficientes de regresión parcial se relacionan con el concepto de **control estadístico**
 
   - Ejemplo 2, modelo 3: El ingreso aumenta en 0.4 puntos por cada nivel adicional de educación, **controlando por experiencia**. O también ...
 
@@ -423,7 +301,7 @@ class: inverse, middle, center
 class: inverse, middle, center
 
 
-# 2. Bases de control y parcialización
+# 2. Control y parcialización
 ---
 
 # Ejemplo: Datos
@@ -504,18 +382,17 @@ ggplot(datos, aes(x=educacion, y=experiencia)) + geom_point() +
 ]
 
 ---
-# Regresión
+# Modelos regresión
 
-
-```{r}
+.medium[
+```{r }
 reg_y_x1=lm(ingreso ~ educacion, data=datos)
 reg_y_x2=lm(ingreso ~ experiencia, data=datos)
 reg_y_x1_x2=lm(ingreso ~ educacion + experiencia , data=datos)
 ```
 
-.medium[
 ```{r echo=FALSE, results='asis'}
-htmlreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2), booktabs = TRUE, dcolumn = TRUE, doctype = FALSE, caption=" ")
+htmlreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2), booktabs = TRUE, dcolumn = TRUE, doctype = FALSE, caption=" ", include.rsquared = F, include.adjrs = TRUE, include.nobs = TRUE,include.rmse=FALSE)
 ```
 ]
 
@@ -524,20 +401,20 @@ htmlreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2), booktabs = TRUE, dcolumn = TRUE, do
 
 - Regresión múltiple: más de un predictor
 
+--
+
 - No es equivalente a realizar regresiones múltiples por separado con cada predictor
 
+--
+
 - Predictores correlacionados: requiere consideración, ya que de otra manera se estaría sobreestimando el efecto de $X$ en $Y$
+--
 
 - Además de ser una corrección estadística, el control se relaciona con preguntas sustantivas basadas en teoría
 
+--
+
 - El output de regresión múltiple realiza automáticamente el control estadístico vía parcialización de coeficientes. Los detalles de este procedimiento se muestran a continuación.
-
-
----
-class: inverse, center, middle
-
-# 3. Demostración parcialización
-
 
 ---
 # Parcialización 1
@@ -607,7 +484,7 @@ $$\widehat{educacion}=2.66+0.541_{experiencia}$$
 ```{r}
 x1_fit_x2=fitted.values(reg_x1_x2)
 resx1_2=residuals(reg_x1_x2)
-datos=cbind(datos, x1_fit_x2,resx1_2); datos
+datos=cbind(datos, x1_fit_x2,resx1_2); head(datos)
 ```
 ]
 
@@ -615,7 +492,7 @@ Ejemplo caso 1: experiencia=1
 
 $$\widehat{educacion}=2.66+0.541*1=3.2$$
 
-Y residuo  $=2-3.2=-1.2$
+Y residuo  $=2-3.2=-1.196$
 
 ---
 # Parcialización 7
@@ -703,7 +580,9 @@ class: inverse
 
 - El control se implementa agregando predictores en el modelo que por razones teóricas se presume pueden afectar la relación del regresor principal en _Y_
 
-- Y en términos técnicos, esto opera mediante parcialización: los predictores se parcializan mutuamente, generando coeficientes de regresión parciales.
+--
+
+- En términos técnicos, esto opera mediante parcialización: los predictores se parcializan mutuamente, generando coeficientes de regresión parciales.
 
 - El regresor parcial entonces es un regresor ajustado por la presencia de otro(s) regresore(s)
 
@@ -711,7 +590,7 @@ class: inverse
 ---
 class: inverse, middle, center
 
-# 2. Predictores Categóricos
+# 3. Predictores Categóricos
 
 
 ---
@@ -742,8 +621,6 @@ class: inverse, middle, center
 
 - Pensemos que queremos predecir el ingreso de una persona, a partir de una variable $X$, que expresa el sexo de una persona
 
-
-
 $$X=1(Mujer)$$
 $$X=0(Hombre)$$
 
@@ -755,8 +632,6 @@ Para las mujeres: $Y=\alpha +\beta X= \alpha+\beta$
 Para los hombres: $Y=\alpha +\beta X= \alpha$
 
 Diferencia      : $\beta$
-
-Podemos usar la misma idea básica para incluir variables explicativas binarias y catégoricas en los modelos de regresión múltiple.
 
 ---
 
@@ -782,13 +657,14 @@ En nuestra sociedad, hay grupos que tienden a ubicarse en los niveles más altos
 
 ## Ejemplo estimación
 
+.medium[
 ```{r echo=F, warning=FALSE, message=FALSE,results='asis' }
 library(haven)
 library(sjmisc)
 library(car)
 library(texreg)
 
-elsoc <- read_dta("https://juancarloscastillo.github.io/metsoc-facsouchile/documents/data/ELSOC_W01_v2.00_Stata13.dta")
+elsoc <- read_dta("ELSOC_W01_v2.00_Stata13.dta")
 elsoc[elsoc==-999 | elsoc==-888] <- NA
 
 elsoc$sexo<- as.factor(car::recode(elsoc$m0_sexo, "1='Hombre'; 2='Mujer'"))
@@ -801,14 +677,15 @@ modelo1<- lm(d01_01 ~ m0_edad+m29+sexo, data=elsoc)
 modelo2<- lm(d01_01 ~ m0_edad+m29+sexo+edu, data=elsoc)
 
 
-htmlreg(modelo1, custom.model.names = "Estatus Social Subjetivo", # Cambiar nombre del título
+htmlreg(modelo1, custom.model.names = "Estatus Social <br> Subjetivo", # Cambiar nombre del título
        custom.coef.names = c("Intercepto", "Edad", "Ingreso", "Mujer"),   #Cambiar nombre de las variables
        custom.note = "Elaboración propia en base a Elsoc", #Agregar una nota
        single.row = T, #para que la DS este en una linea
-       booktabs = TRUE, dcolumn = TRUE, doctype = FALSE)
+       booktabs = TRUE, dcolumn = TRUE, doctype = FALSE, caption=" ", include.rsquared = F, include.adjrs = TRUE, include.nobs = TRUE,include.rmse=FALSE)
 #
 
 ```
+]
 
 Este resultado implica que las mujeres (sexo=1) obtienen 0.13 puntos promedios menos **en relación** a los hombres (sexo=0) en la variable de estatus social subjetivo, manteniendo las otras variables constantes.
 
@@ -857,13 +734,13 @@ $$Y_{ingreso} = \beta_{0}+\beta_{1}X_{media}+\beta_{2}X_{tecnica}+\beta_{3}X_{un
 .pull-left[
 ### Resumen
 .medium[
-- Podemos incluir variables explicativas categóricas incluyéndolas en el modelo como un conjunto de variables dicotómicas 1/0 (dummy).
+- Inclusión de variables categóricas como binaias 1/0 (dummy).
 
 - Una variable binaria por cada categoría, excepto por una **categoría de referencia**.
 
 - La interpretación de los coeficientes es la diferencia en promedio entre la categoría y la categoría de referencia, manteniendo el resto de las variables constantes.
 
-- La selección de la categoría de referencia suele ser arbitraria y no genera una diferencia sustantiva en el modelo, pero ojo que determina cual es la unidad de agrupamiento y por ende su interpretación.
+- La selección de la categoría de referencia debe facilitar la interpretación y tener sentido en relación a las hipótesis.
 ]
 ]
 
@@ -877,7 +754,7 @@ htmlreg(list(modelo1, modelo2), #custom.model.names = "Estatus Social Subjetivo"
        #custom.coef.names = c("Intercepto", "Edad", "Ingreso", "Mujer"),   #Cambiar nombre de las variables
        custom.note = "Elaboración propia en base a Elsoc", #Agregar una nota
        single.row = T, #para que la DS este en una linea
-       booktabs = TRUE, dcolumn = TRUE, doctype = FALSE)
+       booktabs = TRUE, dcolumn = TRUE, doctype = FALSE,caption=" ", include.rsquared = F, include.adjrs = TRUE, include.nobs = TRUE,include.rmse=FALSE)
 #
 ```
 ]
@@ -892,60 +769,7 @@ class: inverse, middle,center
 ---
 class: inverse, middle, center
 
-# 3. Inferencia Estadística
-
----
-
-# Conceptos claves de inferencia
-
-.pull-left[
-- La inferencia en estadística se refiere a la relación que existe entre los resultados obtenidos basados en nuestra muestra y la población:
-
-
-- ### ¿En qué medida podemos hacer inferencias desde nuestra muestra a la población?
-
-- Un concepto central en esto es el **ERROR** y su cuantificación
-]
-
-
-.pull-right[
-![:scale 90%](../images/inference1.png)
-
-]
-
----
-# Error estándar
-
-- Asumimos que nuestra estimación se basa en una muestra, y que podría variar si hubiera sido calculado en una muestra distinta
-
-- Por lo tanto, existe una variación muestral del promedio (u otro estadístico), y una desviación muestral también. La desviación muestral se conoce como el **error estándar**.
-
-- Basados en demostraciones estadísticas, en muestras mayores a 30 esta distribución muestral se aproxima a una distribución normal, con un promedio igual al promedio de la población y una desviación estándar de:
-
-$$\sigma_{\bar{X}}=\frac{s}{\sqrt{N}}=SE(error estándar)$$
-
-- Esto se conoce como el teorema del límite central, que nos dice que mediante esta ecuación podemos obtener el error estándar del promedio.
-
----
-# Error, probabilidad e intervalos
-
-- El error estándar nos permite establecer un intervalo de posibles valores para nuestra estimación
-
-- Para ello nos basamos en una función teórica de distribución que es la curva normal
-
-.center[![:scale 85%](../images/normal.png)]
-
----
-# Error, probabilidad e intervalos
-
-- Dentro de las propiedades de la curva normal sabemos que el 68% de los casos se encuentran a +/- 1 SD del promedio, y el 95% a +/- 1.96 SD
-
-- En base a esto, por ejemplo si tenemos una muestra de 50 bebes, estatura $\bar{X}=64cm$ , y desviación estándar $\sigma=4$:
-
-$$SE=\frac{4}{\sqrt{50}}=0.56$$
-
-- 64 +/- 0.56 nos da un intervalo de 63.43-64.56, donde se encuentra el 68% de la población
-- Si sumamos +/- 1.96 SE (1.09) nos da un intervalo de 62,91 - 65.09 de estatura donde se encuentra el 95% de los bebes
+# 4. Inferencia Estadística
 
 ---
 # Prueba de hipótesis
@@ -969,32 +793,6 @@ $$SE=\frac{4}{\sqrt{50}}=0.56$$
 - ... o en otras palabras, cuando las diferencias son estadísticamente distintas de 0.
 
 ---
-# Prueba de hipótesis
-
-.pull-left[
-Para hacer frente a esta situación, se establecen dos tipos de hipótesis:
-
-- Hipótesis nula ( $H_{0}$ ): no existen diferencias
-- Hipótesis alternativa ( $H_{a}$ ): existen diferencias
-
-
-]
---
-
-.pull-right[
-¿Tiene el entrenamiento en matemáticas un impacto en mayor puntaje SIMCE?
-
-$$H_{0}: \mu_{0}=\mu_{1} \vee \mu_{entren}=\mu_{pob}$$
-
-$$H_{a}: \mu_{0}>\mu_{1} \vee \mu_{entren}>\mu_{pob}$$
-- Se usa 5% como convención para rechazar la hipótesis nula. Si no hay significación, se falla en rechazar la hipótesis nula.
-
-- El test de hipótesis se asocia a valores de probabilidad, cuyos resultados esperados son p<0.05 ,p<0.01 o p<0.001
-
-]
-
----
-
 ## Prueba de hipótesis
 
 Para el caso del modelo de regresión lineal
@@ -1032,31 +830,6 @@ $H_{0}$: **No** hay asociación lineal entre el predictor $X$ y la variable $Y$ 
 
 
 $H_{a}$: **Hay** asociación lineal entre el predictor $X$ y la variable $Y$ en la población.
-
-
----
-
-## Prueba de hipótesis para $\beta{j}$
-
-.pull-left[
-
-- La mayoría de los programas estadísticos incluyen el error estándar de $\beta{j}$ o $SE(\beta{j})$.
-
-- $SE(\beta{j})$ estima el error estándar de la distribución muestral de $\beta{j}$, cuando se toma una muestra aleatoria de tamaño N de una población y se estima un modelo de regresión lineal.
-
-- Además se incluye el estadístico $t$ el cual tiene una correspondencia con el valor p que cuantifica la probabilidad de obtener un valor de $\beta{j}$ diferente de 0.
-
-]
-
---
-.pull-right[.small[
-```{r}
-round(summary(modelo2)$coefficients[,1:2],2)
-round(summary(modelo2)$coefficients[,3:4],2)
-#N=2337
-```
-]
-]
 
 ---
 # Inferencia, diferencias y prueba _t_
@@ -1169,11 +942,136 @@ coefplot::coefplot(modelo2) +
   theme_bw()
 ```
 
+---
+class: inverse, middle, center
+
+# 5. Ajuste y residuos
+
+---
+## ¿Qué tan bueno es nuestro modelo?
+
+--
+
+.center[![:scale 80%](../images/ajuste.png)]
+
+???
+
+A partir del método de Mínimos Cuadrados Ordinarios,obtenemos una recta que describe un conjunto de datos minimizando las diferencias entre el modelo ajustado a los datos y los datos mismos.
+
+No obstante, incluso cuando se ajusta el mejor modelo puede existir cierta imprecisión, la cual es representada por las diferencias entre los datos observados y los valores predichos por la recta de regresión.
+
+La imprecisión implica evaluar la **Bondad de Ajuste** y se evalua a partir del estadístico $R^2$.
+
+---
+# Observados, estimados & residuos
+
+.center[![:scale 60%](../images/residuals.png)]
+
+El ajuste se relaciona con la diferencia entre los puntajes observados ( $Y$ )  y el puntaje estimado ( $\widehat{Y}$ )
+
+---
+# Descomposición de Y
+
+### -   Tres piezas de información relevante:
+
+$Y$ = Valor observado de Y
+
+$\widehat{Y}$ = estimación de Y a partir de X
+
+$\bar{Y}$ = promedio de Y
+
+---
+# Descomponiendo Y
+
+.center[![:scale 80%](../images/resid2.png)]
+
+--
+
+$$Y=\bar{Y}+(Y-\widehat{Y})+(\widehat{Y}-\bar{Y})$$
+
+--
+
+$$ \Sigma(y_i - \bar{y})^2=\Sigma (\bar{y}-\hat{y}_i)^2 + \Sigma(y_i-\hat{y}_i)^2
+     $$
+
+---
+# Descomponiendo Y
+
+Conceptualmente:
+
+$$SS_{tot}=SS_{reg} + SS_{error}$$
+
+![image](../images/resid_3.JPG)
+
+---
+# Varianza explicada
+
+Por lo tanto:
+
+$$SS_{tot}=SS_{reg} + SS_{error}$$
+
+--
+
+$$\frac{SS_{tot}}{SS_{tot}}=\frac{SS_{reg}}{SS_{tot}} + \frac{SS_{error}}{SS_{tot}}$$
+
+--
+
+$$1=\frac{SS_{reg}}{SS_{tot}}+\frac{SS_{error}}{SS_{tot}}$$
+
+$$\frac{SS_{reg}}{SS_{tot}}= 1- \frac{SS_{error}}{SS_{tot}}=R^2$$
+
+<br>
+
+### .center[¿Qué quiere decir esto?]
+
+---
+# Varianza explicada I
+
+.center[![:scale 60%](../images/ingresoeduc.png)]
+
+- Parte de la variación de Y (ej: ingreso) se asocia a la variación de X (ej: educación)
+
+---
+# Varianza explicada II
+
+.center[![image](../images/plotreg.png)]
+
+- Un porcentaje de la variación de Y puede ser asociado a la variación de X:  $R^2$
+
+---
+# Volviendo al ejemplo: Puntos en partido
+
+.pull-left[
+.small[
+```{r echo=FALSE}
+datos=read.csv("https://juancarloscastillo.github.io/metsoc-facsouchile/documents/practicas/1_regsimp/golf.txt", sep="")
+reg1 <-lm(puntos ~juegos, data = datos)
+datos$estimado <- fitted(reg1)
+datos$residuo = datos$puntos-datos$estimado
+round(datos,2)
+```
+]
+]
+
+--
+.small[
+.pull-right[
+```{r}
+ss_tot<- sum((datos$puntos-
+          mean(datos$puntos))^2); ss_tot
+ss_reg<- sum((datos$estimado -
+          mean(datos$puntos))^2); ss_reg
+ss_reg/ss_tot
+
+```
+
+**Un 40% de la varianza en los puntos obtenidos en el juego se relaciona con la (varianza de) experiencia previa en juegos**
+
+]
+]
 
 
-
-
-
+---
 class: right, bottom
 
 .right[![:scale 30%](https://escudouchile.files.wordpress.com/2012/06/logotipo-facso-ciencias-sociales-u-de-chile.png)]
@@ -1186,4 +1084,4 @@ class: right, bottom
 <br>
 ## Juan Carlos Castillo
 
-## Sesión 1: Regresión simple
+## Sesión 2: Regresión múltiple

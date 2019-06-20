@@ -21,9 +21,8 @@ output:
 ### Clases / prácticas
 
 - [Estadística multivariada](https://juancarloscastillo.github.io/metsoc-facsouchile/index.html)
-- Doctorado Psicología 2019
-  - [Regresión 1](documents/doctorado-psicologia/1regsimple/1_regsimple.html)
-  - [Práctica 1](https://juancarloscastillo.github.io/metsoc-facsouchile/documents/practicas/1_regsimp/prac1_regsimp.html)
+- [Doctorado Psicología 2019](documents/doctorado-psicologia/doc-psic.html)
+
 
 
 ### Newspapers articles, comments & opinions
