@@ -44,6 +44,7 @@ stargazer(datos, type = "text", digits=0)
 
 ```{r}
 cormat=datos %>% select(ingreso,educacion,experiencia) %>% cor()
+
 round(cormat, digits=2)
 corrplot.mixed(cormat)
 ```
@@ -51,7 +52,7 @@ corrplot.mixed(cormat)
 
 ```{r}
 ggplot(datos, aes(x=educacion, y=ingreso)) + geom_point() +
-  geom_smooth(method=lm, se=FALSE)
+  geom_smooth(method=lm)
 
 ggplot(datos, aes(x=experiencia, y=ingreso)) + geom_point() +
   geom_smooth(method=lm, se=FALSE)
@@ -67,8 +68,16 @@ reg_y_x2=lm(ingreso ~ experiencia, data=datos)
 reg_y_x1_x2=lm(ingreso ~ educacion + experiencia , data=datos)
 
 
-screenreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2))
+
+screenreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2),digits = 1)
 ```
+
+
+```{r results='asis', message=FALSE}
+htmlreg(list(reg_y_x1,reg_y_x2,reg_y_x1_x2))
+```
+
+
 
 
 ## Parciales
