@@ -21,3 +21,9 @@ output:
 
 - [Regresión multiple](2regmul/2_regmul.html)
 - [Práctica 2](2regmul/prac2_regmul.html)
+
+
+## Sesión 3
+
+- [Regresión logística](3logistic/3_logistic.html)
+- [Práctica 3](3logistic/prac_3intrologit.html)
