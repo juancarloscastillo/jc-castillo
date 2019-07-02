@@ -58,7 +58,9 @@ output:
 
 - Equality or Insurance? The underlying motives for supporting social policy in Latin America (with Jose de Amesti - 1st author, Luis Maldonado & Jorge Atria). Submitted.
 
-- Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla). Submitted.
+- Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla).  Submitted - Preprint: <a href="https://osf.io/preprints/socarxiv/t87se/">
+<i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
+
 
 - Do people perceive more inequality when more inequality exists? (with Martin Schröder). Revise & Resubmit.
 
