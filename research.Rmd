@@ -216,6 +216,12 @@ output:
 
 ## [Conferences]()
 
+Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
+
+Meritocracia y redistribución en una sociedad desigual (Conferencia COES - Noviembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)
+
+Open academic writing: An Atom-based workflow for social scientists (SocArxiv 2018 Conference - Maryland)[(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
+
 Castillo,JC (2018) Perceptions and preferences about meritocracy in international comparison. Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center [(to presentation)](documents/ISA2018presentation/castillo2018meritocracyISA.html).
   - <details><summary> *More...* </summary>
 Meritocracy is a concept commonly used to characterize groups and societies in terms of allocation of rewards according to effort and talent. In this sense, the principle of merit has been related to the legitimation of inequalities in modern societies. Nevertheless, the conceptualization of merit is far from clear in the literature, having as a consequence that the few attempts dealing with the empirical study of meritocracy in terms of individual attitudes and beliefs are rather inconsistent among themselves. Based on a systematic review of the extant literature, we propose a conceptual framework for the empirical study of the subjective dimension of meritocracy which is then empirically tested by using data from available indicators of the International Social Survey Programme 2009 survey. The results of confirmatory factor analysis and measurement invariance models indicate that it is possible to identify two dimensions of meritocracy that are usually confused in the literature: perceptions and preferences. Furthermore, these two dimensions are composed of meritocratic and non-meritocratic elements which are not necessarily the ends of a same continuum. The implications for future research on meritocracy are discussed, particularly in relation to preferences towards redistribution.
