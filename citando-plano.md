@@ -1,7 +1,7 @@
 ---
 title: " "
 author: " "
-output: 
+output:
     html_document:
         theme: united
         toc: TRUE
@@ -132,7 +132,7 @@ bibliography:
   - reiniciar
   - Luego en el add-in (desplegable, o tools/add-ins) aparece "insert citations", si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.
 
-### Markdown / Xaringan
+## Markdown / Xaringan
 
 [Xaringan]() es una librería de R que permite generar presentaciones en html basadas en [remark](https://remarkjs.com), que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.
 
@@ -149,7 +149,12 @@ El problema: para generar el html no pasa por pandoc, así que no sigue la misma
 ```
 ````
 
-2. Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, "castillo_2018"). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código: `r Cite (bib, "castillo_2018")`
+2. Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, "castillo_2018"). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código:  ```` `r Cite (bib, "castillo_2018")` ````
+
+3. Algunas complicaciones del RefManagerR
+
+  - muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando
+  - se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc
 
 3. Para generar las referencias: en la lámina que corresponde, incluir:
 

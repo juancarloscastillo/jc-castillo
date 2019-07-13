@@ -620,8 +620,9 @@ bibliography:
 <li>Luego en el add-in (desplegable, o tools/add-ins) aparece “insert citations”, si está bien especificado el bib en el YAML debería aparecer aquí la lista de referencias.</li>
 </ul></li>
 </ul>
-<div id="markdown-xaringan" class="section level3">
-<h3>Markdown / Xaringan</h3>
+</div>
+<div id="markdown-xaringan" class="section level2">
+<h2>Markdown / Xaringan</h2>
 <p><a href="">Xaringan</a> es una librería de R que permite generar presentaciones en html basadas en <a href="https://remarkjs.com">remark</a>, que utiliza una estructura simple de markdown. Básicamente, lo que hace Remark es compilar un markdown + un poco de css a un html, y Xaringan se encarga de la parte css así que el usuario trabaja (casi) solo en markdown.</p>
 <p>El problema: para generar el html no pasa por pandoc, así que no sigue la misma lógica de las citas de markdown. Pero … todo tiene una vuelta de tuerca, y en este caso se puede utilizando el paquete de R <a href="https://github.com/ropensci/RefManageR">RefManageR</a>.</p>
 <ol style="list-style-type: decimal">
@@ -633,13 +634,19 @@ bibliography:
 <a class="sourceLine" id="cb7-4" title="4"><span class="bn"> bib &lt;- ReadBib(&quot;merit_pref_int.bib&quot;, check = FALSE)</span></a>
 <a class="sourceLine" id="cb7-5" title="5"><span class="bn">```</span></a></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, “castillo_2018”). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código: <code>r Cite (bib, "castillo_2018")</code></p></li>
-<li><p>Para generar las referencias: en la lámina que corresponde, incluir:</p></li>
+<li><p>Para citar: los comandos básicos del RefManageR son Cite(), Citep() y Citet() (como en natbib), y en el paréntesis va el nombre del objeto generado antes y que contiene las referencias (bib) y la clave de la referencia como está en el Bibtex. Ejemplo: Cite(bib, “castillo_2018”). Ahora, como se trata de compilar a html sin pasar por pandoc, hay que dar la instrucción para que R/RefManageR hagan el trabajo, así que la cita se escribe en un mini-chunk de código: <code>`r Cite (bib, "castillo_2018")`</code></p></li>
+<li><p>Algunas complicaciones del RefManagerR</p></li>
+</ol>
+<ul>
+<li>muy estricto con la librería .bib, si hay algo que falta en algún campo va a reportar el error. Por lo tanto, a menos que el .bib de la colección completa esté perfecto, es mejor hacer una subcolección de Zotero con las referencias y esta exportarla como Bibtext a la carpeta correspondiente donde se está trabajando</li>
+<li>se puede usar el Zotero Picker en Atom para facilitar el trabajo, pero hay que sacarle manualmente la @ inicial que es automática para referencias en markdown que pasan por pandoc</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Para generar las referencias: en la lámina que corresponde, incluir:</li>
 </ol>
 <div class="sourceCode" id="cb8"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb8-1" title="1"><span class="bn">```{r, results=&#39;asis&#39;, echo=FALSE}</span></a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="bn">PrintBibliography(bib)</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="bn">```</span></a></code></pre></div>
-</div>
 </div>
 <div id="usando-atom-para-flujo-de-trabajo-academico-en-texto-plano-con-citas" class="section level2">
 <h2>Usando Atom para flujo de trabajo académico en texto plano con citas</h2>

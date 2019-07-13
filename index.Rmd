@@ -44,11 +44,25 @@ rmarkdown::render_site(encoding = 'UTF-8')
 
 ### _Latest papers & projects_
 
+<div class="wrap-collabsible">
+<input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
+**Does information about inequality and poverty influence opportunity beliefs?** - Luis Maldonado, Juan Carlos Castillo & Leslie McCall (ISPP Lisboa - Julio 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISPP2019Lisboa/ispp2019lisboa.html#1)
+
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+
+Social structures in contemporary societies have undergone significant changes over the last few decades. In advanced economies, there has been an increase in socio-economic inequality and pressure to dismantle the welfare state. Chilean society is not immune from such changes, but it has witnessed a substantial decrease in the level of poverty over the last 30 years. Recent studies have documented heterogeneous patterns in the policy attitudes among Chilean citizens in response to this and other changes. The present investigation aims to contribute to the understanding of the effect of information about dimensions of socio-economic inequality on voters’ beliefs, through a series of experimental studies. Specifically, the studies assess how information about changes in the social structure of Chilean society affect beliefs about meritocracy and redistributive preferences among the public. Guided by the opportunity model of beliefs about economic inequality, the presentation will discuss the design and results of survey experiments applied to samples of more than 1000 Chilean residents during 2019, seeking to evaluate the role that information about declining poverty has on political attitudes. Practical and theoretical implications of the results will also be discussed.
+</div>
+</div>
+</div>
+
+
 
 <div class="wrap-collabsible">
 <input id="collapsible7" class="toggle" type="checkbox"><label for="collapsible7" class="lbl-toggle">
 **Preferencias redistributivas en contextos desiguales:<br> América Latina 2008 - 2014** - Gonzalo Franetovic & Juan Carlos Castillo (DEMOSAL - Mayo 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/demosal/Demosal2019/demosal2019.html#1)
-
 </label>
 <div class="collapsible-content">
 <div class="content-inner">

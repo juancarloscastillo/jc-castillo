@@ -1,0 +1,385 @@
+---
+title: "ISPP Lisboa presentation"
+subtitle: " "
+author: ".small[Juan Carlos Castillo<br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: " "
+output:
+  xaringan::moon_reader:
+    css: ["xaringan_custom/xaringan-themer.css","xaringan_custom/progress-bar.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat:   |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: inverse, bottom, right
+
+```{r setup, include=FALSE, cache = FALSE}
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+bib <- ReadBib("meritocracy.bib", check = FALSE)
+```
+
+```{r eval=FALSE, echo=FALSE}
+# Correr esta linea para ejecutar
+rmarkdown::render('ispp2019lisboa.Rmd', 'xaringan::moon_reader')
+```
+
+
+<!---
+About macros.js: permite escalar las imágenes como [:scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+# Does information about inequality and poverty influence opportunity beliefs?
+## *A survey experiment*
+<br>
+<hr>
+### Luis Maldonado, _Pontificia Universidad Católica de Chile_ - lmaldona@uc.cl
+### Juan Carlos Castillo, _Universidad de Chile & COES_
+### (Leslie McCall, _Stone Center of Economic Inequality_)
+
+<br>
+
+.small[FONDECYT grant 1160921 - ISPP Lisboa 2019]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+
+class: roja, middle, center, slideInRight
+
+# Background
+
+---
+## Research context
+
+- FONDECYT grant 1160921: **The moral economy of meritocracy and redistributive preferences** (Juan Castillo, Luis Maldonado & Jorge Atria)
+
+
+
+--
+
+  - 2016-2020
+
+  - Qualitative studies (interviews & focus groups)
+
+  - Secondary data analysis (ISSP)
+
+  - Survey experiments
+
+--
+
+- More information & updates on our project website in Researchgate: [https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences](https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences)
+
+---
+## Country context
+
+.center[![:scale 90%](images/Rplot4.png)]
+
+.small[Source: OECD 2018 and PNUD 2017.]
+
+---
+## Country context
+
+.center[![:scale 90%](images/Rplot5.png)]
+
+.small[Source: OECD 2018 and PNUD 2017.]
+
+---
+## Country context
+
+.center[![:scale 100%](images/Rplot6.png)]
+
+.small[Source: WVS 1990-2012 and ISSP 2016. Figure on the left is level of agreement with *Incomes should be made more equal*; Figure on the right is option *Definitely should be the government’s responsibility to reduce income differences between the rich and the poor*]
+---
+## Country context
+
+.center[![:scale 50%](images/Rplot7.png)]
+
+.small[Source: Pilot study (non representative of Chilean population). Question is: *Do you think that the quantity of poor people in Chile today is larger, smaller or about the same as it was 20 years ago?*]
+
+---
+class: roja, middle, center, slideInRight
+
+# This study
+
+---
+## Main concept: Meritocracy
+
+- Allocation of rewards according to personal effort and talent `r Cite(bib, c("young_rise_1962"))`
+
+- Considered as a "myth" that legitimates inequality in modern societies `r Cite(bib, c("young_rise_1962", "hadjar_meritokratie_2008","kunovich_systems_2007", "mcnamee_meritocracy_2004","arrow_meritocracy_2000","@mijs_paradox_2019"))`
+
+- Different meritocratic dimensions `r Cite(bib, "castillo_meritocracia_2018")`
+
+  - **perception** of meritocracy (descriptive)
+
+  - **preferences** for meritocracy (normative)
+
+---
+class: middle, center
+
+![](images/esquema1.png)
+
+---
+class: middle, center
+
+![](images/esquema2.png)
+
+---
+class: middle, center
+
+![](images/esquema3.png)
+
+---
+class: middle, center
+
+![](images/esquema4.png)
+
+---
+## `r Citet(bib, "mccall_Exposure_2017")`
+
+- Inequality information -> opportunity beliefs ("get ahead" battery GSS/ISSP)
+  - more weight to structural factors (as wealthy family)
+  - less weight to individual factors (as hard work)
+
+## ... we add
+
+- Poverty information treatment
+- Separate opportunity items instead of structural & individual factors
+- Education item
+- Previous knowledge checks
+
+---
+## Objective & Hypoteses
+
+- **Objective**: We examine whether exposure to objective information about economic inequality and poverty affects opportunity beliefs
+
+- **Hypothesis**:
+
+  - information about poverty reduction reinforce the meritocratic dream and therefore leads to believe more in individual than structural factors.
+
+  - information about large inequality undermines the meritocratic dream and therefore leads to believe more in structural than individual factors.
+
+---
+class: roja, middle, center, slideInRight
+
+# Research design
+
+---
+## Data
+
+1.  Convenience sample for pilot study was collected in July (this week) 2019, by _Nequest_, an online panel company that works in Spain, Portugal, and Latin America.
+
+    -   N= 1,328 respondents that live in Santiago de Chile.
+
+    -   Duration (median): 11 minutes.
+
+    -   96% of participants finish the questionary.
+
+    -   Effective sample has 794 respondents.
+
+    -   We use quotes for gender, education, and age: 55% women, 95% has secondary or higher.
+
+2.  Questionnaire and random assignment by using _Qualtrics_.
+
+---
+## Treatments
+
+-   Three conditions
+
+    1.  **Poverty condition**: Information about evolution of poverty in Chile during 1990-2015.
+
+    2.  **Control condition**: Information about consume of cigarette in Chile during the last decades.
+
+    3.  **Inequality condition**: Information about income inequality in Chile in terms of index 10/10 that shows Chile as one of the countries with the highest income inequality within OECD.
+
+- We designed _manipulation checks_ for each one of these three conditions.
+---
+### 1. Poverty condition: "A series of studies show a decrease in poverty in Chile during the last decades ..."
+
+.center[![:scale 80%](images/fig3.png)]
+
+---
+### 1. Poverty condition: "A series of studies show a decrease in poverty in Chile during the last decades ..."
+
+.center[![:scale 82%](images/poor2.png)]
+
+---
+### 2. Control condition: "A series of studies show a decrease in cigarretes consumption in Chile during the last decades ..."
+
+.center[![:scale 90%](images/cigarretes.png)]
+
+---
+### 3. Inequality condition: "A series of studies show that Chile presents a high level of economic inequality ..."
+
+.center[![:scale 65%](images/fig6.png)]
+
+
+---
+## Outcomes & moderators
+
+-   Opportunity beliefs: Battery of ISSP, social inequality module.
+
+    -   **Structural factors**: a) coming from a wealthy family and b) having well-educated parents.
+
+    -   **Individual factors**: c) hard work and d) ambition.
+
+    -   We also use the item e) having a good education yourself.
+
+--
+
+-  Moderators:
+
+    - **Egalitarianism**: "income should be made more equal, even though individual effort is not rewarded" (1), or "individual effort should be rewarded despite of generating income differences" (10)
+
+    - **Perception of poverty evolution**: increased; the same, decreased.
+
+
+---
+##  Covariates and method
+
+-   **Covariates**: socio-demographic characteristics.
+
+
+-   **Methods**
+
+    -   Randomization: Covariates are balanced among treatment conditions.
+
+    -   Responses to manipulation checks are associated with socio-demographic variables.
+
+    -   Intent to treat effect (ITT) with regressions for ordinal dependent variables.
+
+---
+class: roja, middle, center, slideInRight
+
+# Results
+
+---
+class: middle, center
+
+<table cellspacing="0" align="center" style="border: none;">
+<caption align="top" style="margin-bottom:0.3em;">Treatment effects: Ordinal logit, odds ratios</caption>
+<tr>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b></b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Family</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Parent educ.</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Education</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Ambition</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Hard work</b></th>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Poverty</td>
+<td style="padding-right: 12px; border: none;">-0.98</td>
+<td style="padding-right: 12px; border: none;">-0.91</td>
+<td style="padding-right: 12px; border: none;">1.46<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.16</td>
+<td style="padding-right: 12px; border: none;">1.18</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.15)</td>
+<td style="padding-right: 12px; border: none;">(0.14)</td>
+<td style="padding-right: 12px; border: none;">(0.23)</td>
+<td style="padding-right: 12px; border: none;">(0.18)</td>
+<td style="padding-right: 12px; border: none;">(0.19)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Inequality</td>
+<td style="padding-right: 12px; border: none;">1.44<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.15</td>
+<td style="padding-right: 12px; border: none;">1.20</td>
+<td style="padding-right: 12px; border: none;">1.04</td>
+<td style="padding-right: 12px; border: none;">1.31<sup style="vertical-align: 0px;">*</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.23)</td>
+<td style="padding-right: 12px; border: none;">(0.18)</td>
+<td style="padding-right: 12px; border: none;">(0.19)</td>
+<td style="padding-right: 12px; border: none;">(0.16)</td>
+<td style="padding-right: 12px; border: none;">(0.21)</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid black;">N</td>
+<td style="border-bottom: 2px solid black;">794</td>
+<td style="border-bottom: 2px solid black;">794</td>
+<td style="border-bottom: 2px solid black;">794</td>
+<td style="border-bottom: 2px solid black;">794</td>
+<td style="border-bottom: 2px solid black;">794</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;" colspan="7"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.05, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.1</span></td>
+</tr>
+</table>
+
+---
+## The effect of poverty condition on **having a good education yourself** by moderators
+
+.center[![:scale 80%](images/Rplot2_2019.png)]
+
+
+---
+class: roja, middle, center, slideInRight
+
+# Discussion
+
+---
+class: inverse, middle
+
+-   Critical role of contexts: increasing economic oppotunities vs. higher economic inequality.
+
+-   Significant effect of poverty’s information on *having a good
+    education yourself*.
+
+-   Opportunity model of beliefs about economic inequality
+
+    1.  **Open question I**: Descriptive analysis suggests a rising demand for redistribution in a context of increasing economic opportunities.
+
+    2.  **Open question II**: Explanatory mechanisms of the effect of perceptions of economic inequality on opportunity beliefs.
+
+---
+class: inverse
+
+## Current stage: Design of the final study
+
+1. **Effect of information about inequality and poverty on opportunity beliefs**
+
+    -   Online Panel by using Netquest with three waves: a) first to collect pre-treatment information (covariates and moderators); b) treatments and outcomes; c) follow up to evaluate persistence of the effects.
+
+    -   To include all relevant items to measure opportunity beliefs.
+
+    -   Moderation: egalitarianism and perception of poverty development.
+
+2.  Registration of pre-analysis plan.
+
+---
+class: inverse
+# References
+
+.small[
+```{r, results='asis', echo=FALSE}
+PrintBibliography(bib)
+```
+]
+---
+class: inverse, center
+
+## Does information about inequality and poverty influence opportunity beliefs?
+<hr>
+### Luis Maldonado, _Pontificia Universidad Católica de Chile_ - lmaldona@uc.cl
+### Juan Carlos Castillo, _Universidad de Chile & COES_
+### (Leslie McCall, _Stone Center of Economic Inequality_)
+
+### ... also with the contribution of our research assistants Julio Iturra & Constanza Ayala
