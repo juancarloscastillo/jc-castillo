@@ -53,10 +53,9 @@ class: animated, fadeIn
 
   - Can be evaluated in terms of openness-closeness?
   - Should be open?
+
     - Normatively
     - Pragmatically
-
---
 
 ???
 - Nowadays in the open science community there are several initiatives dealing with open access and reproducibility, which is mostly focused in the way in which we interact with the wider academic community. However, there is less discussion about how our day-to-day academic practices -as writing - are related to open science.
@@ -108,10 +107,6 @@ class: roja, middle, center
 
 - Is it accessible / editable for everyone (including myself in the future)?
 
---
-
-- Is it the most efficient form of version control and collaboration? (final_final-reallyfinal2.2.docx)
-
 ???
 Issues:
 - Property of the contents (most important aspect related to openess)
@@ -124,15 +119,13 @@ Issues:
 
 ## Advantages
 
-  - **Access**: several free alternatives
-  - **Ownership**: not fixed to a single editor / programe
+  - **Free**: several free alternatives
+  - **Flexible**: not fixed to a single editor / programe
   - **Reproducibility**: allows combination of text and data analysis code in dynamic documents (no copy-paste)
-  - **Collaboration**: better version control (who did what when) via Git-Github
+  - **Version control**: rigorous and efficient via Git-Github
   - **Communication**: Flexible output possibilites (html, latex/pdf, word)
 
---
-
-## Disadvantages
+## Disadvantages ...
 
   - To move ...
   - No WYSIWYG
@@ -175,7 +168,7 @@ class: inverse, middle, center
 
 # The X(irinGITo)-Workflow
 
-![:scale 50%](images/chiringuito.jpg)
+![:scale 40%](images/chiringuito.jpg)
 
 ???
 - chiringuito is spanish slang for a food and beverages stand that is put toghether with very essential things, usually in the beach during the day. I like this image because it represents the basic things you need to start working, and because is very flexible.
@@ -500,8 +493,6 @@ Generate an automated, self-synced BibTex collection from Zotero via **Better Bi
 .right-column[
 ### Connecting Bib file to the markdown file
 
-Add the following at the beginning of your markdown document (called a YAML header):
-
 ```
 ---
 bibliography:
@@ -512,7 +503,6 @@ bibliography:
 ]
 
 --
-
 Where,
 
   - _MyLibrary.bib_ (or whathever name): your Zotero synced collection
@@ -528,7 +518,9 @@ Alternatives to give the path:
   a.  when generating the bib from Zotero, save it in the same directory of the md (Markdown) file, no need for path
   b. paste the complete path to your bib file, wherever it is.
   c. make a link to your bib file (over your bib file, right button, make a link.) Then copy this link where the md folder is, then indicate the exact name of this file in the YAML header.
+
 ---
+
 # 2. Integrating bibliographic references
 
 .left-column[
@@ -540,62 +532,15 @@ Alternatives to give the path:
 ]
 
 .right-column[
-
-Including cites in markdown works indicating the "citation keys" (reference ID):
-
-```
-@article{sabbagh_dimension_2003,
-  title = {The Dimension of ...
-.
-.
-```
-
-With this we can cite like this:
-
-![:scale 110%](images/citingwithkeys.png)
-]
-
-???
-of the item in the Bib file, sort of reference ID (generated automatically by the conversion through BetterBibTex.)
-
----
-# 2. Integrating bibliographic references
-
-.left-column[
-  ### Format
-  ### Reference manager
-  ### Zotero
-  ### Z-flow
-  ### Citing
-]
-
-.right-column[
-
-**Automate with Atom's Zotero-Picker**
-
-- go to Packages &gt; Settings Views &gt; Install Packages
-- Search and install Zotero Picker
-- Zotero must be open while citing
-- Open picker (Packages menu or Alt+Z), is the same Zotero plug-in for Word.
-- and select the references
-]
----
-# 2. Integrating bibliographic references
-
-.left-column[
-  ### Format
-  ### Reference manager
-  ### Zotero
-  ### Z-flow
-  ### Citing
-]
-
-.right-column[
+**Using Zotero Picker package:**
 
 ![:scale 90%](images/citingwithpreview.gif)
 
-(_markdown-preview enhanced_, enable "Use Pandoc Parser" to see references)
 ]
+
+???
+(_markdown-preview enhanced_, enable "Use Pandoc Parser" to see references)
+
 ---
 # Summary
 
