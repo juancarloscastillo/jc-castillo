@@ -45,6 +45,22 @@ rmarkdown::render_site(encoding = 'UTF-8')
 ### _Latest papers & projects_
 
 <div class="wrap-collabsible">
+<input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">
+**Open Academic Writing** -  Juan Carlos Castillo (ESRA Zagreb - Julio 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/ESRA2019_openwriting.html)
+
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="wrap-collabsible">
 <input id="collapsible1" class="toggle" type="checkbox"><label for="collapsible1" class="lbl-toggle">
 **Does information about inequality and poverty influence opportunity beliefs?** - Luis Maldonado, Juan Carlos Castillo & Leslie McCall (ISPP Lisboa - Julio 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISPP2019Lisboa/ispp2019lisboa.html#1)
 
