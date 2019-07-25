@@ -45,6 +45,25 @@ rmarkdown::render_site(encoding = 'UTF-8')
 ### _Latest papers & projects_
 
 <div class="wrap-collabsible">
+<input id="collapsible2" class="toggle" type="checkbox"><label for="collapsible2" class="lbl-toggle">
+**Maldonado,L., Olivos, F. Azar, A. Castillo, J. & Atria, J.(2019) Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries.  Early view in _Social Justice Research_** -  [(*link to paper*)](https://rdcu.be/bIQ2V)
+
+</label>
+<div class="collapsible-content">
+<div class="content-inner">
+<p class="text">
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="wrap-collabsible">
 <input id="collapsible3" class="toggle" type="checkbox"><label for="collapsible3" class="lbl-toggle">
 **Open Academic Writing** -  Juan Carlos Castillo (ESRA Zagreb - Julio 2019) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/ESRA2019_openwriting.html)
 

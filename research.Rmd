@@ -11,7 +11,7 @@ output:
 <br/>
 <br/>
 
-## [Projects / Grants]()
+## Projects / Grants
 
 <br/>
 
@@ -60,7 +60,6 @@ output:
 
 - Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla).  Submitted - Preprint: <a href="https://osf.io/preprints/socarxiv/t87se/">
 <i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
-
 
 - Do people perceive more inequality when more inequality exists? (with Martin Schröder). Revise & Resubmit.
 
@@ -179,6 +178,7 @@ output:
 - Cox, C. & Castillo, J (Eds.) (2015)  Aprendizaje de la ciudadanía: Contextos, experiencias y resultados. Santiago: Ediciones UC.
 
 <details>
+
 <summary> *See more...* </summary>
 
 - Miranda, D. Castillo, J. & Sandoval-Hernandez, A. (2015). Desigualdad económica y conocimiento cívico. Chile en comparación internacional. En : Castillo, J. & Cox, C. Aprendizaje de la Ciudadanía: Contextos, experiencias y resultados. Ediciones UC, Santiago. Pp. 487- 524
@@ -193,7 +193,7 @@ output:
 -
 - Castillo, Miranda & Carrasco (2011). La percepción de desigual de la desigualdad (The unequal perception of inequality). Technical report IT1101, Measurement Center Mide-UC. Santiago: P. Universidad Católica de Chile.
 
-- Castillo, J. (2011). The legitimacy of economic inequality: An empirical approach to the case of Chile. Boca R.: Dissertation.com. ISBN 1-59942-376-6 [link].(https://books.google.cl/books?id=3nLo_ha-sTgC&printsec=frontcover&hl=es#v=onepage&q&f=false).
+- Castillo, J. (2011). The legitimacy of economic inequality: An empirical approach to the case of Chile. Boca R.: Dissertation.com. ISBN 1-59942-376-6 [link](https://books.google.cl/books?id=3nLo_ha-sTgC&printsec=frontcover&hl=es#v=onepage&q&f=false).
 
 - Castillo & Carrasco (2010). Sobre la estabilidad del autoritarismo: Un caso de medición de invarianza longitudinal. (On the stability of authoritarianism: A case of measurement invariance). Technical report IT1008, Measurement Center Mide-UC. Santiago: P. Universidad Católica de Chile.
 
@@ -212,6 +212,7 @@ output:
 - Castillo, J., & Asun, D. (2002). Creencias en la Justicia en el Mundo: Un Estudio Preliminar en Relación a Actitudes de Intolerancia y Discriminación. In D. Paez (Ed.), Psicología Social. Buenos Aires: Prentice Hall.
 
 </details>
+
 <br/>
 
 ## [Conferences]()
@@ -223,9 +224,6 @@ Meritocracia y redistribución en una sociedad desigual (Conferencia COES - Novi
 Open academic writing: An Atom-based workflow for social scientists (SocArxiv 2018 Conference - Maryland)[(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/atomworkflow/Xiringito_press.html#1)
 
 Castillo,JC (2018) Perceptions and preferences about meritocracy in international comparison. Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center [(to presentation)](documents/ISA2018presentation/castillo2018meritocracyISA.html).
-  - <details><summary> *More...* </summary>
-Meritocracy is a concept commonly used to characterize groups and societies in terms of allocation of rewards according to effort and talent. In this sense, the principle of merit has been related to the legitimation of inequalities in modern societies. Nevertheless, the conceptualization of merit is far from clear in the literature, having as a consequence that the few attempts dealing with the empirical study of meritocracy in terms of individual attitudes and beliefs are rather inconsistent among themselves. Based on a systematic review of the extant literature, we propose a conceptual framework for the empirical study of the subjective dimension of meritocracy which is then empirically tested by using data from available indicators of the International Social Survey Programme 2009 survey. The results of confirmatory factor analysis and measurement invariance models indicate that it is possible to identify two dimensions of meritocracy that are usually confused in the literature: perceptions and preferences. Furthermore, these two dimensions are composed of meritocratic and non-meritocratic elements which are not necessarily the ends of a same continuum. The implications for future research on meritocracy are discussed, particularly in relation to preferences towards redistribution.
-</details>
 
 Castillo, JC. & Jaime-Castillo, A. (2018) Reciprocity and Distributive Justice. Joint session organized for the Research Committee 42 (Social Psychology)  and 45 (Rational Choice) at the Congress of the International Sociological Association - ISA (July 15-21). Toronto, Metro Toronto Convention Center.
 
