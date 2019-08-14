@@ -6,14 +6,14 @@ output:
         theme: united
         toc: TRUE
         toc_float: TRUE
-
 ---
-<br/>
-<br/>
+
+<br>
+<br>
 
 ## Projects / Grants
 
-<br/>
+<br>
 
 - **Political socialization and citizenship education: The role of the family and the school** (2018 - 2021) FONDECYT Regular 1181239, associate researcher (principal researcher: Cristián Cox).
 
@@ -36,11 +36,11 @@ output:
 
 - **Testing the stability of perception and justification of economic inequality in Chile: A cross-sectional time comparison** (2010 - 2011)	Inicio 24/2010, principal researcher.
 </details>
-<br/>
+<br>
 
-## [Papers]()
+## Papers
 
-<br/>
+<br>
 
 ### Current paper projects
 
@@ -63,7 +63,7 @@ output:
 
 - Do people perceive more inequality when more inequality exists? (with Martin Schröder). Revise & Resubmit.
 
-<br/>
+<br>
 
 ### Peer-reviewed journal articles
 
@@ -215,7 +215,7 @@ output:
 
 <br/>
 
-## [Conferences]()
+## Conferences
 
 Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
 
@@ -346,7 +346,7 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 
 <br/>
 
-## [Supervised thesis]()
+## Supervised thesis
 
 <br/>
 
@@ -382,8 +382,10 @@ Castillo, J. (2006). Justice Ideologies in Highly Unequal Contexts. The Case of 
 - Torres, A. (2014) Aspectos subjetivos de la meritocracia y su relación con la percepción de desigualdad en Chile. Magíster en Psicología Social-Comunitaria, P. Universidad Católica de Chile.
 
 - Yañez, R. (en curso) Construcción de juicios de justicia y emergencia de sentimientos de injusticia frente a la desigualdad social. Doctorado en Sociología, EHESS Paris (codirector).
+
 </details>
-<br/>
+<
+br/>
 
 ### *Evaluation committee*
 

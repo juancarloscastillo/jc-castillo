@@ -1,0 +1,42 @@
+---
+title: " "
+author: " "
+output:
+    html_document:
+        theme: united
+---
+
+<br/>
+<br/>
+
+<b>
+<font color="red" size=6>
+Coloquio de investigación en desigualdad y ciudadanía - 2do Sem 2019
+</b>
+</font>
+<br>
+
+### Miércoles 13:30  a 14:30, sala reuniones sur (334), edificio nuevo FACSO.
+
+
+El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan metodologías de análisis cuantitativo.
+
+## Calendarización
+
+
+| |  | Presenta   | Tema |
+|--|--|:--|--|
+| Agosto | 14 | -  | Calendarización sesiones
+|  | 21 |  |
+|  | 28 |  |
+| Septiembre   | 4 |   |
+|   | 11  | Daniel Miranda  | Formación ciudadana
+|   | 25  | Cristóbal Moya  | Encuesta factorial
+| Octubre   | 2 |   |
+|   | 9  |   |
+|   | 16 |   |
+|   | 23  |   |
+|   | 30  |   |
+|Noviembre  | 6  |   |
+|   | 13  |   |
+|   | 20  |   |

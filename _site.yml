@@ -5,17 +5,19 @@ navbar:
   right:
   - text: "Research"
     href: research.html
+  - text: "Docencia"
+    href: docencia.html
   - text: "Links"
     href: links.html
   - text: "Contact"
     href: contact.html
   - icon: ai-cv fa-lg
-    href: documents/CVjccastillo.pdf   
+    href: documents/CVjccastillo.pdf
   - icon: ai-researchgate fa-lg
     href: https://www.researchgate.net/profile/Juan_Castillo5/contributions
   - icon: fa-github fa-lg
     href: http://github.com/juancarloscastillo
- 
+
 output:
   html_document:
     theme: yeti
