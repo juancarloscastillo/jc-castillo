@@ -1,0 +1,46 @@
+---
+title: " "
+author: " "
+output:
+    html_document:
+        theme: united
+---
+
+<br/>
+<br/>
+
+<b>
+<font color="red" size=6>
+
+# Talleres y Seminarios Universidad de Chile
+
+</b>
+</font>
+
+## 2do Semestre 2019 (taller 2 / seminario de grado - 4to año)
+
+- Se entregarán 2 informes durante el semestre, uno de avance y uno final.
+- El **informe de avance** contempla la definición del problema de investigación, revisión de literatura, propuesta de sección metodológica.
+- El **informe final** debe incorporar los comentarios y avanzar en la propuesta metodológica incluyendo análisis preliminares.
+- Además de estas definiciones generales sobre contenidos de informes, pueden haber elementos personalizados según el avance de cada estudiante.
+
+### Recomendaciones generales:
+
+- Después de la entrega de cada informe, anotarse en los [horarios de reunión con estudiantes](contact.html) para recibir retroalimentación
+- Presentar en el [Coloquio de Investigación en Desigualdad y Ciudadanía.](coloqui-inv.html)
+- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK)
+- Entrega de informes en formato (R)Markdown, html o pdf
+- Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de [Git/Github](https://github.com/) (Una forma de organizar la escritura en Markdown y versionamiento en Git es mediante el uso de [Workflowr](https://jdblischak.github.io/workflowr/))
+- También por temas de apertura se recomienda inscribir el proyecto en el [Open Science Framework](https://osf.io/)
+
+**Fechas**
+
+- Lunes 23 Septiembre: Entrega de informe de avance
+- Lunes 7 Octubre: correcciones informe avance
+- Lunes 11 de Noviembre: Entrega informe final
+- Lunes 25 Noviembre: correcciones y nota final; entrega de informe de autoevaluación.
+
+
+
+
+<br>
