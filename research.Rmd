@@ -215,6 +215,8 @@ output:
 
 ## Conferences
 
+[Colaboración y Ciencia Abierta (Seminario COES _Abrir la Academia_). 10 de Septiembre 2019, FEN Universidad de Chile.](documents/abrir-la-academia/presentacion.html)
+
 Desigualdad Económica, Percepción de Meritocracia y Preferencias Redistributivas (Congreso Chileno de Sociología - Diciembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/presentacion-final/present-panel-alas2018.html#1)
 
 Meritocracia y redistribución en una sociedad desigual (Conferencia COES - Noviembre 2018) [(*link to presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/coes2018/castillo2018meritocracyCOES.html#1)

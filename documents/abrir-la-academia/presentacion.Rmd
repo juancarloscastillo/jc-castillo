@@ -1,0 +1,72 @@
+---
+title: "Abrir la Academia"
+subtitle: " "
+author: ".small[Juan Carlos Castillo<br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: " "
+output:
+  xaringan::moon_reader:
+    css: ["xaringan_custom/xaringan-themer.css","xaringan_custom/progress-bar.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat:   |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: middle, center
+
+```{r setup, include=FALSE, cache = FALSE}
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+# bib <- ReadBib("meritocracy.bib", check = FALSE)
+```
+
+<!---
+About macros.js: permite escalar las imágenes como [:scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+![](images/coes_blanco_esp.jpg)
+## Colaboración y Ciencia Abierta
+### Juan Carlos Castillo - Departamento de Sociología, Universidad de Chile
+---
+class: middle
+
+# Crisis
+
+![:scale 100%](images/crisis.png)
+
+---
+class: middle
+
+
+![](images/flujo.png)
+
+---
+# Estándares 1
+
+
+![](images/standards1.png)
+
+---
+# Estándares 2 
+
+
+![](images/standards2.png)
+
+
+Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., … Yarkoni, T. (2015). Promoting an open research culture. _Science_, 348(6242), 1422–1425. https://doi.org/10.1126/science.aab2374
+
+
+---
+class: middle, center
+
+![](images/coes_blanco_esp.jpg)
+## Colaboración y Ciencia Abierta
+### Juan Carlos Castillo - Departamento de Sociología, Universidad de Chile
