@@ -7,7 +7,7 @@ output:
         toc: TRUE
         toc_float: TRUE
 ---
-(link abreviado: [bit.ly/diplomado_multinivel](http://bit.ly/dip-multinivel) )
+(link abreviado: [bit.ly/dip-multinivel](http://bit.ly/dip-multinivel) )
 
 Profesor: Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 [jc-castillo.com](https://juancarloscastillo.github.io)
