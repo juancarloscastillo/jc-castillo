@@ -1,0 +1,12 @@
+base
+knitr
+RefManageR
+haven
+corrplot
+dplyr
+stargazer
+Matrix
+lme4
+carData
+car
+ggplot2

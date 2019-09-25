@@ -122,3 +122,5 @@ I use software compatible with the principles of open science, this is, free and
 - [Guidelines for quantitative submissions ASR](http://journals.sagepub.com/doi/abs/10.1177/0003122418806282)
 
 - [Ghraphics principles cheatsheet](https://graphicsprinciples.github.io/)
+
+- [Practical ggplot](https://wilkelab.org/practicalgg/)
