@@ -1,0 +1,528 @@
+---
+title: "Modelos Multinivel"
+author: ".small[Juan Carlos Castillo <br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: "1er Sem 2019"
+output:
+  xaringan::moon_reader:
+    css: ["https://multinivel.netlify.com/docpres/xaringan_custom/xaringan-themer.css","https://multinivel.netlify.com/docpres/xaringan_custom/progress-bar.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat:   |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: bottom, right, inverse
+
+```{r eval=FALSE, include=FALSE}
+# Correr esto para que funcione el infinite moonreader, el root folder debe ser static para si dirigir solo "bajndo" en directorios hacia el bib y otros
+
+xaringan::inf_mr('/static/docpres/02_bases/2mlmbases.Rmd')
+```
+
+```{r setup, include=FALSE, cache = FALSE}
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+# bib <- ReadBib("../../bib/electivomultinivel.bib", check = FALSE)
+opts_chunk$set(warning=FALSE,
+             message=FALSE,
+             echo=TRUE,
+             cache = TRUE,fig.width=7, fig.height=5.2)
+```
+
+<!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('static/docpres/02_bases/2mlmbases.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+.pull-left[.center[
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![:scale 70%](https://multinivel.netlify.com/images/hex_eic2.png)]]
+
+.pull-right[
+# Modelos Multinivel
+### Juan Carlos Castillo
+### Sociología FACSO - UChile
+### 2do Sem 2019
+### [Diplomado Análisis Multivariable]()
+
+<br>
+
+## Sesión 2: Estimando en Distintos Niveles
+]
+
+---
+class: roja, middle, center
+
+# Resumen sesión anterior
+
+
+---
+## Residuos y dependencia contextual
+
+![:scale 70%](images/res_mul4.png)
+
+---
+# Implicancias para el modelo de regresión:
+
+-   Dependencia de los residuos
+
+-   Pérdida de información, mayor error
+
+-   Alternativas? Descomposición de la varianza de los residuos *entre* y
+*dentro* los grupos= en distintos niveles = **multinivel**.
+
+-   En concreto, se agrega un término de error adicional al modelo:
+$\mu_{0j}$
+
+-   Este término de error se expresa como un **efecto aleatorio** (como opuesto a *efecto fijo*)
+
+---
+## Parámetros
+
+![](images/paramet.JPG)
+
+
+---
+class: inverse, right, middle
+
+# **ESTA CLASE**
+
+<br>
+<br>
+
+## Datos jerárquicos (= distintos niveles)
+
+## Datos nivel 2 agregados
+
+## Descomposición de la varianza
+
+## Correlación intra-clase
+
+---
+## Datos ejemplo: High School & Beyond (HSB) data
+
+  -   High School & Beyond (HSB) es una muestra representativa nacional de educación secundaria publica y católica de USA implementada por el National Center for Education Statistics (NCES).
+
+-   Más información en [https://nces.ed.gov/surveys/hsb/](http://nces.ed.gov/surveys/hsb)
+
+-   Level 1 variables:
+
+  -   minority, etnicidad (1 = minority, 0 =other)
+
+  -   female, student gender (1 = female, 0 = male)
+
+  -   ses, (medida estandarizada de nivel socioeconómico en base a variables como educación de los padres, ocupación e ingreso)
+
+  -   **mathach**, logro en matemática (_math achievement_)
+
+---
+## High School & Beyond (HSB) data
+
+-   Level 2 variables:
+
+  -   size (matricula)
+
+  -   sector (1 = Catholic, 0 = public)
+
+  -   pracad (proportion of students in the academic track)
+
+  -   disclim (a scale measuring disciplinary climate)
+
+  -   himnty (1 = more than 40% minority enrollment, 0 = less than 40%)
+
+  -   meanses (mean of the SES values for the students in this school who are included in the level-1 file)
+
+-  **Cluster variable**= id (school id)
+
+---
+## Librerías y datos
+
+### Librerías
+```{r}
+pacman::p_load(
+haven,  # lectura de datos formato externo
+car, # varias funciones, ej scatterplot
+dplyr, # varios gestión de datos
+stargazer, # tablas
+corrplot, # correlaciones
+ggplot2, # gráficos
+lme4) # multilevel
+```
+
+### Datos
+
+.medium[
+```{r, echo=TRUE}
+mlm <-read_dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
+```
+]
+
+---
+## Ajuste datos
+
+.medium[
+```{r}
+dim(mlm)
+names(mlm)
+```
+]
+
+Seleccionar variables de interés
+.medium[
+```{r}
+mlm=mlm %>% select(minority,female,ses,mathach,size,
+  sector,mnses,schoolid) %>% as.data.frame()
+```
+]
+
+---
+## Nota: sobre `%>%`
+
+- `%>%` es conocido como "pipe operator", operador pipa o simplemente pipa
+
+- proviene de la librería `magrittr`, que es utilizada en `dplyr`
+
+- objetivo: hacer más fácil y eficiente el código, incorporando varias funciones en una sola línea / comando
+
+- avanza desde lo más general a lo más específico
+
+
+---
+## Descriptivos generales
+
+.medium[
+```{r}
+stargazer(as.data.frame(mlm),
+          title = "Descriptivos generales", type='text')
+```
+]
+
+---
+## Descriptivos generales
+
+```{r}
+hist(mlm$mathach, xlim = c(0,30))
+```
+
+---
+## Descriptivos generales
+
+```{r}
+scatterplot(mlm$mathach ~ mlm$ses,
+  data=mlm, xlab="SES", ylab="Math Score",
+  main="Math on SES", smooth=FALSE)
+
+```
+
+---
+## Descriptivos generales
+
+```{r}
+cormat=mlm %>%
+  select(mathach,ses,sector,size, mnses) %>%
+  cor()
+
+round(cormat, digits=2)
+```
+
+---
+## Descriptivos generales
+
+```{r}
+corrplot.mixed(cormat)
+```
+
+---
+## Datos agregados
+
+- Datos nivel 2:
+  - propios/idiosincráticos (ej: tamaño)
+  - agregados: generados a partir de datos nivel 1
+
+--
+- Una de las particularidades de los métodos multinivel es que permiten estimar y comparar efectos de la misma variable individual y agregada
+
+- Ejemplo:
+  - nivel socioeconómico individual
+  - nivel socioeconómico de la escuela
+
+
+--
+
+- Para ello, se procede a "agregar", generando una base de datos a nivel 2
+
+
+---
+## Datos agregados
+
+- Usando la funcion `group_by` (agrupar por) de la librería `dplyr`
+- Se agrupa por la variable **cluster**, que identifica a las unidades de nivel 2 (en este caso, `schoolid`)
+- Por defecto se hace con el promedio, pero se pueden hacer otras funciones como contar, porcentajes, mediana, etc.
+
+```{r}
+agg_mlm=mlm %>% group_by(schoolid) %>%
+  summarise_all(funs(mean)) %>% as.data.frame()
+
+```
+
+--
+Entonces,
+  - generamos el objeto `agg_mlm` desde el objeto `mlm`
+  - agrupando por la variable cluster `schoolid`
+  - agregamos (colapsamos) todas `summarise_all` por el promedio `funs(mean)`
+
+---
+## Datos agregados
+
+### Descriptivos
+
+.medium[
+```{r}
+stargazer(agg_mlm, type = "text")
+```
+]
+
+---
+## Comparación Modelos
+
+- Modelo con datos individuales
+
+```{r}
+reg<- lm(mathach~ses+female+sector, data=mlm)
+```
+
+- Modelo con datos agregados
+
+```{r}
+reg_agg<- lm(mathach~ses+female+sector, data=agg_mlm)
+```
+
+- Generación tabla
+
+```{r eval=FALSE}
+stargazer(reg,reg_agg,
+  column.labels=c("Individual","Agregado"),
+  type ='text')
+```
+
+---
+## Comparación Modelos
+
+.small[
+```{r echo=FALSE}
+stargazer(reg,reg_agg,
+  column.labels=c("Individual","Agregado"),
+  type ='text')
+```
+]
+
+
+---
+class: roja, middle, center
+
+# ¿Qué problema puede haber al estimar un mismo modelo para variables individuales y agregadas?
+
+---
+## Implicancias estimación individual/agregada
+
+- diferencias entre los coeficientes: riesgo de falacia ecológica / individualista
+
+- diferencias entre los errores estándar, recordar
+
+$$ \sigma_{est} = \sqrt{\frac{sum(Y-Y')^{2}}{N}}  $$
+
+---
+## Implicancias estimación individual/agregada
+
+```{r echo=FALSE, fig.width=10, fig.height=6}
+mlm$id_data= "level1"
+agg_mlm$id_data="level2"
+merged = bind_rows(mlm, agg_mlm)
+ggplot(merged, aes(x=ses, y=mathach, color=id_data)) +
+    geom_point(shape=1) +
+    scale_colour_hue(l=50) + # Use a slightly darker palette than normal
+    geom_smooth(method=lm) +    # Add linear regression lines fullrange=TRUE)+ # Extend regression lines
+    theme(text = element_text(size = 30))
+```
+
+
+---
+## Implicancias estimación individual/agregada
+
+  - inflación de errores estándar para variables nivel 1 estimadas como agregadas, ej: female agregado (riesgo error tipo II)
+
+  - contracción de errores estándar para variables nivel 2 estimadas como individuales, ej: sector individual (error tipo I)
+
+
+## Solución: 
+### Modelo que ajuste errores estándar según el tipo de variable nivel 1 y nivel 2 = MULTINIVEL
+
+---
+class: inverse, middle, right
+
+# Descomposición de varianza
+
+---
+## Descomposición de la varianza
+
+### Idea base de modelos multinivel: la varianza de la variable dependiente se puede descomponer en distintos niveles
+
+- Estas varianzas son:
+
+  - varianza Nivel 1: dentro o "within", en relación al promedio individual
+
+  - varianza Nivel 2: entre o "between", en relación al promedio de los grupos
+  
+  - varianza Nivel $j$ ...
+
+
+---
+## Varianzas
+
+.medium[
+```{r}
+ ggplot(merged, 
+        aes(x=mathach, colour=id_data)) + 
+        geom_density() + theme(text = element_text(size = 20))
+```
+]
+
+---
+# Descomposición de la varianza
+<br>
+
+![](images/withinbetween.jpg)
+
+---
+# Descomposición de la varianza
+
+.center[
+![](images/withinbetween2.png)
+]
+
+$$var_{tot}=var_{dentro}+var_{entre}$$
+
+---
+class: middle
+
+.pull-left[
+![](images/pie.png)
+
+]
+
+.pull-right[
+<br>
+# ¿Qué proporción de la varianza es "entre" unidades de nivel 2?
+ ]
+
+
+---
+## Varianzas
+
+```{r}
+var_tot = var (mlm$mathach)
+var_entre= var (agg_mlm$mathach)
+```
+
+Proporción de varianza _entre_ (estimación "bruta"):
+
+```{r}
+var_tot
+var_entre
+var_entre/var_tot
+```
+
+---
+# Varianzas
+
+![](images/var_pred.png)
+
+
+---
+class: roja, middle, center
+
+# Correlación intra-clase
+
+## "Proporción de la varianza de la variable dependiente que se asocia a la pertenencia a unidades de nivel 2"
+
+---
+class: right
+
+# Correlación intra-clase
+
+### - Expresa de manera simple la descomposición de la varianza
+
+### - Informa la relevancia de el uso de modelos multinivel
+
+### - Anticipa el posible efecto de predictores de nivel 2 (poca varianza, poco que explicar)
+
+### - Se calcula en base a la estimación de los efectos aleatorios del **modelo nulo**
+
+---
+class: inverse
+
+# RESUMEN
+
+- Errores de estimación al incluir predictores de nivel 2 en regresión de un nivel (OLS)
+
+- Modelo multinivel: ajusta los efectos y errores según el nivel del predictor
+
+- Descomposición de la varianza: 
+
+  - permite obtener la proporción de la variable dependiente que se asocia a la pertenencia a unidades de nivel 2 (correlación intra-clase)
+  
+  - base de modelo multinivel: cada predictor se ajusta según su nivel a la varianza correspondiente de la dependiente
+
+---
+class: inverse, middle, center
+
+# Próxima clase
+
+## Estimación modelo multinivel - librería `lme4` de `R`
+
+
+---
+class: inverse
+
+.pull-left[.center[
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![:scale 70%](https://multinivel.netlify.com/images/hex_eic2.png)]]
+
+.pull-right[
+# Modelos Multinivel
+### Juan Carlos Castillo
+### Sociología FACSO - UChile
+### 2do Sem 2019
+### [Diplomado Análisis Multivariable]()
+
+<br>
+
+]
+
+
+
