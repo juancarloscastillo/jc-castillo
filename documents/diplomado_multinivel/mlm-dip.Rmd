@@ -1,6 +1,5 @@
 ---
 title: "Modelos Multinivel"
-subtitle: "Diplomado Análisis Multivariable"
 output:
     html_document:
         theme: readable
@@ -14,7 +13,12 @@ output:
 <br><br>
 
 
-(link abreviado: [bit.ly/dip-multinivel](http://bit.ly/dip-multinivel) )
+<div class="mycontent">
+
+# DIPLOMADO ANALISIS MULTIVARIABLE
+2do SEM 2019
+
+(link abreviado de este sitio: [bit.ly/dip-multinivel](http://bit.ly/dip-multinivel) )
 
 Profesor: Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 [jc-castillo.com](https://juancarloscastillo.github.io)
@@ -56,3 +60,4 @@ Gran parte de la investigación sociológica hace referencia al contexto en que 
 
 
 <br><br><br>
+</div>

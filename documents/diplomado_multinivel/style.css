@@ -51,9 +51,16 @@ pre {
 
 
 p {
-font-size: 130%
+font-size: 100%
 
 }
+
+h1.title {
+  font-size: 0px;
+  color: DarkRed;
+  text-align: center;
+}
+
 
 
 /*
