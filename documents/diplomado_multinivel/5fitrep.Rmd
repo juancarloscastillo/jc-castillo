@@ -80,7 +80,7 @@ class: roja, middle, center
 # Modelo con coeficientes aleatorios
 <br>
 
-![](../images/raneffects.JPG)
+![](images/raneffects.JPG)
 
 ---
 # Modelo con coeficientes aleatorios
@@ -140,7 +140,7 @@ class: roja, middle, center
 ---
 ## 1. Ajuste por proporción de varianzas
 
-![](../images/var_pred.png)
+![](images/var_pred.png)
 
 ---
 ## 1. Ajuste por proporción de varianzas
