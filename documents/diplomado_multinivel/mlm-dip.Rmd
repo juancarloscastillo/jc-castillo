@@ -42,8 +42,8 @@ Gran parte de la investigación sociológica hace referencia al contexto en que 
 |             	| 26 	| [Estimando en distintos niveles](2mlm2niveles.html)                         	| [Práctica A](https://multinivel.netlify.com/practicas/a_introreg/a_introreg.html) 	|
 | Octubre     	| 2  	|[ Correlación intra-clase y predictores en distintos niveles](3mlmICC.html) 	| [Práctica B](https://multinivel.netlify.com/practicas/b_iccranef/b_icc-ranef.html) 	|
 |             	| 3  	| [Efectos aleatorios](4mlmranef.html)                                         	| [Práctica C](https://multinivel.netlify.com/practicas/c_ranef.html) 	|
-|             	| 9  	| Interacción entre niveles                                  	| Práctica D 	|
-|             	| 10 	| Ajuste y modelos logísticos multinivel                     	| Práctica F 	|
+|             	| 9  	| [Ajuste y reporte](5fitrep.html)                                  	| [Práctica D](d_ajuste-reporte.html) 	|
+|             	| 10 	| Interacción entre niveles y modelos logísticos multinivel                     	| Práctica F 	|
 
 </font>
 

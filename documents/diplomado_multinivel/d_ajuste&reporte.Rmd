@@ -1,0 +1,200 @@
+---
+title: "Práctica D MLM"
+subtitle: "Ajuste"
+author: "Juan Carlos Castillo"
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = T)
+```
+
+# Cargar / instalar librerías
+
+```{r message=FALSE, warning=FALSE}
+pacman::p_load(lme4,foreign,stargazer, psych,texreg,
+               xtable,dplyr,sjPlot,nlme, lsmeans,
+               lmerTest, effects, TMB,corrplot, kableExtra )
+
+```
+
+#  Leer datos base High School and Beyond (HSB)
+
+```{r results='hide'}
+mlm = read.dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
+dim(mlm) # dimensiones base filas / columnas
+names(mlm)
+#agregar datos para ejercicios:
+agg_mlm = mlm %>% group_by(schoolid) %>% summarise_all(funs(mean))
+
+
+
+```
+
+
+# Modelos
+
+```{r}
+results_0 = lmer(mathach ~ 1 + (1 | schoolid), data = mlm)
+results_1 = lmer(mathach ~ 1 + minority + ses + (1 | schoolid), data = mlm)
+results_2 = lmer(mathach ~ 1 + mnses  + sector + (1 | schoolid), data = mlm)
+results_3 = lmer(mathach ~ 1 + minority + ses + mnses  + sector + (1 | schoolid), data = mlm)
+results_4 = lmer(mathach ~ 1 + ses + mnses  + sector + (1 + ses | schoolid), data = mlm)
+results_5 = lmer(mathach ~ 1 + ses + ses*sector + (1 + ses | schoolid), data = mlm)
+
+str(mlm$sector) # el gr?fico de interacci?n funciona con la variable estimada como factor
+
+mlm$sector=as.factor(mlm$sector)
+results_5 = lmer(mathach ~ 1 + ses + ses*sector + (1 + ses | schoolid), data = mlm)
+```
+
+$mathach= \gamma_{00}(intercepto)+\gamma_{10}ses_{ij}+\gamma_{01}sector_j+\gamma_{11}ses_{ij} *sector{j}+\mu_{0j}(intercepto)+\mu_{1j}ses_{ij}+ r_{ij}$
+
+
+# Análisis de ajuste de modelos
+
+## Cálculo R2 B&R 
+
+Extraer componentes de la varianza para cálculo de R2
+
+```{r results='hide'}
+varcomp_0=as.data.frame(VarCorr(results_0))
+tau00_0=varcomp_0[1,4]
+sigma2_0=varcomp_0[2,4]
+
+varcomp_1=as.data.frame(VarCorr(results_1))
+tau00_1=varcomp_1[1,4]
+sigma2_1=varcomp_1[2,4]
+
+varcomp_2=as.data.frame(VarCorr(results_2))
+tau00_2=varcomp_2[1,4]
+sigma2_2=varcomp_2[2,4]
+```
+
+Cálculo
+
+```{r results='hide'}
+# Modelo 1 (predictores individuales)
+
+R2_1_L1=(sigma2_0-sigma2_1)/sigma2_0
+R2_1_L1
+
+# Modelo 2 (predictores grupales)
+R2_2_L1=(sigma2_0-sigma2_2)/sigma2_0
+R2_2_L1
+R2_2_L1=(tau00_0-tau00_2)/tau00_0
+R2_2_L1
+
+# ICC (para comparación)
+ICC_0=tau00_0/(tau00_0+sigma2_0)
+ICC_0
+
+```
+
+
+##  Test de devianza (deviance)
+
+Deviance modelo simple sin multilevel (para contraste con nulo y obtener significación de intercepto aleatorio por contraste)
+
+Deviance modelo 1
+```{r results='hide'}
+results_0ml = lmer(mathach ~ 1 + (1 | schoolid), data = mlm, REML=FALSE)
+results_1ml = lmer(mathach ~ 1 + minority + ses + (1 | schoolid), data = mlm, REML=FALSE)
+results_1ml # deviance=46443.64
+```
+
+Cálculo deviance test (anidado-mayor)
+
+```{r warning=FALSE}
+47115.8-46443.64 #= 672.16, 2 DF (2 parametros adicionales)
+
+qchisq(.95, df=2) # 5.99 valor cr?tico chi2 para 2 df, menor que deviance, por lo tanto la diferencia entre los modelos es distinta de 0.
+```
+
+De manera directa...
+
+```{r}
+anova(results_0ml,results_1ml)
+```
+
+
+Para contraste modelo con y sin intercepto aleatorio (i.e. ajuste del nulo)
+
+```{r}
+interceptOnly <-gls(mathach ~ 1, data = mlm, method = "ML")
+summary(interceptOnly)
+results_0ml2 = lme(mathach ~ 1, data = mlm, random=~ 1 | schoolid, method="ML") # porque anova no funciona con objeto lmer ...
+anova(interceptOnly,results_0ml2)
+```
+
+
+Contraste modelo con y sin pendiente aleatoria
+```{r}
+anova(results_1,results_3)
+```
+
+# Exploración de datos, descriptivos y reporte
+
+## Descriptivos básicos
+
+```{r results='hide', warning=FALSE, }
+
+hist(mlm$mathach, prob=TRUE)
+curve(dnorm(x, mean=mean(mlm$mathach), sd=sd(mlm$mathach)), add=TRUE)
+describe(mlm)
+
+# Summary table multilevel variables L1
+summary(mlm)
+#mlm$_merge=NULL # drop merge variable
+
+
+```
+
+
+```{r results='asis'}
+
+stargazer(mlm,title="Estadísticos descriptivos", type = "html") # tabla exportable a latex
+
+# Para seleccionar algunas variables:
+names(mlm)
+mlm_sub=mlm[c("schoolid", "size", "sector")]
+names(mlm_sub)
+```
+
+
+Correlaciones
+```{r}
+mlmL1 = mlm %>% select(minority:mathach)
+sjt.corr(mlmL1, triangle = "lower")
+
+# Plot
+M=cor(mlmL1)
+corrplot(M, type="lower",
+order="AOE", cl.pos="b", tl.pos="d") #agrega nombres en diag.
+
+```
+
+
+## Reporte de modelo
+
+```{r results='asis'}
+
+htmlreg(l = results_1, type = "html", doctype = FALSE)
+htmlreg(l = list(results_0, results_1,results_2),dcolumn = TRUE , type = "html", doctype = FALSE)
+
+```
+
+
+
+
+
+
+
+
