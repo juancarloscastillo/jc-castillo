@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Modelos Multinivel</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".small[Juan Carlos Castillo    Departamento de Sociología - UCH / COES   ]" />
+    <link rel="stylesheet" href="https://multinivel.netlify.com/docpres/xaringan_custom/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="https://multinivel.netlify.com/docpres/xaringan_custom/progress-bar.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: bottom, right, inverse
+
+
+
+
+
+&lt;!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('static/docpres/02_bases/2mlmbases.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+---&gt;
+
+.pull-left[.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 70%](https://multinivel.netlify.com/images/hex_eic2.png)]]
+
+.pull-right[
+# Modelos Multinivel
+### Juan Carlos Castillo
+### Sociología FACSO - UChile
+### 2do Sem 2019
+### [Diplomado Análisis Multivariable](https://juancarloscastillo.github.io/jc-castillo/documents/diplomado_multinivel/mlm-dip.html)
+
+&lt;br&gt;
+
+## Sesión 6: Interacciones entre niveles
+]
+
+---
+class: roja, middle, center
+
+
+# Interacción entre niveles
+
+
+---
+# Interacciones entre niveles: bases
+
+- Modelo multinivel con predictores individuales y contextuales
+
+.center[![:scale ](../images/mod4.png)]
+
+--
+- 	Modelo multinivel con interacción entre niveles
+
+.center[![:scale ](../images/mod5.png)]
+
+
+---
+# Interacciones entre niveles: bases
+
+Tipos de estimaciones (efectos) en multinivel
+
+-   Nivel 1, individual (Y en X)
+
+-   Directo entre niveles: Y en Z
+
+-   Interacción entre niveles: Y en X\*Z: ¿Existen cambios en la relación entre Y y X en función de una variable Z?
+
+-   Interpretación: por cada unidad de aumento en Z, la relación entre Y y X se modifica en `\(\gamma_{11}\)`
+
+Por lo tanto, el objetivo es dar cuenta de la variabilidad de la pendiente ( `\(\tau_{11}\)` ) en función de Z
+
+---
+# Interacciones entre niveles: bases
+
+Ejemplo:
+
+-   (Y,X) Efecto de nivel socioeconómico en intención de voto
+
+-   (Y,Z) Efecto de la calidad de la democracia en intención de voto
+
+-   (Y, X\*Z) Cambios en el efecto de nivel socioeconómico en voto según la calidad de la democracia de los países
+
+---
+# Interacciones entre niveles: bases
+
+.center[
+![:scale 70%](../images/ranslope.JPG)
+]
+---
+# Interacciones entre niveles: bases
+
+-   La estimación de interacción entre niveles asume la existencia de **varianza** en la pendiente respectiva
+
+-   Es decir, se requiere comprobar si esta varianza es distinta de 0
+
+-   Diferentes métodos:
+
+    -   Comparación de ajuste de modelos (ej: deviance) - próx.clase
+
+    -   Bootstrap no paramétrico, dado que es difícil mantener el supuesto de distribución normal de las varianzas
+
+-   Considerar temas de potencia: con bajo N nivel 2 es posible que no se detecte la diferencia (de 0) para `\(\tau_{11}\)`
+
+---
+# Interacciones entre niveles: Ejemplo 1 HSB data
+
+
+```r
+pacman::p_load(lme4,sjPlot)
+mlm = read.dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
+
+mlm$sector_f=as.factor(mlm$sector) # Cambiar a factor
+
+reg_mlm3c = lmer(mathach ~ 1 + ses + sector_f + 
+                   ses*sector_f + mnses +   
+                   (1 + ses | schoolid), data=mlm)
+```
+
+
+```r
+# modelos para comparar
+reg_mlm3a = lmer(mathach ~ 1 + ses + sector_f + 
+                   mnses + (1 | schoolid), data=mlm)
+
+reg_mlm3b = lmer(mathach ~ 1 + ses + sector_f + 
+                   mnses + (1 + ses | schoolid), data=mlm)
+```
+
+
+
+---
+
+.small[
+
+&lt;table cellspacing="0" align="center" style="border: none;"&gt;
+&lt;caption align="bottom" style="margin-top:0.3em;"&gt;Statistical models&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"&gt;&lt;b&gt;&lt;/b&gt;&lt;/th&gt;
+&lt;th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"&gt;&lt;b&gt;Model 1&lt;/b&gt;&lt;/th&gt;
+&lt;th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"&gt;&lt;b&gt;Model 2&lt;/b&gt;&lt;/th&gt;
+&lt;th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"&gt;&lt;b&gt;Model 3&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(Intercept)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;11.80&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;11.75&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;12.20&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.23)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.23)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.20)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;ses&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.95&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.96&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.78&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.14)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.14)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.14)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;sector_f1&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.14&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.13&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;1.27&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.34)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.35)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.30)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;ses:sector_f1&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-1.31&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-1.31&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-1.33&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.21)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.22)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.21)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;mnses&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;3.13&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;(0.38)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="border-top: 1px solid black;"&gt;AIC&lt;/td&gt;
+&lt;td style="border-top: 1px solid black;"&gt;46586.16&lt;/td&gt;
+&lt;td style="border-top: 1px solid black;"&gt;46585.11&lt;/td&gt;
+&lt;td style="border-top: 1px solid black;"&gt;46532.06&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;BIC&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;46627.44&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;46640.15&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;46593.98&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Log Likelihood&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-23287.08&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-23284.56&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;-23257.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Num. obs.&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;7185&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;7185&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;7185&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Num. groups: schoolid&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;160&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;160&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;160&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Var: schoolid (Intercept)&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;3.69&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;3.82&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;2.34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Var: Residual&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;36.84&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;36.79&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;36.79&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;Var: schoolid ses&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;0.08&lt;/td&gt;
+&lt;td style="padding-right: 12px; border: none;"&gt;0.07&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="border-bottom: 2px solid black;"&gt;Cov: schoolid (Intercept) ses&lt;/td&gt;
+&lt;td style="border-bottom: 2px solid black;"&gt;&lt;/td&gt;
+&lt;td style="border-bottom: 2px solid black;"&gt;0.54&lt;/td&gt;
+&lt;td style="border-bottom: 2px solid black;"&gt;0.18&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="padding-right: 12px; border: none;" colspan="5"&gt;&lt;span style="font-size:0.8em"&gt;&lt;sup style="vertical-align: 0px;"&gt;***&lt;/sup&gt;p &amp;lt; 0.001, &lt;sup style="vertical-align: 0px;"&gt;**&lt;/sup&gt;p &amp;lt; 0.01, &lt;sup style="vertical-align: 0px;"&gt;*&lt;/sup&gt;p &amp;lt; 0.05&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+]
+
+---
+## Devianza
+
+.medium[
+
+```r
+anova(reg_mlm3b,reg_mlm3c)
+```
+
+```
+## Data: mlm
+## Models:
+## reg_mlm3b: mathach ~ 1 + ses + sector_f + ses * sector_f + (1 + ses | schoolid)
+## reg_mlm3c: mathach ~ 1 + ses + sector_f + ses * sector_f + mnses + (1 + 
+## reg_mlm3c:     ses | schoolid)
+##           Df   AIC   BIC logLik deviance  Chisq Chi Df Pr(&gt;Chisq)    
+## reg_mlm3b  8 46579 46634 -23282    46563                             
+## reg_mlm3c  9 46525 46587 -23254    46507 55.923      1  7.535e-14 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+]
+
+
+---
+# Interacciones entre niveles: Ejemplo 1 HSB data
+
+
+```r
+plot_model(reg_mlm3c, type = "int")
+```
+
+![](6inter_logit_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+
+
+---
+# Interacciones entre niveles: Ejemplo 2
+
+(Aguinis et al,2013)
+
+-   Basado en paper de Chen et al 2007
+
+-   Dependiente (Y): empoderamiento individual
+
+-   Independiente (X): calidad de la relación lider-miembro (LMX - leader member exchange)
+
+-   Independiente (Z): clima de liderazgo
+
+---
+# Interacciones entre niveles: Ejemplo 2
+
+-   Hipotesis:
+
+    -   La calidad de la relación líder-miembro (X) aumenta el         empoderamiento individual (Y)
+
+    -   El clima de liderazgo (Z)aumenta el empoderamiento individual (Y)
+
+    -   La relación ente empoderamiento (Y) y LMX (X) será más fuerte en      equipos con mejor clima de liderazgo (Z)
+
+---
+
+![](../images/aguinis_mlm.JPG)
+
+---
+
+Interpretación:
+
+-   `\(\gamma_{11}\)` representa el cambio en la pendiente de empowerment en LMX a través de los grupos cuando el clima de liderazgo se incrementa en 1 punto.
+
+-   Positivo: LMX (X) se encuentra relacionado más fuertemente a empowerment (Y) en grupos con clima más positivo en comparación a grupos con clima menos positivo.
+
+-   “the slope of individual empowerment on LMX is expected to equal `\(\gamma_{10} = 0.269\)` for teams with an average leadership climate.” (Ojo: porque el clima está centrado al promedio en el ejemplo, si no sería 0)
+
+-   “However, the relationship between individual LMX and individual empowerment becomes stronger, by `\(\gamma_{11} = 0.104\)` units, as a team’s leadership climate increases by one unit”.
+
+(Aguinis et al 2013, p. 1504)
+
+---
+
+![](../images/aguinis_int.JPG)
+
+---
+
+# A tener en cuenta ( ... best practices)
+
+-   Análisis de potencia (principalmente cuando hay posibilidades de diseñar el estudio)
+
+-   Significación del efecto aleatorio: comparación de ajuste con modelos previos
+
+
+---
+
+# Breve bonus-track
+
+- Especificación modelo logístico
+
+- Especificación modelo en 3 niveles
+
+
+---
+# Modelos para dependientes categóricas en R
+
+- El principal comando de R para estimar modelos multinivel
+para variables categóricas es `glmer`, que es parte de la
+libreria lme4
+
+- La sintaxis para glmer es similar a la del comando lmer,
+agregando algunas opciones adicionales, por ejemplo para
+logistica se agrega `family = binomial("logit")`.
+
+
+```r
+fit2 &lt;- glmer(antemed ~ magec + (1 | comm), 
+              family = binomial("logit"), 
+              data = mydata)
+```
+
+---
+# Modelos con tres niveles
+
+## Ejemplo: individuos anidados en cursos (class), cursos anidados en escuelas
+
+
+```r
+Model4.7 &lt;- lmer(geread~1+(1|school/class), 
+                 data = Achieve)
+```
+
+---
+
+# Práctica
+
+- En casa: replicar Aguinis, datos disponibles (JOM.csv), sintaxis en paper
+
+- Guia E
+
+---
+class: inverse, bottom
+
+.pull-left[.center[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 70%](https://multinivel.netlify.com/images/hex_eic2.png)]]
+
+.pull-right[
+# Modelos Multinivel
+### Juan Carlos Castillo
+### Sociología FACSO - UChile
+### 2do Sem 2019
+### [Diplomado Análisis Multivariable](https://juancarloscastillo.github.io/jc-castillo/documents/diplomado_multinivel/mlm-dip.html)
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` ",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

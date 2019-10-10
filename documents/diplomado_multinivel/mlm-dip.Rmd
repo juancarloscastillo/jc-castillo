@@ -43,7 +43,7 @@ Gran parte de la investigación sociológica hace referencia al contexto en que 
 | Octubre     	| 2  	|[ Correlación intra-clase y predictores en distintos niveles](3mlmICC.html) 	| [Práctica B](https://multinivel.netlify.com/practicas/b_iccranef/b_icc-ranef.html) 	|
 |             	| 3  	| [Efectos aleatorios](4mlmranef.html)                                         	| [Práctica C](https://multinivel.netlify.com/practicas/c_ranef.html) 	|
 |             	| 9  	| [Ajuste y reporte](5fitrep.html)                                  	| [Práctica D](d_ajuste-reporte.html) 	|
-|             	| 10 	| Interacción entre niveles y modelos logísticos multinivel                     	| Práctica F 	|
+|             	| 10 	| [Interacción entre niveles](6inter_logit.html)                     	| [Práctica E](e_interaccion.html) 	|
 
 </font>
 
@@ -53,6 +53,8 @@ Gran parte de la investigación sociológica hace referencia al contexto en que 
 - Bibliogafía básica
 
   - [Finch et al (2014) Multilevel modeling using R](bibliografia/finch et al 2014 multilevel modeling using R.pdf)
+
+  - [Aguinis et al (2013) Best-Practice Recommendations for Estimating Cross-Level Interaction Effects Using Multilevel Modeling](https://www.dropbox.com/s/h7zg80ie6d0j2of/aguinis%20et%20al%202013%20cross%20level%20interactions%20best%20practices.pdf?dl=0)
 
 # Links
 

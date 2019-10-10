@@ -1,0 +1,96 @@
+---
+title: "Práctica D MLM"
+subtitle: "Interacciones"
+author: "Juan Carlos Castillo"
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+```
+
+
+# Cargar/instalar librerías**
+```{r warning=FALSE}
+pacman::p_load(lme4,haven,stargazer, texreg, sjPlot, dplyr) # paquetes a cargar
+
+```
+
+
+# Leer datos base High School and Beyond (HSB)**
+
+Como en sesión anterior
+
+```{r results='hide', message=FALSE}
+mlm = read.dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
+dim(mlm)
+names(mlm)
+attach(mlm)
+
+#Agregacion de casos a escuelas
+agg_mlm=mlm %>% group_by(schoolid) %>% summarise_all(funs(mean))
+```
+
+
+
+```{r}
+#Tabla estadisticos descriptivos
+stargazer(mlm,title="Estadísticos descriptivos", type = "text")
+```
+
+# Interacciones entre niveles
+
+Revisar estructura variable para la interacción
+
+```{r results='asis'}
+
+str(mlm$sector)
+table(mlm$sector)
+mlm$sector_f=as.factor(mlm$sector) # Cambiar a factor
+```
+
+
+```{r}
+# Probar sin pendiente aleatoria
+reg_mlm3a = lmer(mathach ~ 1 + ses + sector_f +  mnses + (1 | schoolid),data=mlm)
+
+# Con pendiente aleatoria
+reg_mlm3b = lmer(mathach ~ 1 + ses + sector_f +  mnses + (1 + ses | schoolid),data=mlm)
+```
+
+
+
+## Devianza
+
+```{r}
+anova(reg_mlm3b,reg_mlm3a)
+
+```
+
+
+## Estimar modelo
+
+```{r}
+reg_mlm3c = lmer(mathach ~ 1 + ses + sector_f + ses*sector_f + mnses +   (1 + ses | schoolid),data=mlm)
+screenreg(c(reg_mlm3a,reg_mlm3b, reg_mlm3c))
+
+```
+
+
+# Plot
+
+```{r}
+
+plot_model(reg_mlm3c, type = "int")
+
+```
+
+
+

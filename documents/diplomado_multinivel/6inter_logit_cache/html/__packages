@@ -1,0 +1,11 @@
+base
+Matrix
+lme4
+foreign
+stargazer
+texreg
+lattice
+sjPlot
+dplyr
+knitr
+RefManageR
