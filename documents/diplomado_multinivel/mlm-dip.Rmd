@@ -54,7 +54,7 @@ Gran parte de la investigación sociológica hace referencia al contexto en que 
 
   - [Finch et al (2014) Multilevel modeling using R](bibliografia/finch et al 2014 multilevel modeling using R.pdf)
 
-  - [Aguinis et al (2013) Best-Practice Recommendations for Estimating Cross-Level Interaction Effects Using Multilevel Modeling](https://www.dropbox.com/s/h7zg80ie6d0j2of/aguinis%20et%20al%202013%20cross%20level%20interactions%20best%20practices.pdf?dl=0)
+  - [Aguinis et al (2013) Best-Practice Recommendations for Estimating Cross-Level Interaction Effects Using Multilevel Modeling](https://multinivel.netlify.com/readings/aguinis2013crosslevel.pdf)
 
 # Links
 

@@ -61,11 +61,11 @@ About macros.js: permite escalar las imágenes como [scale 50%](path to image), 
 ### Juan Carlos Castillo
 ### Sociología FACSO - UChile
 ### 2do Sem 2019
-### [Diplomado Análisis Multivariable](https://juancarloscastillo.github.io/jc-castillo/documents/diplomado_multinivel/mlm-dip.html)
+### [multinivel.netlify.com](https://multinivel.netlify.com)
 
 <br>
 
-## Sesión 6: Interacciones entre niveles
+## Sesión 7: Interacciones entre niveles y centrado
 ]
 
 ---
@@ -80,12 +80,12 @@ class: roja, middle, center
 
 - Modelo multinivel con predictores individuales y contextuales
 
-.center[![:scale ](../images/mod4.png)]
+.center[![:scale ](images/mod4.png)]
 
 --
 - 	Modelo multinivel con interacción entre niveles
 
-.center[![:scale ](../images/mod5.png)]
+.center[![:scale ](images/mod5.png)]
 
 
 ---
@@ -118,7 +118,7 @@ Ejemplo:
 # Interacciones entre niveles: bases
 
 .center[
-![:scale 70%](../images/ranslope.JPG)
+![:scale 70%](images/ranslope.JPG)
 ]
 ---
 # Interacciones entre niveles: bases
@@ -129,7 +129,7 @@ Ejemplo:
 
 -   Diferentes métodos:
 
-    -   Comparación de ajuste de modelos (ej: deviance) - próx.clase
+    -   Comparación de ajuste de modelos (ej: deviance)
 
     -   Bootstrap no paramétrico, dado que es difícil mantener el supuesto de distribución normal de las varianzas
 
@@ -144,18 +144,18 @@ mlm = read.dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
 
 mlm$sector_f=as.factor(mlm$sector) # Cambiar a factor
 
-reg_mlm3c = lmer(mathach ~ 1 + ses + sector_f + 
-                   ses*sector_f + mnses +   
+reg_mlm3c = lmer(mathach ~ 1 + ses + sector_f +
+                   ses*sector_f + mnses +
                    (1 + ses | schoolid), data=mlm)
 
 ```
 
 ```{r}
 # modelos para comparar
-reg_mlm3a = lmer(mathach ~ 1 + ses + sector_f + 
+reg_mlm3a = lmer(mathach ~ 1 + ses + sector_f +
                    mnses + (1 | schoolid), data=mlm)
 
-reg_mlm3b = lmer(mathach ~ 1 + ses + sector_f + 
+reg_mlm3b = lmer(mathach ~ 1 + ses + sector_f +
                    mnses + (1 + ses | schoolid), data=mlm)
 
 ```
@@ -216,7 +216,7 @@ plot_model(reg_mlm3c, type = "int")
 
 ---
 
-![](../images/aguinis_mlm.JPG)
+![](images/aguinis_mlm.JPG)
 
 ---
 
@@ -234,7 +234,7 @@ Interpretación:
 
 ---
 
-![](../images/aguinis_int.JPG)
+![](images/aguinis_int.JPG)
 
 ---
 
@@ -266,8 +266,8 @@ agregando algunas opciones adicionales, por ejemplo para
 logistica se agrega `family = binomial("logit")`.
 
 ```{r eval=FALSE}
-fit2 <- glmer(antemed ~ magec + (1 | comm), 
-              family = binomial("logit"), 
+fit2 <- glmer(antemed ~ magec + (1 | comm),
+              family = binomial("logit"),
               data = mydata)
 ```
 
@@ -277,15 +277,22 @@ fit2 <- glmer(antemed ~ magec + (1 | comm),
 ## Ejemplo: individuos anidados en cursos (class), cursos anidados en escuelas
 
 ```{r eval=FALSE}
-Model4.7 <- lmer(geread~1+(1|school/class), 
+Model4.7 <- lmer(geread~1+(1|school/class),
                  data = Achieve)
 ```
+
+---
+# Otras consideraciones varias
+
+- centrado de variables (ver texto de [Enders & Tofighi 2007](https://www.dropbox.com/s/vw626uzlqos4t2z/enders%20tofighi%202007%20Centering%20Predictor%20Variables.pdf?dl=0))
+
+- [Guía de incorporación de variables de nivel 2](https://multinivel.netlify.com/practicas/d_datosl2)
 
 ---
 
 # Práctica
 
-- En casa: replicar Aguinis, datos disponibles (JOM.csv), sintaxis en paper
+- En casa: replicar Aguinis, datos disponibles ([JOM.csv](https://www.dropbox.com/s/86amiu9fmnopcq7/JOM.csv?dl=0)), sintaxis en paper
 
 - Guia E
 
