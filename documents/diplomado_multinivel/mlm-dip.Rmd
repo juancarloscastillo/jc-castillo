@@ -9,12 +9,7 @@ output:
         includes:
           before_body: header.html
 ---
-
-<br><br>
-
-
 <div class="mycontent">
-
 # DIPLOMADO ANALISIS MULTIVARIABLE
 2do SEM 2019
 
