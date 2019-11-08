@@ -107,6 +107,8 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+- [ThinkR, data visualization with R](https://thinkr.biz/)
+
 - [Pimp my RMD](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)

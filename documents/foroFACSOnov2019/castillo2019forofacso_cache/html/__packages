@@ -1,0 +1,8 @@
+base
+knitr
+RefManageR
+Matrix
+lme4
+sjPlot
+haven
+texreg
