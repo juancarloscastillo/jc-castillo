@@ -54,7 +54,7 @@ About macros.js: permite escalar las imágenes como [scale 50%](path to image), 
 <br>
 ## Juan Carlos Castillo
 ### FONDECYT 1160921 - COES - Universidad de Chile
-FACSO - Santiago, Noviembre 2019
+Santiago, Noviembre 2019
 
 ---
 
@@ -185,6 +185,4 @@ class: inverse right
 
 <br>
 [jc-castillo.com](https://juancarloscastillo.github.io/jc-castillo/)
-
----
 
