@@ -217,6 +217,8 @@ output:
 
 ## Conferences
 
+[CEPAL 2019 Taller interno Cohesión Social](documents/CEPAL2019/pres02.html)
+
 [Desigualdad, Justicia y Redistribución, Foro FACSO 2019](documents/foroFACSOnov2019/castillo2019forofacso.html)
 
 [Colaboración y Ciencia Abierta (Seminario COES _Abrir la Academia_). 10 de Septiembre 2019, FEN Universidad de Chile.](documents/abrir-la-academia/presentacion.html)
