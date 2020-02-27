@@ -29,7 +29,7 @@ rmarkdown::render_site(encoding = 'UTF-8')
 ---
 
 ### PhD Sociology, Humboldt University - Berlin <br/>
-### Deputy director [Centre for Social Conflict and Cohesion Studies](http://www.coes.cl)
+### Principal Researcher [Centre for Social Conflict and Cohesion Studies](http://www.coes.cl)
 [<img src="images/logocoes.jpg" style="width:20%" align="left">](http://www.coes.cl)
 <br/>
 <br/>
