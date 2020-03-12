@@ -107,6 +107,12 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+- [ExPanDaR, interactive analysis](https://joachim-gassen.github.io/2019/12/explore-your-data-with-expand/)
+
+- [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
+
+- [Flipbooks in Xaringan](https://evamaerey.github.io/little_flipbooks_library/about/what_the_flipbook)
+
 - [Workshop Designing ggplots](https://github.com/malcolmbarrett/designing.ggplots)
 
 - [ThinkR, data visualization with R](https://thinkr.biz/)
