@@ -18,7 +18,7 @@ output:
 - **Political socialization and citizenship education: The role of the family and the school** (2018 - 2021) FONDECYT Regular 1181239, associate researcher (principal researcher: Cristián Cox).
 
 
-- **The moral economy of meritocracy and redistributive preference** (2016 - 2019) FONDECYT Regular 1160921, principal researcher. [(link to project website)](https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences)
+- **The moral economy of meritocracy and redistributive preference** (2016 - 2019) FONDECYT Regular 1160921, principal researcher. [(link to project website)](https://www.researchgate.net/project/The-moral-economy-of-meritocracy-and-redistributive-preferences). Link a [informe final del proyecto](documents/informeFONDECYTmoraleconomy/resultados.html).
 
 
 - **Centre for Social Conflict and Cohesion Studies** [COES](www.coes.cl) (2013 - 2018 / 2019-2023) FONDAP CONICYT 15130009, principal researcher / deputy director (2013-2019).
@@ -46,7 +46,7 @@ output:
 
 - Taking from the rich or giving to the poor: The two faces of support for redistribution (with Efraín García-Sánchez)
 
-- Redistributive preferences in unequal contexts: Changes in Latin America between 2008 and 2014 (with Gonzalo Franetovic)
+- Redistributive preferences in unequal contexts: Changes in Latin America between 2008 and 2018 (with Gonzalo Franetovic)
 
 - Perceptions and Preferences about Meritocracy in International Comparison  [(*link to ISA 2018 presentation*)](https://juancarloscastillo.github.io/jc-castillo/documents/ISA2018presentation/castillo2018meritocracyISA.html#1)
 
@@ -69,7 +69,7 @@ output:
 
 (If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
 
-- Maldonado,L., Olivos, F. Azar, A. Castillo, J. & Atria, J.(2019) Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries.  Accepted in _Social Justice Research_
+- Maldonado,L., Olivos, F. Azar, A. Castillo, J. & Atria, J.(2019) Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries. [_Social Justice Research_](https://link.springer.com/article/10.1007/s11211-019-00336-6)
 
 - Cumsille, P., Martínez, L. Loyola, I. & Castillo, JC. (2018) Patterns of civic and political commitment in early adolescence. Forthcoming in _Journal of Early Adolescence_.
 
@@ -105,7 +105,7 @@ output:
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a> [pdf]("documentos/papers/Miranda et al. 2017. Young Citizens Participation.pdf")
 
 - Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2018)
-“Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” _Public Health 148:59-69_ (ISI) [pdf]("documents/papers/azar et al 2017 income, egalitarianism and health redistribution.pdf")
+“Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” _Public Health 148:59-69_ (ISI) [link](https://doi.org/10.1016/j.puhe.2017.09.007).
 
 
 <details>
