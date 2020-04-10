@@ -112,12 +112,15 @@
 .gha-message-commits{font-size:11px}
 .gha-message-merge{padding:3px 7px;border-radius:3px;background:#e8f1f6;color:rgba(0,0,0,.5);font-size:12px;line-height:2}
 .gha-sha{font-size:12px;font-family:Consolas,"Liberation Mono",Courier,monospace}
+
 .gha-gravatar-small{float:left;margin-right:6px;width:30px}
 .gha-gravatar-commit{margin-bottom:-3px;border-radius:2px}
 .gha-gravatar-user{float:left}
-.gha-user-info{display:inline-block;float:left;margin:0 auto;padding:6px 10px 5px;color:#495961;font-size:10px}
+
+.gha-user-info{display:inline-block;float:left;margin:0 auto;padding:6px 10px 5px;color:#408080;font-size:15px}
 .gha-user-info a{color:#495961}
-.gha-user-info p a{font-weight:100}
+.gha-user-info p a{font-weight:200}
+
 .gha-without-name{padding-top:20px;padding-left:15px}
 .gha-info{margin:15px;padding:10px;border:1px solid #e4e4c6;border-radius:4px;background:#ffffde;color:#6d6d4b;font-weight:400;font-size:13px}
 .gha-time{color:#bbb;font-weight:400;font-size:12px}
