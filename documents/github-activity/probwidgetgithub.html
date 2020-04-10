@@ -1,0 +1,56 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+<link rel="stylesheet" href="github-activity-0.1.5.min.css">
+
+<script src="//code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
+<script>
+  function updateFeed(username) {
+    GitHubActivity.feed({ username: username, selector: '#feed' });
+  }
+
+  $(document).ready(function() {
+    updateFeed('caseyscarborough');
+
+    $('#update').click(function() { updateFeed($("#username").val()); });
+    $("#username").keypress(function(e) {
+      if (e.which === 13) {
+        updateFeed($("#username").val());
+      }
+    });
+  });
+</script>
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    padding: 20px;
+    font-family: 'Helvetica', 'Arial';
+  }
+
+  #feed {
+    width: 700px;
+    height: 600px;
+    margin: 30px 0;
+  }
+</style>
+</head>
+<body>
+<h1><i class="fa fa-github"></i> GitHub Activity Stream</h1>
+
+<p>GitHub Activity Stream an embeddable widget that displays a user's public activity on GitHub. It displays a user's username, name, photo, and a specified number of recent activity updates.</p>
+
+<p>Visit the <a href="https://github.com/caseyscarborough/github-activity">project repository on GitHub</a> for instructions on how to embed it on your site.</p>
+
+<p>A demo of the activity stream is shown below:</p>
+<input type="text" id="username" placeholder="GitHub Username" />
+<button id="update">Update</button>
+<div id="feed"></div>
+</body>
+</html>

@@ -10,7 +10,7 @@ output:
 urlcolor: blue
 ---
 
-(Versión online en [https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html](https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html).)
+(Versión online en [https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html](https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html).) 
 ----
 
 **"Economía moral de la meritocracia y preferencias redistributivas"** es un proyecto de 4 años adjudicado en la versión 2016 del concurso FONDECYT Regular. Su investigador principal es [Juan Carlos Castillo](https://jc-castillo.com), de la Universidad de Chile, y sus coinvestigadores son Luis Maldonado de la Universidad Católica y Jorge Atria, de la Universidad Diego Portales.
