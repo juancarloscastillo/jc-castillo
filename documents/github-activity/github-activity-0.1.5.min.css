@@ -117,7 +117,7 @@
 .gha-gravatar-commit{margin-bottom:-3px;border-radius:2px}
 .gha-gravatar-user{float:left}
 
-.gha-user-info{display:inline-block;float:left;margin:10 auto;padding:6px 10px 5px;color:#408080;font-size:15px}
+.gha-user-info{display:inline-block;float:left;margin:0 auto;padding:6px 10px 5px 5px;color:#408080;font-size:15px}
 .gha-user-info a{color:#1F7BB0}
 .gha-user-info p a{font-weight:300}
 
