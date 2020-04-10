@@ -8,20 +8,16 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
 <script type="text/javascript" src="github-activity-0.1.5.min.js"></script>
 <script>
-  function updateFeed(username) {
-    GitHubActivity.feed({ username: username, selector: '#feed' });
-  }
 
-  $(document).ready(function() {
-    updateFeed('juancarloscastillo/cienciasocialabierta');
+GitHubActivity.feed({
+	username: "juancarloscastillo",
+	repository: "cienciasocialabierta", // optional
+	selector: "#feed",
+	limit: 20 // optional
+});
 
-    $('#update').click(function() { updateFeed($("#username").val()); });
-    $("#username").keypress(function(e) {
-      if (e.which === 13) {
-        updateFeed($("#username").val());
-      }
-    });
-  });
+
+
 </script>
 <style>
   html, body {
