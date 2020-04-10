@@ -11,7 +11,7 @@
 .gha-feed{width:100%;height:100%;background:#fff;font-weight:700;font-size:14px;font-family:Helvetica,arial,freesans,clean,sans-serif;line-height:1.3;overflow-y:auto;border:1px solid #ddd}
 .gha-feed,.gha-feed h2,.gha-feed h3,.gha-feed li,.gha-feed p,.gha-feed ul{margin:0;padding:0}.gha-feed ul{list-style-type:none;padding:0;margin:0}
 .gha-feed li{list-style-type:none;line-height:1.4}
-.gha-feed small{color:#666;font-weight:600;font-size:13px}
+.gha-feed small{color:#666;font-weight:600;font-size:20px}
 .gha-feed small a{font-weight:400}
 .gha-feed small a .more-commits{font-size:11px}span
 
