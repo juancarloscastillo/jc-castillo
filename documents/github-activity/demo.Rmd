@@ -1,0 +1,14 @@
+---
+title: "Demo Rmarkdown GitHub Activity Widget"
+output:
+  html_document:
+    includes:
+      in_header: head_github-activity.html
+---
+
+# This is a demo file for the github-activity feed produced with Rmarkdown
+
+And ... here is the feed:
+
+<div id="feed">
+</div>
