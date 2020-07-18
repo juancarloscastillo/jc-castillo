@@ -233,11 +233,46 @@ input[type='checkbox'] {
 }
 
 .row-full{
-width: 100vw;
+width: 200vw;
 position: relative;
-margin-left: -50vw;
+margin-left: -130vw;
 height: 100px;
 margin-top: -50px;
 margin-bottom: 550px;
 left: 50%;
+}
+
+/*columns*/
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 230px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.pull-right-narrow {
+  float: right;
+  width: 33%;
+}
+
+
+.pull-left-wide {
+  float: left;
+  width: 66%;
 }

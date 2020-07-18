@@ -56,8 +56,6 @@ output:
 
 - Equality or Insurance? The underlying motives for supporting social policy in Latin America (with Jose de Amesti - 1st author, Luis Maldonado & Jorge Atria). Submitted.
 
-- Talent and Business Success: Economic elites&#39; moral economy of meritocracy in Chile (with Jorge Atria, Luis Maldonado & Simón Ramirez). Submitted.
-
 - Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla).  Submitted - Preprint: <a href="https://osf.io/preprints/socarxiv/t87se/">
 <i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 
@@ -68,6 +66,8 @@ output:
 ### Peer-reviewed journal articles
 
 (If you are looking for copies of my papers, check my site in [Researchgate](https://www.researchgate.net/profile/Juan_Castillo5/contributions)).
+
+- Atria, J., Castillo, J., Maldonado, L., & Ramirez, S. (2020). Economic Elites’ Attitudes Toward Meritocracy in Chile: A Moral Economy Perspective. American Behavioral Scientist. [https://doi.org/10.1177/0002764220941214](https://journals.sagepub.com/doi/10.1177/0002764220941214)
 
 - Maldonado,L., Olivos, F. Azar, A. Castillo, J. & Atria, J.(2019) Risk exposure, humanitarianism and willingness to pay for universal healthcare: A cross-national analysis of 28 countries. [_Social Justice Research_](https://link.springer.com/article/10.1007/s11211-019-00336-6)
 
