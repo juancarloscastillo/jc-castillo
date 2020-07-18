@@ -79,11 +79,12 @@ recordar incluir en css.
 #### Utilizo principalmente datos de encuestas nacionales y comparativas internacionales. En análisis de datos me he especializado en métodos cuantitativos, particularmente modelos multinivel y ecuaciones estructurales.
 
 <br>
-<br>
 
 ---
 
-### _Últimos articulos, proyectos & presentaciones:_
+### _Últimos artículos, proyectos & presentaciones:_
+
+<br>
 
 <div class="wrap-collabsible">
 <input id="collapsible8" class="toggle" type="checkbox"><label for="collapsible8" class="lbl-toggle">
