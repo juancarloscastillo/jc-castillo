@@ -107,6 +107,18 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+- [RStats illustrations](https://github.com/allisonhorst/stats-illustrations)
+
+- [teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
+
+- [XaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/)
+
+- [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599)
+
+- [Libro (bookdown): Introducción a la ciencia de Datos, de Rafael Irizarry](https://rafalab.github.io/dslibro/)
+
+- [Teach R Interactive courses](https://education.rstudio.com/blog/2020/05/teach-interactive-course/)
+
 - [ExPanDaR, interactive analysis](https://joachim-gassen.github.io/2019/12/explore-your-data-with-expand/)
 
 - [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
@@ -133,6 +145,6 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Guidelines for quantitative submissions ASR](http://journals.sagepub.com/doi/abs/10.1177/0003122418806282)
 
-- [Ghraphics principles cheatsheet](https://graphicsprinciples.github.io/)
+- [Graphics principles cheatsheet](https://graphicsprinciples.github.io/)
 
 - [Practical ggplot](https://wilkelab.org/practicalgg/)

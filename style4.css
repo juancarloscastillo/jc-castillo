@@ -2,28 +2,36 @@ html, body {
   font-weight: 400;
   font-size: 16px;
   height: 100%;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Courier new', serif;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Courier new', serif;
 }
 
 h1.title {
-  color: #FFFFFF;  
+  color: #FFFFFF;
   font-size: 1px;
-  
+
   }
 
 /* footer */
 
+.navbar-default {
+  background-color:#000000;
+  font-family: 'Courier new', serif;
+}
+
+
 .navbar-brand {
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Courier new', serif;
   font-weight: 300;
   font-size: 24px;
   height: 100%;
 }
+
+/* footer */
 
 #rbmvFooter {
   z-index: 2;
@@ -33,7 +41,7 @@ h1.title {
 
 #rbmvFooter.footer {
   color: #d1420e; /* orange */
-  background-color: #111111;  
+  background-color: #111111;
   padding: 4% 8%;
   margin-top: 7em;
   box-shadow: 0px 3px 50px 0px rgba(43,45,66,0.4);
@@ -66,7 +74,7 @@ h1.title {
   color: var(--light-grey);
 }
 
- 
+
 /*collapsible - add specifications for <details> tag*/
 
  summary::-webkit-details-marker {
@@ -82,7 +90,7 @@ summary:focus {
 
       .note {
           position:relative;
-          
+
           padding:0.5em 0.5em;
           margin:1em auto;
           color:#ffffff;
@@ -167,7 +175,7 @@ input[type='checkbox'] {
   background: #7d8c8e;
   cursor: pointer;
   border-radius: 7px;
-  transition: all 0.25s ease-out;  
+  transition: all 0.25s ease-out;
 }
 
 .lbl-toggle:hover {
@@ -217,5 +225,19 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
+/*parallax*/
 
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
 
+.row-full{
+width: 100vw;
+position: relative;
+margin-left: -50vw;
+height: 100px;
+margin-top: -50px;
+margin-bottom: 550px;
+left: 50%;
+}

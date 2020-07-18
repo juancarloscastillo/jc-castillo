@@ -15,28 +15,33 @@ output:
 <!---
 Para rendir el sitio desde terminal R:
 rmarkdown::render_site(encoding = 'UTF-8')
+
+
+instrucciones para el parallax aquí: http://pixelcog.github.io/parallax.js/
+recordar incluir en css.
 --->
 
-<br/>
-<br/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="site_libs/parallax/parallax.js-1.5.0/parallax.min.js"></script>
 
-<img src="images/facso.png" style="width:100%" align="left"> <br/>
+<div class="container" style="width: 750px; margin: 0 auto;">
 
-<br clear="all" />
+<div class="row-full">
 
-### Profesor del [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, Universidad de Chile <br/>
+<div class="parallax-window" data-parallax="scroll" data-image-src="images/facsobw.png"></div>
+</div>
+</div>
+
+### Profesor del [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, [Universidad de Chile](https://www.uchile.cl/) <br/>
 
 ---
 
-### PhD Sociology, Humboldt University - Berlin <br/>
-### Principal Researcher [Centre for Social Conflict and Cohesion Studies](http://www.coes.cl)
+### PhD Sociología, [Universidad de Humboldt](https://www.sowi.hu-berlin.de/en/index.html), Berlin <br/>
+### Investigador Principal [COES](http://www.coes.cl), Centro de Estudios de Conflicto y Cohesión Social
 [<img src="images/logocoes.jpg" style="width:20%" align="left">](http://www.coes.cl)
 <br/>
 <br/>
 <br/>
-<br/>
-... and proud moderator of <br/>
-[<img src="images/socarxiv.jpg" style="width:30%">](http://www.socopen.org)
 <br/>
 <br/>
 

@@ -10,6 +10,12 @@ output:
 
 # Universidad de Chile
 
+### 2020
+
+- [Estadística multivariada](https://multivariada.netlify.app/)
+- [Ciencia Social Abierta](https://cienciasocialabierta.netlify.com/)
+
+
 ### 2019
 
 - [Modelos Multinivel - Diplomado Análisis Multivariable](documents/diplomado_multinivel/mlm-dip.html)

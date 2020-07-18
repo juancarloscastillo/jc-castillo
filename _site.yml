@@ -20,7 +20,7 @@ navbar:
 
 output:
   html_document:
-    theme: yeti
+    theme: cerulean
     highlight: pygments
     css: style4.css
     includes:

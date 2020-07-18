@@ -165,6 +165,9 @@ output:
 
 ### Books, chapters & working papers
 
+
+- Maldonado, L., Castillo, J., Iturra, J., Atria, J., & Meneses, F. (2019). Meritocracia y redistribución en Chile: Señales de la opinión pública. [https://doi.org/10.17605/OSF.IO/G4EK8](https://doi.org/10.17605/OSF.IO/G4EK8)<a href="https://doi.org/10.17605/OSF.IO/G4EK8"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
+
 - Breznau, N., Rinke, E., Wuttke, A., Adem, M., Adriaans, J., Alvarez-Benjumea, A., … Castillo, JC. … Żółtak, T. (2019, January 26). The Crowdsourced Replication Initiative: Investigating Immigration and Social Policy Preferences. Executive Report. https://doi.org/10.31235/osf.io/6j9qb. <a href="https://doi.org/10.31235/osf.io/6j9qb"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 
 - Miranda, D. & Castillo, JC (2018) Measurement Model and Invariance Testing of Scales Measuring Egalitarian Values in ICCS 2009. In A. Sandoval-Hernandez, M. Isaac & D. Miranda (Eds.) Teaching tolerance in a globalized world. New York, NY: Springer Berlin Heidelberg. <i class="ai ai-open-access fa-lg" style="font-size:20px"></i>[Open Access](https://link.springer.com/chapter/10.1007/978-3-319-78692-6_3)
