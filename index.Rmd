@@ -32,33 +32,29 @@ recordar incluir en css.
 </div>
 </div>
 
+<div class="row">
+  <div class="column left">
 
-### Profesor de metodología cuantitativa en el [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, [Universidad de Chile](https://www.uchile.cl/) <br/>
-
-
-<br/>
+### Profesor del [Departamento de Sociología](http://www.facso.uchile.cl/sociologia), Facultad de Ciencias Sociales, [Universidad de Chile](https://www.uchile.cl/) <br/>
 
 ### PhD Sociología, [Universidad de Humboldt](https://www.sowi.hu-berlin.de/en/index.html), Berlin <br/>
-
-
----
 
 ### Investigador Principal [COES](http://www.coes.cl), Centro de Estudios de Conflicto y Cohesión Social
 [<img src="images/logocoes.jpg" style="width:20%" align="left">](http://www.coes.cl)
 
-<br/>
-<br/>
+</div>
+<div class="column right" >
+<img src="images/circle.png" alt="circle" width="300" height="230">
+</div>
+</div>
+
 <br/>
 <br/>
 
----
+<hr style="height:3px;border-top:1px solid #f00" />
 
-<br/>
 
-<div class="row">
-  <div class="column left">
-
-### [**Mis principales áreas de investigación son:**]()
+### [**Principales áreas de investigación:**]()
 
 <br>
 
@@ -68,21 +64,15 @@ recordar incluir en css.
 
 #### - **Formación ciudadana y desigualdad**: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura.
 
+<br>
 
-
-  </div>
-  <div class="column right" >
-<img src="images/circle.png" alt="circle" width="300" height="230">
-  </div>
-</div>
-
-#### Utilizo principalmente datos de encuestas nacionales y comparativas internacionales. En análisis de datos me he especializado en métodos cuantitativos, particularmente modelos multinivel y ecuaciones estructurales.
+#### Para mi investigación utilizo principalmente datos de encuestas nacionales y comparativas internacionales. En análisis de datos me he especializado en métodos cuantitativos, particularmente **modelos multinivel** y **ecuaciones estructurales**.
 
 <br>
 
----
+<hr style="height:3px;border-top:1px solid #f00" />
 
-### _Últimos artículos, proyectos & presentaciones:_
+### [**Últimos artículos, proyectos & presentaciones:**]()
 
 <br>
 
