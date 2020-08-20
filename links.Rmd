@@ -107,6 +107,16 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+- [ggdist](https://mjskay.github.io/ggdist/)
+
+- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/)
+
+- [Gates Open Research](https://gatesopenresearch.org/)
+
+- [Internal replication of computational workflows in scientific research](https://gatesopenresearch.org/articles/4-17/v2)
+
+- [Seeing Theory](https://seeing-theory.brown.edu/index.html#secondPage)
+
 - [RStats illustrations](https://github.com/allisonhorst/stats-illustrations)
 
 - [teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)

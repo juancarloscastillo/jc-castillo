@@ -68,6 +68,9 @@ recordar incluir en css.
 
 #### Para mi investigación utilizo principalmente datos de encuestas nacionales y comparativas internacionales. En análisis de datos me he especializado en métodos cuantitativos, particularmente **modelos multinivel** y **ecuaciones estructurales**.
 
+#### Adscribo y promuevo los principios de **ciencia abierta**, en términos de facilitar el acceso a los productos de investigación y de la transparencia y reproducibilidad de las investigaciones (detalles en mi curso ["Ciencia Social Abierta"](https://cienciasocialabierta.netlify.app/)). 
+
+
 <br>
 
 <hr style="height:3px;border-top:1px solid #f00" />

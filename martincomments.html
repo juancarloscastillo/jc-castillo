@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>martincomments.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link rel="stylesheet" href="site_libs/academicons-1.8.6/css/academicons.css" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style4.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Juan Carlos Castillo</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="docencia.html">Docencia</a>
+</li>
+<li>
+  <a href="links.html">Links</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="documents/CVjccastillo.pdf">
+    <span class="ai ai-cv fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.researchgate.net/profile/Juan_Castillo5/contributions">
+    <span class="ai ai-researchgate fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/juancarloscastillo">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p>main comments:</p>
+<ul>
+<li><p>I highlighted some sections of the theoretical part that still are not clear to understand after the last editing.</p></li>
+<li><p>Regarding the response to the reviewers:</p>
+<ul>
+<li><p>Reviewers 1 and 2 point to different aspects of the theoretical section. Reviewer 1 is confused, as he thinks the paper deals with redistributive preferences and/or inequality concerns. I thought that this was probably our fault, but Reviewer 2 got it totally clear (as well as reviewer 3). Still, I made polite responses to Reviewer 1.</p></li>
+<li><p>Reviewer 2 is into theory, I agree with this. There were some theoretical explanations in the paper, but we have to recognize that this is an under-researched area and that we are not going to find any big theory (Bourdieu or Luhman kind) explaining this. There are few middle range theories that now are highlighted and presented as such, reviewer 2 was right because the paper was mostly focused on empirical results and now there is more theory and hypothesis, but they are not very different from the original sense that was behind the empirical evidence. Please have a look to the new version and let me know what you think.</p></li>
+<li><p>I think many aspects of Reviewer 3 are covered in the responses to reviewer 2. Still, there is one comment that I do not get: the one about gender and sex: “I was not entirely sure why gender and age played such a prominent role in this paper.” … do they??</p></li>
+<li><p>My major actual concerns is your response to reviewer 1 regarding new variables. What he simply suggests is “I’d recommend sticking with a more conventional set of controls”. So, I don’t think it is necessary to include meritocracy and other stuff, social class would be enough from my point of view. And there are some risks of including meritocracy: a) this is not a mere “control”, we would need a theory to base that, and it would be a different paper, b) now it would really looked similar to Mijs, c) I do not agree at all with Mijs’ operationalization of meritocracy, d) this was not mentioned by reviewer 2 or 3 … and also not by reviewer 1, he just refers to controls.</p></li>
+</ul></li>
+</ul>
+<p>Below the new references incorporated:</p>
+<p>Becker, B. (2019). Mind the Income Gaps? Experimental Evidence of Information’s Lasting Effect on Redistributive Preferences. Social Justice Research. <a href="https://doi.org/10.1007/s11211-019-00343-7" class="uri">https://doi.org/10.1007/s11211-019-00343-7</a></p>
+<p>Bobzien, L. (2019). Polarized perceptions, polarized preferences? Understanding the relationship between inequality and preferences for redistribution. Journal of European Social Policy, 095892871987928. <a href="https://doi.org/10.1177/0958928719879282" class="uri">https://doi.org/10.1177/0958928719879282</a></p>
+<p>Castillo, J. C., Miranda, D., &amp; Madero, I.(2013). Todos somos de clase media: Sobre el estatus social subjetivo en Chile. Latin American Research Review, 48(1), 155–173. <a href="https://doi.org/10.1353/lar.2013.0006" class="uri">https://doi.org/10.1353/lar.2013.0006</a></p>
+<p>Dawtry, R. J., Sutton, R. M., &amp; Sibley, C. G. (2015). Why Wealthier People Think People Are Wealthier, and Why It Matters: From Social Sampling to Attitudes to Redistribution. Psychological Science. <a href="https://doi.org/10.1177/0956797615586560" class="uri">https://doi.org/10.1177/0956797615586560</a></p>
+<p>Edmiston, D. (2018). The poor “sociological imagination” of the rich: Explaining attitudinal divergence towards welfare, inequality, and redistribution. Social Policy &amp; Administration, 52(5), 983–997. <a href="https://doi.org/10.1111/spol.12366" class="uri">https://doi.org/10.1111/spol.12366</a></p>
+<p>García-Castro, J. D., Rodríguez-Bailón, R., &amp; Willis, G. B. (2020). Perceiving economic inequality in everyday life decreases tolerance to inequality. Journal of Experimental Social Psychology, 90, 104019. <a href="https://doi.org/10.1016/j.jesp.2020.104019" class="uri">https://doi.org/10.1016/j.jesp.2020.104019</a></p>
+<p>Irwin, S. (2018). Lay Perceptions of Inequality and Social Structure. Sociology, 52(2), 211–227. <a href="https://doi.org/10.1177/0038038516661264" class="uri">https://doi.org/10.1177/0038038516661264</a></p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
