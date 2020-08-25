@@ -107,6 +107,8 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+- [Designing GGplots - con una muy buena presentación en Xaringan](https://designing-ggplots.netlify.app/#1)
+
 - [ggdist](https://mjskay.github.io/ggdist/)
 
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/)
