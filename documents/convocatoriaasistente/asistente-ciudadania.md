@@ -1,6 +1,6 @@
 ---
 title: 'CONVOCATORIA ASISTENTE DE INVESTIGACIÓN FONDECYT '
-subtitle: "Postulaciones abiertas hasta el 4 de Septiembre de 2020"
+subtitle: "Postulaciones abiertas hasta el 10 de Septiembre de 2020"
 
 output:
   html_document:
@@ -46,7 +46,9 @@ Coinvestigadores: [Daniel Miranda (UC)](https://www.mideuc.cl/investigacion/equi
 - CV resumido (máximo 2 páginas)
 - Párrafo describiendo principales habilidades y motivaciones para integrarse a este proyecto (máximo 300 palabras).
 
-Ambos documentos deben enviarse en un archivo pdf de la siguiente manera: _nombre-apellido.pdf_.
+Ambos documentos deben enviarse en **un mismo archivo pdf** de la siguiente manera: _nombre-apellido.pdf_.
 
 
-## Envío de antecedentes a damiran1@uc.cl hasta el **04 de Septiembre**.
+## Para envío de postulaciones [click AQUÍ](https://docs.google.com/forms/d/e/1FAIpQLSecoCIVOziaYca_Yuy9hl1zzNJ-pUdjyGQdyrl2BxRmaZqkKg/viewform).
+
+En caso de preguntas escribir a la asistente del proyecto Anaís Herrera,  [anais.herrera@ug.uchile.cl](anais.herrera@ug.uchile.cl).
