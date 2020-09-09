@@ -1,0 +1,90 @@
+# Taller ATOM
+
+
+
+# ¿Por qué usar editores?
+
+- texto plano/simple: mismo entorno para escritura y análisis (código)
+
+- herramientas de apoyo a la escritura (formato, corrección ortografía)
+
+- plataforma común desde la cual ejecutar programas y vincularse a otros programas y servicios
+
+---
+# IDEs: Alternativas
+
+- Emacs
+- Vim
+- Sublime
+- ATOM
+
+---
+# ATOM: características
+
+- open source
+- adaptable
+- ameno
+- muy buenas funciones Git/Github
+
+---
+# Bases
+
+- Instalación
+- Entorno general: menues, paneles, footer
+- Pestañas de trabajo / división de pantalla
+- Opciones generales editor
+- Temas
+- Librerías
+- grammars
+
+---
+
+# Escritura: principales
+
+- markdown preview enhanced
+- spell check
+- zotero picker
+- pandoc-convert
+- browser plus
+- pdf-view
+
+---
+# cosas de edición
+
+- soft-wrap
+- ctrl+j
+- auto indent
+- mayusculas/minúsculas
+- cambio de lineas (shift+flecha)
+- cursor multiple (ctrl + mouse o alt+shift)
+- activar cursor multiple en resultados de búsqueda (Find All, luego shift+Enter)
+- ctrl+d selecciona palabra destacada y genera cursor múltiple
+-
+
+---
+# Escritura: otros interesantes
+- cursor / bloques
+- zen
+- minimap
+- wordcount
+
+---
+# Análisis datos R
+
+- terminal
+- script
+- hydrogen
+- Rbox?
+
+---
+# Git/github
+
+- crear repositorio ejemplo para taller
+- clonar
+
+
+
+# Temas varios
+- snippets
+- copy project path
+-
