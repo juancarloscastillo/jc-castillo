@@ -16,6 +16,8 @@ output:
 
 ### Tutorials
 
+- [Taller ATOM Septiembre 2020](documents/tallerATOM/atom_web.html)
+
 - Libro [INVESTIGACIÓN SOCIAL ABIERTA](https://juancarloscastillo.github.io/in-socabi/) (...en desarrollo.)
 
 - [Citando en texto plano](citando-plano.html) (citing in plain text): referencias bibliográficas para documentos académicos en LaTeX, (R)Markdown, y Xaringan desde Atom.

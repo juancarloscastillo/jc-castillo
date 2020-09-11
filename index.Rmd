@@ -16,6 +16,9 @@ output:
 ```{r eval=FALSE, echo=FALSE}
 # Para rendir el sitio desde terminal R:
 rmarkdown::render_site(encoding = 'UTF-8')
+head(iris)
+
+1+1
 ```
 
 
