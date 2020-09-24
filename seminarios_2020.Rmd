@@ -1,0 +1,59 @@
+---
+title: " Seminarios de Grado / Título  - 2sem 2020 "
+author: " "
+output:
+    html_document:
+        theme: united
+---
+
+<br/>
+<br/>
+
+<b>
+<font color="red" size=6>
+
+# Seminarios Sociología Universidad de Chile
+
+</b>
+</font>
+
+## 2do Semestre 2020
+
+- Se entregarán 2 informes durante el semestre, uno de avance y uno final.
+
+- **Informe de avance**
+
+  - Seminario Grado (4to año): contempla la definición del problema de investigación, revisión de literatura, propuesta de sección metodológica.
+
+  - Seminario Título (5o año): versión final del análisis de datos y propuesta de conclusiones
+
+- El **informe final**
+
+  - Seminario de Grado (4to Año):  debe incorporar los comentarios y avanzar en la propuesta metodológica incluyendo análisis preliminares.
+
+  - Seminario de Título (5to Año): documento final incorporando los últimos comentarios y conclusiones finales.
+
+- Además de estas definiciones generales sobre contenidos de informes, pueden haber instancias personalizadas según el avance de cada estudiante.
+
+### Recomendaciones generales:
+
+- Después de la entrega de cada informe, anotarse en los [horarios de reunión con estudiantes](contact.html) para recibir retroalimentación
+
+- Presentar en el [Coloquio de Investigación en Desigualdad y Ciudadanía.](coloqui-inv.html)
+
+- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK)
+
+- Entrega de informes en formato (R)Markdown, html o pdf
+
+- Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de [Git/Github](https://github.com/)
+
+- También por temas de apertura se recomienda inscribir el proyecto en el [Open Science Framework](https://osf.io/)
+
+**Fechas**
+
+- Viernes 30 Octubre 2020: Entrega de informe de avance
+- Viernes 18 Diciembre 2020: Entrega informe final
+
+
+
+<br>

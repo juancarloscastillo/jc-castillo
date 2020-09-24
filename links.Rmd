@@ -110,6 +110,10 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
+-[distill: article writing in RMarkdown](https://rstudio.github.io/distill/basics.html)
+
+-[explorer: R package for exploring data with a Shiny app](https://rolkra.github.io/start-to-explore/)
+
 - [remedy - add-in for markdown writing in RStudio](https://github.com/ThinkR-open/remedy)
 
 - [R modelsummary](https://vincentarelbundock.github.io/modelsummary/)

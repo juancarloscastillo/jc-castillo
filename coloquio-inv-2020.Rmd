@@ -1,0 +1,31 @@
+---
+title: " "
+author: " "
+output:
+    html_document:
+        theme: united
+---
+
+<br/>
+<br/>
+
+<b>
+<font color="red" size=6>
+Coloquio de investigación en desigualdad y ciudadanía - 2do Sem 2019
+</b>
+</font>
+<br>
+
+
+### Jueves 16:00  a 17:00, Semptiembre-Diciembre (online)
+
+El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan metodologías de análisis cuantitativo.
+
+## Calendarización
+
+
+| |  | Presenta   | Tema |
+|--|--|:--|--|
+| Semptiembre | 24 | -  | Calendarización sesiones
+
+# Links,a presentaciones y otros

@@ -14,6 +14,8 @@ output:
 
 - [Estadística multivariada](https://multivariada.netlify.app/)
 - [Ciencia Social Abierta](https://cienciasocialabierta.netlify.com/)
+- [Seminario de grado](seminarios_2020.html)
+- [Coloquio investigación en desigualdad y ciudadanía](coloquio-inv-2020.html)
 
 
 ### 2019

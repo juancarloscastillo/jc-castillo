@@ -35,10 +35,12 @@ Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 - [https://github.com/juancarloscastillo/ejemploclasegithub](https://github.com/juancarloscastillo/ejemploclasegithub)
 
 
+
 ## Links
 
 - Instalación y documentación: [https://atom.io/](https://atom.io/)
 
+- Ejemplos de [archivo de snippets](snippets.cson)
 
 ## Foro
 
