@@ -35,7 +35,8 @@ El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentr
 | Octubre     | 15 | Simón Varas  | Enfermedades Crónicas No Transmisibles y el efecto protector de la Cohesión Social en Chile
 |             | 22 | Francisco Meneses | El rol del manejo del lenguaje en la transmisión intergeneracional de las habilidades políticas en jóvenes chilenos
 |             | 29 | Carlos Budnevich  | La heterogeneidad de la composición social de las escuelas y su relación con el rendimiento académico en lenguaje y matemática de los estudiantes secundarios chilenos
-| Noviembre   | 5  | Anaís Herrera | El rol de la familia y la escuela en la socialización política de las actitudes hacia la igualdad de derecho |             | 12 | Matías Retamales | El efecto mitigador del sentido de justicia en la escuela sobre la intención de participación cívica: Un estudio multinivel sobre estudiantes chilenos
+| Noviembre   | 5  | Anaís Herrera | El rol de la familia y la escuela en la socialización política de las actitudes hacia la igualdad de derecho
+|             | 12 | Matías Retamales | El efecto mitigador del sentido de justicia en la escuela sobre la intención de participación cívica: Un estudio multinivel sobre estudiantes chilenos
 |             | 19 | Karen Tapia |
 |             | 26 | Sebastián Cortínez |
 | Diciembre   |  3 | Kevin Carrasco |
