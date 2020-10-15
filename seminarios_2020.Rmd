@@ -23,7 +23,7 @@ output:
 
 - **Informe de avance**
 
-  - Seminario Grado (4to año): contempla la definición del problema de investigación, revisión de literatura, propuesta de sección metodológica.
+  - Seminario Grado (4to año): contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica - disponibilidad de datos. (app. 1000 palabras).
 
   - Seminario Título (5o año): versión final del análisis de datos y propuesta de conclusiones
 

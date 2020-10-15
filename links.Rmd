@@ -74,6 +74,10 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Open Science
 
+- [Gates Open Research](https://gatesopenresearch.org/)
+
+- [Internal replication of computational workflows in scientific research](https://gatesopenresearch.org/articles/4-17/v2)
+
 - [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/pages/tutorials.html)
 
 - [Open Science Framework](https://osf.io/)
@@ -110,25 +114,34 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Miscellaneous
 
--[distill: article writing in RMarkdown](https://rstudio.github.io/distill/basics.html)
+**Data preparation & modeling**
+
+- [Book IMS: Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
+
+- [Book Tidy Modeling with R](https://www.tmwr.org/)
 
 -[explorer: R package for exploring data with a Shiny app](https://rolkra.github.io/start-to-explore/)
 
-- [remedy - add-in for markdown writing in RStudio](https://github.com/ThinkR-open/remedy)
-
 - [R modelsummary](https://vincentarelbundock.github.io/modelsummary/)
 
-- [Xaringan slides sharing](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/)
+- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/)
+
+- [Libro (bookdown): Introducción a la ciencia de Datos, de Rafael Irizarry](https://rafalab.github.io/dslibro/)
+
+- [Teach R Interactive courses](https://education.rstudio.com/blog/2020/05/teach-interactive-course/)
+
+- [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
+
+
+**Visualization**
+
+- [ggstatsplot: ggplot2 Based Plots with Statistical Details] (https://github.com/IndrajeetPatil/ggstatsplot)
+
+- [rtist: fancy color palettes in R graphs](https://github.com/tomasokal/rtist)
 
 - [Designing GGplots - con una muy buena presentación en Xaringan](https://designing-ggplots.netlify.app/#1)
 
 - [ggdist](https://mjskay.github.io/ggdist/)
-
-- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/)
-
-- [Gates Open Research](https://gatesopenresearch.org/)
-
-- [Internal replication of computational workflows in scientific research](https://gatesopenresearch.org/articles/4-17/v2)
 
 - [Seeing Theory](https://seeing-theory.brown.edu/index.html#secondPage)
 
@@ -136,29 +149,36 @@ I use software compatible with the principles of open science, this is, free and
 
 - [teacups-giraffes-and-statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
 
-- [XaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/)
-
-- [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599)
-
-- [Libro (bookdown): Introducción a la ciencia de Datos, de Rafael Irizarry](https://rafalab.github.io/dslibro/)
-
-- [Teach R Interactive courses](https://education.rstudio.com/blog/2020/05/teach-interactive-course/)
-
 - [ExPanDaR, interactive analysis](https://joachim-gassen.github.io/2019/12/explore-your-data-with-expand/)
-
-- [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
-
-- [Flipbooks in Xaringan](https://evamaerey.github.io/little_flipbooks_library/about/what_the_flipbook)
 
 - [Workshop Designing ggplots](https://github.com/malcolmbarrett/designing.ggplots)
 
 - [ThinkR, data visualization with R](https://thinkr.biz/)
 
+- [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer).
+
+- [Graphics principles cheatsheet](https://graphicsprinciples.github.io/)
+
+- [Practical ggplot](https://wilkelab.org/practicalgg/)
+
+
+**Reporting, workflows & communication**
+
+- [distill: article writing in RMarkdown](https://rstudio.github.io/distill/basics.html)
+
+- [remedy - add-in for markdown writing in RStudio](https://github.com/ThinkR-open/remedy)
+
+- [Xaringan slides sharing](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/)
+
+- [XaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/)
+
+- [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599)
+
+- [Flipbooks in Xaringan](https://evamaerey.github.io/little_flipbooks_library/about/what_the_flipbook)
+
 - [Pimp my RMD](https://holtzy.github.io/Pimp-my-rmd/)
 
 - [workflowr: organized + reproducible + shareable data science in R](https://github.com/jdblischak/workflowr)
-
-- [SEM diagrams in R](http://rich-iannone.github.io/DiagrammeR/modification.html), see also [this](https://rpubs.com/tjmahr/sem_diagrammer).
 
 - [Making R & Python work in Atom](https://jstaf.github.io/2018/03/25/atom-ide.html)
 
@@ -169,7 +189,3 @@ I use software compatible with the principles of open science, this is, free and
 - [Good tips for academic writing from Kevin Lafferty](http://trophiccascades.forestry.oregonstate.edu/sites/trophic/files/Lafferty_WritingScientificPaper.pdf)
 
 - [Guidelines for quantitative submissions ASR](http://journals.sagepub.com/doi/abs/10.1177/0003122418806282)
-
-- [Graphics principles cheatsheet](https://graphicsprinciples.github.io/)
-
-- [Practical ggplot](https://wilkelab.org/practicalgg/)
