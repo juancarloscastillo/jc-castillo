@@ -16,7 +16,7 @@ output:
 - [Ciencia Social Abierta](https://cienciasocialabierta.netlify.com/)
 - [Seminario de grado](seminarios_2020.html)
 - [Coloquio investigación en desigualdad y ciudadanía](coloquio-inv-2020.html)
-
+- [Aspectos subjetivos desigualdad económica - Magister Ciencias Sociales FACSO](documents/magister-facso-2020/magister_web.html)
 
 ### 2019
 

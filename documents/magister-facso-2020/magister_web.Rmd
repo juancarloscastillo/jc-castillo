@@ -1,0 +1,59 @@
+---
+title: "Aspectos subjetivos de la desigualdad económica"
+output:
+    html_document:
+        theme: readable
+        css: style.css
+#        toc: TRUE
+        #toc_float: TRUE
+#        includes:
+#          before_body: header.html
+---
+
+# Aspectos subjetivos de la desigualdad económica
+
+Módulo del seminario magister: **Imaginarios sociológicos del régimen neoliberal chileno** 
+
+**Octubre 2020**
+
+Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
+[jc-castillo.com](https://juancarloscastillo.github.io)
+
+
+## Sesión 8 - 20 Octubre: Investigación empírica en aspectos subjetivos de la desigualdad y justicia distributiva .
+
+
+**Lecturas**
+
+- [Kluegel, J., & Smith, E. (1981). Beliefs About Stratification. Annual Review of Sociology, 7, 29–56.](kluegel & smith 1981 beliefs about statification.pdf)
+
+- [Janmaat, J. G. (2013). Subjective inequality: A review of international comparative studies on people’s views about inequality. European Journal of Sociology, 54(03), 357–389.](janmaat 2014 subjective inequality.pdf)
+
+
+**Documento presentación**
+
+<iframe src=sesion1/sesion8.html height="530" width=100% allowfullscreen="true">
+</iframe>
+
+
+
+## Sesión 9 - Martes 27 de Octubre: Percepciones de desigualdad y clase social subjetiva.
+
+**Lecturas**
+
+- [Castillo, J. C., Miranda, D., & Cabib, I. M. (2013). Todos somos de clase media: Sobre el estatus social subjetivo en Chile. Latin American Research Review, 48(1), 155–173. https://doi.org/10.1353/lar.2013.0006](castillo et al 2013 todos somos de clase media.pdf)
+
+- [Larrañaga, O., Frei, R., & Cociña, M. (2017). Desiguales: Orígenes, cambios y desafíos de la brecha social en Chile. Uqbar Editores. - Cap. 6: Entre la molestia y la tolerancia](https://www.undp.org/content/dam/chile/docs/pobreza/undp_cl_pobreza-Libro-DESIGUALES-final.pdf)
+
+
+
+## Sesion 10: Las preferencias por la redistribución económica.
+
+- [Dimick, M., Rueda, D., & Stegmueller, D. (2018). Models of Other-Regarding Preferences, Inequality, and Redistribution. Annual Review of Political Science, 21(1), 441–460. https://doi.org/10.1146/annurev-polisci-091515-030034](Dimick, Rueda & Stegmueller 2018 preferences annual reviews.pdf)
+
+- [Castillo, J., Madero-Cabib, I., & Salamovich, A. (2013). Clivajes partidarios y cambios en preferencias distributivas en Chile. Revista de Ciencia Política, 33(2), 469–488. https://doi.org/10.4067/S0718-090X2013000200003](https://scielo.conicyt.cl/pdf/revcipol/v33n2/art03.pdf)
+
+
+
+
+
