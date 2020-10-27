@@ -45,6 +45,11 @@ Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 
 - [Larrañaga, O., Frei, R., & Cociña, M. (2017). Desiguales: Orígenes, cambios y desafíos de la brecha social en Chile. Uqbar Editores. - Cap. 6: Entre la molestia y la tolerancia](https://www.undp.org/content/dam/chile/docs/pobreza/undp_cl_pobreza-Libro-DESIGUALES-final.pdf)
 
+**Documento presentación**
+
+<iframe src=sesion2/sesion9.html height="530" width=100% allowfullscreen="true">
+</iframe>
+
 
 
 ## Sesion 10: Las preferencias por la redistribución económica.

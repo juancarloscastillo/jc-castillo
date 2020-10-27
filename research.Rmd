@@ -166,7 +166,9 @@ output:
 ### Books, chapters & working papers
 
 
-- Maldonado, L., Castillo, J., Iturra, J., Atria, J., & Meneses, F. (2019). Meritocracia y redistribución en Chile: Señales de la opinión pública. [https://doi.org/10.17605/OSF.IO/G4EK8](https://doi.org/10.17605/OSF.IO/G4EK8)<a href="https://doi.org/10.17605/OSF.IO/G4EK8"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
+- Castillo, J., Meneses, F., Iturra, J. & Maldonado, L. (2019) Cambios en percepción y justificación de desigualdad salarial en Chile entre 1999-2019. Revista Análisis del Año. Versión online en repositorio del proyecto [https://juancarloscastillo.github.io/chilegapstime](https://juancarloscastillo.github.io/chilegapstime)
+
+- Maldonado, L., Castillo, J., Iturra, J., Atria, J., & Meneses, F. (2019). Meritocracia y redistribución en Chile: Señales de la opinión pública. [https://doi.org/10.17605/OSF.IO/G4EK8](https://doi.org/10.17605/OSF.IO/G4EK8)<a href="https://doi.org/10.17605/OSF.IO/G4EK8"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>. [Columna CIPER](https://www.ciperchile.cl/2019/12/06/la-demanda-por-igualdad-y-los-caminos-que-cuentan-con-amplio-respaldo-ciudadano/)
 
 - Breznau, N., Rinke, E., Wuttke, A., Adem, M., Adriaans, J., Alvarez-Benjumea, A., … Castillo, JC. … Żółtak, T. (2019, January 26). The Crowdsourced Replication Initiative: Investigating Immigration and Social Policy Preferences. Executive Report. https://doi.org/10.31235/osf.io/6j9qb. <a href="https://doi.org/10.31235/osf.io/6j9qb"><i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 

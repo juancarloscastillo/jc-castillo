@@ -32,6 +32,8 @@ output:
 
 ### Newspapers articles, comments & opinions
 
+- [CIPER 2019 La demanda por igualdad y los caminos que cuentan con amplio respaldo ciudadano](https://www.ciperchile.cl/2019/12/06/la-demanda-por-igualdad-y-los-caminos-que-cuentan-con-amplio-respaldo-ciudadano/)
+
 - “Notas sobre los resultados de Chile en la última prueba internacional de formación ciudadana”, con Daniel Miranda en [CIPER](https://ciperchile.cl/2017/12/28/notas-sobre-los-resultados-de-chile-en-la-ultima-prueba-internacional-de-formacion-ciudadana/) (Diciembre 2017).
 
 - “La meritocracia, ¿una tragedia?”, en [El Mostrador](http://www.elmostrador.cl/noticias/opinion/2017/08/21/la-meritocracia-una-tragedia) (Diciembre 2017).
@@ -134,6 +136,10 @@ I use software compatible with the principles of open science, this is, free and
 
 
 **Visualization**
+
+-[BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/)
+
+- [esquisse: ggplot2 builder addin](https://dreamrs.github.io/esquisse/)
 
 - [ggstatsplot: ggplot2 Based Plots with Statistical Details] (https://github.com/IndrajeetPatil/ggstatsplot)
 
