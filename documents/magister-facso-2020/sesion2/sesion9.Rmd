@@ -35,6 +35,10 @@ opts_chunk$set(warning=FALSE,
 xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css"))
 ```
 
+```{r xaringanExtra-share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
 
 <!---
 Para correr en ATOM
