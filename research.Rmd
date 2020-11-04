@@ -222,6 +222,9 @@ output:
 
 ## Conferences
 
+[Reproducibilidad](documents/conferencias/coes2020_cienciabierta/02_reproducibilidad.html) - Panel Ciencia Abierta en Conferencia Desarrollo y Cohesión Social COES-DESOC Noviembre 2020
+
+
 Tokio LAINAC Conference - Enero 2020: Rethinking Inequalities: [¿Menos desigualdad, más injusticia?](https://juancarloscastillo.github.io/chilegapstime/docs/prestokio2020/castillo20202tokio.html#1)
 
 [CEPAL 2019 Taller interno Cohesión Social](documents/CEPAL2019/pres01.html)
