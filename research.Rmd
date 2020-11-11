@@ -220,9 +220,12 @@ output:
 
 <br/>
 
-## Conferences
+## Conferences & presentations
 
-[Reproducibilidad](documents/conferencias/coes2020_cienciabierta/02_reproducibilidad.html) - Panel Ciencia Abierta en Conferencia Desarrollo y Cohesión Social COES-DESOC Noviembre 2020
+[Presentación Observatorio de Cohesión social](documents/conferencias/ocs_coes2020/ocs_coes.html) - Taller CEPAL-COES: ¿Cómo se define la cohesión y cómo se puede medir?; 9 Noviembre 2020.
+
+
+[Reproducibilidad](documents/conferencias/coes2020_cienciabierta/02_reproducibilidad.html) - Panel Ciencia Abierta en Conferencia Desarrollo y Cohesión Social COES-DESOC 3 Noviembre 2020
 
 
 Tokio LAINAC Conference - Enero 2020: Rethinking Inequalities: [¿Menos desigualdad, más injusticia?](https://juancarloscastillo.github.io/chilegapstime/docs/prestokio2020/castillo20202tokio.html#1)

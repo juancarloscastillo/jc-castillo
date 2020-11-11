@@ -118,6 +118,8 @@ I use software compatible with the principles of open science, this is, free and
 
 **Data preparation & modeling**
 
+- [Learn R for free - recursos para aprender R, con versión en español](https://www.learnr4free.com/index.html)
+
 - [Book IMS: Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 
 - [Book Tidy Modeling with R](https://www.tmwr.org/)
@@ -135,7 +137,11 @@ I use software compatible with the principles of open science, this is, free and
 - [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
 
 
-**Visualization**
+**Visualization & publication**
+
+- [modelsummary: regression tables with side-by-side models](https://vincentarelbundock.github.io/modelsummary/articles/modelsummary.html)
+
+- [Gotop: Add a “scroll to top” icon to R Markdown and Shiny ](https://felixluginbuhl.com/gotop/)
 
 -[BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/)
 
