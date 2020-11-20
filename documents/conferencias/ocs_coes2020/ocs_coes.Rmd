@@ -64,6 +64,15 @@ About macros.js: permite escalar las imágenes como [scale 50%](path to image), 
 ### Seminario CEPAL-COES, 11 Nov 2020 
 ]
 
+???
+Agradecimientos CEPAL
+
+- COES y observatorios (Conflictos, Huelgas, Gobierno). Objetivo de COES de enfocarse en la generación de datos y análisis en temas asociados a conflicto y cohesión social.
+
+- Hasta ahora tenemos muchos datos disponibles en temas de cohesión (ELSOC), pero no contamos con una interfaz que permina acceder de manera simple a información e indicadores de cohesión social para distintos públicos que podrían estar interesados en este tema.
+
+- Contexto: revuelta y pandemia, incrementa los desafíos. Comisión de cohesión social.
+
 ---
 class: inverse center
 
@@ -94,6 +103,10 @@ class: middle right
 interactions of society as characterized by a set of attitudes and norms that
 includes trust, a sense of belonging and the willingness to participate and help, as well as their behavioral manifestations” (Chan et al., 2006: 290)
 
+<br>
+
+.tiny[Chan, J., To, H.-P., & Chan, E. (2006). Reconsidering Social Cohesion: Developing a Definition and Analytical Framework for Empirical Research. Social Indicators Research, 75(2), 273–302. https://doi.org/10.1007/s11205-005-2118-1
+]
 
 ---
 .pull-left-narrow[
@@ -107,11 +120,21 @@ includes trust, a sense of belonging and the willingness to participate and help
 ]
 
 
+???
+
+- Distinción entre lo que queremos explicar y lo que se explica (explanandum y explanans)
+- Una cosa es el concepto de cohesión, otra cosa son los factores asociados. No incluir  hipótesis en la definición de objetos de estudio.
+- por lo tanto, esto es un marco de estudio / acción para el estudio y las políticas de cohesión social.
+
 ---
 
 class: roja bottom right
 
 # OCS
+
+???
+
+No es una propuesta de medición propiamente tal, es una selección de indicadores y una plataforma interactiva para realizar análisis. Se basa en un modelo de cohesión pero sin duda requiere avanzar en el diseño de indicadores e índices más específicos.
 
 ---
 # Características (1)
@@ -121,7 +144,6 @@ class: roja bottom right
 - Indicadores .red[repetidos] en el tiempo
 
 - Tipos de análisis:
-
   - Univariado
   - Longitudinal
   - Bivariado
@@ -140,6 +162,12 @@ class: roja bottom right
   - generado con herramientas de código abierto como [`blogdown`](https://github.com/rstudio/blogdown) y [`Shiny`](https://shiny.rstudio.com/)
   
   - código de programación abierto en [repositorio Github](https://github.com/ocscoes/)
+
+
+??? 
+
+tema datos secundarios
+
 
 ---
 # Equipo
