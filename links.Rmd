@@ -76,6 +76,8 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Open Science
 
+- [Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)](https://doi.org/10.7818/ECOS.2016.25-2.11)
+
 - [Gates Open Research](https://gatesopenresearch.org/)
 
 - [Internal replication of computational workflows in scientific research](https://gatesopenresearch.org/articles/4-17/v2)
@@ -118,9 +120,7 @@ I use software compatible with the principles of open science, this is, free and
 
 **Data preparation & modeling**
 
-- [Tidyblocks: Una herramienta basada en bloques para enseñar ciencia de datos básica (tipo Slack).](https://tidyblocks.tech/)
-
-- [Learn R for free - recursos para aprender R, con versión en español](https://www.learnr4free.com/index.html)
+-- [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/)
 
 - [Book IMS: Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 
@@ -139,13 +139,8 @@ I use software compatible with the principles of open science, this is, free and
 - [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
 
 
-**Visualization & publication**
 
-- [easyalluvial: visualise categorical data over multiple dimensions as flows (as sankey diagrams)](https://github.com/erblast/easyalluvial)
-
-- [modelsummary: regression tables with side-by-side models](https://vincentarelbundock.github.io/modelsummary/articles/modelsummary.html)
-
-- [Gotop: Add a “scroll to top” icon to R Markdown and Shiny ](https://felixluginbuhl.com/gotop/)
+**Visualization**
 
 -[BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/)
 
