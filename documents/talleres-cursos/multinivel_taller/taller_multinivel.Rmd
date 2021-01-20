@@ -1,0 +1,587 @@
+---
+title: "taller-multinivel-2021"
+author: ".small[Juan Carlos Castillo <br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: "Enero 2021"
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    css: ["custom_2020.css"]
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: inverse bottom right
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = TRUE)
+pacman::p_load(RefManageR)
+# bib <- ReadBib("merit_pref_int.bib", check = FALSE)
+```
+
+```{r eval=FALSE, include=FALSE}
+# Para que funcione el infinite moon reader, correr desde el root!
+```
+
+```{r setup2, include=FALSE, cache = FALSE}
+require("knitr")
+#options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+# bib <- ReadBib("../../bib/electivomultinivel.bib", check = FALSE)
+opts_chunk$set(warning=FALSE,
+             message=FALSE,
+             echo=TRUE,
+             cache = TRUE,fig.width=7, fig.height=5.2)
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css"))
+```
+
+```{r xaringanExtra-share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+
+<!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- rmarkdown::render('static/docpres/07_interacciones/7interacciones.Rmd', 'xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+![:scale 20%](https://multinivel.netlify.com/../images/hex_eic2.png)
+
+# Taller estimación multinivel
+
+Juan Carlos Castillo - [jc-castillo.com](http://jc-castillo.com/)
+
+Enero 2021
+
+---
+class: roja, bottom, right
+
+# El problema
+
+---
+# Preguntas
+
+- ¿Se pueden sacar conclusiones sobre .blue[individuos] basados en datos de .red[contextos]?
+
+  - ej: comunas más pobres tienen menor tasa de votación, por lo tanto ... personas pobres votan menos?
+  
+- ¿Se pueden hacer conclusiones sobre .red[contextos] basados en datos de .blue[individuos]?
+
+  - ej: individuos más pobres votan menos, por lo tanto ... comunas  pobres votan menos (en promedio)?
+  
+---
+# Falacia ecológica / individualista
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/fal5.png)
+
+---
+# Contexto e implicancias teóricas
+
+En el planteamiento de una investigación con hipótesis multinivel, es
+relevante definir:
+
+-   Qué es el **contexto**
+
+--
+
+-   Cuáles son los .blue[elementos principales] del contexto a considerar en las hipótesis
+
+--
+
+-   Cómo se relacionan variables del contexto con variables .red[individuales] 
+
+---
+## Tipos generales de problemas multinivel
+
+Tres tipos de preguntas básicas, ejemplo educación:
+
+--
+
+1.  ¿Existen diferencias de rendimiento académico de los alumnos entre escuelas?
+
+--
+
+2.  ¿Tienen estas diferencias relación con variables de la escuela?
+
+--
+
+3.  Las características de los estudiantes, ¿poseen un efecto distinto en rendimiento de acuerdo a características de las escuelas?
+
+---
+class: roja bottom center
+
+# Lógica de estimación
+
+
+---
+# Formas de estimación multinivel
+
+Base: modelo de regresión simple (no multinivel)
+
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/mod1.png)
+
+
+---
+# Formas de estimación multinivel
+
+Modelo multinivel con predictores individuales, ajustado por pertenencia a unidades de nivel 2
+
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/mod2.png)
+
+---
+# Formas de estimación multinivel
+
+Modelo multinivel con predictores contextuales
+
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/mod3.png)
+
+---
+# Formas de estimación multinivel
+
+Modelo multinivel con predictores individuales y contextuales
+
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/mod4.png)
+
+---
+# Formas de estimación multinivel
+
+Modelo multinivel con interacción entre niveles
+
+![:scale 60%](https://multinivel.netlify.app/docpres/02_bases/images/mod5.png)
+
+---
+# Elementos de la estimación multinivel
+
+1.  Correlación intra clase
+
+2.  Estimación con predictores nivel 1 (ajustando por anidación)
+
+3.  (múltiples) predictores nivel 2
+
+4.  Variabilidad de parámetros de estimación nivel 1 (pendientes)
+
+5.  Interacción entre niveles
+
+
+---
+class: roja bottom right
+
+# Residuos, dependencia y parámetros
+
+
+---
+## Residuos y dependencia contextual
+
+![:scale 50%](https://multinivel.netlify.app/docpres/02_bases/images/res_mul4.png)
+
+---
+# Implicancias para el modelo de regresión:
+
+-   Dependencia conextual de los residuos
+
+-   Estimación descompone la varianza de los residuos *entre* y
+*dentro* los grupos= en distintos niveles = **multinivel**.
+
+-   En concreto, se agrega un término de error adicional al modelo:
+$\mu_{0j}$
+
+-   Este término de error se expresa como un **efecto aleatorio** (como opuesto a *efecto fijo*)
+
+---
+## Parámetros 
+
+![:scale 90%](https://multinivel.netlify.app/docpres/02_bases/images/paramet.JPG)
+
+---
+# Detalles de la notación formal:
+.medium[
+-   $_i$ es el índice asociado a los individuos
+-   $_j$ es el índice asociado a la pertenencia a grupos ( $_j=1 ..., N$)
+-   $y_{ij}$ es la variable dependiente
+-   $X_{i}$ es la variable independiente de nivel individual
+-   $\beta$ y $\gamma$ son coeficientes de regresión
+-   $Z_j$ es la variable independiente a nivel grupal
+-   $r_{ij}$ es el residuo a nivel individual
+-   $\mu_{j}$ es un residuo/desviación de nivel grupal
+-   $\tau_{00}$ es la varianza de $\mu_{0j}$
+-   $\sigma^2$ es la varianza de $r_{ij}$
+]
+
+---
+class: roja bottom right
+
+# Práctica A: datos agregados y correlación intra-clase
+
+---
+## Práctica: High School & Beyond (HSB) data
+
+-   Level 2 variables:
+
+  -   size (matricula)
+  -   sector (1 = Catholic, 0 = public)
+  -   pracad (proportion of students in the academic track)
+  -   disclim (a scale measuring disciplinary climate)
+  -   himnty (1 = more than 40% minority enrollment, 0 = less than 40%)
+  -   meanses (mean of the SES values for the students in this school who are included in the level-1 file)
+
+-  **Cluster variable**= id (school id)
+
+---
+### Librerías
+```{r}
+pacman::p_load(
+haven,  # lectura de datos formato externo
+car, # varias funciones, ej scatterplot
+dplyr, # varios gestión de datos
+stargazer, # tablas
+corrplot, # correlaciones
+ggplot2, # gráficos
+lme4) # multilevel
+```
+
+---
+## Datos
+.medium[
+```{r, echo=TRUE}
+mlm <-read_dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
+```
+]
+
+.medium[
+```{r}
+dim(mlm)
+```
+]
+
+---
+## Seleccionar variables de interés
+.medium[
+```{r}
+names(mlm)
+mlm=mlm %>% select(minority,female,ses,mathach,size,
+  sector,mnses,schoolid) %>% as.data.frame()
+```
+]
+---
+## Descriptivos generales
+
+.small[
+```{r}
+stargazer(as.data.frame(mlm),
+          title = "Descriptivos generales", type='text')
+```
+]
+
+---
+## Descriptivos generales
+
+```{r}
+hist(mlm$mathach, xlim = c(0,30))
+```
+
+---
+## Descriptivos generales
+
+.medium[
+```{r}
+scatterplot(mlm$mathach ~ mlm$ses,
+  data=mlm, xlab="SES", ylab="Math Score",
+  main="Math on SES", smooth=FALSE)
+
+```
+]
+
+---
+## Descriptivos generales
+
+```{r}
+corrplot.mixed(cormat)
+```
+
+
+---
+# Datos anidados / con estructura jerárquica
+
+<br>
+
+| IDi | IDg | var_i1 | var_i2 | var_g1 | var_g2 |
+|-----|-----|--------|--------|--------|--------|
+| 1   | 1   | 8      | 7      | 4      | 1      |
+| 2   | 1   | 5      | 5      | 4      | 1      |
+| 3   | 1   | 3      | 1      | 4      | 1      |
+| 4   | 2   | 3      | 2      | 6      | 8      |
+| 5   | 2   | 1      | 4      | 6      | 8      |
+| 6   | 2   | 7      | 5      | 6      | 8      |
+
+
+---
+## Datos agregados
+
+- Datos nivel 2:
+
+  - propios/idiosincráticos (ej: tamaño)
+  - agregados: generados a partir de datos nivel 1
+
+- Ejemplo:
+  - nivel socioeconómico individual
+  - nivel socioeconómico de la escuela ("agregado" del individual)
+
+---
+## Datos agregados
+
+- Usando la funcion `group_by` (agrupar por) de la librería `dplyr`
+- Se agrupa por la variable **cluster**, que identifica a las unidades de nivel 2 (en este caso, `schoolid`)
+- Por defecto se hace con el promedio, pero se pueden hacer otras funciones como contar, porcentajes, mediana, etc.
+
+```{r}
+agg_mlm=mlm %>% group_by(schoolid) %>%
+  summarise_all(funs(mean)) %>% as.data.frame()
+
+```
+
+---
+## Datos agregados - Descriptivos
+
+.small[
+```{r}
+stargazer(agg_mlm, type = "text")
+```
+]
+
+---
+## Comparación Modelos
+
+.small[
+- Modelo con datos individuales
+
+```{r}
+reg<- lm(mathach~ses+female+sector, data=mlm)
+```
+
+- Modelo con datos agregados
+
+```{r}
+reg_agg<- lm(mathach~ses+female+sector, data=agg_mlm)
+```
+
+- Generación tabla
+
+```{r eval=FALSE}
+stargazer(reg,reg_agg,
+  column.labels=c("Individual","Agregado"),
+  type ='text')
+```
+]
+---
+.small[
+```{r echo=FALSE}
+stargazer(reg,reg_agg,
+  column.labels=c("Individual","Agregado"),
+  type ='text')
+```
+]
+
+
+---
+## ¿Cuál es el efecto "verdadero"?
+
+```{r echo=FALSE, fig.width=10, fig.height=6}
+mlm$id_data= "level1"
+agg_mlm$id_data="level2"
+merged = bind_rows(mlm, agg_mlm)
+ggplot(merged, aes(x=ses, y=mathach, color=id_data)) +
+    geom_point(shape=1) +
+    scale_colour_hue(l=50) + # Use a slightly darker palette than normal
+    geom_smooth(method=lm) +    # Add linear regression lines fullrange=TRUE)+ # Extend regression lines
+    theme(text = element_text(size = 30))
+```
+
+
+---
+class: roja, bottom, right
+
+# Descomposición de varianza
+
+---
+## Descomposición de la varianza
+
+- varianza Nivel 1: dentro o "within", en relación al promedio individual
+
+- varianza Nivel 2: entre o "between", en relación al promedio de los grupos
+  
+- varianza Nivel $j$ ...
+
+
+---
+## Varianzas
+
+.medium[
+```{r}
+ ggplot(merged, 
+        aes(x=mathach, colour=id_data)) + 
+        geom_density() + theme(text = element_text(size = 20))
+```
+]
+
+---
+# Descomposición de la varianza
+
+.pull-left[
+![:scale 100%](https://multinivel.netlify.app/docpres/03_jerarquicos/images/withinbetween2.png)]
+
+.pull-right[
+<br>
+<br>
+<br>
+<br>
+<br>
+$$var_{tot}=var_{dentro}+var_{entre}$$
+]
+
+---
+# Descomposición de varianza y predictores 
+
+![](https://multinivel.netlify.app/docpres/03_jerarquicos/images/var_pred.png)
+
+
+---
+class: inverse, middle, center
+
+# **Correlación intra-clase (ICC)**
+
+## _Proporción de la varianza de la variable dependiente que corresponde a unidades de nivel 2_
+
+
+---
+class: roja, middle, right
+
+# Estimación modelo multinivel
+
+### librería **lme4** de **R**
+### Componentes de la varianza
+
+### Efectos fijos y aleatorios
+
+---
+# Pasos (usuales) en la estimación multinivel
+ 
+0.  Modelo nulo (descomposición de varianza e ICC)
+
+1.  Modelo con variables individuales
+
+2.  Modelo con variables contextuales
+
+3.  Modelo con variables individuales y contextuales
+
+4.  Modelo con pendiente (individual) aleatoria
+
+5.  Modelo con variables individuales, contextuales e interacción entre
+    niveles (cross-level interaction)
+---
+## 0.Modelo nulo
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_0.JPG)
+
+---
+## 1.Modelo con variable independiente individual
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_1.JPG)
+
+---
+## 2.Modelo con variable independiente grupal
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_2.JPG)
+
+---
+## 3.Modelo con variable independiente individual y grupal
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_3.JPG)
+
+---
+## 4.Modelo con pendiente aleatoria
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_4.JPG)
+
+---
+## 4.Modelo con pendiente aleatoria
+
+![image](https://multinivel.netlify.app/docpres/04_icc&ranef/images/random2.jpg)
+
+---
+## 5.Modelo con interacción entre niveles
+
+![:scale 65%](https://multinivel.netlify.app/docpres/04_icc&ranef/images/model_5.JPG)
+
+.medium[
+"La relación entre X e Y varía entre contextos, y esta variación se asocia a una característica del contexto"
+
+*Ej*: la influencia del nivel socioeconómico en rendimiento en lenguaje es moderada por la presencia de bibliotecas en las escuelas]
+
+
+  
+---
+## Notas del modelo nulo e ICC
+
+-   Descomposición de la varianza en modelo nulo=
+    $Var\ y=\tau_{00} + \sigma^2$ = grupal + individual
+
+-   Correlación intra-clase = ICC =
+    $\rho=\frac{\tau_{00}}{\tau_{00}+\sigma^2}$
+
+-   Una ICC **baja** indica poca variabilidad de la
+    variable dependiente entre unidades de nivel 2
+      - _por lo tanto_, menores posibilidades de dar cuenta (*explicar*) de esa varianza con
+    predictores de nivel 2.
+
+---
+# Estimación multinivel en `R`
+
+### librería lme4, función `lmer` (linear mixed effects)
+
+-   forma general:
+
+    -   `objeto <- lmer (depvar ~ predictor_1 + predictor_2 + predictor_n + (1 | cluster), data=data)`
+
+    -   el objeto contiene la información de la estimación; para ver un
+        resumen, `summary(objeto)`, y de manera más presentable,
+        `screenreg(objeto)`
+
+
+---
+class: roja bottom right
+
+# Práctica B: Estimación multinivel en R
+
+##[link](https://multinivel.netlify.app/practicas/b_iccranef/b_icc-ranef.html)
+
+---
+class: middle center
+
+# ¡gracias!
+
+Más información en sitio del curso electivo FACSO: [https://multinivel.netlify.app/](https://multinivel.netlify.app/)
+
+---
+class: inverse bottom right
+
+![:scale 20%](https://multinivel.netlify.com/../images/hex_eic2.png)
+
+# Taller estimación multinivel
+
+Juan Carlos Castillo - [jc-castillo.com](http://jc-castillo.com/)
+
+Enero 2021
+
+
+

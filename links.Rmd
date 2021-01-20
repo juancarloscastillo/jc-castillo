@@ -14,9 +14,11 @@ output:
 <br/>
 
 
-### Tutorials
+### Tutoriales / talleres
 
-- [Taller ATOM  - Septiembre 2020](documents/tallerATOM/atom_web.html)
+- [Taller Multinivel](documents/talleres-cursos/multinivel_taller/taller_multinivel.html)
+
+- [Taller ATOM  - Septiembre 2020](documents/talleres-cursos/tallerATOM/atom_web.html)
 
 - Libro [INVESTIGACIÓN SOCIAL ABIERTA](https://juancarloscastillo.github.io/in-socabi/) (...en desarrollo.)
 
@@ -120,7 +122,9 @@ I use software compatible with the principles of open science, this is, free and
 
 **Data preparation & modeling**
 
--- [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/)
+- [R Syntax Comparison :: CHEAT SHEET](https://www.amelia.mn/Syntax-cheatsheet.pdf)
+
+- [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/)
 
 - [Book IMS: Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 
