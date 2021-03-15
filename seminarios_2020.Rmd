@@ -12,7 +12,9 @@ output:
 <b>
 <font color="red" size=6>
 
-# Seminarios Sociología Universidad de Chile
+# Seminarios / Tesis Sociología Universidad de Chile
+
+![](images/dinosour.jpg)
 
 </b>
 </font>

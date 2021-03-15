@@ -122,6 +122,9 @@ I use software compatible with the principles of open science, this is, free and
 
 **Data preparation & modeling**
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Estimating a Parameter from a Random Sample <a href="https://t.co/H2KxnLzDyH">pic.twitter.com/H2KxnLzDyH</a></p>&mdash; Chelsea Parlett-Pelleriti (@ChelseaParlett) <a href="https://twitter.com/ChelseaParlett/status/1338662205894508545?ref_src=twsrc%5Etfw">December 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 - [R Syntax Comparison :: CHEAT SHEET](https://www.amelia.mn/Syntax-cheatsheet.pdf)
 
 - [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/)
@@ -130,7 +133,7 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Book Tidy Modeling with R](https://www.tmwr.org/)
 
--[explorer: R package for exploring data with a Shiny app](https://rolkra.github.io/start-to-explore/)
+- [explorer: R package for exploring data with a Shiny app](https://rolkra.github.io/start-to-explore/)
 
 - [R modelsummary](https://vincentarelbundock.github.io/modelsummary/)
 
@@ -142,15 +145,23 @@ I use software compatible with the principles of open science, this is, free and
 
 - [Applied R in the classroom](https://onlinelibrary.wiley.com/doi/full/10.1111/1467-8462.12362)
 
+- [*lmeresampler*: R package for resampling multilevel models](http://aloy.github.io/lmeresampler/)
+
+- [How to standardize variables in R](https://data-se.netlify.app/2021/02/26/how-to-standardize-variables-in-r/)
+
 
 
 **Visualization**
 
--[BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/)
+- [Guess the correlation](http://guessthecorrelation.com/)
+
+- [Multilevel models visualization](http://mfviz.com/hierarchical-models/)
+
+- [BEAUTIFUL AND INFORMATIVE DATA VISUALISATION](https://ourcodingclub.github.io/tutorials/datavis/)
 
 - [esquisse: ggplot2 builder addin](https://dreamrs.github.io/esquisse/)
 
-- [ggstatsplot: ggplot2 Based Plots with Statistical Details] (https://github.com/IndrajeetPatil/ggstatsplot)
+- [ggstatsplot: ggplot2 Based Plots with Statistical Details](https://github.com/IndrajeetPatil/ggstatsplot)
 
 - [rtist: fancy color palettes in R graphs](https://github.com/tomasokal/rtist)
 
@@ -178,6 +189,8 @@ I use software compatible with the principles of open science, this is, free and
 
 
 **Reporting, workflows & communication**
+
+- [Reporting model parameters](https://thiyanga.netlify.app/post/regoutputs/) with [`parameters` library](https://easystats.github.io/parameters/index.html)
 
 - [distill: article writing in RMarkdown](https://rstudio.github.io/distill/basics.html)
 
