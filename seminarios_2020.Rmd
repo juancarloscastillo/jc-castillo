@@ -1,5 +1,5 @@
 ---
-title: " Seminarios de Grado / Título  - 2sem 2020 "
+title: " Seminarios de Grado / Título / Tesis"
 author: " "
 output:
     html_document:
@@ -12,32 +12,50 @@ output:
 <b>
 <font color="red" size=6>
 
-# Seminarios / Tesis Sociología Universidad de Chile
+# Seminarios / Memorias / Tesis Sociología Universidad de Chile
 
 ![](images/dinosour.jpg)
 
 </b>
 </font>
 
-## 2do Semestre 2020
+La guía de seminarios/memorias/tesis es una actividad de acompañamiento semestral que incluye:
 
-- Se entregarán 2 informes durante el semestre, uno de avance y uno final.
+- presentaciones en el [Coloquio de Investigación en Desigualdad y Ciudadanía](coloquio-inv-2021)
 
-- **Informe de avance**
+- entrega de dos informes semestrales
 
-  - Seminario Grado (4to año): contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica - disponibilidad de datos. (app. 1000 palabras).
+- reuniones de evaluación y asesoría
 
-  - Seminario Título (5o año): versión final del análisis de datos y propuesta de conclusiones
+## Informes
 
-- El **informe final**
+Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 
-  - Seminario de Grado (4to Año):  debe incorporar los comentarios y avanzar en la propuesta metodológica incluyendo análisis preliminares.
+- Seminario de grado:
 
-  - Seminario de Título (5to Año): documento final incorporando los últimos comentarios y conclusiones finales.
+  - informe de avance: contempla la definición del problema de investigación, objeto de estudio, pregunta de investigación, revisión inicial de literatura, propuesta de sección metodológica disponibilidad de datos. (app. 1000 palabras).
 
-- Además de estas definiciones generales sobre contenidos de informes, pueden haber instancias personalizadas según el avance de cada estudiante.
+  - informe final: debe incorporar los comentarios al informe de avance y avanzar en la propuesta metodológica incluyendo análisis preliminares univariados.
 
-### Recomendaciones generales:
+- Seminario de título 1
+
+  - informe de avance: ajuste de antecedentes conceptuales y finalización de sección metodológica.
+
+  - informe final: incorporación de comentarios y avance de análisis bivariados
+
+- Seminario de título 2
+
+  - informe de avance: finalización de análisis y contraste de hipótesis, borrador de conclusión
+
+  - informe final: incorporación de comentarios y finalización de conclusiones.
+
+### Funcionamiento:
+
+- seminaristas/tesisas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes
+
+- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/), que permite ambas salidas.
+
+- los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/)
 
 - Después de la entrega de cada informe, anotarse en los [horarios de reunión con estudiantes](contact.html) para recibir retroalimentación
 
@@ -53,9 +71,7 @@ output:
 
 **Fechas**
 
-- Viernes 30 Octubre 2020: Entrega de informe de avance
-- Viernes 18 Diciembre 2020: Entrega informe final
-
+A acordar cada semestre.
 
 
 <br>

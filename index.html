@@ -13,47 +13,40 @@
 
 <title>Juan Carlos Castillo</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="stylesheet" href="site_libs/academicons-1.8.6/css/academicons.css" />  
 
-
-
-
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
 
 <link rel="stylesheet" href="style4.css" type="text/css" />
 
@@ -64,10 +57,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -84,40 +73,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -145,7 +107,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -157,7 +119,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -168,10 +130,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -183,7 +158,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -288,7 +262,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="http://github.com/juancarloscastillo">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fas fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -299,7 +273,7 @@ $(document).ready(function () {
 
 <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -346,12 +320,13 @@ recordar incluir en css.
 <div id="principales-áreas-de-investigación" class="section level3">
 <h3><a href=""><strong>Principales áreas de investigación:</strong></a></h3>
 <p><br></p>
-<div id="justicia-distributiva-y-subjetividad-me-interesa-la-forma-en-que-se-percibe-y-se-justifica-la-desigualdad-económica-así-como-sus-consecuencias-en-términos-políticos.-en-este-ámbito-he-investigado-principalmente-percepción-y-justificación-de-brechas-salariales-así-como-también-clase-social-subjetiva-preferencias-redistributivas-y-atribuciones-de-pobreza.-actualmente-estoy-enfocado-en-el-estudio-de-percepción-y-preferencias-meritocráticas-en-el-marco-del-proyecto-fondecyt-regular-economía-moral-de-la-meritocracia-y-preferencias-redistributivas-junto-a-los-profesores-luis-maldonado-uc-y-jorge-atria-udp.-un-resumen-de-resultados-de-este-proyecto-se-encuentra-aquí" class="section level4">
-<h4>- <strong>Justicia distributiva y subjetividad</strong>: me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza. Actualmente estoy enfocado en el estudio de percepción y preferencias meritocráticas en el marco del proyecto FONDECYT Regular “Economía moral de la meritocracia y preferencias redistributivas” , junto a los profesores Luis Maldonado (UC) y Jorge Atria (UDP). Un resumen de resultados de este proyecto se encuentra <a href="https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html">aquí</a></h4>
+<div id="justicia-distributiva-y-subjetividad-me-interesa-la-forma-en-que-se-percibe-y-se-justifica-la-desigualdad-económica-así-como-sus-consecuencias-en-términos-políticos.-en-este-ámbito-he-investigado-principalmente-percepción-y-justificación-de-brechas-salariales-así-como-también-clase-social-subjetiva-preferencias-redistributivas-y-atribuciones-de-pobreza." class="section level4">
+<h4>- <strong>Justicia distributiva y subjetividad</strong>: me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza.</h4>
 <p><br></p>
 </div>
-<div id="formación-ciudadana-y-desigualdad-esta-línea-vincula-desigualdad-de-origen-familiar-con-niveles-de-conocimiento-cívico-de-estudiantes-así-como-también-con-sus-expectativas-de-participación-política-futura.-en-este-tema-he-realizado-investigaciones-utilizando-datos-del-estudio-iccs-international-civic-and-citizenship-education-study-junto-a-los-profesores-cristian-cox-investigador-principal-udp-y-daniel-miranda-uc.-los-principales-resultados-de-un-primer-proyecto-fondecyt-2011-2015-se-encuentran-en-el-libro-aprendizaje-de-la-ciudadanía-cox-castillo-2015-así-como-también-en-una-serie-de-artículos.-actualmente-nos-encontramos-desarrollando-un-segundo-proyecto-fondecyt-2018-2022-con-foco-en-cambios-en-socialización-política-en-estudiantes-y-sus-familias-para-lo-cual-estamos-levantando-datos-en-70-escuelas-en-3-regiones-de-chile." class="section level4">
-<h4>- <strong>Formación ciudadana y desigualdad</strong>: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los profesores Cristian Cox (investigador principal, UDP) y Daniel Miranda (UC). Los principales resultados de un primer proyecto FONDECYT 2011-2015 se encuentran en el libro “<a href="https://ediciones.uc.cl/index.php/aprendizaje-de-la-ciudadania-contextos-experiencias-y-resultados-2075.html">Aprendizaje de la Ciudadanía</a>” (Cox &amp; Castillo, 2015), así como también en una serie de artículos. Actualmente nos encontramos desarrollando un segundo proyecto FONDECYT (2018-2022) con foco en cambios en socialización política en estudiantes y sus familias, para lo cual estamos levantando datos en 70 escuelas en 3 regiones de Chile.</h4>
+<div id="formación-ciudadana-y-desigualdad-esta-línea-vincula-desigualdad-de-origen-familiar-con-niveles-de-conocimiento-cívico-de-estudiantes-así-como-también-con-sus-expectativas-de-participación-política-futura.-en-este-tema-he-realizado-investigaciones-utilizando-datos-del-estudio-iccs-international-civic-and-citizenship-education-study-junto-a-los-investigadores-cristian-cox-udp-y-daniel-miranda-uc." class="section level4">
+<h4>- <strong>Formación ciudadana y desigualdad</strong>: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los investigadores Cristian Cox (UDP) y Daniel Miranda (UC).</h4>
+<p><br></p>
 </div>
 <div id="cohesión-social-este-tema-lo-abordo-desde-mi-rol-de-investigador-principal-de-coes-donde-dirijo-la-línea-de-interacciones-individuales-y-grupales.-me-interesa-la-conceptualización-y-medición-de-distintas-dimensiones-de-cohesión-social-en-particular-aquellas-vinculadas-a-temas-de-confianza." class="section level4">
 <h4>- <strong>Cohesión social</strong>: este tema lo abordo desde mi rol de investigador principal de <a href="https://www.coes.cl/">COES</a>, donde dirijo la línea de interacciones individuales y grupales. Me interesa la conceptualización y medición de distintas dimensiones de cohesión social, en particular aquellas vinculadas a temas de confianza.</h4>
@@ -548,7 +523,7 @@ Social structures in contemporary societies have undergone significant changes o
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -566,7 +541,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

@@ -11,7 +11,7 @@ output:
 
 <b>
 <font color="red" size=6>
-Coloquio de investigación en desigualdad y ciudadanía - 2do Sem 2019
+Coloquio de investigación en desigualdad y ciudadanía - 2do Sem 2020
 </b>
 </font>
 <br>

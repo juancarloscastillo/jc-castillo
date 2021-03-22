@@ -10,9 +10,15 @@ output:
 
 # Universidad de Chile
 
-### 2020
+### 2021
 
 - [Estadística multivariada](https://multivariada.netlify.app/)
+- [Coloquio investigación en desigualdad y ciudadanía](coloquio-inv-2021.html)
+- [Seminarios de grado / memorias / tesis](seminarios-talleres.html)
+
+### 2020
+
+- [Estadística multivariada](https://version202--multivariada.netlify.app/)
 - [Ciencia Social Abierta](https://cienciasocialabierta.netlify.com/)
 - [Seminario de grado](seminarios_2020.html)
 - [Coloquio investigación en desigualdad y ciudadanía](coloquio-inv-2020.html)

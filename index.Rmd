@@ -17,8 +17,6 @@ output:
 # Para renderizar el sitio desde terminal R:
 rmarkdown::render_site(encoding = 'UTF-8')
 head(iris)
-
-1+1
 ```
 
 
@@ -66,11 +64,13 @@ recordar incluir en css.
 
 <br>
 
-#### - **Justicia distributiva y subjetividad**: me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza. Actualmente estoy enfocado en el estudio de percepción y preferencias meritocráticas en el marco del proyecto FONDECYT Regular "Economía moral de la meritocracia y preferencias redistributivas" , junto a los profesores Luis Maldonado (UC) y Jorge Atria (UDP). Un resumen de resultados de este proyecto se encuentra [aquí](https://juancarloscastillo.github.io/jc-castillo/documents/informeFONDECYTmoraleconomy/resultados.html)
+#### - **Justicia distributiva y subjetividad**: me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza.
 
 <br>
 
-#### - **Formación ciudadana y desigualdad**: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los profesores Cristian Cox (investigador principal, UDP) y Daniel Miranda (UC). Los principales resultados de un primer proyecto FONDECYT 2011-2015 se encuentran en el libro "[Aprendizaje de la Ciudadanía](https://ediciones.uc.cl/index.php/aprendizaje-de-la-ciudadania-contextos-experiencias-y-resultados-2075.html)" (Cox & Castillo, 2015), así como también en una serie de artículos. Actualmente nos encontramos desarrollando un segundo proyecto FONDECYT (2018-2022) con foco en cambios en socialización política en estudiantes y sus familias, para lo cual estamos levantando datos en 70 escuelas en 3 regiones de Chile.
+#### - **Formación ciudadana y desigualdad**: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los investigadores Cristian Cox (UDP) y Daniel Miranda (UC).
+
+<br>
 
 #### - **Cohesión social**: este tema lo abordo desde mi rol de investigador principal de [COES](https://www.coes.cl/), donde dirijo la línea de interacciones individuales y grupales. Me interesa la conceptualización y medición de distintas dimensiones de cohesión social, en particular aquellas vinculadas a temas de confianza.
 

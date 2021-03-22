@@ -1,0 +1,69 @@
+---
+title: " "
+author: " "
+output:
+    html_document:
+        theme: united
+---
+
+<br/>
+<br/>
+
+<b>
+<font color="red" size=6>
+Coloquio de investigación en desigualdad y ciudadanía - 1er Sem 2021
+</b>
+</font>
+<br>
+
+
+### Jueves 16:00  a 17:00, Marzo-Junio 2021 (online)
+
+El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan metodologías de análisis cuantitativo. Para estudiantes de:
+
+- Seminario de grado (4to)
+- Seminario de título 1 y 2 (5to)
+- Magister/educación continua
+
+<br>
+
+## Calendarización
+
+
+|             |   |  Presenta   | Tema | Comenta
+|---|---|----|------|------|
+| Marzo       | 18 | -  | Calendarización sesiones
+|             | 25 | JC Castillo  | [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
+| Abril       |  1 | Andreas Lafferte  | Propuestas tema seminario | Martín Venegas
+|             |  8 |   |  |
+|             | 15 | JC Castillo | Escritura académica|
+|             | 22 | Diego Esturillo | |
+|             | 29 | Karen Tapia   | |
+| Mayo        |  6 | _Semana de receso_
+|             | 13 | Martín Venegas | |
+|             | 20 | Sebastián Cortínez | |
+|             | 27 | Javiera Urrutia |
+| Junio       |  3 | Andreas Lafferte & <br> Diego Esturillo  |
+|             | 10 | _Semana de receso_ |
+|             | 17 | Karen Tapia & <br> Martín Venegas  |
+|             | 24 | Sebastián Cortínez & <br> Javiera Urrutia  |
+| Julio       |  1 | Cierre  |
+
+
+
+
+# Links
+
+- [Del rigor en la ciencia](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/)
+
+- [Manterola & Otzen (2013) Porqué Investigar y Cómo Conducir una Investigación](https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0717-95022013000400056)
+
+- [Becker (2011) Manual de Escritura para Científicos Sociales](http://www.derechoshumanos.unlp.edu.ar/assets/files/documentos/manual-de-escritura-para-cientificos-sociales.pdf)
+
+- [Good tips for academic writing from Kevin Lafferty](http://trophiccascades.forestry.oregonstate.edu/sites/trophic/files/Lafferty_WritingScientificPaper.pdf)
+
+- [Publicación de artículos académicos: buenas prácticas y recomendaciones para la redacción y envío a revistas científicas](https://repositori.upf.edu/handle/10230/44599)
+
+- [Formulación de una investigación cuantitativa (documento de presentación)](https://estrategias-ic.netlify.app/docpres/02_formu/02_formu.html#1).
+
+- [Hernández et al El Planteamiento Cuantitativo del Problema](https://estrategias-ic.netlify.app/readings/cap3Hernandezetal2014.pdf)
