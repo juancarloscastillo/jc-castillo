@@ -119,9 +119,6 @@ output:
 
 - Equality or Insurance? The underlying motives for supporting social policy in Latin America (with Jose de Amesti - 1st author, Luis Maldonado & Jorge Atria). Submitted.
 
-- Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez (with Daniel Miranda & Angélica Bonilla).  Submitted - Preprint: <a href="https://osf.io/preprints/socarxiv/t87se/">
-<i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
-
 - Do people perceive more inequality when more inequality exists? (with Martin Schröder). Revise & Resubmit.
 
 <br>
@@ -228,6 +225,10 @@ output:
 
 ### Books, chapters & working papers
 
+- Miranda & Castillo (2020) Cambios en la participación política de los escolares. En Alé, S., Duarte, K. & Miranda, D. (2020) Saltar el torniquete: Reflexiones desde las juventudes de Octubre. Santiago: Fondo de Cultura Económica.
+
+- Castillo, JC. Miranda D, & Bonilla, A.(2020) Medición de actitudes hacia la igualdad de derechos entre géneros en pruebas internacionales: Implicancias respecto a su validez. En Manzi et al Validez de Instituciones Educacionales en Chile y Latinoamérica. Santiago: Ediciones UC - Preprint: <a href="https://osf.io/preprints/socarxiv/t87se/">
+<i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
 
 - Castillo, J., Meneses, F., Iturra, J. & Maldonado, L. (2019) Cambios en percepción y justificación de desigualdad salarial en Chile entre 1999-2019. Revista Análisis del Año. Versión online en repositorio del proyecto [https://juancarloscastillo.github.io/chilegapstime](https://juancarloscastillo.github.io/chilegapstime)
 

@@ -35,8 +35,8 @@ El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentr
 | Marzo       | 18 | -  | Calendarización sesiones
 |             | 25 | JC Castillo  | [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
 | Abril       |  1 | Andreas Lafferte  | Propuestas tema seminario | Martín Venegas
-|             |  8 |   |  |
-|             | 15 | JC Castillo | Escritura académica|
+|             |  8 | JC Castillo | Escritura académica|
+|             | 15 |  |  |
 |             | 22 | Diego Esturillo | |
 |             | 29 | Karen Tapia   | |
 | Mayo        |  6 | _Semana de receso_
