@@ -129,13 +129,15 @@ output:
 
 - Atria J, Castillo J, Maldonado L, Ramirez S. (2020) Economic Elites’ Attitudes Toward Meritocracy in Chile: A Moral Economy Perspective. American Behavioral Scientist 64(9),1219-1241. [https://doi.org/10.1177/0002764220941214](https://journals.sagepub.com/doi/10.1177/0002764220941214)
 
-- Maldonado, L., Olivos, F., Castillo, J.C. et al. (2019) Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries. Social Justice Research 32, 349–383 [https://doi.org/10.1007/s11211-019-00336-6](https://link.springer.com/article/10.1007/s11211-019-00336-6)
+- Frei, R., Castillo, J. C., Herrera, R., & Suárez, J. I. (2020). ¿Fruto del esfuerzo? Los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. Latin American Research Review, 55(3), 477–495. DOI: [http://doi.org/10.25222/larr.464](https://larrlasa.org/articles/10.25222/larr.464/)
 
 -  Martínez, M. L., Cumsille, P., Loyola, I., & Castillo, J. C. (2020). Patterns of Civic and Political Commitment in Early Adolescence. The Journal of Early Adolescence, 40(1), 5–27. [https://doi.org/10.1177/0272431618824714](https://doi.org/10.1177/0272431618824714)
 
-- Atria, J., Ramírez, S., Castillo, JC. & Maldonado, L. (2018) Studying meritocracy in an unequal context: Perspectives from chilean scholars. _Universum_ 34(2)127-145 (SCOPUS)  [DOI 10.4067/S0718-23762019000200127 ](http://dx.doi.org/10.4067/S0718-23762019000200127 ).<i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
+-   Miranda, D., Castillo, J. C., & Sandoval-Hernandez, A. (2020). Young Citizens Participation: Empirical Testing of a Conceptual Model. Youth & Society, 52(2), 251–271. [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)
+<a href="https://www.researchgate.net/publication/320263594_Young_Citizens_Participation_Empirical_Testing_of_a_Conceptual_Model">
+<i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a> [pdf]("documentos/papers/Miranda et al. 2017. Young Citizens Participation.pdf")
 
-- Frei, R., Castillo, J. C., Herrera, R., & Suárez, J. I. (2020). ¿Fruto del esfuerzo? Los cambios en las atribuciones sobre pobreza y riqueza en Chile entre 1996 y 2015. Latin American Research Review, 55(3), 477–495. DOI: [http://doi.org/10.25222/larr.464](https://larrlasa.org/articles/10.25222/larr.464/)
+- Maldonado, L., Olivos, F., Castillo, J.C. et al. (2019) Risk Exposure, Humanitarianism and Willingness to Pay for Universal Healthcare: A Cross-National Analysis of 28 Countries. Social Justice Research 32, 349–383 [https://doi.org/10.1007/s11211-019-00336-6](https://link.springer.com/article/10.1007/s11211-019-00336-6)
 
 - Castillo, J.C., Olivos, F. and Azar, A. (2019), Deserving a Just Pension: A Factorial Survey Approach*. Social Science Quarterly, 100: 359-378. [https://doi.org/10.1111/ssqu.12539](https://onlinelibrary.wiley.com/doi/abs/10.1111/ssqu.12539). <a href="https://www.researchgate.net/publication/328359653_Deserving_a_Just_Pension_A_Factorial_Survey_Approach">
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
@@ -146,6 +148,12 @@ output:
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 <a href="https://osf.io/preprints/socarxiv/qkpu4/">
 <i class="ai ai-osf fa-lg" style="font-size:20px;color:blue"></i></a>
+
+
+- Atria, J., Ramírez, S., Castillo, JC. & Maldonado, L. (2018) Studying meritocracy in an unequal context: Perspectives from chilean scholars. _Universum_ 34(2)127-145 (SCOPUS)  [DOI 10.4067/S0718-23762019000200127 ](http://dx.doi.org/10.4067/S0718-23762019000200127 ).<i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
+
+- Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2018)
+“Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” _Public Health 148:59-69_ [https://doi.org/10.1016/j.puhe.2017.09.00](https://doi.org/10.1016/j.puhe.2017.09.007).
 
 - Castillo, JC & Rivera,M. (2018) Poverty and wealth attributions: A second order confirmatory factor analysis model. Psykhe 27(2) [http://dx.doi.org/10.7764/psykhe.27.2.1152](http://dx.doi.org/10.7764/psykhe.27.2.1152) (SCOPUS).
 <a href="http://www.psykhe.cl/index.php/psykhe/article/view/1152/pdf_113"><i class="ai ai-open-access fa-lg" style="font-size:20px"></i>
@@ -160,12 +168,6 @@ output:
 <i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a>
 [link to pdf](https://scielo.conicyt.cl/pdf/cuhso/v27n2/0719-2789-cuhso-27-02-00005.pdf)
 
--   Miranda, D., Castillo, J. C., & Sandoval-Hernandez, A. (2020). Young Citizens Participation: Empirical Testing of a Conceptual Model. Youth & Society, 52(2), 251–271. [https://doi.org/10.1177/0044118X17741024](https://doi.org/10.1177/0044118X17741024)
-<a href="https://www.researchgate.net/publication/320263594_Young_Citizens_Participation_Empirical_Testing_of_a_Conceptual_Model">
-<i class="ai ai-researchgate fa-lg" style="font-size:20px;color:green"></i></a> [pdf]("documentos/papers/Miranda et al. 2017. Young Citizens Participation.pdf")
-
-- Azar, A., Maldonado, L., Castillo, JC & Atria, J. (2018)
-“Income, Egalitarianism, and Attitudes Towards Healthcare Policy: A Study on Public Attitudes in 29 Countries” _Public Health 148:59-69_ [https://doi.org/10.1016/j.puhe.2017.09.00](https://doi.org/10.1016/j.puhe.2017.09.007).
 
 
 <details>
