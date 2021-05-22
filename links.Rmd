@@ -13,7 +13,6 @@ output:
 
 <br/>
 
-
 ### Tutoriales / talleres
 
 - [Taller Multinivel](documents/talleres-cursos/multinivel_taller/taller_multinivel.html)

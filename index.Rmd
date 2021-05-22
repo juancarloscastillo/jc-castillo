@@ -54,11 +54,9 @@ recordar incluir en css.
 ### PhD Sociología, [Universidad de Humboldt](https://www.sowi.hu-berlin.de/en/index.html), Berlin <br/>
 
 ### Investigador Principal [COES](http://www.coes.cl), Centro de Estudios de Conflicto y Cohesión Social
-[<img src="images/logocoes.jpg" style="width:20%" align="left">](http://www.coes.cl)
+[<img src="images/COES_Logo_sello2.png" style="width:20%" align="left">](http://www.coes.cl)
 
 </div>
-
-
 </div>
 
 <br/>
@@ -70,23 +68,53 @@ recordar incluir en css.
 
 ### [**Principales áreas de investigación:**]()
 
+<div class="row">
+<div class="column left">
+
+<div class="box">**Justicia distributiva y subjetividad**
+<hr style="height:3px;border-top:1px solid #f00" />
+Me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza.
+</div>
+<br>
+<div class="box">  **Cohesión social**
+<hr style="height:3px;border-top:1px solid #f00" />
+Este tema lo abordo desde mi rol de investigador principal de [COES](https://www.coes.cl/), donde dirijo la línea de interacciones individuales y grupales. Investigo la conceptualización y medición de distintas dimensiones de cohesión social,y coordino el [Observatorio de Cohesión Social](https://ocs-coes.netlify.app/)
+<br>
+[<img src="images/ocs.png" style="width:50%" align="center">](https://ocs-coes.netlify.app/)
+
+</div>
+
+</div>
+
+
+
+
+<div class="column right">
+
+<div class="box"> **Formación ciudadana y desigualdad**
+<hr style="height:3px;border-top:1px solid #f00" />
+Esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los investigadores Cristian Cox (UDP) y Daniel Miranda (UC).
+</div>
+<br>
+<div class="box">  **Ciencia Abierta**
+<hr style="height:3px;border-top:1px solid #f00" />
+Adscribo y promuevo los principios de **ciencia abierta**, en términos de  acceso, transparencia y reproducibilidad.  En este marco doy el curso [Ciencia Social Abierta](https://cienciasocialabierta.netlify.app/) en la Carrera de Sociología en la Universidad de Chile, y coordino el Laboratorio de Investigación Social Abierta - [LISA-COES](https://lisa-coes.netlify.app/).
+<br>
+[<img src="images/logo_lisa.png" style="width:50%" align="center">](https://lisa-coes.netlify.app/)
+
+</div>
+
+
+</div>
+<br>
 <br>
 
-#### - **Justicia distributiva y subjetividad**: me interesa la forma en que se percibe y se justifica la desigualdad económica, así como sus consecuencias en términos políticos. En este ámbito he investigado principalmente percepción y justificación de brechas salariales, así como también clase social subjetiva, preferencias redistributivas y atribuciones de pobreza.
+
 
 <br>
 
-#### - **Formación ciudadana y desigualdad**: esta línea vincula desigualdad de origen familiar con niveles de conocimiento cívico de estudiantes, así como también con sus expectativas de participación política futura. En este tema he realizado investigaciones utilizando datos del estudio ICCS (International Civic and Citizenship Education Study), junto a los investigadores Cristian Cox (UDP) y Daniel Miranda (UC).
 
-<br>
 
-#### - **Cohesión social**: este tema lo abordo desde mi rol de investigador principal de [COES](https://www.coes.cl/), donde dirijo la línea de interacciones individuales y grupales. Me interesa la conceptualización y medición de distintas dimensiones de cohesión social, en particular aquellas vinculadas a temas de confianza.
-
-<br>
-
-#### Para mi investigación utilizo principalmente datos de encuestas nacionales y comparativas internacionales. En análisis de datos me he especializado en métodos cuantitativos, particularmente **modelos multinivel** y **ecuaciones estructurales**.
-
-#### Adscribo y promuevo los principios de **ciencia abierta**, en términos de facilitar el acceso a los productos de investigación y de la transparencia y reproducibilidad de las investigaciones (detalles en mi curso ["Ciencia Social Abierta"](https://cienciasocialabierta.netlify.app/)).
 
 
 <br>
