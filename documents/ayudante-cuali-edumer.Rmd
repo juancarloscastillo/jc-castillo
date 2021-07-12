@@ -8,9 +8,9 @@ output:
         #toc_float: TRUE
 ---
 
-## Proyecto Fondecyt Regular Nº 1210847 (2021-2024)
+### Proyecto Fondecyt Regular Nº 1210847 (2021-2024)
 
-# “Meritocracia en la Escuela: Fundamentos Morales del Mercado Educativo y sus implicancias para la formación ciudadana en Chile”
+### “Meritocracia en la Escuela: Fundamentos Morales del Mercado Educativo y sus implicancias para la formación ciudadana en Chile”
 
 ---
 
@@ -29,22 +29,23 @@ El objetivo de esta investigación consiste en analizar el impacto de aspectos c
 -  Participación en reuniones de equipo.
 
 **Requisitos:**
+
 - Estar cursando pregrado o postgrado en ciencias sociales
 - Tener experiencia en metodologías cualitativas
 
 **Condiciones**
 
-- Dedicación aproximada de un tercio de jornada semanal durante seis meses ($300.000 - $450.000 mensual dependiendo de experiencia y grado académico).
+- Dedicación aproximada de un tercio de jornada semanal durante seis meses
+- Honorarios $300.000 - $450.000 mensual dependiendo de experiencia y grado académico.
 
 **Postulación**
 
 El plazo para postular es el **23 de julio del 2021.** La postulación debe incluir
-currículo actualizado y breve carta de presentación y motivación (máximo una plana).
+currículo actualizado y breve carta de presentación y motivación (máximo una plana), ambos documentos en 1 solo archivo pdf.
 
 [<img src="boton-postular.png" width="200">](https://forms.gle/6cX17oZdRScpxeg28)
 
 ---
-
 
 **Equipo del proyecto:**
 
