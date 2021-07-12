@@ -77,6 +77,8 @@ I use software compatible with the principles of open science, this is, free and
 
 ### Open Science
 
+- [Create, Publish, and Analyze Personal Websites Using R and RStudio](https://r4sites-book.netlify.app/)
+
 - [Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)](https://doi.org/10.7818/ECOS.2016.25-2.11)
 
 - [Gates Open Research](https://gatesopenresearch.org/)
@@ -123,6 +125,7 @@ I use software compatible with the principles of open science, this is, free and
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Estimating a Parameter from a Random Sample <a href="https://t.co/H2KxnLzDyH">pic.twitter.com/H2KxnLzDyH</a></p>&mdash; Chelsea Parlett-Pelleriti (@ChelseaParlett) <a href="https://twitter.com/ChelseaParlett/status/1338662205894508545?ref_src=twsrc%5Etfw">December 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+- [Group comparisons](https://indrajeetpatil.github.io/ggstatsplot/articles/web_only/ggbetweenstats.html)
 
 - [R Syntax Comparison :: CHEAT SHEET](https://www.amelia.mn/Syntax-cheatsheet.pdf)
 
