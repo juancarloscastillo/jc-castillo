@@ -11,7 +11,7 @@ output:
 ---
 <div class="mycontent">
 
-# Markdown y herramientas de escritura abierta
+# Markdown y herramientas de escritura abierta ([bit.ly/markdown-herramientas](https://juancarloscastillo.github.io/jc-castillo/documents/talleres-cursos/markdown-mexico/markdown-herramientas.html))
 
 **Edición, citas, versionamiento y publicación**
 
