@@ -1,0 +1,51 @@
+---
+title: "Taller Markdown y herramientas de escritura abierta"
+output:
+    html_document:
+        theme: readable
+        css: style.css
+#        toc: TRUE
+        #toc_float: TRUE
+        includes:
+          before_body: header.html
+---
+<div class="mycontent">
+
+# Markdown y herramientas de escritura abierta
+
+**Edición, citas, versionamiento y publicación**
+
+Agosto 2021 - Universidad Iberoamericana de México
+
+Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
+
+[jc-castillo.com](https://juancarloscastillo.github.io)
+
+
+### Sesiones
+
+<font size="3">
+
+|              	| Sesión                                    	| Práctico                          	|
+|-------------------	|:-------------------------------------------	|:-----------------------------------	|
+| Lunes 16     	| [Introducción a escritura en texto simple](slides/01-textosimple/01_textosimple.html)  	| - [Editor.md](https://pandao.github.io/editor.md/en.html) <br> - [Tutorial Markdown online](https://www.markdowntutorial.com/es/) 	|
+| Miércoles 18 	| Escribiendo Markdown en ATOM                 	| - [Instalación y funcionamiento ATOM](https://atom.io/) <br> - Librerias ATOM-Markdown           	|
+| Viernes 20   	| Citas en texto plano                      	| Zotero, Bibtex & Betterbibtex     	|
+| Lunes 23     	| Versionamiento y repos con Git & Github    	| Repositorios Github               	|
+| Miércoles 25 	| Publicación web vía Rmarkdown              	| Github pages                      	|
+
+
+</font>
+
+
+## Links
+
+- Instalación y documentación ATOM: [https://atom.io/]()
+
+
+## Comentarios & preguntas
+
+- [hypotes.is](https://web.hypothes.is/)
+
+<br><br><br>
+</div>

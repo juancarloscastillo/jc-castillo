@@ -55,7 +55,7 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 
 - seminaristas/tesisas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes
 
-- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/), que permite ambas salidas.
+- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/), que permite ambas salidas. Documento de presentación [aquí](documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
 
 - los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/)
 
@@ -79,6 +79,8 @@ A acordar cada semestre. En general, el informe de avance se entrega el informe 
 # Links
 
 - Taller escritura académica 2021, link [documento presentación](documents/talleres-cursos/escritura-academica/escritura-academica.html)
+
+- [Presentación tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
 
 - [Del rigor en la ciencia](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/)
 

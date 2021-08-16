@@ -14,16 +14,16 @@
       font-family: 'Montserrat';
       font-size: 150%;
       line-height: 1.7;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 10px;
+      padding-left: 10px;
 }
 
 .myimg{
-    width: 50%;
+    width: 120px;
     color: red;
     position: absolute;
-    top: 40px;
-    left: 45%;
+    top: 150px;
+    left: 65%;
 }
 
 
@@ -42,12 +42,12 @@
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 h1 {
-    padding-top: 65px !important;
-    margin-top: 30px !important;
+    padding-top: 10px !important;
+    margin-top: 10px !important;
 }
 
 pre {
