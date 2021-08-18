@@ -47,7 +47,7 @@ About macros.js: permite escalar las imágenes como [scale 50%01_](path to image
 ![:scale 60%](../Markdown-mark.png)
 ]
 .right[
-## .grey[Sesión 1: *Introducción a la escritura en texto simple*]
+## .grey[Sesión 2: *ATOM &amp; Markdown*]
 ]]
 
 ---
@@ -58,330 +58,448 @@ class: animated, fadeIn
 ---
 class: inverse, bottom, right
 
-# .green[Fundamentos de escritura simple]
 
-## 1. Motivación. Ciencia abierta
-## 2. Herramientas tradicionales de escritura
-## 3. Escritura abierta
-## 4. Edición en Markdown
-
----
-class: inverse, bottom, right
-
-# .green[Fundamentos de escritura simple]
-
-## 1. .yellow[Motivación. Ciencia abierta]
-## 2. Herramientas tradicionales de escritura
-## 3. Escritura abierta
-## 4. Edición en Markdown
+# .green[Contenidos]
 
 
----
-# Motivación: Ciencia Abierta
+## 1. Introducción, instalación y entorno
+ 
+## 2. Librerías/customización general
 
---
-
-- Crisis de **acceso**
-
---
-
-- Crisis de **reproducibilidad**
-
---
-
-.center[
-# .green[¿Qué herramientas facilitan o entorpecen la reproducibilidad?]
-]
-
---
-
-.center[
-# .green[¿Qué tan abierto es el proceso de escritura?]
-]
-
----
-# Dimensiones de escritura y apertura
-
-&lt;br&gt;
-
-- **Eficiencia**: ¿Son las herramientas de escritura que utilizamos eficientes para el trabajo académico?
-
---
-
-- **Ética**: ¿Facilitan el cumplimiento de los principios normativos de la ciencia?
-
---
-
-- **Propiedad**: ¿A quién pertenece lo que escribimos?
-
+## 3. Librerías y entorno Markdown
 
 ---
 class: inverse, bottom, right
 
-# .green[Fundamentos de escritura simple]
 
-## 1. Motivación. Ciencia abierta
-## 2. .yellow[Herramientas tradicionales de escritura]
-## 3. Escritura abierta
-## 4. Edición en Markdown
+# .green[Contenidos]
 
 
+## 1. .yellow[Introducción, instalación y entorno]
+ 
+## 2. Librerías/customización general
 
----
-# Flujo de trabajo con procesador de texto tradicional
-
-.center[
-![:scale 70%](W_workflow.png)
-]
-
----
-# Abriendo el archivo de escritura tradicional
-
-![](realWord.png)
+## 3. Librerías y entorno Markdown
 
 
 ---
-# Desventajas del procesador tradicional
+# ¿Por qué usar editores? 
 
+- adecuado en un contexto de apertura y de propiedad de los contenidos (texto plano/simple)
 
+- altamente personalizable
+
+- mismo entorno en caso de realizar análisis que impliquen código
+
+- posee herramientas de apoyo a la escritura (formato, corrección ortografía)
+
+- vínculos con otras herramientas y programas
+
+---
+# Editores: Alternativas
 
 .pull-left-wide[
-
-- Barrera de **pago/licencia** para acceder a contenidos (propiedad)
-
-- Difícil **versionamiento** y llevar registro de quién hizo qué cambio, barrera a la reproducibilidad y colaboración 
-
-- No permite un documento enteramente **reproducible** que combine texto y código de análisis (en caso de utilizarlo) 
+![](editor.jpg)
 ]
+
 
 .pull-right-narrow[
-&lt;br&gt;
-&lt;br&gt;
-![](word.jpg)
+- Emacs
 
+- Vim
+
+- VCS
+
+- Sublime
+
+- RStudio (?)
+
+- ATOM
 ]
 
 
 ---
-class: inverse, bottom, right
+# ATOM: características
 
-# .green[Fundamentos de escritura simple]
+.pull-left[
+![:scale 55%](atom_logo.png)
 
-## 1. Motivación. Ciencia abierta
-## 2. Herramientas tradicionales de escritura
-## 3. .yellow[Escritura abierta]
-## 4. Edición en Markdown
+.right[
+![:scale 30%](github-logo.png)
+]
+]
 
+
+
+
+.pull-right[
+- open source
+
+- personalizable
+
+- multiplataforma
+
+- muy buena integración Git/Github
+
+- integración Markdown
+]
 ---
-# Inspiración
-
+# Instalación
+&lt;br&gt;
+&lt;br&gt;
 .center[
-![](bowers&amp;healey.png)]
+#.extralarge[[https://atom.io/](https://atom.io/)]
+]
+---
+# Entorno general (1)
 
+- menues superiores
+
+- paneles: archivos (izquierda) y git (derecha)
+
+- pestañas de trabajo / división de pantalla
+
+- footer
 
 ---
-# Escritura libre y abierta
+class: middle center
 
-- independiente de programa comercial
-
-- independiente de plataformas específicas
-
-- que permita combinar texto y análisis en un mismo documento
-
-- foco en los contenidos en lugar del formato
-
-- que permita distintas opciones de formato final
-
-
+![:scale 90%](atom_session.png)
 ---
-# Funcionamiento de escritura simple / plana
+class: inverse
 
-- entorno: editor de texto
-
-- separación entre texto de entrada (input) y texto de salida (output)
-
-- foco en el input/contenido vs output/formato
-
-- marcas de edición: vínculo entre formato de input y output
- 
-
----
-# Marcas de edición
-
-- Vínculo entre escritura en texto simple (input) y output
-
-![](marcas-edi.png)
----
-# Principales Alternativas escritura simple
-
-.left-column[
-# .green[Latex]
-
-# Markdown
-]
-
-.right-column[
-
-- sistema de escritura simple de amplio uso en la academia
-
-- alta calidad en salida a pdf
-
-- creado a comienzos de los 80 (Donald Knuth, Leslie Lamport)
-
-
-]
-
----
-# Principales Alternativas escritura simple
-
-.left-column[
-# .green[Latex]
-
-# Markdown
-]
-
-.right-column[
-
-![](latex.jpg)
-
-
-]
-
----
-# Principales Alternativas escritura simple
-
-.left-column[
-# Latex
-
-# .green[Markdown]
-]
-
-.right-column[
-
-- creado por John Gruber y Aaron Swartz en 2004
-
-- forma de escritura simple con pocas marcas de formato
-
-- conversión a distintos formatos de salida (html, pdf)
-
-- Soporta encabezados, tablas, imágenes, tablas de contenidos, ecuaciones, links ... todo lo necesario para documentos académicos
-
---
-
-- filosofía: foco en contenido primero, el formato después.
-
-
-]
-
----
-# Principales Alternativas escritura simple
-
-.left-column[
-# Latex
-
-# .green[Markdown]
-]
-
-.right-column[
-
-![](markdownpreview.png)
-]
-
-
----
-# Principales Alternativas escritura simple
+# .green[Atajo más importante: buscador de comandos]
 
 &lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+.center[
+# .extralarge[.red[ctrl + shift + P]]
+]
 
+---
+# Settings generales
 
-|          	| **Control de formato** 	| **Marcas de edición** 	| **Formatos de salida** 	|
-|----------	|:--------------------:|:----------------:|:--------------------:|
-| LaTeX    	|          +         	|        +       	|          -         	|
-| Markdown 	|          -         	|        -       	|          +         	|
+- settings (Edit&gt;Preferences, o ctrl + ,)
+
+  - Core: básicos
+  
+  - Editor: tipo letra, distancia entre líneas, etc. 
+  
+  - Keybindings: atajos de teclado
+  
+  - Packages: librerías instaladas
+  
+  - Themes
+  
+  - Install: agregar librerías
+
+---
+# Importantes en settings generales
+
+- **Core**: 
+  - file encoding: UTF-8
+
+- **Editor**: activar 
+  - soft wrap 
+  - zoom font when ctrl scrolling
+  
+- **Themes**: según gusto personal, probar
 
 ---
 class: inverse, bottom, right
 
-# .green[Fundamentos de escritura simple]
 
-## 1. Motivación. Ciencia abierta
-## 2. Herramientas tradicionales de escritura
-## 3. Escritura abierta
-## 4. .yellow[Edición en Markdown]
+# .green[Contenidos]
+
+
+## 1. Introducción, instalación y entorno
+ 
+## 2. .yellow[Librerías/customización general]
+
+## 3. Librerías y entorno Markdown
 
 
 ---
-# Ejemplos de marcas de edición en Markdown
+# Librerías / packages
+
+- ATOM viene con algunas librerías básicas pre-instaladas
+
+- El resto es a elección según necesidad y gusto
+
+- Las librerías tienen también distintas opciones a considerar
+
+- En este curso vamos a instalar un set de librerías que se relacionan con escritura y con Markdown 
+
+- Para instalar: Settings (ctrl+,) -&gt; install, buscar
+
+---
+# Librerías para escritura general
+
+.pull-left[
+## .green[Básicas escritura]
+
+- Wordcount
+
+- Spellcheck
+]
+
+.pull-right[
+# .green[Opcionales escritura]
+
+- Zen
+
+- Glowing cursor
+
+- Neon selection
+
+- Minimap
+
+- theme switcher
+]
+
+---
+# Ejemplo Wordcount
+
+.pull-left[
+![](installwordcount.gif)
+]
+
+.pull-right[
+
+- Install
+
+- revisar settings
+
+]
+
+---
+# Spell check
+
+- En settings:
+
+  - en grammars debería aparecer text.md (para que aplique a archivos markdown)
+  
+  - Check Use Systems y Use Locales (para Linux)
+  
+  - Ver settings para Windows y Mac en documentación
+  
+  - En caso de problemas lo que funciona siempre es usar **locales**
+      - [bajar/guardar diccionarios](https://www.oxygenxml.com/spell_checking.html) en carpeta local
+      - dar ruta donde corresponde (locale paths)
+
+---
+class: inverse, bottom, right
 
 
-  - Texto en **negrita** entre dos astericos: ``` **negrita** ```
+# .green[Contenidos]
 
-  - Texto en *cursiva* con un asterico por lado: ``` *cursiva* ```
+
+## 1. Introducción, instalación y entorno
+ 
+## 2. Librerías/customización general
+
+## 3. .yellow[Librerías y entorno Markdown]
+
+---
+# Librerías markdown 
+
+.pull-left[
+
+# .green[Básicas Markdown]
+
+- language-markdown
+
+- pandoc-convert
+]
+
+.pull-right[
+
+# .green[Opcionales Markdown]
+
+- markdown preview enhanced
+
+- toolbar markdown writer
+]
+
+---
+# Librerías markdown 
+
+.pull-left[
+
+# .green[Básicas Markdown]
+
+- **language-markdown**
+
+- pandoc-convert
+]
+
+.pull-right[
+- agrega funciones de edición en archivos markdown (resaltado, listas de items)
+
+- funciona a partir de un "grammar" o identificador de lenguaje (en footer de Atom)
+
+- Se activa automáticamente en archivos con extensión .md (markdown)
+
+
+]
+
+---
+# Librerías markdown 
+
+.pull-left[
+
+# .green[Básicas Markdown]
+
+- language-markdown
+
+- **pandoc-convert**
+]
+
+.pull-right[
+
+- usa pandoc para convertir entre distintos formatos
+
+- acceso vía buscador de comandos (ctrl+shift+P), "convert" + formato deseado de salida 
+
+]
+
+---
+# Librerías markdown 
+
+.pull-left[
+
+# .green[Opcionales Markdown]
+
+- **markdown preview enhanced**
+
+- toolbar markdown writer
+
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+.medium[
+- previsualización lado-a-lado scroll simultaneo
+
+- renderización de citas Bibtex
+
+- conversión / impresión pdfs
+
+- activación con buscador de comandos
+]
+]
+
+---
+
+![](markdownwriting.gif)
+
+---
+# Librerías markdown 
+
+.pull-left[
+
+# .green[Opcionales Markdown]
+
+- markdown preview enhanced
+
+- **toolbar markdown writer**
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+.medium[
+- Barra de formato y otras funciones markdown
+
+- Se activa con archivos .md
+
+- En opciones: 
+
+  - Tamaño
   
-  - Títulos se marcan con # al principio, subtítulos ## , y así sucesivamente
-  
-  - Links: `[texto](web link)`
-  
-  - Imágenes:  `![](ruta a imagen)`
+  - Lugar
+]
+]
+
+---
+# ... y otras librerías útiles
+
+- pdf viewer
+
+- browser plus
+
+- terminal
+
+
+
+---
+class:inverse, middle, center
+
+# .extralarge[Algunos extras...]
+
+---
+# Carpetas de proyecto
+
+- se recomienda trabajar en .red[carpetas de proyecto] donde estén los documentos markdown y los archivos externos asociados como imágenes y archivos de referencias
+
+- para esto:
+ - generar carpeta en administrador de archivos
+ - en ATOM: File -&gt; Open Folder
+ - Aparece en el panel izquierdo con todos los archivos disponibles
+ - se pueden tener abiertas varias carpetas a la vez
+ 
+---
+# Code Snippets
+
+- permiten automatizar bloques de código/texto recurrentes
+
+- para acceder: buscador de comandos &gt; snippets
+
+- se agregan al final del archivo de snippets
+
+---
+# Code Snippets: ejemplo chunk R
+
+```
+'.text.md,.source.gfm.rmd':
+    'chunk':
+      'prefix': 'chu'
+      'body':"""
+
+```
+
+````
+```{r}
+
+```
+````
+
+  """
+
+Luego, al escribir "chu" en el editor, se activa la opción
+
+
+---
+# Funciones escritura
+ 
+- ctrl+j: elimina saltos de línea en un bloque (útil al copiar bloques desde pdf)
+
+- cambio de lineas (shift+flecha)
+
+- cursor multiple (ctrl + mouse o alt+shift)
+
+- activar cursor multiple en resultados de búsqueda (Find All, luego shift+Enter)
+
+- ctrl+d selecciona palabra destacada y genera cursor múltiple
 
 ---
 class: inverse middle center
 
-# .green[Mayores detalles en la Práctica de Markdown (ver sitio web del curso)]
+# .green[Proxima sesión:] 
 
-#  [.yellow[Editor.md]](https://pandao.github.io/editor.md/en.html)
-  
-#  [.yellow[Tutorial Markdown online]](https://www.markdowntutorial.com/es/)
-  
----
-# Markdown y pandoc
-
-
-![](pandoc.png)
-
----
-# Editores Markdown
-
-- múltiples editores de texto (Emacs, Sublime, VIM, etc.)
-
---
-
-- plataformas que permiten escribir y agregan funciones adicionales para distintos lenguajes como:
-
-  - texto predictivo
-  - resaltado
-  - visualización de imágenes
-  - previsualización instantánea
-
---
-
-- en este curso vamos a utilizar **Atom**, principalmente por sus ventajas en temas de versionamiento y citación
-  
-
-
----
-class: slideInRight
-background-image: url("../texture_background.jpg")
-
-# .extralarge[.yellow[Resumen]] 
-
-.white[
-
-## - ciencia abierta y escritura
-
-## - limitaciones procesadores tradicionales 
-
-
-## - texto plano y marcas de edición 
-
-
-## - Markdown: alternativa simple para escritura simple ]
-
----
-class: inverse, middle, center,slideInRight
-
-# .green[Próxima sesión:] 
-# .extralarge[.yellow[Atom]]
+# .extralarge[.yellow[Gestión de referencias bibliográficas en Markdown/Atom]]
 
 
 ---

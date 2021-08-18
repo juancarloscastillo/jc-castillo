@@ -49,7 +49,7 @@ About macros.js: permite escalar las imágenes como [scale 50%01_](path to image
 
 .pull-left[
 # Markdown y herramientas de escritura abierta
-## [.medium[.black[bit.ly/markdown-herramientas.com]]]()
+## [.medium[.black[bit.ly/markdown-herramientas]]]()
 ----
 ## [.white[Juan Carlos Castillo]](https://juancarloscastillo.github.io/jc-castillo/)
 ## .small[Agosto 2021      ]
