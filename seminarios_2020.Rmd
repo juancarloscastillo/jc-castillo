@@ -53,7 +53,7 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 
 - seminaristas/tesisas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes
 
-- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/), que permite ambas salidas.
+- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/) (video taller [aquí](https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1)), que permite ambas salidas.
 
 - los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/)
 
@@ -61,11 +61,11 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 
 - Presentar en el [Coloquio de Investigación en Desigualdad y Ciudadanía.](coloqui-inv.html)
 
-- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK)
+- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK), video sesión disponible [aquí](https://www.dropbox.com/s/4if7bpbbhuo7406/zoom_0.mp4?raw=1)
 
 - Entrega de informes en formato (R)Markdown, html o pdf
 
-- Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de [Git/Github](https://github.com/)
+- Para facilitar el versionamiento de los informes y la entrega de comentarios se sugiere el uso de [Git/Github](https://github.com/).
 
 - También por temas de apertura se recomienda inscribir el proyecto en el [Open Science Framework](https://osf.io/)
 

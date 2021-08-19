@@ -28,6 +28,7 @@ La guía de seminarios/memorias/tesis es una actividad de acompañamiento semest
 - reuniones de evaluación y asesoría
 
 <br>
+
 ## Informes
 
 Se entregarán 2 informes durante el semestre, uno de avance y uno final.
@@ -51,11 +52,12 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
   - informe final: incorporación de comentarios y finalización de conclusiones.
 
 <br>
+
 ### Funcionamiento:
 
 - seminaristas/tesisas se incorporan a canal de Slack, donde se comparte información relativa a las investigaciones y se hace entrega de los informes
 
-- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/), que permite ambas salidas. Documento de presentación [aquí](documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
+- la entrega puede ser en pdf o html. Se recomienda usar [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/) (video taller [aquí](https://www.dropbox.com/s/u3g2x74nj31jsu1/zoom_0.mp4?raw=1)), que permite ambas salidas. Documento de presentación [aquí](documents/talleres-cursos/tesisfacsodown/tesisfacsodown.html)
 
 - los comentarios se realizarán mediante [hypotes.is](https://hypothes.is/)
 
@@ -63,7 +65,7 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 
 - Presentar al menos 1 vez al semestre en el [Coloquio de Investigación en Desigualdad y Ciudadanía.](coloqui-inv.html)
 
-- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK)
+- Recomendaciones de escritura académica [aquí](http://bit.ly/2e4rKiK), video sesión disponible [aquí](https://www.dropbox.com/s/4if7bpbbhuo7406/zoom_0.mp4?raw=1)
 
 - Entrega de informes en formato (R)Markdown, html o pdf
 
@@ -74,7 +76,6 @@ Se entregarán 2 informes durante el semestre, uno de avance y uno final.
 **Fechas entrega informes**
 
 A acordar cada semestre. En general, el informe de avance se entrega el informe 1 semana después de la presentación, y el final la última semana del semestre.
-
 
 # Links
 
