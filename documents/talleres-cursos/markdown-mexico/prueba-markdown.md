@@ -1,4 +1,9 @@
-# Probando markdown
+---
+title: texto prueba
+bibliography: referencias.bib
+---
+
+# Probando markdown gfgfg
 
 ## segundo encabezado
 
@@ -6,10 +11,17 @@
 
 1. # *cursiva*  ffdf fdf
 
-   dasd  | asds  |  
+dasd  | asds  |
 --|---|--
   |   |
-  |   |
-3.
 
-#
+### Probando citas
+
+
+Al citar desde Zotero no funciona
+
+[@knight_luck_2009]
+
+@knight_luck_2009
+
+Referencias

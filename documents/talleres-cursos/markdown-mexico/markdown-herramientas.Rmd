@@ -30,7 +30,7 @@ Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 |-------------------	|:-------------------------------------------	|:-----------------------------------	|
 | Lunes 16     	| [Introducción a escritura en texto simple](slides/01-textosimple/01_textosimple.html)  	| - [Editor.md](https://pandao.github.io/editor.md/en.html) <br> - [Tutorial Markdown online](https://www.markdowntutorial.com/es/) 	|
 | Miércoles 18 	| [Escribiendo Markdown en ATOM](slides/02-atom/02_atom.html)                 	| - [Instalación y funcionamiento ATOM](https://atom.io/) <br> - Librerias ATOM-Markdown           	|
-| Viernes 20   	| Citas en texto plano                      	| Zotero, Bibtex & Betterbibtex     	|
+| Viernes 20   	| [Citas en texto plano ](slides/03-bibtex/03_bibtex.html)                     	| Zotero, Bibtex & Betterbibtex     	|
 | Lunes 23     	| Versionamiento y repos con Git & Github    	| Repositorios Github               	|
 | Miércoles 25 	| Publicación web vía Rmarkdown              	| Github pages                      	|
 

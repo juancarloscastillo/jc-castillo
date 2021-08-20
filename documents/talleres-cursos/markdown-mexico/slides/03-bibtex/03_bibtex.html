@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Markdown y Herramientas de Escritura Abierta</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".small[Juan Carlos Castillo    Departamento de Sociología - UCH / COES   ]" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="custom_2020.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: front
+
+
+
+
+
+&lt;!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- 
+
+rmarkdown::render('01-textosimple/01_textosimple.Rmd','xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%01_](path to image), hay si que grabar ese archivo js en el directorio.
+---&gt;
+
+
+.pull-left[
+# Markdown y herramientas de escritura abierta
+## [.medium[.black[bit.ly/markdown-herramientas]]](https://bit.ly/markdown-herramientas)
+----
+## [.white[Juan Carlos Castillo]](https://juancarloscastillo.github.io/jc-castillo/)
+## .small[Agosto 2021      ]
+]
+
+
+.pull-right[
+.right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 60%](../Markdown-mark.png)
+]   
+.right[
+## .grey[Sesión 3: *Citando en Markdown/Bibtex*]
+]]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Bibtex / csl
+ 
+## 2. Zotero / BetterBibTex
+
+## 3. Citando en Atom
+
+
+---
+## Citar: Sobre hombros de gigantes
+.pull-left[
+![](standing.png)
+]
+
+.pull-right[
+
+&lt;br&gt;
+- pararse sobre el conocimiento acumulado
+
+- identificar áreas para avanzar
+
+- reconocer trabajo previo
+
+- no reinventar la rueda
+
+]
+
+---
+class: inverse middle center
+
+# ¿Cómo trabajar con citas cuando se escribe en texto plano?
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. .yellow[Bibtex / csl]
+ 
+## 2. Zotero / BetterBibTex
+
+## 3. Citando en Atom
+
+
+---
+# Bibtex (.bib)
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![](BibTeX_logo.svg.png)]
+
+.pull-right[
+- formato de almacenamiento de citas en texto plano (no es un programa)
+
+
+- Un archivo Bibtex tiene extensión **.bib**, donde deben estar almacenadas todas las referencias citadas en el texto]
+
+---
+# Ejemplo referencia en Bibtex 
+.center[
+![:scale 80%](bibtex-record.png)
+]
+---
+# Archivo Bibtex (.bib)
+
+- un archivo bibtex tiene múltiples referencias una después de la otra, el orden no es relevante.
+
+- cada referencia posee una serie de campos con información necesaria para poder citar
+
+- este formato se puede ingresar manualmente, copiar y pegar de otras fuentes, o automatizar desde software de gestión de referencias (detalles más adelante)
+
+---
+# Archivo con definición de estilo (.csl)
+
+- además de las referencias en .bib, necesitamos poder dar el estilo de formato deseado a citas y bibliografía, mediante archivos  **csl** (citation style language) 
+
+- existen múltiples estilos de citación (alrededor de 10.000)
+
+- los más usados: APA, ASA, Chicago
+
+- estos estilos (en archivos csl) se pueden bajar desde repositorios, se recomienda el siguiente: [https://www.zotero.org/styles](https://www.zotero.org/styles)
+
+---
+# Claves de citación
+
+La forma de citar es a través de la .green[clave que identifica la referencia], que es la que aparece al principio de cada una, y se agrega una @. Ej:
+.small[
+```
+- Tal como señala [@sabbagh_dimension_2003], los principales resultados ...
+
+```
+]
+
+Al renderizar, esto genera:
+
+- **Tal como señala Sabbagh (2003), los principales resultados ...**
+
+Y además, agrega la bibliografía al final del documento.
+
+---
+# Opciones de citación
+
+&lt;br&gt;
+.medium[
+| Se escribe                                         	| Renderiza                     	|
+|----------------------------------------------------	|-------------------------------	|
+| `Como dice [@sabbagh_dimension_2003]`                	| Como dice Sabbagh (2003)      	|
+| `Sabbagh [-@sabbagh_dimension_2003] dice ... `       	| Sabbagh (2020) dice ...       	|
+| `Sabbagh [-@sabbagh_dimension_2003, pp.35] dice ...` 	| Sabbagh (2020, p.35) dice ... 	|
+]
+
+---
+# Utilizando Bibtex en escritura en texto simple
+
+- es claro que tanto la generación manual de registros Bibtex como la  incorporación manual de citas es un gran desincentivo a su uso.
+
+- la simplificación y automatización de esto pasa por dos procesos:
+
+  - Automatizar la generación de un archivo .bib desde un software de gestión de referencias (Zotero - BetterBibTex)
+  
+  - Automatizar la incorporación de citas al documento (Atom Zotero picker)
+
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Bibtex / csl
+ 
+## 2. .yellow[Zotero / BetterBibTex]
+
+## 3. Citando en Atom
+
+  
+---
+# Software de gestión de referencias
+
+.pull-left-narrow[
+&lt;br&gt;
+![](refman.jpg)
+]
+
+.pull-right-wide[
+- los software de gestión de referencias bibliográficas permiten almacenar, organizar y luego utilizar las referencias
+
+- diferentes alternativas de software de gestión de referencias bibliográficas: Endnote, Mendeley, Refworks, Zotero
+
+- en adelante vamos a ejemplificar con Zotero, que es un software libre y de código abierto
+]
+---
+## Zotero
+
+.pull-left[
+.center[
+&lt;br&gt;
+![:scale 80%](zotero.png)
+]]
+
+.pull-right[
+&lt;br&gt;
+- instalar  [https://www.zotero.org](zotero.org)
+
+- además del programa, instalar "conector" para el navegador (permite almacenar directamente con 1 click) ]
+
+---
+## Zotero: vista general
+
+.center[
+![:scale 80%](https://www.zotero.org/static/images/home/screenshot-1.4.png)
+]
+
+---
+# Zotero: almacenamiento
+.pull-left[
+
+a. vía .green[conector] del navegador: cuando hay una referencia presente en la página, ir al botón del conector y se guarda (Zotero debe estar abierto)
+
+.small[
+(la referencia se almacena en la carpeta que está activa en Zotero)
+]
+]
+
+
+.pull-right[
+![](conector.png)
+]
+---
+
+.pull-left[
+# Zotero: almacenamiento
+
+b)Vía identificador DOI / ISBN / ISSN ]
+
+.pull-right[
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![](doizotero.png)]
+
+---
+# Zotero: almacenamiento
+
+.pull-left[
+c) Manual: llenando los campos
+]
+
+.pull-right[
+![](zoteromanual.png)
+]
+---
+# Zotero
+
+- más información sobre manejo y capacidades:
+
+[https://www.youtube.com/watch?v=Uxv3aE4XoNY](https://www.youtube.com/watch?v=Uxv3aE4XoNY)
+
+... y tutoriales y guías varios en la red
+
+---
+# Zotero-Bibtex
+
+- Zotero permite exportar las referencias en formato Bibtex
+
+- Puede ser toda la colección o una parte (carpeta)
+
+- 2 alternativas: 
+  - manual
+  - automatizada
+  
+---
+## Zotero-Bibtex: exportación manual
+&lt;br&gt;
+.pull-left-narrow[
+![](zoteroexport.png)
+]
+
+.pull-right-wide[
+- Carpeta -&gt;  boton derecho -&gt; export -&gt; formato Bibtex
+
+- guardar archivo .bib en carpeta del proyecto
+]
+---
+## Zotero-Better Bibtex: exportación automatizada
+
+&lt;br&gt;
+
+- **BetterBibTex**: Zotero plug-in que permite exportación automática y  sincronizada
+
+- Instalación: 
+.medium[
+  - bajar archivo desde el sitio del desarrollador: [https://retorque.re/zotero-better-bibtex/installation/](https://retorque.re/zotero-better-bibtex/installation/)
+
+  - en Zotero: Tools -&gt; Adds-on -&gt; ruedita dentada -&gt; install add-on from file
+  
+  - reiniciar Zotero
+  ]
+  
+---
+# Zotero-Better Bibtex
+
+![](bbt-install.png)
+---
+# Zotero-Better Bibtex
+.center[
+![:scale 90%](betterbibtex.png)
+]
+
+
+---
+# Zotero-Better Bibtex: Exportando referencias
+
+- puede ser colección completa o carpetas específicas
+  
+- posicionarse sobre carpeta, botón derecho y `Export collection`
+  
+      - Formato: Better BibTex
+      - Keep updated (sincronización automática)
+      - dar ruta hacia carpeta del proyecto
+  
+- precaución: no caracteres especiales ni espacios en el nombre del archivo .bib
+
+
+---
+# Zotero-Better Bibtex
+
+.center[
+![:scale 80%](exportbibtex.gif)
+]
+---
+# Zotero-bibtex: consideraciones sobre claves
+
+- multiples formas de organizar las claves Bibtex
+
+- mantener un mismo formato es relevante, sobre todo para trabajo colaborativo
+
+- se generan desde la pestaña Citation Keys de BetterBibTex
+
+- Recomendación: `[auth:lower]_[shorttitle1:lower]_[year]`
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Bibtex / csl
+ 
+## 2. Zotero / BetterBibTex
+
+## 3. .yellow[Citando en Atom]
+---
+# Vínculo Markdown-Bibtex en YAML
+
+
+- se realiza en el **preámbulo** del documento: YAML (Yet Another Markdown Language)
+
+- el YAML es una sección inicial de archivos Markdown donde se especifican distintas opciones del documento, principalmente de formato
+
+- se define como un bloque de texto que va separado por `---`
+
+```
+    ---
+    bibliography: referencias.bib
+    csl: apa.csl
+    ---
+
+    Y aquí comienza el documento ...
+
+```
+
+
+---
+# Citando en Atom/Markdown vía  Zotero picker
+
+.pull-left[
+&lt;br&gt;
+![:scale 90%](zoteropicker.png)
+]
+
+
+.pull-right[
+- instalar librería
+
+- se activa luego con **alt+z**, o con el buscador de comandos (ctrl+shift+P)
+
+- se abre la ventana de búsqueda de citas 
+
+- Zotero debe estar abierto
+
+
+]
+---
+class: inverse middle center
+
+# .green[Proxima sesión:] 
+
+# .extralarge[.yellow[Versionamiento con Git/Github]]
+
+---
+class: front
+.pull-left[
+# Markdown y herramientas de escritura abierta
+## [.medium[.black[bit.ly/markdown-herramientas]]](https://bit.ly/markdown-herramientas)
+----
+## [.white[Juan Carlos Castillo]](https://juancarloscastillo.github.io/jc-castillo/)
+## .small[Agosto 2021]
+]
+
+
+.pull-right[
+.right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 60%](../Markdown-mark.png)
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url("../Markdown-mark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 17.2em;
+  right: 32.3em;
+  width: 60px;
+  height: 30px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
