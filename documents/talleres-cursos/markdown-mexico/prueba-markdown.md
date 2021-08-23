@@ -1,15 +1,19 @@
 ---
 title: texto prueba
-bibliography: referencias.bib
+bibliography: bibliography.bib
+numbersections: true
+
 ---
 
-# Probando markdown gfgfg
 
-## segundo encabezado
+# Probando markdown
+
+## Segundo encabezado
 
 **Probando negrita**  fdfd
 
-1. # *cursiva*  ffdf fdf
+
+1. *cursiva*  ffdf fdf
 
 dasd  | asds  |
 --|---|--
@@ -24,4 +28,4 @@ Al citar desde Zotero no funciona
 
 @knight_luck_2009
 
-Referencias
+**Referencias**

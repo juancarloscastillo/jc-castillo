@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Markdown y Herramientas de Escritura Abierta</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".small[Juan Carlos Castillo    Departamento de Sociología - UCH / COES   ]" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="custom_2020.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: front
+
+
+
+
+
+&lt;!---
+Para correr en ATOM
+- open terminal, abrir R (simplemente, R y enter)
+- 
+
+rmarkdown::render('01-textosimple/01_textosimple.Rmd','xaringan::moon_reader')
+
+About macros.js: permite escalar las imágenes como [scale 50%01_](path to image), hay si que grabar ese archivo js en el directorio.
+---&gt;
+
+
+.pull-left[
+# Markdown y herramientas de escritura abierta
+## [.medium[.black[bit.ly/markdown-herramientas]]](https://bit.ly/markdown-herramientas)
+----
+## [.black[Juan Carlos Castillo]](https://juancarloscastillo.github.io/jc-castillo/)
+## .small[Agosto 2021      ]
+]
+
+
+.pull-right[
+.right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 60%](../Markdown-mark.png)
+]   
+.right[
+## .grey[Sesión 4: *Control de versiones y colaboración con Git &amp; Github*]
+]]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Versionamiento y Git
+ 
+## 2. Git en Atom
+
+## 3. Github y link con Atom
+
+---
+class: inverse
+
+.pull-left[
+.center[
+![:scale 85%](finaldoc.gif)
+]
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+# ¿Cómo registrar de manera eficiente quién hizo qué y cuando en un archivo/documento?
+]
+
+---
+class: inverse  middle center
+
+# .green[La escritura en texto simple (como Markdown) permite implementar un sistema de control de versiones, además de herramientas de respaldo, colaboración y comunicación]
+
+--
+
+# El sistema de .yellow[control de versiones] proviene del mundo del desarrollo de software
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. .yellow[Versionamiento y Git]
+ 
+## 2. Git en Atom
+
+## 3. Github y link con Atom
+
+
+---
+## El origen: Abriendo un sistema operativo
+
+.pull-left[
+&lt;br&gt;
+![:scale 100%](torvalds.png)
+]
+
+
+.pull-right[
+- Linus Torvalds, 1991 (21 años)
+
+- Crea sistema operativo libre (**Linux**) y lo abre a la colaboración. Postea:
+
+  - "I'm doing a (free) operating system (just a hobby, won't be big and professional..."
+
+]
+---
+## Desarrollo del Linux Kernel
+
+
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+![](kernelversions.png)
+]
+
+.pull-right[
+&lt;br&gt;
+
+- version 1: 1994
+
+- version 5: 2019
+
+- Más de 11 mil colaboradores
+
+- mas de 30 millones de líneas de código
+
+- **¿versionamiento?**
+
+]
+
+---
+#... más sobre Linux, Torvalds y código abierto 
+
+
+Linus Torvalds TED Talk 
+
+[https://www.youtube.com/watch?v=o8NPllzkFhE&amp;t=156s](https://www.youtube.com/watch?v=o8NPllzkFhE&amp;t=156s)
+
+---
+# Git
+
+.pull-left-narrow[
+![:scale 120%](git.png)
+]
+
+.pull-right-wide[
+- Torvalds crea **Git** en 2005 para poder llevar registro y administrar las distintas versiones de Linux
+
+- Git quiere decir *incompetente* / *desagradable*.
+
+- "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'." (Torvalds, 2012)
+
+]
+
+
+???
+
+Torvalds sarcastically quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[24][25] The man page describes Git as "the stupid content tracker".[26] The read-me file of the source code elaborates further:[27]
+
+The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your way):
+
+random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.
+stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
+"global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
+"goddamn idiotic truckload of sh*t": when it breaks
+
+---
+# Git: un software de control de versiones
+
+- es una especie de memoria o registro local que guarda información sobre:
+
+  - quién hizo un cambio
+  - cuándo lo hizo
+  - qué hizo
+
+--
+
+- mantiene la información de todos los cambios en la historia de la carpeta / repositorio local
+
+--
+
+- se puede sincronizar con repositorio remoto (ej. Github)
+
+---
+# Git / Github
+
+- actualmente, Git / Github posee más de 100 millones de repositorios
+
+- mayor fuente de código en el mundo
+
+- ha transitado desde el mundo de desarrollo de software hacia distintos ámbitos de trabajo colaborativo y abierto
+
+- entorno de trabajo que favorece la ciencia abierta
+
+
+---
+class: white
+
+.pull-left-narrow[
+#.green[ Dos lógicas de versionamiento]
+
+.black[1.Deltas]
+
+&lt;br&gt;
+&lt;br&gt;
+
+
+.black[2.Imágenes (snapshots)]
+
+**-&gt; Git**
+]
+
+
+
+.pull-right-wide[
+![](deltas.png)
+
+![](snapshots.png)
+]
+
+---
+class: inverse middle right center
+
+# .green[Git no es un registro de versiones de archivos específicos, sino de una .yellow[carpeta completa]]
+
+&lt;br&gt;
+
+# Guarda .yellow["fotos"] de momentos específicos de la carpeta, y esta foto se *saca* mediante un .yellow[commit]
+
+---
+class: white
+
+.center[
+![:scale 75%](gitflow.jpeg)
+]
+
+---
+# Commits
+
+- El **commit** es el procedimiento fundamental del control de versiones
+
+- Git no registra cualquier cambio que se "guarda", sino los que se "comprometen" (commit).
+
+--
+
+- En un **commit**
+  - se seleccionan los archivos cuyo cambio se desea registrar (*stage*)
+  - se registra lo que se está comprometiendo en el cambio (mensaje de commit)
+
+---
+# ¿Cuándo hacer un commit?
+
+- según conveniencia
+
+- sugerencias:
+
+  - que sea un momento que requiera registro (momento de foto)
+  
+  - no para cambios menores
+  
+  - no esperar muchos cambios distintos que puedan hacer perder el sentido del commit
+
+---
+# Pasos básicos versionamiento Git local
+
+- inicializar la carpeta como repositorio git (solo la primera vez)
+
+- agregar (add) los cambios que se quieran comprometer al escenario de compromiso (stage)
+
+- mensaje de commit
+
+- commit
+
+---
+# Uso
+
+- tradicionalmente, el uso de git se realiza con comandos desde el **terminal** (git bash)
+
+- actualmente, existen una serie de programas locales que facilitan el uso de Git, tanto específicos como también editores genéricos
+
+- en este curso, vamos a utilizar las utilidades Git / Github que se ofrecen en el contexto de **Atom**, editor altamente compatible con Git/Github
+
+.center[
+![:scale 30%](logos.png)
+]
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Versionamiento y Git
+ 
+## 2. .yellow[Git en Atom]
+
+## 3. Github y link con Atom
+
+---
+# Librerías
+
+
+- Atom viene con la [librería **Github**](https://github.atom.io/) preinstalada
+
+- Esta librería permite una serie de funciones, tales como:
+  - inicializar repositorio
+  - registrar commits
+  - conexión con repositorio remoto mediante push/pull
+  
+---
+# Inicializando un repositorio local
+
+- en caso de querer versionar un repositorio de manera local, la carpeta de trabajo/proyecto debe ser inicializada
+
+- el comando en este caso es `git init`, se activa en Atom desde el buscador de comandos (ctrl+shift+P) Github Initialize
+
+- se da la ruta a la carpeta que se desea inicializar
+
+- con esto se crea una carpeta oculta .git que contiene toda la información del versionamiento - .red[no modificar]
+
+---
+# Trabajando con Git en Atom
+
+- al abrir una carpeta conversionamiento Git, se activa automáticamente el panel de la derecha
+
+  - **Unstaged changes**: archivos con cambios desde el último commit
+  
+  - **Staged changes**: archivos con cambios que van a pasar por el commit (por lo general, todos)
+  
+  - **Commit message**: mensage de commit (breve e informativo)
+  
+  - **Botón  de commit** ("Commit to master")
+
+---
+class: white center
+
+
+![](git-pane.png)
+
+---
+# Comparando versiones
+
+- distintas opciones alrededor del concepto de **diff**
+
+- si se presiona algún commit previo, se abren los archivos destacando los cambios, pero no es muy fácil de visualizar
+
+- recomendación: **Git Time Machine**, de librería Git Plus
+
+  - genera panel inferior con línea de tiempo, que al ir navegando muestra las diferencias con previos commits
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Versionamiento y Git
+ 
+## 2. Git en Atom
+
+## 3. .yellow[Github y link con Atom]
+
+
+---
+# Github
+
+- Plataforma de repositorios versionables y vinculados a repositorios locales
+
+- Además del versionamiento permite:
+
+  - respaldo web
+  - apertura
+  - trabajo colaborativo compartiendo el repositorio 
+  - copiar otros repositorios (clonar) y modificarlos
+  - sugerir cambios a otros repositorios (mediante fork)
+  - publicación web en Github Pages
+
+---
+# Github - pasos iniciales
+
+- Crear cuenta en [github.com](https://github.com/)
+
+- Generar nuevo repositorio vacío (Repositories -&gt; new)
+
+- Clonarlo a local
+
+
+---
+# Clonar repo
+
+.pull-left[
+![](clone_git.png)
+]
+
+.pull-right[
+- copiar dirección
+
+- en **Atom**: Git clone
+  - pegar dirección
+  - dar ruta a carpeta vacía
+
+]
+
+
+---
+# Flujo github: pull &amp; push
+.center[
+![:scale 60%](gitflow.jpeg)
+]
+
+
+---
+# Flujo Github en Atom
+
+- Desde footer: 
+
+  - **Fetch**: comprueba si hay cambios en repositorio (por ejemplo, de algún colaborador)
+  
+  - Si hay cambios, se activa la opción **Pull** - ejecutar
+  
+  - Para subir un commit local, opción **Push**
+  
+- La primera vez que se utiliza se va a requerir ingresar usuario y clave 
+
+
+---
+# Otras funcionalidades
+
+- agregar colaboradores: settings &gt; manage access
+
+- branches
+
+- pull requests
+
+
+---
+class: inverse middle center
+
+# .green[Proxima sesión:] 
+
+# .extralarge[.yellow[Publicación Web]]
+
+---
+class: front
+.pull-left[
+# Markdown y herramientas de escritura abierta
+## [.medium[.black[bit.ly/markdown-herramientas]]](https://bit.ly/markdown-herramientas)
+----
+## [.black[Juan Carlos Castillo]](https://juancarloscastillo.github.io/jc-castillo/)
+## .small[Agosto 2021]
+]
+
+
+.pull-right[
+.right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+![:scale 60%](../Markdown-mark.png)
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://multinivel.netlify.com/docpres/xaringan_custom/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url("../Markdown-mark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 17.2em;
+  right: 32.3em;
+  width: 60px;
+  height: 30px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
