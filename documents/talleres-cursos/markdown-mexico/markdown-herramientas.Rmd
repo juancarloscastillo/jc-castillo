@@ -32,8 +32,7 @@ Juan Carlos Castillo, Departamento de Sociología, Universidad de Chile
 | Miércoles 18 	| [Escribiendo Markdown en ATOM](slides/02-atom/02_atom.html)                 	| - [Instalación y funcionamiento ATOM](https://atom.io/) <br> - Librerias ATOM-Markdown           	|
 | Viernes 20   	| [Citas en texto plano ](slides/03-bibtex/03_bibtex.html)                     	| Zotero, Bibtex & Betterbibtex     	|
 | Lunes 23     	| [Versionamiento y repos con Git & Github](slides/04-git/04_git.html)    	| Repositorios Github               	|
-| Miércoles 25 	| Publicación web vía Rmarkdown              	| Github pages                      	|
-
+| Miércoles 25 	| [Renderización y Publicación](slides/05-pub/05_pub.html)              	| Github pages                      	|
 
 </font>
 

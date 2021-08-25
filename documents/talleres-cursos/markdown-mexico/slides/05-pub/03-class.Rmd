@@ -1,0 +1,53 @@
+---
+title: "Preregistros"
+linktitle: "3: Preregistros"
+date: "2021-08-17"
+class_date: "2021-08-17"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+menu:
+  class:
+    parent: Clases
+    weight: 1
+type: docs
+weight: 1
+editor_options:
+  chunk_output_type: console
+---
+
+## Documento presentación
+
+<span class="sidenote">Para ver en pantalla completa click [**aquí**](/slides/03-preregistro-OSF/03_preregistro_osf.html). Para guardar/imprimir (en modo pantalla completa): botón derecho, imprimir/guardar como pdf. </span>
+
+<iframe src=/slides/03-preregistro-OSF/03_preregistro_osf.html height="550" width=100% allowfullscreen="true">
+</iframe>
+
+
+
+## Video clase
+
+<div style="width: 100%; height: 600px; overflow: hidden;">
+<video  style="width: 100%;" controls>
+<source src="https://www.dropbox.com/s/qlvibdgfj6p878l/clase3.mp4?raw=1" type="video/mp4">
+</video>
+</div>
+
+--
+
+## Links
+
+- [How To Properly Preregister A Study](http://datacolada.org/64)
+
+- [Lindsay et al (2016) Research Preregistration 101.](https://www.psychologicalscience.org/observer/research-preregistration-101)
+
+- [Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114
+](https://www.pnas.org/content/115/11/2600)
+
+- [OSF Preregistration resources](https://www.cos.io/initiatives/prereg)
+
+- [How To Properly Preregister A Study - Data Colada](http://datacolada.org/64)

@@ -62,23 +62,41 @@ class: inverse, bottom, right
 # .green[Contenidos]
 
 
-## 1. Renderización local simple
+## 1. Renderización
  
-## 2. Publicación web vía Github/Github pages
+## 2. Markdown a html
 
-## 3. Formatos, plantillas y extras
+## 3. Markdown a pdf
+
+## 4. Publicación web vía Github/Githup pages
+
+## 5. Extras
 
 
 ---
-class: inverse
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. .yellow[Renderización]
+ 
+## 2. Markdown a html
+
+## 3. Markdown a pdf
+
+## 4. Publicación web vía Github/Githup pages
+
+## 5. Extras
 
 
 ---
 # Renderización desde Markdown
 
-- Renderización se refiere al proceso de producción de un documento en formato de salida
+- Renderización se refiere al proceso de producción/compilación de un documento en formato simple a un formato de salida
 
-- Los dos tipos de renderización principal desde Markdown son html y pdf 
+- Los dos tipos de renderización principal desde Markdown son html y pdf (vía Latex) 
 
 - En ambos casos el programa de conversión de un formato a otro es **Pandoc**
 
@@ -107,22 +125,245 @@ class: white
 
 - Yet Another Markdown Language
 
-- Se especifican algunas opciones que Pandoc vincula a la plantilla de salida, siendo las más típicas:
+- Preámbulo que se incluye al principio del documento Markdown entre lineas marcadas por tres guiones
 
-`---
+```
+    ---
+    (aquí opciones YAML)
+    ---
+```
+- Se especifican algunas opciones que Pandoc vincula a la plantilla de salida, siendo las más típicas: ...
 
-ffdsd 
-`
+---
+# Opciones tradicionales en YAML
 
+
+```
+---
+title: Perceived Inequality
+author: Juan Carlos Castillo
+bibliography: bibliography.bib
+csl: apa.csl
+abstract: "Economic and social inequalities have 
+generated growing concern and crises across 
+contemporary societies "
+geometry: margin=0.8in
+linestretch: '1.5'
+link-citations: yes
+---
+
+Y aquí comienza el documento ...
+
+```
+
+---
+# YAML y output
+
+- el reconocimiento de las opciones de YAML y su manifestación en documento de salida depende de si son reconocidas o no por la plantilla
+
+- para un mismo documento algunas opciones pueden ser reconocidas en salida html y no en pdf, o viceversa
+
+--
+
+- por lo tanto, si bien la renderización a formatos múltiples es una opción, es recomendable considerar de antemano el formato de salida preferido
+
+  - y en general: Markdown funciona más fluidamente con un formato de salida html simple
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Renderización
+ 
+## 2. .yellow[Markdown a html]
+
+## 3. Markdown a pdf
+
+## 4. Publicación web vía Github/Githup pages
+
+## 5. Extras
+
+---
+# Renderización html en Atom
+
+- `pandoc-convert`: funciona bien, pero no reconoce citas 😭
+
+- `markdown-preview-enhanced`: tiene la opción de convertir a html, reconoce citas pero no considera otros elementos de YAML como título, autor, etc.
+
+- `pandoc-interface-yaml`: buen reconocimiento de opciones de YAML, aunque varían entre html y pdf
 
 
 ---
-# Renderización simple 
+# pandoc-interface-yaml
 
-- 
+- instalar librería en Atom
+
+- agregar opciones a YAML:
+
+  - `export-format: 'html' `(formato de exportación)
+  - `export-options: '--citeproc'` (para que reconozca las citas)
+
+- correr desde buscador de comandos (ctrl+shift+P) (pandoc interface yaml)
+
+- el archivo se guarda en la carpeta del proyecto
+  
+---
+# Imágenes en markdown-html
+
+- se renderizan en tamaño original con el código markdown tradicional `![](imagen.jpg)`
+
+- para modificar lo más directo es ingresarlas con tags html:
+
+  - `&lt;img src="Markdown-mark.png" width="100"&gt;`
+  
+  - y centrada: `&lt;center&gt;&lt;img src="Markdown-mark.png" width="150"&gt;&lt;/center&gt;`
+
+  - esto también se pre-visualiza en el `markdown-preview-enhanced` y se puede ir ajustando el tamaño/posición
+
+---
+# Algunos temas markdown-html
+
+- muchas opciones temas de formato específico requieren tags html y/o css
+
+- estos tags son reconocibles solo en salida a html, no en otras como pdf (requiere tags específicas para Latex, ver más adelante)
+
+- para formatos htlm específicos y de alta calidad desde Markdown los mayores avances van por la vía de Rmarkdown y librerías como [blogdown](https://bookdown.org/yihui/blogdown/), [bookdown](https://bookdown.org/yihui/bookdown/) y [rticles](https://github.com/rstudio/rticles) (... tema para otro curso)
+
+---
+class: inverse, bottom, right
 
 
+# .green[Contenidos]
 
+
+## 1. Renderización
+ 
+## 2. Markdown a html
+
+## 3. .yellow[Markdown a pdf]
+
+## 4. Publicación web vía Github/Githup pages
+
+## 5. Extras
+
+---
+# Conversión a pdf vía Latex
+
+- requiere tener instalada alguna distribución de [Latex](https://www.latex-project.org/)
+
+- sugerencia: [Texlive](http://www.tug.org/texlive/)
+
+- seguir instrucciones de instalación, una vez instalado queda disponible para ejecución vía pandoc
+
+---
+# usando pandoc-interface-yaml
+
+- agregar opción en YAML:
+
+  - `export-format: 'pdf' `(formato de exportación)
+  
+- También se recomienda:
+  - `geometry: margin=0.8in` (márgenes)
+  - `linestretch: '1.5'` (espaciado interlineal)
+  
+- al ejecutar `pandoc-interface-yaml` se genera un documento pdf que se guarda en el directorio raíz de la carpeta del proyecto
+  
+  
+---
+# Imágenes markdown-pdf
+
+Si el resultado con la inserción de la imagen con Markdown simple no es satisfactorio, formatear directamente con Tags de Latex:
+
+```
+\begin{center}
+\includegraphics[width=5cm]{Markdown-mark.png}
+\end{center}
+```
+
+- Los tags de Latex no son renderizados en el html y viceversa
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Renderización
+ 
+## 2. Markdown a html
+
+## 3. Markdown a pdf
+
+## 4. .yellow[Publicación web vía Github/Githup pages]
+
+## 5. Extras
+
+
+---
+# Visualización directa y rápida de htmls en Github
+
+- Si la carpeta del proyecto esta vinculada a un repositorio en Github, al visualizar un archivo html lo que se va a ver es el código html no renderizado
+
+- para ver el archivo renderizado existe una funcionalidad específica: [http://htmlpreview.github.io/](http://htmlpreview.github.io/)
+
+- pegar en el recuadro la dirección al html que está en Github y se verá renderizado, ese link se puede compartir con terceros
+
+
+---
+# Generación de sitios web con Github pages
+
+- Settings &gt; Pages
+
+- Seleccionar fuente: Source: Master
+
+- Seleccionar tema
+
+- La dirección de la página aparece arriba
+
+---
+# Generación de sitios web con Github pages
+
+  - en el repositorio solo se agrega un archivo que es un "site generator" (_config.yml)
+
+  - todo lo que sea modificado en el archivo .md (mediante commit) será renderizado automáticamente en el sitio web.
+
+
+---
+class: inverse, bottom, right
+
+
+# .green[Contenidos]
+
+
+## 1. Renderización
+ 
+## 2. Markdown a html
+
+## 3. Markdown a pdf
+
+## 4. Publicación web vía Github/Githup pages
+
+## 5. .yellow[Extras]
+
+---
+# Extras y pendientes ...
+
+- **Tablas**: en general no es fácil generar tablas directo en markdown, sugiero utilizar el [markdown tables generator](https://www.tablesgenerator.com/markdown_tables)  
+
+- Rutas relativas
+  - para subir de directorio: `../` por cada nivel
+  - para bajar: siempre desde la raíz siguiendo la estructura de directorios, ej: "input/images/image1.jpg"
+
+- Critic markup: [http://criticmarkup.com/users-guide.php](http://criticmarkup.com/users-guide.php), sistema de control de cambios para Markdown
 
 ---
 class: front
