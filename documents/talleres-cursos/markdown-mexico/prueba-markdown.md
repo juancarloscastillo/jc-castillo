@@ -71,7 +71,7 @@ Como dijo Knight una vez [-@knight_luck_2009], eso era muy importante.
 
 ## Critic markup
 
-I {++think most++} people start {--using R --}with scripts initially. Scripts are great for modular computational tasks, but for generating informative {~~reports, Rmarkdown~>~~} is a must. {>>Rmd makes it possible to use a YAML header to specify certain<<} parameters right at the beginning of the document. Built-in {==YAML parameters==}{>><<} make it easier to create more organized and informative reports. In this post, I will share with you few of the YAML options I commonly use for generating HTML outputs in my data analysis projects. You can check out the following resources for details about tons of other options:
+
 
 
 
