@@ -29,4 +29,4 @@ El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentr
 
 ## Calendarización
 
-<iframe src="https://docs.google.com/spreadsheets/d/1OGqPsfqPE5IjHGldLcK_YifZ6Cj9EKBMI2D9m5xCZRk/edit#gid=0&range=A1:D18" width="1000" height="1000"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRe36nX3SsL8poUp0of2aJT8-b19IRfGJfy1yvUQFcEDNFR0F4VSrJSN9xVTQDLikHng94vw8uGTAIF/pubhtml?widget=true&amp;headers=false" width="700" height="650"></iframe>
