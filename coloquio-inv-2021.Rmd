@@ -17,7 +17,7 @@ Coloquio de investigación en desigualdad y ciudadanía - 1er Sem 2021
 <br>
 
 
-### Jueves 16:00  a 17:00, Marzo-Junio 2021 (online)
+### Jueves 16:00  a 17:00
 
 El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentran temáticamente vinculados a áreas de desigualdad y/o ciudadanía, y que utilizan metodologías de análisis cuantitativo. Para estudiantes de:
 
@@ -29,22 +29,4 @@ El objetivo de este coloquio es presentar trabajos en desarrollo que se encuentr
 
 ## Calendarización
 
-
-|             |   |  Presenta   | Tema | Comenta
-|---|---|----|------|------|
-| Marzo       | 18 | -  | Calendarización sesiones
-|             | 25 | JC Castillo  | [tesisfacsodown](https://juancarloscastillo.github.io/tesisfacsodown/)
-| Abril       |  1 | Andreas Lafferte  | Propuestas tema seminario | Martín Venegas
-|             |  8 | JC Castillo | Escritura académica|
-|             | 15 |  |  |
-|             | 22 | Diego Esturillo | |
-|             | 29 | Karen Tapia   | |
-| Mayo        |  6 | _Semana de receso_
-|             | 13 | Martín Venegas | |
-|             | 20 | Sebastián Cortínez | |
-|             | 27 | Javiera Urrutia |
-| Junio       |  3 | Andreas Lafferte & <br> Diego Esturillo  |
-|             | 10 | _Semana de receso_ |
-|             | 17 | Karen Tapia & <br> Martín Venegas  |
-|             | 24 | Sebastián Cortínez & <br> Javiera Urrutia  |
-| Julio       |  1 | Cierre  |
+<iframe src="https://docs.google.com/spreadsheets/d/1OGqPsfqPE5IjHGldLcK_YifZ6Cj9EKBMI2D9m5xCZRk/edit#gid=0&range=A1:D18" width="1000" height="1000"></iframe>

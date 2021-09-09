@@ -7,13 +7,13 @@ abstract: "Economic and social inequalities have generated growing concern and c
 geometry: margin=0.8in
 linestretch: '1.5'
 link-citations: yes
-export-format: 'html'
+export-format: 'pdf'
 export-options: '--citeproc'
 ---
 
 # 1. Probando markdown
 
-I think most people start using R with scripts initially. Scripts are great for modular computational tasks, but for generating informative reports, Rmarkdown is a must. Rmd makes it possible to use a YAML header to specify certain parameters right at the beginning of the document. Built-in YAML parameters make it easier to create more organized and informative reports. In this post, I will share with you few of the YAML options I commonly use for generating HTML outputs in my data analysis projects. You can check out the following resources for details about tons of other options:
+I {++think most++} people start using R with scripts initially. Scripts are great for modular computational tasks, but for generating informative reports, Rmarkdown is a must.{~~ Rmd makes ~>~~}it possible to use a YAML header to specify certain parameters right at the beginning of the document. Built-in YAML parameters make it easier to create more organized and informative repo{--rts. In this post, I will share with you few of the YAML options I commonly use for gener--} ating HTML outputs in my data analysis projects. You can check out the following resources for details about tons of other options:
 
 ## Segundo encabezado
 
@@ -43,7 +43,7 @@ Esto funciona tanto para salida en html como Latex/pdf. El problema es el tamañ
 - En el caso de **html**:
 `<img src="Markdown-mark.png" width="200">`
 
-<img src="Markdown-mark.png" width="200">
+<img src="Markdown-mark.png" width="400">
 
 Y si se desea centrada:
 
